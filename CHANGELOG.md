@@ -6,14 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`1.24.0...master`][1.24.0...master]
+For a full diff see [`1.0.0...master`][1.0.0...master].
 
-### Fixed
+## [`1.0.0`][1.0.0]
 
-* Dropped support for PHP 7.1 ([#221]), by [@localheinz])
+For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 
-[1.24.0...master]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.24.0...master
+[1.0.0...master]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...master
+[d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 
-[#221]: https://github.com/ergebnis/php-cs-fixer-config/pull/221
-
-[@localheinz]: https://github.com/localheinz
+[1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.0.0

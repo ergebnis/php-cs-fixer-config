@@ -1,0 +1,25 @@
+# https://dependabot.com/docs/config-file/
+
+version: 1
+
+update_configs:
+  - default_assignees:
+      - "localheinz"
+    default_labels:
+      - "dependency"
+    default_reviewers:
+      - "localheinz"
+    directory: "/"
+    package_manager: "github_actions"
+    update_schedule: "weekly"
+
+  - default_assignees:
+      - "localheinz"
+    default_labels:
+      - "dependency"
+    default_reviewers:
+      - "localheinz"
+    directory: "/"
+    package_manager: "php:composer"
+    update_schedule: "weekly"
+    version_requirement_updates: "increase_versions"

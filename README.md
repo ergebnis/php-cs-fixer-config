@@ -21,7 +21,8 @@ $ composer require --dev ergebnis/php-cs-fixer-config
 
 Pick one of the rule sets:
 
-* [`Ergebnis\PhpCsFixer\RuleSet\Custom`](src/RuleSet/Custom.php)
+* [`Ergebnis\PhpCsFixer\RuleSet\Php71`](src/RuleSet/Php71.php)
+* [`Ergebnis\PhpCsFixer\RuleSet\Php73`](src/RuleSet/Php73.php)
 
 Create a configuration file `.php_cs` in the root of your project:
 
@@ -30,7 +31,7 @@ Create a configuration file `.php_cs` in the root of your project:
 
 use Ergebnis\PhpCsFixer\Config;
 
-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Custom());
+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71());
 
 $config->getFinder()->in(__DIR__);
 $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/php_cs.cache');
@@ -67,8 +68,8 @@ All configuration examples use the caching feature, and if you want to use it as
 +@see https://github.com/ergebnis/php-cs-fixer-config
 +EOF;
 
--$config = Config\Factory::fromRuleSet(new Config\RuleSet\Custom());
-+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Custom($header));
+-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71());
++$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71($header));
 
  $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/php_cs.cache');
@@ -101,8 +102,8 @@ file headers will be added to PHP files, for example:
 
  use Ergebnis\PhpCsFixer\Config;
 
--$config = Config\Factory::fromRuleSet(new Config\RuleSet\Custom());
-+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Custom(), [
+-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71());
++$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71(), [
 +    'mb_str_functions' => false,
 +    'strict_comparison' => false,
 +]);
@@ -147,7 +148,7 @@ If you like [`composer` scripts](https://getcomposer.org/doc/articles/scripts.md
      "php": "^7.2",
    },
    "require-dev": {
-     "friendsofphp/php-cs-fixer": "~2.16.0"
+     "ergebnis/php-cs-fixer-config": "~1.0.0"
 +  },
 +  "scripts": {
 +    "coding-standards": [

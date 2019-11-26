@@ -258,6 +258,8 @@ Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
 
 Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
 
+:bulb: Do you want to add a rule for personal use or use in your organization? Instead of opening a pull request here, perhaps consider creating a new package based on [`ergebnis/php-cs-fixer-config-template`](https://github.com/ergebnis/php-cs-fixer-config-template), a GitHub repository template that provides a good starting point for creating and sharing your own rule sets.
+
 ## Code of Conduct
 
 Please have a look at [`CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md).

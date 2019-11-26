@@ -47,7 +47,7 @@ We are using [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit) t
 Run
 
 ```
-$ make test
+$ make tests
 ```
 
 to run all the tests.

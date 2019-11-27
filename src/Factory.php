@@ -27,7 +27,7 @@ final class Factory
      *
      * @return Config
      */
-    public static function fromRuleSet(RuleSet $ruleSet, array $overrideRules = [])
+    public static function fromRuleSet(RuleSet $ruleSet, array $overrideRules = []): Config
     {
         if (\PHP_VERSION_ID < $ruleSet->targetPhpVersion()) {
             throw new \RuntimeException(\sprintf(

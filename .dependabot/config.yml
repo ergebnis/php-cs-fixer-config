@@ -11,9 +11,12 @@ update_configs:
       - "localheinz"
     directory: "/"
     package_manager: "github_actions"
-    update_schedule: "weekly"
+    update_schedule: "daily"
 
-  - default_assignees:
+  - automerged_updates:
+      - match:
+          dependency_type: "development"
+    default_assignees:
       - "localheinz"
     default_labels:
       - "dependency"
@@ -21,5 +24,5 @@ update_configs:
       - "localheinz"
     directory: "/"
     package_manager: "php:composer"
-    update_schedule: "weekly"
+    update_schedule: "daily"
     version_requirement_updates: "increase_versions"

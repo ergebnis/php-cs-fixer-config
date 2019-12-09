@@ -3,9 +3,7 @@ it: coding-standards dependency-analysis static-code-analysis tests ## Runs the 
 
 .PHONY: code-coverage
 code-coverage: vendor ## Collects coverage from running unit tests with phpunit/phpunit
-	mkdir -p .build/phpunit
-	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
-	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text --prepend=.build/phpunit/xdebug-filter.php
+	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text
 
 .PHONY: coding-standards
 coding-standards: vendor ## Fixes code style issues with friendsofphp/php-cs-fixer
@@ -14,7 +12,7 @@ coding-standards: vendor ## Fixes code style issues with friendsofphp/php-cs-fix
 
 .PHONY: dependency-analysis
 dependency-analysis: vendor ## Runs a dependency analysis with maglnet/composer-require-checker
-	docker run --interactive --rm --tty --workdir=/app --volume ${PWD}:/app localheinz/composer-require-checker-action:1.1.0
+	docker run --interactive --rm --tty --workdir=/app --volume ${PWD}:/app localheinz/composer-require-checker-action:1.1.1
 
 .PHONY: help
 help: ## Displays this list of targets with descriptions

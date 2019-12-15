@@ -14,9 +14,6 @@
     "php": "^7.2",
     "friendsofphp/php-cs-fixer": "~2.16.0"
   },
-  "replace": {
-    "localheinz/php-cs-fixer-config": "*"
-  },
   "require-dev": {
     "ergebnis/phpstan-rules": "~0.14.0",
     "ergebnis/test-util": "~0.9.0",

@@ -99,10 +99,7 @@ final class FactoryTest extends Framework\TestCase
         self::assertSame($rules, $config->getRules());
     }
 
-    /**
-     * @return \Generator
-     */
-    public function providerTargetPhpVersion()
+    public function providerTargetPhpVersion(): \Generator
     {
         $values = [
             \PHP_VERSION_ID - 1,

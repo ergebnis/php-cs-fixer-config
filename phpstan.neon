@@ -2,9 +2,11 @@ includes:
 	- phpstan-baseline.neon
 
 parameters:
-	classesAllowedToBeExtended:
-		- Ergebnis\PhpCsFixer\Config\RuleSet\AbstractRuleSet
-		- Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet\AbstractRuleSetTestCase
+	checkMissingIterableValueType: false
+	ergebnis:
+		classesAllowedToBeExtended:
+			- Ergebnis\PhpCsFixer\Config\RuleSet\AbstractRuleSet
+			- Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet\AbstractRuleSetTestCase
 	inferPrivatePropertyTypeFromConstructor: true
 	level: max
 	paths:

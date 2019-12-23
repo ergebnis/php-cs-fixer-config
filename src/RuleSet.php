@@ -20,14 +20,14 @@ interface RuleSet
      *
      * @return string
      */
-    public function name();
+    public function name(): string;
 
     /**
      * Returns an array of rules along with their configuration.
      *
      * @return array
      */
-    public function rules();
+    public function rules(): array;
 
     /**
      * Returns the minimum required PHP version (PHP_VERSION_ID).
@@ -36,5 +36,5 @@ interface RuleSet
      *
      * @return int
      */
-    public function targetPhpVersion();
+    public function targetPhpVersion(): int;
 }

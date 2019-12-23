@@ -107,10 +107,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         self::assertSame($expected, $rules['header_comment']);
     }
 
-    /**
-     * @return \Generator
-     */
-    final public function providerValidHeader()
+    final public function providerValidHeader(): \Generator
     {
         $values = [
             'string-empty' => '',
@@ -145,10 +142,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
-    /**
-     * @return \Generator
-     */
-    final public function providerRuleNames()
+    final public function providerRuleNames(): \Generator
     {
         $values = [
             'rule set' => self::createRuleSet()->rules(),

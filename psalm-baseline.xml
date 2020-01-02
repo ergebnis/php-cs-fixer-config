@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="3.8.1@8e54e3aa060fc490d86d0e2abbf62750516d40fd">
+  <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
+    <InternalClass occurrences="2">
+      <code>FixerFactory::create()</code>
+      <code>RuleSet::create($rules)</code>
+    </InternalClass>
+    <InternalMethod occurrences="4">
+      <code>FixerFactory::create()</code>
+      <code>registerBuiltInFixers</code>
+      <code>getFixers</code>
+      <code>RuleSet::create($rules)</code>
+    </InternalMethod>
+  </file>
+</files>

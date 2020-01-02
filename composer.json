@@ -12,6 +12,7 @@
   ],
   "require": {
     "php": "^7.1",
+    "ext-filter": "*",
     "friendsofphp/php-cs-fixer": "~2.16.0"
   },
   "require-dev": {

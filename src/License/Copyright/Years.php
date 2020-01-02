@@ -11,12 +11,12 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\License;
+namespace Ergebnis\PhpCsFixer\Config\License\Copyright;
 
 /**
  * @internal
  */
-final class CopyrightYears
+final class Years
 {
     private $value;
 
@@ -26,31 +26,31 @@ final class CopyrightYears
     }
 
     /**
-     * @param Year $startYear
-     * @param Year $endYear
+     * @param Year $start
+     * @param Year $end
      *
      * @throws \InvalidArgumentException
      *
      * @return self
      */
-    public static function fromRange(Year $startYear, Year $endYear): self
+    public static function fromRange(Year $start, Year $end): self
     {
-        if ($startYear->greaterThan($endYear)) {
+        if ($start->greaterThan($end)) {
             throw new \InvalidArgumentException(\sprintf(
                 'Start year "%s" needs to be equal to or less than end year "%s".',
-                $startYear->toString(),
-                $endYear->toString()
+                $start->toString(),
+                $end->toString()
             ));
         }
 
-        if ($startYear->equals($endYear)) {
-            return self::fromYear($startYear);
+        if ($start->equals($end)) {
+            return self::fromYear($start);
         }
 
         return new self(\sprintf(
             '%s-%s',
-            $startYear->toString(),
-            $endYear->toString()
+            $start->toString(),
+            $end->toString()
         ));
     }
 

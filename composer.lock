@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c89b5bca275f3a3fab9cbd570e300a16",
+    "content-hash": "92e32fcd84e52211d528621fa5c14272",
     "packages": [
         {
             "name": "composer/semver",
@@ -727,7 +727,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.1",
+            "version": "v4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",

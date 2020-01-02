@@ -11,16 +11,16 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\Test\Unit\Header;
+namespace Ergebnis\PhpCsFixer\Config\Test\Unit\License;
 
-use Ergebnis\PhpCsFixer\Config\Header\Year;
+use Ergebnis\PhpCsFixer\Config\License\Year;
 use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Ergebnis\PhpCsFixer\Config\Header\Year
+ * @covers \Ergebnis\PhpCsFixer\Config\License\Year
  */
 final class YearTest extends Framework\TestCase
 {

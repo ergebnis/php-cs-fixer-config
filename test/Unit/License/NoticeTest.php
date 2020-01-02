@@ -11,18 +11,18 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\Test\Unit\Header;
+namespace Ergebnis\PhpCsFixer\Config\Test\Unit\License;
 
-use Ergebnis\PhpCsFixer\Config\Header\License;
+use Ergebnis\PhpCsFixer\Config\License\Notice;
 use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Ergebnis\PhpCsFixer\Config\Header\License
+ * @covers \Ergebnis\PhpCsFixer\Config\License\Notice
  */
-final class LicenseTest extends Framework\TestCase
+final class NoticeTest extends Framework\TestCase
 {
     use Helper;
 
@@ -31,11 +31,11 @@ final class LicenseTest extends Framework\TestCase
      *
      * @param string $value
      */
-    public function testFromStringReturnsLicense(string $value): void
+    public function testFromStringReturnsNotice(string $value): void
     {
-        $license = License::fromString($value);
+        $notice = Notice::fromString($value);
 
-        self::assertSame($value, $license->toString());
+        self::assertSame($value, $notice->toString());
     }
 
     public function provideValidValue(): \Generator
@@ -52,11 +52,11 @@ final class LicenseTest extends Framework\TestCase
      *
      * @param string $value
      */
-    public function testFromStringReturnsLicenseWithTrimmedValue(string $value): void
+    public function testFromStringReturnsNoticeWithTrimmedValue(string $value): void
     {
-        $license = License::fromString($value);
+        $notice = Notice::fromString($value);
 
-        self::assertSame(\trim($value), $license->toString());
+        self::assertSame(\trim($value), $notice->toString());
     }
 
     public function provideUntrimmedValue(): \Generator
@@ -73,9 +73,9 @@ final class LicenseTest extends Framework\TestCase
 
     public function testIsEmptyReturnsFalseWhenTrimmedValueIsNotEmpty(): void
     {
-        $license = License::fromString(self::faker()->realText());
+        $notice = Notice::fromString(self::faker()->realText());
 
-        self::assertFalse($license->isEmpty());
+        self::assertFalse($notice->isEmpty());
     }
 
     /**
@@ -85,9 +85,9 @@ final class LicenseTest extends Framework\TestCase
      */
     public function testIsEmptyReturnsTrueWhenTrimmedValueIsEmpty(string $value): void
     {
-        $license = License::fromString($value);
+        $notice = Notice::fromString($value);
 
-        self::assertTrue($license->isEmpty());
+        self::assertTrue($notice->isEmpty());
     }
 
     public function provideBlankOrEmptyString(): \Generator

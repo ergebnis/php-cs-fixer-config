@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\Header;
+namespace Ergebnis\PhpCsFixer\Config\License;
 
 /**
  * @internal
@@ -22,31 +22,31 @@ final class Header
 
     private $author;
 
-    private $license;
+    private $notice;
 
     private $url;
 
-    private function __construct(CopyrightYears $copyrightYear, Author $author, License $license, Url $url)
+    private function __construct(CopyrightYears $copyrightYear, Author $author, Notice $notice, Url $url)
     {
         $this->copyrightYear = $copyrightYear;
         $this->author = $author;
-        $this->license = $license;
+        $this->notice = $notice;
         $this->url = $url;
     }
 
-    public static function create(CopyrightYears $copyrightYear, Author $author, License $license, Url $url): self
+    public static function create(CopyrightYears $copyrightYear, Author $author, Notice $notice, Url $url): self
     {
         return new self(
             $copyrightYear,
             $author,
-            $license,
+            $notice,
             $url
         );
     }
 
     public function toString(): string
     {
-        if ($this->license->isEmpty()) {
+        if ($this->notice->isEmpty()) {
             return <<<EOF
 Copyright (c) {$this->copyrightYear->toString()} {$this->author->toString()}
 
@@ -57,7 +57,7 @@ EOF;
         return <<<EOF
 Copyright (c) {$this->copyrightYear->toString()} {$this->author->toString()}
 
-{$this->license->toString()}
+{$this->notice->toString()}
 
 @see {$this->url->toString()}
 EOF;

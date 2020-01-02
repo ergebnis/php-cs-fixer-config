@@ -11,12 +11,12 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\Header;
+namespace Ergebnis\PhpCsFixer\Config\License;
 
 /**
  * @internal
  */
-final class Url
+final class Notice
 {
     private $value;
 
@@ -25,25 +25,14 @@ final class Url
         $this->value = $value;
     }
 
-    /**
-     * @param string $value
-     *
-     * @throws \InvalidArgumentException
-     *
-     * @return self
-     */
     public static function fromString(string $value): self
     {
-        $trimmed = \trim($value);
+        return new self(\trim($value));
+    }
 
-        if (false === \filter_var($trimmed, \FILTER_VALIDATE_URL)) {
-            throw new \InvalidArgumentException(\sprintf(
-                'Value "%s" does not appear to be a valid URL.',
-                $value
-            ));
-        }
-
-        return new self($trimmed);
+    public function isEmpty(): bool
+    {
+        return '' === $this->value;
     }
 
     public function toString(): string

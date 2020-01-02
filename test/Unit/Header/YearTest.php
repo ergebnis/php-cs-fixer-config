@@ -92,6 +92,18 @@ final class YearTest extends Framework\TestCase
         }
     }
 
+    public function testCurrentReturnsYearWithUtcValue(): void
+    {
+        $value = new \DateTimeImmutable(
+            'now',
+            new \DateTimeZone('UTC')
+        );
+
+        $year = Year::current();
+
+        self::assertSame($value->format('Y'), $year->toString());
+    }
+
     public function testEqualsReturnsFalseWhenValueIsDifferent(): void
     {
         $one = Year::fromString('2020');

@@ -44,6 +44,16 @@ final class Year
         return new self($value);
     }
 
+    public static function current(): self
+    {
+        $value = new \DateTimeImmutable(
+            'now',
+            new \DateTimeZone('UTC')
+        );
+
+        return self::fromString($value->format('Y'));
+    }
+
     public function toString(): string
     {
         return $this->value;

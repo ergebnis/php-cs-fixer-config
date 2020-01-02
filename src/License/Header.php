@@ -18,7 +18,7 @@ namespace Ergebnis\PhpCsFixer\Config\License;
  */
 final class Header
 {
-    private $copyrightYear;
+    private $copyrightYears;
 
     private $author;
 
@@ -26,18 +26,18 @@ final class Header
 
     private $url;
 
-    private function __construct(CopyrightYears $copyrightYear, Author $author, Notice $notice, Url $url)
+    private function __construct(CopyrightYears $copyrightYears, Author $author, Notice $notice, Url $url)
     {
-        $this->copyrightYear = $copyrightYear;
+        $this->copyrightYears = $copyrightYears;
         $this->author = $author;
         $this->notice = $notice;
         $this->url = $url;
     }
 
-    public static function create(CopyrightYears $copyrightYear, Author $author, Notice $notice, Url $url): self
+    public static function create(CopyrightYears $copyrightYears, Author $author, Notice $notice, Url $url): self
     {
         return new self(
-            $copyrightYear,
+            $copyrightYears,
             $author,
             $notice,
             $url
@@ -48,14 +48,14 @@ final class Header
     {
         if ($this->notice->isEmpty()) {
             return <<<EOF
-Copyright (c) {$this->copyrightYear->toString()} {$this->author->toString()}
+Copyright (c) {$this->copyrightYears->toString()} {$this->author->toString()}
 
 @see {$this->url->toString()}
 EOF;
         }
 
         return <<<EOF
-Copyright (c) {$this->copyrightYear->toString()} {$this->author->toString()}
+Copyright (c) {$this->copyrightYears->toString()} {$this->author->toString()}
 
 {$this->notice->toString()}
 

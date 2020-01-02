@@ -13,12 +13,12 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\License;
 
-use Ergebnis\PhpCsFixer\Config\License\Author;
-use Ergebnis\PhpCsFixer\Config\License\CopyrightYears;
+use Ergebnis\PhpCsFixer\Config\License\Copyright\Holder;
+use Ergebnis\PhpCsFixer\Config\License\Copyright\Year;
+use Ergebnis\PhpCsFixer\Config\License\Copyright\Years;
 use Ergebnis\PhpCsFixer\Config\License\Header;
 use Ergebnis\PhpCsFixer\Config\License\Notice;
 use Ergebnis\PhpCsFixer\Config\License\Url;
-use Ergebnis\PhpCsFixer\Config\License\Year;
 use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
 
@@ -27,11 +27,11 @@ use PHPUnit\Framework;
  *
  * @covers \Ergebnis\PhpCsFixer\Config\License\Header
  *
- * @uses \Ergebnis\PhpCsFixer\Config\License\Author
- * @uses \Ergebnis\PhpCsFixer\Config\License\CopyrightYears
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Copyright\Holder
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Copyright\Year
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Copyright\Years
  * @uses \Ergebnis\PhpCsFixer\Config\License\Notice
  * @uses \Ergebnis\PhpCsFixer\Config\License\Url
- * @uses \Ergebnis\PhpCsFixer\Config\License\Year
  */
 final class HeaderTest extends Framework\TestCase
 {
@@ -41,24 +41,24 @@ final class HeaderTest extends Framework\TestCase
     {
         $faker = self::faker();
 
-        $copyrightYears = CopyrightYears::fromRange(
+        $years = Years::fromRange(
             Year::fromString('2019'),
             Year::fromString(\date('2020'))
         );
 
-        $author = Author::fromString($faker->name);
+        $holder = Holder::fromString($faker->name);
 
         $url = Url::fromString($faker->url);
 
         $header = Header::create(
-            $copyrightYears,
-            $author,
+            $years,
+            $holder,
             Notice::fromString(''),
             $url
         );
 
         $expected = <<<EOF
-Copyright (c) {$copyrightYears->toString()} {$author->toString()}
+Copyright (c) {$years->toString()} {$holder->toString()}
 
 @see {$url->toString()}
 EOF;
@@ -70,12 +70,12 @@ EOF;
     {
         $faker = self::faker();
 
-        $copyrightYears = CopyrightYears::fromRange(
+        $years = Years::fromRange(
             Year::fromString('2019'),
             Year::fromString(\date('2020'))
         );
 
-        $author = Author::fromString($faker->name);
+        $holder = Holder::fromString($faker->name);
 
         $notice = Notice::fromString(
             <<<'EOF'
@@ -87,14 +87,14 @@ EOF
         $url = Url::fromString($faker->url);
 
         $header = Header::create(
-            $copyrightYears,
-            $author,
+            $years,
+            $holder,
             $notice,
             $url
         );
 
         $expected = <<<EOF
-Copyright (c) {$copyrightYears->toString()} {$author->toString()}
+Copyright (c) {$years->toString()} {$holder->toString()}
 
 {$notice->toString()}
 

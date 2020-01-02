@@ -85,9 +85,9 @@ final class UrlTest extends Framework\TestCase
      */
     public function testFromStringReturnsUrlWithTrimmedValue(string $value): void
     {
-        $author = Url::fromString($value);
+        $url = Url::fromString($value);
 
-        self::assertSame(\trim($value), $author->toString());
+        self::assertSame(\trim($value), $url->toString());
     }
 
     public function provideUntrimmedValue(): \Generator

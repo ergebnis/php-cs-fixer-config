@@ -14,8 +14,8 @@ declare(strict_types=1);
 use Ergebnis\PhpCsFixer\Config;
 
 $header = Config\License\Header::create(
-    Config\License\CopyrightYears::fromYear(Config\License\Year::fromString('2019')),
-    Config\License\Author::fromString('Andreas Möller'),
+    Config\License\Copyright\Years::fromYear(Config\License\Copyright\Year::fromString('2019')),
+    Config\License\Copyright\Holder::fromString('Andreas Möller'),
     Config\License\Notice::fromString(
         <<<'EOF'
 For the full copyright and license information, please view

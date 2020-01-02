@@ -11,18 +11,18 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\Test\Unit\License;
+namespace Ergebnis\PhpCsFixer\Config\Test\Unit\License\Copyright;
 
-use Ergebnis\PhpCsFixer\Config\License\Author;
+use Ergebnis\PhpCsFixer\Config\License\Copyright\Holder;
 use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Ergebnis\PhpCsFixer\Config\License\Author
+ * @covers \Ergebnis\PhpCsFixer\Config\License\Copyright\Holder
  */
-final class AuthorTest extends Framework\TestCase
+final class HolderTest extends Framework\TestCase
 {
     use Helper;
 
@@ -36,7 +36,7 @@ final class AuthorTest extends Framework\TestCase
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage('Value cannot be blank or empty.');
 
-        Author::fromString($value);
+        Holder::fromString($value);
     }
 
     public function provideInvalidValue(): \Generator
@@ -58,11 +58,11 @@ final class AuthorTest extends Framework\TestCase
      *
      * @param string $value
      */
-    public function testFromStringReturnsAuthor(string $value): void
+    public function testFromStringReturnsHolder(string $value): void
     {
-        $author = Author::fromString($value);
+        $holder = Holder::fromString($value);
 
-        self::assertSame($value, $author->toString());
+        self::assertSame($value, $holder->toString());
     }
 
     public function provideValidValue(): \Generator
@@ -79,11 +79,11 @@ final class AuthorTest extends Framework\TestCase
      *
      * @param string $value
      */
-    public function testFromStringReturnsAuthorWithTrimmedValue(string $value): void
+    public function testFromStringReturnsHolderWithTrimmedValue(string $value): void
     {
-        $author = Author::fromString($value);
+        $holder = Holder::fromString($value);
 
-        self::assertSame(\trim($value), $author->toString());
+        self::assertSame(\trim($value), $holder->toString());
     }
 
     public function provideUntrimmedValue(): \Generator

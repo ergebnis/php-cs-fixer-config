@@ -127,10 +127,10 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @dataProvider providerRuleNames
      *
-     * @param array  $ruleNames
-     * @param string $source
+     * @param string   $source
+     * @param string[] $ruleNames
      */
-    final public function testRulesAreSortedByName($source, $ruleNames): void
+    final public function testRulesAreSortedByName(string $source, array $ruleNames): void
     {
         $sorted = $ruleNames;
 
@@ -193,6 +193,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
      */
     final protected static function createRuleSet($header = null): Config\RuleSet
     {
+        /** @var class-string $className */
         $className = self::className();
 
         $reflection = new \ReflectionClass($className);
@@ -236,7 +237,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
          *
          * @see https://github.com/FriendsOfPHP/PHP-CS-Fixer/pull/2361
          */
-        $rules = \array_map(static function (): bool {
+        $rules = \array_map(static function ($ruleConfiguration): bool {
             return true;
         }, self::createRuleSet()->rules());
 

@@ -23,7 +23,7 @@ abstract class AbstractRuleSet implements RuleSet
     /**
      * @var string
      */
-    protected $name;
+    protected $name = '';
 
     /**
      * @var array
@@ -33,7 +33,7 @@ abstract class AbstractRuleSet implements RuleSet
     /**
      * @var int
      */
-    protected $targetPhpVersion;
+    protected $targetPhpVersion = 0;
 
     final public function __construct(?string $header = null)
     {

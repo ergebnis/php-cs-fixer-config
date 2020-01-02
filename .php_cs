@@ -13,16 +13,16 @@ declare(strict_types=1);
 
 use Ergebnis\PhpCsFixer\Config;
 
-$header = Config\Header\Header::create(
-    Config\Header\CopyrightYears::fromYear(Config\Header\Year::fromString('2019')),
-    Config\Header\Author::fromString('Andreas Möller'),
-    Config\Header\License::fromString(
+$header = Config\License\Header::create(
+    Config\License\CopyrightYears::fromYear(Config\License\Year::fromString('2019')),
+    Config\License\Author::fromString('Andreas Möller'),
+    Config\License\Notice::fromString(
         <<<'EOF'
 For the full copyright and license information, please view
 the LICENSE file that was distributed with this source code.
 EOF
     ),
-    Config\Header\Url::fromString('https://github.com/ergebnis/php-cs-fixer-config')
+    Config\License\Url::fromString('https://github.com/ergebnis/php-cs-fixer-config')
 );
 
 $config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71($header->toString()));

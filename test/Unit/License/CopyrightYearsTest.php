@@ -11,21 +11,21 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\Test\Unit\Header;
+namespace Ergebnis\PhpCsFixer\Config\Test\Unit\License;
 
-use Ergebnis\PhpCsFixer\Config\Header\CopyrightYears;
-use Ergebnis\PhpCsFixer\Config\Header\Year;
+use Ergebnis\PhpCsFixer\Config\License\CopyrightYears;
+use Ergebnis\PhpCsFixer\Config\License\Year;
 use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Ergebnis\PhpCsFixer\Config\Header\CopyrightYears
+ * @covers \Ergebnis\PhpCsFixer\Config\License\CopyrightYears
  *
- * @uses \Ergebnis\PhpCsFixer\Config\Header\Author
- * @uses \Ergebnis\PhpCsFixer\Config\Header\Url
- * @uses \Ergebnis\PhpCsFixer\Config\Header\Year
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Author
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Url
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Year
  */
 final class CopyrightYearsTest extends Framework\TestCase
 {

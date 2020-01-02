@@ -11,27 +11,27 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\Test\Unit\Header;
+namespace Ergebnis\PhpCsFixer\Config\Test\Unit\License;
 
-use Ergebnis\PhpCsFixer\Config\Header\Author;
-use Ergebnis\PhpCsFixer\Config\Header\CopyrightYears;
-use Ergebnis\PhpCsFixer\Config\Header\Header;
-use Ergebnis\PhpCsFixer\Config\Header\License;
-use Ergebnis\PhpCsFixer\Config\Header\Url;
-use Ergebnis\PhpCsFixer\Config\Header\Year;
+use Ergebnis\PhpCsFixer\Config\License\Author;
+use Ergebnis\PhpCsFixer\Config\License\CopyrightYears;
+use Ergebnis\PhpCsFixer\Config\License\Header;
+use Ergebnis\PhpCsFixer\Config\License\Notice;
+use Ergebnis\PhpCsFixer\Config\License\Url;
+use Ergebnis\PhpCsFixer\Config\License\Year;
 use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Ergebnis\PhpCsFixer\Config\Header\Header
+ * @covers \Ergebnis\PhpCsFixer\Config\License\Header
  *
- * @uses \Ergebnis\PhpCsFixer\Config\Header\Author
- * @uses \Ergebnis\PhpCsFixer\Config\Header\CopyrightYears
- * @uses \Ergebnis\PhpCsFixer\Config\Header\License
- * @uses \Ergebnis\PhpCsFixer\Config\Header\Url
- * @uses \Ergebnis\PhpCsFixer\Config\Header\Year
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Author
+ * @uses \Ergebnis\PhpCsFixer\Config\License\CopyrightYears
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Notice
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Url
+ * @uses \Ergebnis\PhpCsFixer\Config\License\Year
  */
 final class HeaderTest extends Framework\TestCase
 {
@@ -53,7 +53,7 @@ final class HeaderTest extends Framework\TestCase
         $header = Header::create(
             $copyrightYears,
             $author,
-            License::fromString(''),
+            Notice::fromString(''),
             $url
         );
 
@@ -77,7 +77,7 @@ EOF;
 
         $author = Author::fromString($faker->name);
 
-        $license = License::fromString(
+        $notice = Notice::fromString(
             <<<'EOF'
 For the full copyright and license information, please view
 the LICENSE file that was distributed with this source code.
@@ -89,14 +89,14 @@ EOF
         $header = Header::create(
             $copyrightYears,
             $author,
-            $license,
+            $notice,
             $url
         );
 
         $expected = <<<EOF
 Copyright (c) {$copyrightYears->toString()} {$author->toString()}
 
-{$license->toString()}
+{$notice->toString()}
 
 @see {$url->toString()}
 EOF;

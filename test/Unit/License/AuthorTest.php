@@ -11,16 +11,16 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\Test\Unit\Header;
+namespace Ergebnis\PhpCsFixer\Config\Test\Unit\License;
 
-use Ergebnis\PhpCsFixer\Config\Header\Author;
+use Ergebnis\PhpCsFixer\Config\License\Author;
 use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Ergebnis\PhpCsFixer\Config\Header\Author
+ * @covers \Ergebnis\PhpCsFixer\Config\License\Author
  */
 final class AuthorTest extends Framework\TestCase
 {

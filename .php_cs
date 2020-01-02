@@ -13,7 +13,11 @@ declare(strict_types=1);
 
 use Ergebnis\PhpCsFixer\Config;
 
-$years = Config\License\Copyright\Years::fromYear(Config\License\Copyright\Year::fromString('2019'));
+$years = Config\License\Copyright\Years::fromRange(
+    Config\License\Copyright\Year::fromString('2019'),
+    Config\License\Copyright\Year::current()
+);
+
 $holder = Config\License\Copyright\Holder::fromString('Andreas Möller');
 
 $file = Config\License\File::create(

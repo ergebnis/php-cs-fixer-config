@@ -31,7 +31,7 @@ final class Factory
     {
         if (\PHP_VERSION_ID < $ruleSet->targetPhpVersion()) {
             throw new \RuntimeException(\sprintf(
-                'Current PHP version "%s is less than targeted PHP version "%s".',
+                'Current PHP version "%s" is less than targeted PHP version "%s".',
                 \PHP_VERSION_ID,
                 $ruleSet->targetPhpVersion()
             ));

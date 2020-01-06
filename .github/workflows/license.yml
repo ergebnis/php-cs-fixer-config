@@ -75,4 +75,4 @@ jobs:
           branch: "master"
           commit_message: "Enhancement: Update license year"
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.ERGEBNIS_GITHUB_TOKEN }}"

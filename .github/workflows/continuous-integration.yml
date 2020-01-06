@@ -175,7 +175,7 @@ jobs:
         run: "mkdir -p .build/psalm"
 
       - name: "Run vimeo/psalm"
-        run: "vendor/bin/psalm --config=psalm.xml --show-info=false"
+        run: "vendor/bin/psalm --config=psalm.xml --shepherd --show-info=false --stats"
 
   tests:
     name: "Tests"
@@ -281,7 +281,7 @@ jobs:
         run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php"
 
       - name: "Collect code coverage with Xdebug and phpunit/phpunit"
-        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php"
+        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=.build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php"
 
       - name: "Send code coverage report to Codecov.io"
         env:
@@ -348,8 +348,8 @@ jobs:
       - "tests"
 
     steps:
-      - name: "Approve"
+      - name: "Approve pull requests created by dependabot that update development dependencies"
         uses: "hmarr/auto-approve-action@v2.0.0"
         if: "(github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]') && github.event_name == 'pull_request' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')"
         with:
-          github-token: "${{ secrets.AUTO_APPROVE_TOKEN }}"
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"

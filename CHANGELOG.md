@@ -56,6 +56,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.0
 [1.1.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.1
 [1.1.2]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.2
+[1.1.3]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.3
 [2.0.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.0.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0

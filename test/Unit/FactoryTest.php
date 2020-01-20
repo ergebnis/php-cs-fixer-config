@@ -23,13 +23,6 @@ use PHPUnit\Framework;
  */
 final class FactoryTest extends Framework\TestCase
 {
-    public function testIsFinal(): void
-    {
-        $reflection = new \ReflectionClass(Config\Factory::class);
-
-        self::assertTrue($reflection->isFinal());
-    }
-
     public function testFromRuleSetThrowsRuntimeExceptionIfCurrentPhpVersionIsLessThanTargetPhpVersion(): void
     {
         $targetPhpVersion = \PHP_VERSION_ID + 1;

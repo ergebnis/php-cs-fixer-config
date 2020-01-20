@@ -6,11 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`1.1.2...master`][1.1.2...master].
+For a full diff see [`2.0.0...master`][2.0.0...master].
+
+## [`2.0.0`][2.0.0]
+
+For a full diff see [`1.1.2...2.0.0`][1.1.2...2.0.0].
 
 ### Removed
 
-* Removed classes uses for construction of header ([#50]), by [@localheinz]
+* Removed classes uses for construction of header, use [`ergebnis/license`](https://github.com/ergebnis/license) instead ([#50]), by [@localheinz]
 
 ## [`1.1.2`][1.1.2]
 
@@ -48,12 +52,14 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.0
 [1.1.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.1
 [1.1.2]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.2
+[2.0.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.0.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
 [1.1.0...1.1.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.0...1.1.1
 [1.1.1...1.1.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.1...1.1.2
-[1.1.2...master]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.2...master
+[1.1.2...2.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.2...2.0.0
+[2.0.0...master]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.0.0...master
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14

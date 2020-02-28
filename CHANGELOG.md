@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.0.0...master`][2.0.0...master].
+For a full diff see [`2.1.0...master`][2.1.0...master].
+
+## [`2.1.0`][2.1.0]
+
+For a full diff see [`2.0.0...2.1.0`][2.0.0...2.1.0].
+
+### Changed
+
+* Configured `php_unit_dedicate_assert` fixer to target `newest` versions of `phpunit/phpunit` ([#73]), by [@localheinz]
 
 ## [`2.0.0`][2.0.0]
 
@@ -58,6 +66,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [1.1.2]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.2
 [1.1.3]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.3
 [2.0.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.0.0
+[2.1.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.1.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -65,13 +74,15 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [1.1.1...1.1.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.1...1.1.2
 [1.1.2...1.1.3]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.2...1.1.3
 [1.1.3...2.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.3...2.0.0
-[2.0.0...master]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.0.0...master
+[2.0.0...2.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.0.0...2.1.0
+[2.1.0...master]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.1.0...master
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
 [#17]: https://github.com/ergebnis/php-cs-fixer-config/pull/17
 [#23]: https://github.com/ergebnis/php-cs-fixer-config/pull/23
 [#50]: https://github.com/ergebnis/php-cs-fixer-config/pull/50
+[#73]: https://github.com/ergebnis/php-cs-fixer-config/pull/73
 
 [@linuxjuggler]: https://github.com/linuxjuggler
 [@localheinz]: https://github.com/localheinz

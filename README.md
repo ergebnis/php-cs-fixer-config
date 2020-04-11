@@ -1,7 +1,9 @@
 # php-cs-fixer-config
 
-[![Continuous Deployment](https://github.com/ergebnis/php-cs-fixer-config/workflows/Continuous%20Deployment/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
-[![Continuous Integration](https://github.com/ergebnis/php-cs-fixer-config/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
+[![Integrate](https://github.com/ergebnis/php-cs-fixer-config/workflows/Integrate/badge.svg?branch=master)](https://github.com/ergebnis/php-cs-fixer-config/actions)
+[![Prune](https://github.com/ergebnis/php-cs-fixer-config/workflows/Prune/badge.svg?branch=master)](https://github.com/ergebnis/php-cs-fixer-config/actions)
+[![Release](https://github.com/ergebnis/php-cs-fixer-config/workflows/Release/badge.svg?branch=master)](https://github.com/ergebnis/php-cs-fixer-config/actions)
+[![Renew](https://github.com/ergebnis/php-cs-fixer-config/workflows/Renew/badge.svg?branch=master)](https://github.com/ergebnis/php-cs-fixer-config/actions)
 
 [![Code Coverage](https://codecov.io/gh/ergebnis/php-cs-fixer-config/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-cs-fixer-config)
 [![Type Coverage](https://shepherd.dev/github/ergebnis/php-cs-fixer-config/coverage.svg)](https://shepherd.dev/github/ergebnis/php-cs-fixer-config)
@@ -270,7 +272,9 @@ Please have a look at [`CODE_OF_CONDUCT.md`](https://github.com/ergebnis/.github
 
 ## License
 
-This package is licensed using the [MIT License](LICENSE.md).
+This package is licensed using the MIT License.
+
+Please have a look at [`LICENSE.md`](LICENSE.md).
 
 ## Credits
 

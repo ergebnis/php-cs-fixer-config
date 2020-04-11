@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="3.8.1@8e54e3aa060fc490d86d0e2abbf62750516d40fd">
+<files psalm-version="3.10.1@eeed5ecccc10131397f0eb7ee6da810c0be3a7fc">
+  <file src="test/Unit/FactoryTest.php">
+    <MixedInferredReturnType occurrences="1">
+      <code>\Generator</code>
+    </MixedInferredReturnType>
+  </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass occurrences="2">
       <code>FixerFactory::create()</code>
@@ -11,5 +16,19 @@
       <code>getFixers</code>
       <code>RuleSet::create($rules)</code>
     </InternalMethod>
+    <MixedArgument occurrences="1">
+      <code>RuleSet::create($rules)-&gt;getRules()</code>
+    </MixedArgument>
+    <MixedInferredReturnType occurrences="3">
+      <code>string[]</code>
+      <code>\Generator</code>
+      <code>\Generator</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="1">
+      <code>getRules</code>
+    </MixedMethodCall>
+    <MixedReturnStatement occurrences="1">
+      <code>$builtInFixers</code>
+    </MixedReturnStatement>
   </file>
 </files>

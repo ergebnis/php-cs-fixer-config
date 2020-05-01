@@ -16,7 +16,7 @@
     "friendsofphp/php-cs-fixer": "~2.16.3"
   },
   "require-dev": {
-    "ergebnis/composer-normalize": "^2.5.0",
+    "ergebnis/composer-normalize": "^2.5.1",
     "ergebnis/license": "~0.1.0",
     "ergebnis/phpstan-rules": "~0.14.4",
     "ergebnis/test-util": "~1.0.0",

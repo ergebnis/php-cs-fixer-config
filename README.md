@@ -17,7 +17,7 @@ Provides a configuration factory and multiple rule sets for [`friendsofphp/php-c
 
 Run
 
-```sh
+```shell
 $ composer require --dev ergebnis/php-cs-fixer-config
 ```
 
@@ -281,3 +281,7 @@ Please have a look at [`LICENSE.md`](LICENSE.md).
 This project is inspired by and also replaces [`localheinz/php-cs-fixer-config`](https://github.com/localheinz/php-cs-fixer-config).
 
 The rule set [`Ergebnis\PhpCsFixer\RuleSet\Laravel6`](src/RuleSet/Laravel6.php) is based on [`laravel-shift/.php_cs.laravel.php`](https://gist.github.com/laravel-shift/cab527923ed2a109dda047b97d53c200).
+
+## Curious what I am building?
+
+:mailbox_with_mail: [Subscribe to my list](https://localheinz.com/projects/), and I will occasionally send you an email to let you know what I am working on.

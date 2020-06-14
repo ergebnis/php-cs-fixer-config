@@ -8,10 +8,23 @@ For details, take a look at the following workflow configuration files:
 - [`workflows/prune.yaml`](workflows/prune.yaml)
 - [`workflows/release.yaml`](workflows/release.yaml)
 - [`workflows/renew.yaml`](workflows/renew.yaml)
+- [`workflows/triage.yaml`](workflows/triage.yaml)
 
 ## Coding Standards
 
-We are using [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer) to enforce coding standards.
+We are using [`ergebnis/composer-normalize`](https://github.com/ergebnis/composer-normalize) to normalize `composer.json`.
+
+We are using [`yamllint`](https://github.com/adrienverge/yamllint) to enforce coding standards in YAML files.
+
+If you do not have `yamllint` installed yet, run
+
+```
+$ brew install yamllint
+```
+
+to install `yamllint`.
+
+We are using [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer) to enforce coding standards in PHP files.
 
 Run
 

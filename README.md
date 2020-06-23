@@ -17,7 +17,7 @@ Provides a configuration factory and multiple rule sets for [`friendsofphp/php-c
 
 Run
 
-```shell
+```sh
 $ composer require --dev ergebnis/php-cs-fixer-config
 ```
 

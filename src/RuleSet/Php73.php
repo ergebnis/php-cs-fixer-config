@@ -13,6 +13,8 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
+use PhpCsFixer\Fixer;
+
 final class Php73 extends AbstractRuleSet
 {
     protected $name = 'ergebnis (PHP 7.3)';
@@ -212,7 +214,13 @@ final class Php73 extends AbstractRuleSet
         'nullable_type_declaration_for_default_null_value' => true,
         'object_operator_without_whitespace' => true,
         'ordered_class_elements' => true,
-        'ordered_imports' => true,
+        'ordered_imports' => [
+            'imports_order' => [
+                Fixer\Import\OrderedImportsFixer::IMPORT_TYPE_CLASS,
+                Fixer\Import\OrderedImportsFixer::IMPORT_TYPE_CONST,
+                Fixer\Import\OrderedImportsFixer::IMPORT_TYPE_FUNCTION,
+            ],
+        ],
         'ordered_interfaces' => true,
         'php_unit_construct' => true,
         'php_unit_dedicate_assert' => [

@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.1.0...main`][2.1.0...main].
+For a full diff see [`2.2.0...main`][2.2.0...main].
+
+## [`2.2.0`][2.2.0]
+
+For a full diff see [`2.1.2...2.2.0`][2.1.2...2.2.0].
+
+### Changed
+
+* Configured `ordered_imports` fixer to group imports by kind ([#133]), by [@localheinz]
 
 ## [`2.1.0`][2.1.0]
 
@@ -67,6 +75,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [1.1.3]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/1.1.3
 [2.0.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.0.0
 [2.1.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.1.0
+[2.2.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.2.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -75,7 +84,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [1.1.2...1.1.3]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.2...1.1.3
 [1.1.3...2.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.3...2.0.0
 [2.0.0...2.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.0.0...2.1.0
-[2.1.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.1.0...main
+[2.1.2...2.2.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.1.2...2.2.0
+[2.2.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.2.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -83,6 +93,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#23]: https://github.com/ergebnis/php-cs-fixer-config/pull/23
 [#50]: https://github.com/ergebnis/php-cs-fixer-config/pull/50
 [#73]: https://github.com/ergebnis/php-cs-fixer-config/pull/73
+[#133]: https://github.com/ergebnis/php-cs-fixer-config/pull/133
 
 [@linuxjuggler]: https://github.com/linuxjuggler
 [@localheinz]: https://github.com/localheinz

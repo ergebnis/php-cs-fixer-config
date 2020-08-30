@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": "^7.1",
+    "php": "^7.2",
     "ext-filter": "*",
     "friendsofphp/php-cs-fixer": "~2.16.4"
   },
@@ -34,7 +34,7 @@
   },
   "config": {
     "platform": {
-      "php": "7.1.33"
+      "php": "7.2.33"
     },
     "preferred-install": "dist",
     "sort-packages": true

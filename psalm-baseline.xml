@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="3.14.1@9822043ca46d6682b76097bfa97d7c450eef9e90">
+<files psalm-version="3.16@d03e5ef057d6adc656c0ff7e166c50b73b4f48f3">
   <file src="test/Unit/FactoryTest.php">
     <MixedInferredReturnType occurrences="1">
       <code>\Generator</code>
@@ -12,17 +12,17 @@
     </InternalClass>
     <InternalMethod occurrences="4">
       <code>FixerFactory::create()</code>
-      <code>registerBuiltInFixers</code>
-      <code>getFixers</code>
       <code>RuleSet::create($rules)</code>
+      <code>getFixers</code>
+      <code>registerBuiltInFixers</code>
     </InternalMethod>
     <MixedArgument occurrences="1">
       <code>RuleSet::create($rules)-&gt;getRules()</code>
     </MixedArgument>
     <MixedInferredReturnType occurrences="3">
+      <code>\Generator</code>
+      <code>\Generator</code>
       <code>string[]</code>
-      <code>\Generator</code>
-      <code>\Generator</code>
     </MixedInferredReturnType>
     <MixedMethodCall occurrences="1">
       <code>getRules</code>

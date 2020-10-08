@@ -28,7 +28,7 @@ $ composer require --dev ergebnis/php-cs-fixer-config
 Pick one of the rule sets:
 
 * [`Ergebnis\PhpCsFixer\RuleSet\Laravel6`](src/RuleSet/Laravel6.php)
-* [`Ergebnis\PhpCsFixer\RuleSet\Php71`](src/RuleSet/Php71.php)
+* [`Ergebnis\PhpCsFixer\RuleSet\Php71`](src/RuleSet/Php74.php)
 * [`Ergebnis\PhpCsFixer\RuleSet\Php73`](src/RuleSet/Php73.php)
 * [`Ergebnis\PhpCsFixer\RuleSet\Php74`](src/RuleSet/Php74.php)
 
@@ -39,7 +39,7 @@ Create a configuration file `.php_cs` in the root of your project:
 
 use Ergebnis\PhpCsFixer\Config;
 
-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71());
+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74());
 
 $config->getFinder()->in(__DIR__);
 $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/php_cs.cache');
@@ -68,7 +68,7 @@ All configuration examples use the caching feature, and if you want to use it as
  use Ergebnis\PhpCsFixer\Config;
 
 +$header = <<<EOF
-+Copyright (c) 2019 Andreas Möller
++Copyright (c) 2020 Andreas Möller
 +
 +For the full copyright and license information, please view
 +the LICENSE file that was distributed with this source code.
@@ -76,8 +76,8 @@ All configuration examples use the caching feature, and if you want to use it as
 +@see https://github.com/ergebnis/php-cs-fixer-config
 +EOF;
 
--$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71());
-+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71($header));
+-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74());
++$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74($header));
 
  $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/php_cs.cache');
@@ -92,7 +92,7 @@ file headers will be added to PHP files, for example:
 <?php
 
 /**
- * Copyright (c) 2019 Andreas Möller
+ * Copyright (c) 2020 Andreas Möller
  *
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
@@ -110,8 +110,8 @@ file headers will be added to PHP files, for example:
 
  use Ergebnis\PhpCsFixer\Config;
 
--$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71());
-+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71(), [
+-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74());
++$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74(), [
 +    'mb_str_functions' => false,
 +    'strict_comparison' => false,
 +]);

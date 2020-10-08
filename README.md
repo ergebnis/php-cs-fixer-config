@@ -181,14 +181,12 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 
 ```diff
  on:
-   pull_request:
+   pull_request: null
    push:
      branches:
        - main
-     tags:
-       - "**"
 
- name: "Continuous Integration"
+ name: "Integrate"
 
  jobs:
 +  coding-standards:
@@ -196,37 +194,43 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +
 +    runs-on: ubuntu-latest
 +
++    strategy:
++      matrix:
++        php-version:
++          - "7.2"
++
 +    steps:
 +      - name: "Checkout"
-+        uses: actions/checkout@v1.1.0
++        uses: "actions/checkout@v2"
 +
-+      - name: "Disable Xdebug"
-+        run: php7.2 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
++      - name: "Install PHP with extensions"
++        uses: "shivammathur/setup-php@v2"
++        with:
++          coverage: "none"
++          php-version: "${{ matrix.php-version }}"
 +
 +      - name: "Cache dependencies installed with composer"
-+        uses: actions/cache@v1.0.2
++        uses: "actions/cache@v2"
 +        with:
-+          path: ~/.composer/cache
-+          key: php7.2-composer-locked-${{ hashFiles('**/composer.lock') }}
-+          restore-keys: |
-+            php7.2-composer-locked-
++          path: "~/.composer/cache"
++          key: "php-${{ matrix.php-version }}-composer-${{ hashFiles('composer.lock') }}"
++          restore-keys: "php-${{ matrix.php-version }}-composer-"
 +
 +      - name: "Install locked dependencies with composer"
-+        run: php7.2 $(which composer) install --no-interaction --no-progress --no-suggest
++        run: "composer install --no-interaction --no-progress --no-suggest"
 +
 +      - name: "Create cache directory for friendsofphp/php-cs-fixer"
 +        run: mkdir -p .build/php-cs-fixer
 +
 +      - name: "Cache cache directory for friendsofphp/php-cs-fixer"
-+        uses: actions/cache@v1.0.2
++        uses: "actions/cache@v2"
 +        with:
-+          path: ~/.build/php-cs-fixer
-+          key: php7.2-php-cs-fixer-${{ hashFiles('**/composer.lock') }}
-+          restore-keys: |
-+            php7.2-php-cs-fixer-
++          path: "~/.build/php-cs-fixer"
++          key: "php-${{ matrix.php-version }}-php-cs-fixer-${{ github.sha }}"
++          restore-keys: "php-${{ matrix.php-version }}-php-cs-fixer-"
 +
 +      - name: "Run friendsofphp/php-cs-fixer"
-+        run: php7.2 vendor/bin/php-cs-fixer fix --config=.php_cs --diff --diff-format=udiff --dry-run --verbose
++       run: "vendor/bin/php-cs-fixer fix --config=.php_cs --diff --diff-format=udiff --dry-run --verbose"
 ```
 
 ## Changelog

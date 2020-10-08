@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.2.2...main`][2.2.2...main].
+For a full diff see [`2.3.0...main`][2.3.0...main].
+
+## [`2.3.0`][2.3.0]
+
+For a full diff see [`2.2.2...2.3.0`][2.2.2...2.3.0].
+
+### Added
+
+* Added `RuleSet\Php74` for use with PHP 7.4 ([#200]), by [@dependabot]
 
 ## [`2.2.2`][2.2.2]
 
@@ -94,6 +102,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.2.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.2.0
 [2.2.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.2.1
 [2.2.2]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.2.2
+[2.3.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.3.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -105,7 +114,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.1.2...2.2.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.1.2...2.2.0
 [2.2.0...2.2.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.2.0...2.2.1
 [2.2.1...2.2.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.2.1...2.2.2
-[2.2.2...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.2.2...main
+[2.2.2...2.3.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.2.1...2.3.0
+[2.3.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.3.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -116,6 +126,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#133]: https://github.com/ergebnis/php-cs-fixer-config/pull/133
 [#135]: https://github.com/ergebnis/php-cs-fixer-config/pull/135
 [#168]: https://github.com/ergebnis/php-cs-fixer-config/pull/168
+[#200]: https://github.com/ergebnis/php-cs-fixer-config/pull/200
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

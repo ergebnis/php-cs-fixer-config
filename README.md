@@ -229,34 +229,6 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +        run: php7.2 vendor/bin/php-cs-fixer fix --config=.php_cs --diff --diff-format=udiff --dry-run --verbose
 ```
 
-### Travis
-
-If you like [Travis CI](https://travis-ci.com), add a `coding-standards` stage to your jobs:
-
-```diff
- language: php
-
- cache:
-   directories:
-     - $HOME/.composer/cache
-+    - .build/php-cs-fixer
-
- jobs:
-   include:
-+    - stage: "Coding Standards"
-+
-+      php: 7.2
-+
-+      install:
-+        - composer install --no-interaction --no-progress --no-suggest
-+
-+      before_script:
-+        - mkdir -p .build/php-cs-fixer
-+
-+      script:
-+        - vendor/bin/php-cs-fixer fix --config=.php_cs --diff --dry-run --verbose
-```
-
 ## Changelog
 
 Please have a look at [`CHANGELOG.md`](CHANGELOG.md).

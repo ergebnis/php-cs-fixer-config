@@ -27,20 +27,32 @@ final class FactoryTest extends Framework\TestCase
     {
         $targetPhpVersion = \PHP_VERSION_ID + 1;
 
-        $ruleSet = $this->prophesize(Config\RuleSet::class);
+        $ruleSet = new class($targetPhpVersion) implements Config\RuleSet {
+            /**
+             * @var int
+             */
+            private $phpVersion;
 
-        $ruleSet
-            ->name()
-            ->shouldNotBeCalled();
+            public function __construct(int $phpVersion)
+            {
+                $this->phpVersion = $phpVersion;
+            }
 
-        $ruleSet
-            ->rules()
-            ->shouldNotBeCalled();
+            public function name(): string
+            {
+                return \spl_object_hash($this);
+            }
 
-        $ruleSet
-            ->targetPhpVersion()
-            ->shouldBeCalled()
-            ->willReturn($targetPhpVersion);
+            public function rules(): array
+            {
+                return [];
+            }
+
+            public function targetPhpVersion(): int
+            {
+                return $this->phpVersion;
+            }
+        };
 
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage(\sprintf(
@@ -49,7 +61,7 @@ final class FactoryTest extends Framework\TestCase
             $targetPhpVersion
         ));
 
-        Config\Factory::fromRuleSet($ruleSet->reveal());
+        Config\Factory::fromRuleSet($ruleSet);
     }
 
     /**
@@ -68,24 +80,46 @@ final class FactoryTest extends Framework\TestCase
             ],
         ];
 
-        $ruleSet = $this->prophesize(Config\RuleSet::class);
+        $ruleSet = new class($name, $rules, $targetPhpVersion) implements Config\RuleSet {
+            /**
+             * @var string
+             */
+            private $name;
 
-        $ruleSet
-            ->name()
-            ->shouldBeCalled()
-            ->willReturn($name);
+            /**
+             * @var array
+             */
+            private $rules;
 
-        $ruleSet
-            ->rules()
-            ->shouldBeCalled()
-            ->willReturn($rules);
+            /**
+             * @var int
+             */
+            private $phpVersion;
 
-        $ruleSet
-            ->targetPhpVersion()
-            ->shouldBeCalled()
-            ->willReturn($targetPhpVersion);
+            public function __construct(string $name, array $rules, int $phpVersion)
+            {
+                $this->name = $name;
+                $this->rules = $rules;
+                $this->phpVersion = $phpVersion;
+            }
 
-        $config = Config\Factory::fromRuleSet($ruleSet->reveal());
+            public function name(): string
+            {
+                return $this->name;
+            }
+
+            public function rules(): array
+            {
+                return $this->rules;
+            }
+
+            public function targetPhpVersion(): int
+            {
+                return $this->phpVersion;
+            }
+        };
+
+        $config = Config\Factory::fromRuleSet($ruleSet);
 
         self::assertTrue($config->getUsingCache());
         self::assertTrue($config->getRiskyAllowed());
@@ -117,29 +151,53 @@ final class FactoryTest extends Framework\TestCase
             ],
         ];
 
+        $targetPhpVersion = \PHP_VERSION_ID;
+
+        $ruleSet = new class($name, $rules, $targetPhpVersion) implements Config\RuleSet {
+            /**
+             * @var string
+             */
+            private $name;
+
+            /**
+             * @var array
+             */
+            private $rules;
+
+            /**
+             * @var int
+             */
+            private $phpVersion;
+
+            public function __construct(string $name, array $rules, int $phpVersion)
+            {
+                $this->name = $name;
+                $this->rules = $rules;
+                $this->phpVersion = $phpVersion;
+            }
+
+            public function name(): string
+            {
+                return $this->name;
+            }
+
+            public function rules(): array
+            {
+                return $this->rules;
+            }
+
+            public function targetPhpVersion(): int
+            {
+                return $this->phpVersion;
+            }
+        };
+
         $overrideRules = [
             'foo' => false,
         ];
 
-        $ruleSet = $this->prophesize(Config\RuleSet::class);
-
-        $ruleSet
-            ->name()
-            ->shouldBeCalled()
-            ->willReturn($name);
-
-        $ruleSet
-            ->rules()
-            ->shouldBeCalled()
-            ->willReturn($rules);
-
-        $ruleSet
-            ->targetPhpVersion()
-            ->shouldBeCalled()
-            ->willReturn(\PHP_VERSION_ID);
-
         $config = Config\Factory::fromRuleSet(
-            $ruleSet->reveal(),
+            $ruleSet,
             $overrideRules
         );
 

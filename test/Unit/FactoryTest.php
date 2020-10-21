@@ -66,8 +66,6 @@ final class FactoryTest extends Framework\TestCase
 
     /**
      * @dataProvider providerTargetPhpVersion
-     *
-     * @param int $targetPhpVersion
      */
     public function testFromRuleSetCreatesConfig(int $targetPhpVersion): void
     {

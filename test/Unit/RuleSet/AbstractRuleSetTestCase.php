@@ -127,7 +127,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @dataProvider providerRuleNames
      *
-     * @param string   $source
      * @param string[] $ruleNames
      */
     final public function testRulesAreSortedByName(string $source, array $ruleNames): void
@@ -159,8 +158,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     /**
      * @throws \RuntimeException
-     *
-     * @return string
      */
     final protected static function className(): string
     {
@@ -188,8 +185,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
      * @param string $header
      *
      * @throws \RuntimeException
-     *
-     * @return Config\RuleSet
      */
     final protected static function createRuleSet($header = null): Config\RuleSet
     {

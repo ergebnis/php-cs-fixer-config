@@ -199,7 +199,11 @@ final class Php71Test extends AbstractRuleSetTestCase
         'no_singleline_whitespace_before_semicolons' => true,
         'no_spaces_around_offset' => true,
         'no_superfluous_elseif' => true,
-        'no_superfluous_phpdoc_tags' => false,
+        'no_superfluous_phpdoc_tags' => [
+            'allow_mixed' => true,
+            'allow_unused_params' => false,
+            'remove_inheritdoc' => false,
+        ],
         'no_trailing_comma_in_list_call' => true,
         'no_trailing_comma_in_singleline_array' => true,
         'no_unneeded_control_parentheses' => true,

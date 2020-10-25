@@ -58,8 +58,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         \sort($fixersNotBuiltIn);
 
         self::assertEmpty($fixersNotBuiltIn, \sprintf(
-            'Failed to assert that fixers for the rules "%s" are built in',
-            \implode('", "', $fixersNotBuiltIn)
+            "Failed asserting that fixers for the rules\n\n%s\n\nare built in.",
+            ' - ' . \implode("\n - ", $fixersNotBuiltIn)
         ));
     }
 
@@ -73,8 +73,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         \sort($fixersWithoutConfiguration);
 
         self::assertEmpty($fixersWithoutConfiguration, \sprintf(
-            'Failed to assert that built-in fixers for the rules "%s" are configured',
-            \implode('", "', $fixersWithoutConfiguration)
+            "Failed asserting that built-in fixers for the rules\n\n%s\n\nare configured.",
+            ' - ' . \implode("\n - ", $fixersWithoutConfiguration)
         ));
     }
 
@@ -136,7 +136,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         \sort($sorted);
 
         self::assertEquals($sorted, $ruleNames, \sprintf(
-            'Failed to assert that the rules are sorted by name in %s',
+            'Failed asserting that the rules are sorted by name in %s.',
             $source
         ));
     }

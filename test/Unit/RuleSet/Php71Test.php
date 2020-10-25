@@ -268,7 +268,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         ],
         'php_unit_test_class_requires_covers' => true,
         'phpdoc_add_missing_param_annotation' => [
-            'only_untyped' => false,
+            'only_untyped' => true,
         ],
         'phpdoc_align' => true,
         'phpdoc_annotation_without_dot' => true,

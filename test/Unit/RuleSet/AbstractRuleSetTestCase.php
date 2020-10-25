@@ -51,8 +51,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     final public function testAllConfiguredRulesAreBuiltIn(): void
     {
         $fixersNotBuiltIn = \array_diff(
-            $this->configuredFixers(),
-            $this->builtInFixers()
+            self::configuredFixers(),
+            self::builtInFixers()
         );
 
         \sort($fixersNotBuiltIn);
@@ -66,8 +66,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     final public function testAllBuiltInRulesAreConfigured(): void
     {
         $fixersWithoutConfiguration = \array_diff(
-            $this->builtInFixers(),
-            $this->configuredFixers()
+            self::builtInFixers(),
+            self::configuredFixers()
         );
 
         \sort($fixersWithoutConfiguration);
@@ -222,7 +222,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @return string[]
      */
-    private function builtInFixers(): array
+    private static function builtInFixers(): array
     {
         static $builtInFixers;
 
@@ -238,7 +238,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         return $builtInFixers;
     }
 
-    private function configuredFixers(): array
+    private static function configuredFixers(): array
     {
         /**
          * RuleSet::create() removes disabled fixers, to let's just enable them to make sure they are not removed.

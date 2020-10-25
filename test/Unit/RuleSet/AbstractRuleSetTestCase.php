@@ -180,8 +180,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @param ?string $header
-     *
      * @throws \RuntimeException
      */
     final protected static function createRuleSet(?string $header = null): Config\RuleSet

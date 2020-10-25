@@ -20,7 +20,6 @@ final class Php73 extends AbstractRuleSet
     protected $name = 'ergebnis (PHP 7.3)';
 
     protected $rules = [
-        '@PSR2' => true,
         'align_multiline_comment' => [
             'comment_type' => 'all_multiline',
         ],
@@ -32,6 +31,7 @@ final class Php73 extends AbstractRuleSet
         'binary_operator_spaces' => [
             'default' => 'single_space',
         ],
+        'blank_line_after_namespace' => true,
         'blank_line_after_opening_tag' => true,
         'blank_line_before_return' => false,
         'blank_line_before_statement' => [
@@ -59,6 +59,7 @@ final class Php73 extends AbstractRuleSet
                 'yield',
             ],
         ],
+        'braces' => true,
         'cast_spaces' => true,
         'class_attributes_separation' => [
             'elements' => [
@@ -66,6 +67,7 @@ final class Php73 extends AbstractRuleSet
                 'property',
             ],
         ],
+        'class_definition' => true,
         'class_keyword_remove' => false,
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,
@@ -75,6 +77,7 @@ final class Php73 extends AbstractRuleSet
         'concat_space' => [
             'spacing' => 'one',
         ],
+        'constant_case' => true,
         'date_time_immutable' => true,
         'declare_equal_normalize' => true,
         'declare_strict_types' => true,
@@ -95,6 +98,8 @@ final class Php73 extends AbstractRuleSet
             'before_array_assignments_colon' => false,
             'before_array_assignments_equals' => false,
         ],
+        'elseif' => true,
+        'encoding' => true,
         'ereg_to_preg' => true,
         'error_suppression' => [
             'mute_deprecation_error' => true,
@@ -109,7 +114,9 @@ final class Php73 extends AbstractRuleSet
         'final_static_access' => true,
         'fopen_flag_order' => true,
         'fopen_flags' => true,
+        'full_opening_tag' => true,
         'fully_qualified_strict_types' => true,
+        'function_declaration' => true,
         'function_to_constant' => true,
         'function_typehint_space' => true,
         'general_phpdoc_annotation_remove' => false,
@@ -123,7 +130,9 @@ final class Php73 extends AbstractRuleSet
         'increment_style' => [
             'style' => 'pre',
         ],
+        'indentation_type' => true,
         'is_null' => true,
+        'line_ending' => true,
         'linebreak_after_opening_tag' => true,
         'list_syntax' => [
             'syntax' => 'short',
@@ -131,6 +140,7 @@ final class Php73 extends AbstractRuleSet
         'logical_operators' => true,
         'lowercase_cast' => true,
         'lowercase_constants' => false,
+        'lowercase_keywords' => true,
         'lowercase_static_reference' => true,
         'magic_constant_casing' => true,
         'magic_method_casing' => true,
@@ -157,6 +167,8 @@ final class Php73 extends AbstractRuleSet
         'no_blank_lines_after_class_opening' => true,
         'no_blank_lines_after_phpdoc' => true,
         'no_blank_lines_before_namespace' => false,
+        'no_break_comment' => true,
+        'no_closing_tag' => true,
         'no_empty_comment' => true,
         'no_empty_phpdoc' => true,
         'no_empty_statement' => true,
@@ -191,7 +203,9 @@ final class Php73 extends AbstractRuleSet
         'no_short_bool_cast' => true,
         'no_short_echo_tag' => true,
         'no_singleline_whitespace_before_semicolons' => true,
+        'no_spaces_after_function_name' => true,
         'no_spaces_around_offset' => true,
+        'no_spaces_inside_parenthesis' => true,
         'no_superfluous_elseif' => true,
         'no_superfluous_phpdoc_tags' => [
             'allow_mixed' => true,
@@ -200,6 +214,8 @@ final class Php73 extends AbstractRuleSet
         ],
         'no_trailing_comma_in_list_call' => true,
         'no_trailing_comma_in_singleline_array' => true,
+        'no_trailing_whitespace' => true,
+        'no_trailing_whitespace_in_comment' => true,
         'no_unneeded_control_parentheses' => true,
         'no_unneeded_curly_braces' => true,
         'no_unneeded_final_method' => true,
@@ -312,7 +328,15 @@ final class Php73 extends AbstractRuleSet
         'silenced_deprecation_error' => false,
         'simple_to_complex_string_variable' => true,
         'simplified_null_return' => false,
+        'single_blank_line_at_eof' => true,
         'single_blank_line_before_namespace' => true,
+        'single_class_element_per_statement' => [
+            'elements' => [
+                'property',
+            ],
+        ],
+        'single_import_per_statement' => true,
+        'single_line_after_imports' => true,
         'single_line_comment_style' => false,
         'single_line_throw' => false,
         'single_quote' => true,
@@ -324,6 +348,8 @@ final class Php73 extends AbstractRuleSet
         'strict_comparison' => true,
         'strict_param' => true,
         'string_line_ending' => true,
+        'switch_case_semicolon_to_colon' => true,
+        'switch_case_space' => true,
         'ternary_operator_spaces' => true,
         'ternary_to_null_coalescing' => true,
         'trailing_comma_in_multiline_array' => true,

@@ -21,7 +21,6 @@ final class Laravel6 extends AbstractRuleSet
     protected $name = 'Laravel 6 (PHP 7.2)';
 
     protected $rules = [
-        '@PSR2' => true,
         'align_multiline_comment' => false,
         'array_indentation' => false,
         'array_syntax' => [
@@ -59,6 +58,7 @@ final class Laravel6 extends AbstractRuleSet
         'concat_space' => [
             'spacing' => 'none',
         ],
+        'constant_case' => true,
         'date_time_immutable' => false,
         'declare_equal_normalize' => true,
         'declare_strict_types' => false,
@@ -126,6 +126,7 @@ final class Laravel6 extends AbstractRuleSet
         'no_blank_lines_after_class_opening' => true,
         'no_blank_lines_after_phpdoc' => true,
         'no_blank_lines_before_namespace' => false,
+        'no_break_comment' => true,
         'no_closing_tag' => true,
         'no_empty_comment' => false,
         'no_empty_phpdoc' => true,
@@ -179,7 +180,9 @@ final class Laravel6 extends AbstractRuleSet
         'nullable_type_declaration_for_default_null_value' => false,
         'object_operator_without_whitespace' => true,
         'ordered_class_elements' => false,
-        'ordered_imports' => ['sortAlgorithm' => 'alpha'],
+        'ordered_imports' => [
+            'sortAlgorithm' => 'alpha',
+        ],
         'ordered_interfaces' => false,
         'php_unit_construct' => false,
         'php_unit_dedicate_assert' => false,

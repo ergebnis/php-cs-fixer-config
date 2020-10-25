@@ -88,10 +88,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     /**
      * @dataProvider providerValidHeader
-     *
-     * @param string $header
      */
-    final public function testHeaderCommentFixerIsEnabledIfHeaderIsProvided($header): void
+    final public function testHeaderCommentFixerIsEnabledIfHeaderIsProvided(string $header): void
     {
         $rules = self::createRuleSet($header)->rules();
 
@@ -182,11 +180,11 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @param string $header
+     * @param ?string $header
      *
      * @throws \RuntimeException
      */
-    final protected static function createRuleSet($header = null): Config\RuleSet
+    final protected static function createRuleSet(?string $header = null): Config\RuleSet
     {
         /** @var class-string $className */
         $className = self::className();

@@ -16,6 +16,11 @@ parameters:
 			path: src/RuleSet/AbstractRuleSet.php
 
 		-
+			message: "#^Method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:createRuleSet\\(\\) has parameter \\$header with a nullable type declaration\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
+
+		-
 			message: "#^Method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:createRuleSet\\(\\) has parameter \\$header with null as default value\\.$#"
 			count: 1
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php

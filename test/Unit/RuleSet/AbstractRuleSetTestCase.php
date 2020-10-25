@@ -139,6 +139,23 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
+    /**
+     * @dataProvider providerRuleNames
+     *
+     * @param string[] $ruleNames
+     */
+    final public function testRulesDoNotContainRuleSets(string $source, array $ruleNames): void
+    {
+        $ruleSets = \array_filter($ruleNames, static function (string $ruleName): bool {
+            return '@' === \mb_substr($ruleName, 0, 1);
+        });
+
+        self::assertEquals([], $ruleSets, \sprintf(
+            'Failed to assert that the rules are sorted by name in %s',
+            $source
+        ));
+    }
+
     final public function providerRuleNames(): \Generator
     {
         $values = [

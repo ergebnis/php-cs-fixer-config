@@ -146,13 +146,13 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
      */
     final public function testRulesDoNotContainRuleSets(string $source, array $ruleNames): void
     {
-        $ruleSets = \array_filter($ruleNames, static function (string $ruleName): bool {
+        $namesOfConfiguredRuleSets = \array_filter($ruleNames, static function (string $ruleName): bool {
             return '@' === \mb_substr($ruleName, 0, 1);
         });
 
-        self::assertEquals([], $ruleSets, \sprintf(
-            'Failed to assert that the rules are sorted by name in %s',
-            $source
+        self::assertEmpty($namesOfConfiguredRuleSets, \sprintf(
+            "Failed asserting that rule sets \n\n%s\n\nare not configured.",
+            ' - ' . \implode("\n - ", $namesOfConfiguredRuleSets)
         ));
     }
 

@@ -168,6 +168,37 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
+    final public function testRulesDoNotEnableDeprecatedFixers(): void
+    {
+        $fixers = self::builtInFixers();
+
+        $rulesEnablingDeprecatedFixers = \array_filter(
+            self::createRuleSet()->rules(),
+            static function ($ruleConfiguration, string $ruleName) use ($fixers): bool {
+                if (false === $ruleConfiguration) {
+                    return false;
+                }
+
+                if (!\array_key_exists($ruleName, $fixers)) {
+                    return false;
+                }
+
+                $fixer = $fixers[$ruleName];
+
+                return $fixer instanceof Fixer\DeprecatedFixerInterface;
+            },
+            \ARRAY_FILTER_USE_BOTH
+        );
+
+        $namesOfEnabledDeprecatedFixers = \array_keys($rulesEnablingDeprecatedFixers);
+
+        self::assertEmpty($namesOfEnabledDeprecatedFixers, \sprintf(
+            "Failed asserting that deprecated fixers with names\n\n%s\n\nare not enabled in rule set \"%s\".",
+            ' - ' . \implode("\n - ", $namesOfEnabledDeprecatedFixers),
+            static::className()
+        ));
+    }
+
     /**
      * @phpstan-return class-string
      *
@@ -228,20 +259,33 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @return array<int, string>
+     * @return array<string, Fixer\FixerInterface>
      */
-    private static function builtInFixerNames(): array
+    private static function builtInFixers(): array
     {
         $fixerFactory = FixerFactory::create();
 
         $fixerFactory->registerBuiltInFixers();
 
-        /** @var array<int, string> $builtInFixerNames */
-        $builtInFixerNames = \array_values(\array_map(static function (Fixer\FixerInterface $fixer): string {
-            return $fixer->getName();
-        }, $fixerFactory->getFixers()));
+        $fixers = $fixerFactory->getFixers();
 
-        return $builtInFixerNames;
+        /** @var array<string, Fixer\FixerInterface> $builtInFixers */
+        $builtInFixers = \array_combine(
+            \array_map(static function (Fixer\FixerInterface $fixer): string {
+                return $fixer->getName();
+            }, $fixers),
+            $fixers
+        );
+
+        return $builtInFixers;
+    }
+
+    /**
+     * @return array<int, string>
+     */
+    private static function builtInFixerNames(): array
+    {
+        return \array_keys(self::builtInFixers());
     }
 
     /**

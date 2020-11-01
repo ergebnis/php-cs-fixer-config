@@ -134,7 +134,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         \sort($sorted);
 
         self::assertEquals($sorted, $ruleNames, \sprintf(
-            'Failed asserting that the rules are sorted by name in %s.',
+            'Failed asserting that the rules are sorted by name in "%s".',
             $source
         ));
     }
@@ -151,8 +151,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         });
 
         self::assertEmpty($namesOfConfiguredRuleSets, \sprintf(
-            "Failed asserting that rule sets \n\n%s\n\nare not configured.",
-            ' - ' . \implode("\n - ", $namesOfConfiguredRuleSets)
+            "Failed asserting that rule sets \n\n%s\n\nare not configured in \"%s\".",
+            ' - ' . \implode("\n - ", $namesOfConfiguredRuleSets),
+            $source
         ));
     }
 

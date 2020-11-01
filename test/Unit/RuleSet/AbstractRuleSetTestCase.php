@@ -123,7 +123,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @dataProvider provideRuleNames
+     * @dataProvider provideSourceAndRuleNames
      *
      * @param string[] $ruleNames
      */
@@ -140,7 +140,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @dataProvider provideRuleNames
+     * @dataProvider provideSourceAndRuleNames
      *
      * @param string[] $ruleNames
      */
@@ -157,7 +157,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
-    final public function provideRuleNames(): \Generator
+    final public function provideSourceAndRuleNames(): \Generator
     {
         $values = [
             static::className() => self::createRuleSet()->rules(),

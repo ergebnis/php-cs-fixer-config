@@ -35,7 +35,6 @@ final class Laravel6 extends AbstractRuleSet
         ],
         'blank_line_after_namespace' => true,
         'blank_line_after_opening_tag' => true,
-        'blank_line_before_return' => false,
         'blank_line_before_statement' => [
             'statements' => [
                 'return',
@@ -87,7 +86,6 @@ final class Laravel6 extends AbstractRuleSet
         'function_typehint_space' => true,
         'general_phpdoc_annotation_remove' => false,
         'global_namespace_import' => false,
-        'hash_to_slash_comment' => false,
         'header_comment' => false,
         'heredoc_indentation' => false,
         'heredoc_to_nowdoc' => true,
@@ -101,7 +99,6 @@ final class Laravel6 extends AbstractRuleSet
         'list_syntax' => false,
         'logical_operators' => false,
         'lowercase_cast' => true,
-        'lowercase_constants' => false,
         'lowercase_keywords' => true,
         'lowercase_static_reference' => true, // added from Symfony
         'magic_constant_casing' => true,
@@ -109,7 +106,6 @@ final class Laravel6 extends AbstractRuleSet
         'mb_str_functions' => false,
         'method_argument_space' => true,
         'method_chaining_indentation' => false,
-        'method_separation' => false,
         'modernize_types_casting' => false,
         'multiline_comment_opening_closing' => false,
         'multiline_whitespace_before_semicolons' => [
@@ -139,7 +135,6 @@ final class Laravel6 extends AbstractRuleSet
                 'use_trait',
             ],
         ],
-        'no_extra_consecutive_blank_lines' => false,
         'no_homoglyph_names' => false,
         'no_leading_import_slash' => true,
         'no_leading_namespace_whitespace' => true,
@@ -147,7 +142,6 @@ final class Laravel6 extends AbstractRuleSet
             'use' => 'echo',
         ],
         'no_multiline_whitespace_around_double_arrow' => true,
-        'no_multiline_whitespace_before_semicolons' => false,
         'no_null_property_initialization' => false,
         'no_php4_constructor' => false,
         'no_short_bool_cast' => true,
@@ -231,7 +225,6 @@ final class Laravel6 extends AbstractRuleSet
         'phpdoc_var_annotation_correct_order' => false,
         'phpdoc_var_without_name' => true,
         'pow_to_exponentiation' => false,
-        'pre_increment' => false,
         'protected_to_private' => false,
         'psr0' => false,
         'psr4' => true,
@@ -243,7 +236,6 @@ final class Laravel6 extends AbstractRuleSet
         'semicolon_after_instruction' => false,
         'set_type_to_cast' => false,
         'short_scalar_cast' => true,
-        'silenced_deprecation_error' => false,
         'simple_to_complex_string_variable' => false,
         'simplified_null_return' => true,
         'single_blank_line_at_eof' => true,

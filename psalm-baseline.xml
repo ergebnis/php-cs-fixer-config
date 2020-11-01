@@ -11,9 +11,6 @@
       <code>getFixers</code>
       <code>registerBuiltInFixers</code>
     </InternalMethod>
-    <MissingClosureParamType occurrences="1">
-      <code>$ruleConfiguration</code>
-    </MissingClosureParamType>
     <MixedMethodCall occurrences="1">
       <code>getRules</code>
     </MixedMethodCall>

@@ -173,6 +173,10 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
+     * @phpstan-return class-string
+     *
+     * @psalm-return class-string
+     *
      * @throws \RuntimeException
      */
     final protected static function className(): string
@@ -194,6 +198,14 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             ));
         }
 
+        if (!\class_exists($className)) {
+            throw new \RuntimeException(\sprintf(
+                'Class name "%s" resolved from test class name "%s" does not reference a class that exists.',
+                $className,
+                static::class
+            ));
+        }
+
         return $className;
     }
 
@@ -202,7 +214,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
      */
     final protected static function createRuleSet(?string $header = null): Config\RuleSet
     {
-        /** @var class-string $className */
         $className = self::className();
 
         $reflection = new \ReflectionClass($className);

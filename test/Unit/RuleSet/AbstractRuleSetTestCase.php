@@ -105,6 +105,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         self::assertSame($expected, $rules['header_comment']);
     }
 
+    /**
+     * @return \Generator<string, array{0: string}>
+     */
     final public function provideValidHeader(): \Generator
     {
         $values = [
@@ -124,8 +127,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     /**
      * @dataProvider provideSourceAndRuleNames
-     *
-     * @param string[] $ruleNames
      */
     final public function testRulesAreSortedByName(string $source, array $ruleNames): void
     {
@@ -141,8 +142,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     /**
      * @dataProvider provideSourceAndRuleNames
-     *
-     * @param string[] $ruleNames
      */
     final public function testRulesDoNotContainRuleSets(string $source, array $ruleNames): void
     {
@@ -157,6 +156,13 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
+    /**
+     * @phpstan-return \Generator<int, array{0: class-string, 1: array<string>}>
+     *
+     * @psalm-return \Generator<int, array{0: class-string, 1: array<string>}>
+     *
+     * @return \Generator<int, array{0: string, 1: array<string>}>
+     */
     final public function provideSourceAndRuleNames(): \Generator
     {
         $values = [

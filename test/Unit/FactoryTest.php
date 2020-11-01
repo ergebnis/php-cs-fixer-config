@@ -85,7 +85,7 @@ final class FactoryTest extends Framework\TestCase
             private $name;
 
             /**
-             * @var array
+             * @var array<string, array|bool>
              */
             private $rules;
 
@@ -124,6 +124,9 @@ final class FactoryTest extends Framework\TestCase
         self::assertSame($rules, $config->getRules());
     }
 
+    /**
+     * @return \Generator<int, array{0: int}>
+     */
     public function provideTargetPhpVersion(): \Generator
     {
         $values = [
@@ -158,7 +161,7 @@ final class FactoryTest extends Framework\TestCase
             private $name;
 
             /**
-             * @var array
+             * @var array<string, array|bool>
              */
             private $rules;
 

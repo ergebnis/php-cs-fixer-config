@@ -20,6 +20,8 @@ final class Factory
     /**
      * Creates a configuration based on a rule set.
      *
+     * @param array<string, array|bool> $overrideRules
+     *
      * @throws \RuntimeException
      */
     public static function fromRuleSet(RuleSet $ruleSet, array $overrideRules = []): Config

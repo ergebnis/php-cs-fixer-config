@@ -127,7 +127,7 @@ final class Php73Test extends AbstractRuleSetTestCase
         'function_typehint_space' => true,
         'general_phpdoc_annotation_remove' => false,
         'global_namespace_import' => false,
-        'hash_to_slash_comment' => true,
+        'hash_to_slash_comment' => false,
         'header_comment' => false,
         'heredoc_indentation' => true,
         'heredoc_to_nowdoc' => true,
@@ -343,7 +343,11 @@ final class Php73Test extends AbstractRuleSetTestCase
         ],
         'single_import_per_statement' => true,
         'single_line_after_imports' => true,
-        'single_line_comment_style' => false,
+        'single_line_comment_style' => [
+            'comment_types' => [
+                'hash',
+            ],
+        ],
         'single_line_throw' => false,
         'single_quote' => true,
         'single_trait_insert_per_statement' => true,

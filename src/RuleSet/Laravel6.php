@@ -101,7 +101,7 @@ final class Laravel6 extends AbstractRuleSet
         'list_syntax' => false,
         'logical_operators' => false,
         'lowercase_cast' => true,
-        'lowercase_constants' => true,
+        'lowercase_constants' => false,
         'lowercase_keywords' => true,
         'lowercase_static_reference' => true, // added from Symfony
         'magic_constant_casing' => true,

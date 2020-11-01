@@ -87,7 +87,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @dataProvider providerValidHeader
+     * @dataProvider provideValidHeader
      */
     final public function testHeaderCommentFixerIsEnabledIfHeaderIsProvided(string $header): void
     {
@@ -105,7 +105,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         self::assertSame($expected, $rules['header_comment']);
     }
 
-    final public function providerValidHeader(): \Generator
+    final public function provideValidHeader(): \Generator
     {
         $values = [
             'string-empty' => '',
@@ -123,7 +123,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @dataProvider providerRuleNames
+     * @dataProvider provideRuleNames
      *
      * @param string[] $ruleNames
      */
@@ -140,7 +140,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @dataProvider providerRuleNames
+     * @dataProvider provideRuleNames
      *
      * @param string[] $ruleNames
      */
@@ -156,7 +156,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
-    final public function providerRuleNames(): \Generator
+    final public function provideRuleNames(): \Generator
     {
         $values = [
             'rule set' => self::createRuleSet()->rules(),

@@ -224,17 +224,14 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
      */
     private static function builtInFixerNames(): array
     {
-        static $builtInFixerNames;
+        $fixerFactory = FixerFactory::create();
 
-        if (null === $builtInFixerNames) {
-            $fixerFactory = FixerFactory::create();
-            $fixerFactory->registerBuiltInFixers();
+        $fixerFactory->registerBuiltInFixers();
 
-            /** @var array<int, string> $builtInFixerNames */
-            $builtInFixerNames = \array_values(\array_map(static function (Fixer\FixerInterface $fixer): string {
-                return $fixer->getName();
-            }, $fixerFactory->getFixers()));
-        }
+        /** @var array<int, string> $builtInFixerNames */
+        $builtInFixerNames = \array_values(\array_map(static function (Fixer\FixerInterface $fixer): string {
+            return $fixer->getName();
+        }, $fixerFactory->getFixers()));
 
         return $builtInFixerNames;
     }

@@ -26,7 +26,7 @@ abstract class AbstractRuleSet implements RuleSet
     protected $name = '';
 
     /**
-     * @var array
+     * @var array<string, array|bool>
      */
     protected $rules = [];
 

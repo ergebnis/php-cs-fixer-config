@@ -125,57 +125,47 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         }
     }
 
-    /**
-     * @dataProvider provideSourceAndRuleNames
-     */
-    final public function testRulesAreSortedByName(string $source, array $ruleNames): void
+    final public function testRulesAreSortedByNameInRuleSet(): void
     {
+        $ruleNames = \array_keys(self::createRuleSet()->rules());
+
         $sorted = $ruleNames;
 
         \sort($sorted);
 
         self::assertEquals($sorted, $ruleNames, \sprintf(
-            'Failed asserting that the rules are sorted by name in "%s".',
-            $source
+            'Failed asserting that the rules are sorted by name in rule set "%s".',
+            static::className()
         ));
     }
 
-    /**
-     * @dataProvider provideSourceAndRuleNames
-     */
-    final public function testRulesDoNotContainRuleSets(string $source, array $ruleNames): void
+    final public function testRulesAreSortedByNameInRuleSetTest(): void
     {
+        $ruleNames = \array_keys($this->rules);
+
+        $sorted = $ruleNames;
+
+        \sort($sorted);
+
+        self::assertEquals($sorted, $ruleNames, \sprintf(
+            'Failed asserting that the rules are sorted by name in rule set test "%s".',
+            static::class
+        ));
+    }
+
+    final public function testRulesDoNotContainRuleSets(): void
+    {
+        $ruleNames = \array_keys(self::createRuleSet()->rules());
+
         $namesOfConfiguredRuleSets = \array_filter($ruleNames, static function (string $ruleName): bool {
             return '@' === \mb_substr($ruleName, 0, 1);
         });
 
         self::assertEmpty($namesOfConfiguredRuleSets, \sprintf(
-            "Failed asserting that rule sets \n\n%s\n\nare not configured in \"%s\".",
+            "Failed asserting that rule sets \n\n%s\n\nare not configured in rule set \"%s\".",
             ' - ' . \implode("\n - ", $namesOfConfiguredRuleSets),
-            $source
+            static::className()
         ));
-    }
-
-    /**
-     * @phpstan-return \Generator<int, array{0: class-string, 1: array<string>}>
-     *
-     * @psalm-return \Generator<int, array{0: class-string, 1: array<string>}>
-     *
-     * @return \Generator<int, array{0: string, 1: array<string>}>
-     */
-    final public function provideSourceAndRuleNames(): \Generator
-    {
-        $values = [
-            static::className() => self::createRuleSet()->rules(),
-            static::class => $this->rules,
-        ];
-
-        foreach ($values as $source => $rules) {
-            yield [
-                $source,
-                \array_keys($rules),
-            ];
-        }
     }
 
     /**

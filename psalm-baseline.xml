@@ -16,19 +16,16 @@
       <code>getFixers</code>
       <code>registerBuiltInFixers</code>
     </InternalMethod>
-    <MixedArgument occurrences="1">
-      <code>RuleSet::create($rules)-&gt;getRules()</code>
-    </MixedArgument>
     <MixedInferredReturnType occurrences="3">
       <code>\Generator</code>
       <code>\Generator</code>
-      <code>string[]</code>
+      <code>array&lt;int, string&gt;</code>
     </MixedInferredReturnType>
     <MixedMethodCall occurrences="1">
       <code>getRules</code>
     </MixedMethodCall>
     <MixedReturnStatement occurrences="1">
-      <code>$builtInFixers</code>
+      <code>$builtInFixerNames</code>
     </MixedReturnStatement>
   </file>
 </files>

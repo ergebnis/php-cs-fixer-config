@@ -48,33 +48,33 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         self::assertEquals($this->targetPhpVersion, $ruleSet->targetPhpVersion());
     }
 
-    final public function testAllConfiguredRulesAreBuiltIn(): void
+    final public function testAllConfiguredFixersAreBuiltIn(): void
     {
-        $fixersNotBuiltIn = \array_diff(
-            self::configuredFixers(),
-            self::builtInFixers()
+        $namesOfFixersNotBuiltIn = \array_diff(
+            self::configuredFixerNames(),
+            self::builtInFixerNames()
         );
 
-        \sort($fixersNotBuiltIn);
+        \sort($namesOfFixersNotBuiltIn);
 
-        self::assertEmpty($fixersNotBuiltIn, \sprintf(
-            "Failed asserting that fixers for the rules\n\n%s\n\nare built in.",
-            ' - ' . \implode("\n - ", $fixersNotBuiltIn)
+        self::assertEmpty($namesOfFixersNotBuiltIn, \sprintf(
+            "Failed asserting that fixers with the names\n\n%s\n\nare built in.",
+            ' - ' . \implode("\n - ", $namesOfFixersNotBuiltIn)
         ));
     }
 
-    final public function testAllBuiltInRulesAreConfigured(): void
+    final public function testAllBuiltInFixersAreConfigured(): void
     {
-        $fixersWithoutConfiguration = \array_diff(
-            self::builtInFixers(),
-            self::configuredFixers()
+        $namesOfFixersWithoutConfiguration = \array_diff(
+            self::builtInFixerNames(),
+            self::configuredFixerNames()
         );
 
-        \sort($fixersWithoutConfiguration);
+        \sort($namesOfFixersWithoutConfiguration);
 
-        self::assertEmpty($fixersWithoutConfiguration, \sprintf(
-            "Failed asserting that built-in fixers for the rules\n\n%s\n\nare configured.",
-            ' - ' . \implode("\n - ", $fixersWithoutConfiguration)
+        self::assertEmpty($namesOfFixersWithoutConfiguration, \sprintf(
+            "Failed asserting that built-in fixers with the names\n\n%s\n\nare configured.",
+            ' - ' . \implode("\n - ", $namesOfFixersWithoutConfiguration)
         ));
     }
 
@@ -220,25 +220,29 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @return string[]
+     * @return array<int, string>
      */
-    private static function builtInFixers(): array
+    private static function builtInFixerNames(): array
     {
-        static $builtInFixers;
+        static $builtInFixerNames;
 
-        if (null === $builtInFixers) {
+        if (null === $builtInFixerNames) {
             $fixerFactory = FixerFactory::create();
             $fixerFactory->registerBuiltInFixers();
 
-            $builtInFixers = \array_map(static function (Fixer\FixerInterface $fixer): string {
+            /** @var array<int, string> $builtInFixerNames */
+            $builtInFixerNames = \array_values(\array_map(static function (Fixer\FixerInterface $fixer): string {
                 return $fixer->getName();
-            }, $fixerFactory->getFixers());
+            }, $fixerFactory->getFixers()));
         }
 
-        return $builtInFixers;
+        return $builtInFixerNames;
     }
 
-    private static function configuredFixers(): array
+    /**
+     * @return array<int, string>
+     */
+    private static function configuredFixerNames(): array
     {
         /**
          * RuleSet::create() removes disabled fixers, to let's just enable them to make sure they are not removed.
@@ -249,6 +253,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             return true;
         }, self::createRuleSet()->rules());
 
-        return \array_keys(RuleSet::create($rules)->getRules());
+        /** @var array<string, Fixer\FixerInterface> $fixers */
+        $fixers = RuleSet::create($rules)->getRules();
+
+        return \array_keys($fixers);
     }
 }

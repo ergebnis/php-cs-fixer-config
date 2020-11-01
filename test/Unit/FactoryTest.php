@@ -65,7 +65,7 @@ final class FactoryTest extends Framework\TestCase
     }
 
     /**
-     * @dataProvider providerTargetPhpVersion
+     * @dataProvider provideTargetPhpVersion
      */
     public function testFromRuleSetCreatesConfig(int $targetPhpVersion): void
     {
@@ -124,7 +124,7 @@ final class FactoryTest extends Framework\TestCase
         self::assertSame($rules, $config->getRules());
     }
 
-    public function providerTargetPhpVersion(): \Generator
+    public function provideTargetPhpVersion(): \Generator
     {
         $values = [
             \PHP_VERSION_ID - 1,

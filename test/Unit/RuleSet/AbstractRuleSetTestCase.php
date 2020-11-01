@@ -159,8 +159,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     final public function provideRuleNames(): \Generator
     {
         $values = [
-            'rule set' => self::createRuleSet()->rules(),
-            'test' => $this->rules,
+            static::className() => self::createRuleSet()->rules(),
+            static::class => $this->rules,
         ];
 
         foreach ($values as $source => $rules) {

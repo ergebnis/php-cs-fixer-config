@@ -121,7 +121,7 @@ final class Php73 extends AbstractRuleSet
         'general_phpdoc_annotation_remove' => false,
         'global_namespace_import' => false,
         'header_comment' => false,
-        'heredoc_indentation' => true,
+        'heredoc_indentation' => false,
         'heredoc_to_nowdoc' => true,
         'implode_call' => true,
         'include' => true,

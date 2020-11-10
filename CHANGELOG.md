@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.5.2...main`][2.5.2...main].
+For a full diff see [`2.5.3...main`][2.5.3...main].
+
+## [`2.5.3`][2.5.3]
+
+For a full diff see [`2.5.2...2.5.3`][2.5.2...2.5.3].
+
+### Fixed
+
+* Disabled `heredoc_indentaton` fixer ([#247]), by [@localheinz]
 
 ## [`2.5.2`][2.5.2]
 
@@ -139,6 +147,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.5.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.5.0
 [2.5.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.5.1
 [2.5.2]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.5.2
+[2.5.3]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.5.3
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -155,7 +164,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.4.0...2.5.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.4.0...2.5.0
 [2.5.0...2.5.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.5.0...2.5.1
 [2.5.1...2.5.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.5.1...2.5.2
-[2.5.2...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.5.2...main
+[2.5.2...2.5.3]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.5.2...2.5.3
+[2.5.3...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.5.3...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -171,6 +181,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#220]: https://github.com/ergebnis/php-cs-fixer-config/pull/220
 [#226]: https://github.com/ergebnis/php-cs-fixer-config/pull/226
 [#241]: https://github.com/ergebnis/php-cs-fixer-config/pull/241
+[#247]: https://github.com/ergebnis/php-cs-fixer-config/pull/247
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

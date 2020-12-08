@@ -13,6 +13,7 @@ For a full diff see [`2.6.1...main`][2.6.1...main].
 * Enabled `array_push` fixer ([#279]), by [@localheinz]
 * Enabled `clean_namespace` fixer ([#280]), by [@localheinz]
 * Enabled `lambda_not_used_import` fixer ([#281]), by [@localheinz]
+* Enabled `no_alias_language_construct_call` fixer ([#282]), by [@localheinz]
 
 ## [`2.6.1`][2.6.1]
 
@@ -231,6 +232,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#279]: https://github.com/ergebnis/php-cs-fixer-config/pull/279
 [#280]: https://github.com/ergebnis/php-cs-fixer-config/pull/280
 [#281]: https://github.com/ergebnis/php-cs-fixer-config/pull/281
+[#282]: https://github.com/ergebnis/php-cs-fixer-config/pull/282
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

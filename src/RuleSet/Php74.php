@@ -300,7 +300,19 @@ final class Php74 extends AbstractRuleSet
         'phpdoc_align' => true,
         'phpdoc_annotation_without_dot' => true,
         'phpdoc_indent' => true,
-        'phpdoc_inline_tag_normalizer' => false,
+        'phpdoc_inline_tag_normalizer' => [
+            'tags' => [
+                'example',
+                'id',
+                'inheritdoc',
+                'inheritdocs',
+                'internal',
+                'link',
+                'source',
+                'toc',
+                'tutorial',
+            ],
+        ],
         'phpdoc_line_span' => [
             'const' => 'multi',
             'method' => 'multi',

@@ -88,6 +88,15 @@ final class Laravel6Test extends AbstractRuleSetTestCase
         'function_to_constant' => false,
         'function_typehint_space' => true,
         'general_phpdoc_annotation_remove' => false,
+        'general_phpdoc_tag_rename' => [
+            'case_sensitive' => false,
+            'fix_annotation' => true,
+            'fix_inline' => true,
+            'replacements' => [
+                'inheritdoc' => 'inheritdoc',
+                'inheritdocs' => 'inheritdoc',
+            ],
+        ],
         'global_namespace_import' => false,
         'header_comment' => false,
         'heredoc_indentation' => false,
@@ -203,7 +212,6 @@ final class Laravel6Test extends AbstractRuleSetTestCase
         'phpdoc_align' => false,
         'phpdoc_annotation_without_dot' => false,
         'phpdoc_indent' => true,
-        'phpdoc_inline_tag' => true,
         'phpdoc_line_span' => false,
         'phpdoc_no_access' => true,
         'phpdoc_no_alias_tag' => false,
@@ -217,6 +225,11 @@ final class Laravel6Test extends AbstractRuleSetTestCase
         'phpdoc_separation' => false,
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,
+        'phpdoc_tag_type' => [
+            'tags' => [
+                'inheritdoc' => 'inline',
+            ],
+        ],
         'phpdoc_to_comment' => true,
         'phpdoc_to_param_type' => false,
         'phpdoc_to_return_type' => false,

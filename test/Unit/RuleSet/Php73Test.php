@@ -129,6 +129,15 @@ final class Php73Test extends AbstractRuleSetTestCase
         'function_to_constant' => true,
         'function_typehint_space' => true,
         'general_phpdoc_annotation_remove' => false,
+        'general_phpdoc_tag_rename' => [
+            'case_sensitive' => false,
+            'fix_annotation' => true,
+            'fix_inline' => true,
+            'replacements' => [
+                'inheritdoc' => 'inheritdoc',
+                'inheritdocs' => 'inheritdoc',
+            ],
+        ],
         'global_namespace_import' => false,
         'header_comment' => false,
         'heredoc_indentation' => false,
@@ -285,7 +294,6 @@ final class Php73Test extends AbstractRuleSetTestCase
         'phpdoc_align' => true,
         'phpdoc_annotation_without_dot' => true,
         'phpdoc_indent' => true,
-        'phpdoc_inline_tag' => true,
         'phpdoc_line_span' => [
             'const' => 'multi',
             'method' => 'multi',
@@ -307,6 +315,11 @@ final class Php73Test extends AbstractRuleSetTestCase
         'phpdoc_separation' => true,
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,
+        'phpdoc_tag_type' => [
+            'tags' => [
+                'inheritdoc' => 'inline',
+            ],
+        ],
         'phpdoc_to_comment' => false,
         'phpdoc_to_param_type' => false,
         'phpdoc_to_return_type' => false,

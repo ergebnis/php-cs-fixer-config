@@ -370,7 +370,7 @@ final class Php73 extends AbstractRuleSet
             'dir' => null,
         ],
         'random_api_migration' => true,
-        'regular_callable_call' => false,
+        'regular_callable_call' => true,
         'return_assignment' => true,
         'return_type_declaration' => true,
         'self_accessor' => true,

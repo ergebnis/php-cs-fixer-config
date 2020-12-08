@@ -252,7 +252,10 @@ final class Php73Test extends AbstractRuleSetTestCase
         'not_operator_with_successor_space' => false,
         'nullable_type_declaration_for_default_null_value' => true,
         'object_operator_without_whitespace' => true,
-        'operator_linebreak' => false,
+        'operator_linebreak' => [
+            'only_booleans' => true,
+            'position' => 'beginning',
+        ],
         'ordered_class_elements' => true,
         'ordered_imports' => [
             'imports_order' => [

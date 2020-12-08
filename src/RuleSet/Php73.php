@@ -265,7 +265,6 @@ final class Php73 extends AbstractRuleSet
             'target' => 'newest',
             'use_class_const' => true,
         ],
-        'php_unit_ordered_covers' => true,
         'php_unit_set_up_tear_down_visibility' => true,
         'php_unit_size_class' => false,
         'php_unit_strict' => false,
@@ -292,6 +291,11 @@ final class Php73 extends AbstractRuleSet
         'phpdoc_no_package' => true,
         'phpdoc_no_useless_inheritdoc' => true,
         'phpdoc_order' => true,
+        'phpdoc_order_by_value' => [
+            'annotations' => [
+                'covers',
+            ],
+        ],
         'phpdoc_return_self_reference' => true,
         'phpdoc_scalar' => true,
         'phpdoc_separation' => true,

@@ -342,7 +342,11 @@ final class Php73 extends AbstractRuleSet
         'phpdoc_separation' => true,
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,
-        'phpdoc_tag_casing' => false,
+        'phpdoc_tag_casing' => [
+            'tags' => [
+                'inheritDoc',
+            ],
+        ],
         'phpdoc_tag_type' => [
             'tags' => [
                 'inheritdoc' => 'inline',

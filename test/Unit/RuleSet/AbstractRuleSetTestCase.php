@@ -70,8 +70,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             self::namesOfRulesThatAreBuiltIn()
         );
 
-        \sort($namesOfRulesThatAreConfiguredAndNotBuiltIn);
-
         self::assertEmpty($namesOfRulesThatAreConfiguredAndNotBuiltIn, \sprintf(
             "Failed asserting that rule set \"%s\" configures only built-in rules. Rules with names\n\n%s\n\nare unknown.",
             static::className(),
@@ -99,8 +97,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             self::namesOfRulesThatAreNotDeprecated(),
             self::namesOfRulesThatAreBuiltIn()
         );
-
-        \sort($namesOfNonDeprecatedFixersWithoutConfiguration);
 
         self::assertEmpty($namesOfNonDeprecatedFixersWithoutConfiguration, \sprintf(
             "Failed asserting that rule set \"%s\" configures all non-deprecated fixers. Fixers with the names\n\n%s\n\nare not configured.",

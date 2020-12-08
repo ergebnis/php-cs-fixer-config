@@ -30,6 +30,7 @@ final class Php71Test extends AbstractRuleSetTestCase
             'comment_type' => 'all_multiline',
         ],
         'array_indentation' => true,
+        'array_push' => false,
         'array_syntax' => [
             'syntax' => 'short',
         ],
@@ -74,6 +75,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         ],
         'class_definition' => true,
         'class_keyword_remove' => false,
+        'clean_namespace' => false,
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,
         'combine_nested_dirname' => true,
@@ -139,6 +141,7 @@ final class Php71Test extends AbstractRuleSetTestCase
             ],
         ],
         'global_namespace_import' => false,
+        'group_import' => false,
         'header_comment' => false,
         'heredoc_indentation' => false,
         'heredoc_to_nowdoc' => true,
@@ -149,6 +152,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         ],
         'indentation_type' => true,
         'is_null' => true,
+        'lambda_not_used_import' => false,
         'line_ending' => true,
         'linebreak_after_opening_tag' => true,
         'list_syntax' => [
@@ -177,6 +181,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         'native_function_type_declaration_casing' => true,
         'new_with_braces' => true,
         'no_alias_functions' => true,
+        'no_alias_language_construct_call' => false,
         'no_alternative_syntax' => true,
         'no_binary_string' => true,
         'no_blank_lines_after_class_opening' => true,
@@ -228,6 +233,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         'no_trailing_comma_in_singleline_array' => true,
         'no_trailing_whitespace' => true,
         'no_trailing_whitespace_in_comment' => true,
+        'no_trailing_whitespace_in_string' => false,
         'no_unneeded_control_parentheses' => true,
         'no_unneeded_curly_braces' => true,
         'no_unneeded_final_method' => true,
@@ -237,6 +243,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         'no_unused_imports' => true,
         'no_useless_else' => true,
         'no_useless_return' => true,
+        'no_useless_sprintf' => false,
         'no_whitespace_before_comma_in_array' => true,
         'no_whitespace_in_blank_line' => true,
         'non_printable_character' => true,
@@ -245,6 +252,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         'not_operator_with_successor_space' => false,
         'nullable_type_declaration_for_default_null_value' => true,
         'object_operator_without_whitespace' => true,
+        'operator_linebreak' => false,
         'ordered_class_elements' => true,
         'ordered_imports' => [
             'imports_order' => [
@@ -254,6 +262,7 @@ final class Php71Test extends AbstractRuleSetTestCase
             ],
         ],
         'ordered_interfaces' => true,
+        'ordered_traits' => false,
         'php_unit_construct' => true,
         'php_unit_dedicate_assert' => [
             'target' => 'newest',
@@ -294,6 +303,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         'phpdoc_align' => true,
         'phpdoc_annotation_without_dot' => true,
         'phpdoc_indent' => true,
+        'phpdoc_inline_tag_normalizer' => false,
         'phpdoc_line_span' => [
             'const' => 'multi',
             'method' => 'multi',
@@ -323,6 +333,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         'phpdoc_separation' => true,
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,
+        'phpdoc_tag_casing' => false,
         'phpdoc_tag_type' => [
             'tags' => [
                 'inheritdoc' => 'inline',
@@ -346,6 +357,7 @@ final class Php71Test extends AbstractRuleSetTestCase
             'dir' => null,
         ],
         'random_api_migration' => true,
+        'regular_callable_call' => false,
         'return_assignment' => true,
         'return_type_declaration' => true,
         'self_accessor' => true,
@@ -354,6 +366,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         'set_type_to_cast' => true,
         'short_scalar_cast' => true,
         'simple_to_complex_string_variable' => true,
+        'simplified_if_return' => false,
         'simplified_null_return' => false,
         'single_blank_line_at_eof' => true,
         'single_blank_line_before_namespace' => true,
@@ -371,6 +384,7 @@ final class Php71Test extends AbstractRuleSetTestCase
         ],
         'single_line_throw' => false,
         'single_quote' => true,
+        'single_space_after_construct' => false,
         'single_trait_insert_per_statement' => true,
         'space_after_semicolon' => true,
         'standardize_increment' => true,
@@ -381,11 +395,14 @@ final class Php71Test extends AbstractRuleSetTestCase
         'string_line_ending' => true,
         'switch_case_semicolon_to_colon' => true,
         'switch_case_space' => true,
+        'switch_continue_to_break' => false,
         'ternary_operator_spaces' => true,
+        'ternary_to_elvis_operator' => false,
         'ternary_to_null_coalescing' => true,
         'trailing_comma_in_multiline_array' => true,
         'trim_array_spaces' => true,
         'unary_operator_spaces' => true,
+        'use_arrow_functions' => false,
         'visibility_required' => [
             'elements' => [
                 'const',

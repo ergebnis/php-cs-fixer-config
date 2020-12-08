@@ -237,7 +237,7 @@ final class Php71 extends AbstractRuleSet
         'no_unused_imports' => true,
         'no_useless_else' => true,
         'no_useless_return' => true,
-        'no_useless_sprintf' => false,
+        'no_useless_sprintf' => true,
         'no_whitespace_before_comma_in_array' => true,
         'no_whitespace_in_blank_line' => true,
         'non_printable_character' => true,

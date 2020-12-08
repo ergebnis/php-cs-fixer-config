@@ -14,6 +14,7 @@ For a full diff see [`2.6.1...main`][2.6.1...main].
 * Enabled `clean_namespace` fixer ([#280]), by [@localheinz]
 * Enabled `lambda_not_used_import` fixer ([#281]), by [@localheinz]
 * Enabled `no_alias_language_construct_call` fixer ([#282]), by [@localheinz]
+* Enabled `no_trailing_whitespace_in_string` fixer ([#283]), by [@localheinz]
 
 ## [`2.6.1`][2.6.1]
 

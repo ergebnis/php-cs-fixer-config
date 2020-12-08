@@ -308,6 +308,7 @@ final class Php73 extends AbstractRuleSet
                 'depends',
                 'group',
                 'internal',
+                'requires',
                 'uses',
             ],
         ],

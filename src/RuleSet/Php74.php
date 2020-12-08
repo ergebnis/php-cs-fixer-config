@@ -303,6 +303,7 @@ final class Php74 extends AbstractRuleSet
             'annotations' => [
                 'covers',
                 'dataProvider',
+                'uses',
             ],
         ],
         'phpdoc_return_self_reference' => true,

@@ -309,6 +309,7 @@ final class Php71Test extends AbstractRuleSetTestCase
             'annotations' => [
                 'covers',
                 'dataProvider',
+                'uses',
             ],
         ],
         'phpdoc_return_self_reference' => true,

@@ -301,6 +301,7 @@ final class Php71 extends AbstractRuleSet
         'phpdoc_order' => true,
         'phpdoc_order_by_value' => [
             'annotations' => [
+                'author',
                 'covers',
                 'dataProvider',
                 'uses',

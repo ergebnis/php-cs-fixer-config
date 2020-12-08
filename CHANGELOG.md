@@ -13,6 +13,7 @@ For a full diff see [`2.5.3...main`][2.5.3...main].
 * Updated `friendsofphp/php-cs-fixer` ([#255]), by [@localheinz]
 * Configured `phpdoc_order_by_value` fixer to order `@dataProvider` annotations by value ([#257]), by [@localheinz]
 * Configured `phpdoc_order_by_value` fixer to order `@uses` annotations by value ([#258]), by [@localheinz]
+* Configured `phpdoc_order_by_value` fixer to order `@author` annotations by value ([#259]), by [@localheinz]
 
 ## [`2.5.3`][2.5.3]
 
@@ -191,6 +192,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#255]: https://github.com/ergebnis/php-cs-fixer-config/pull/255
 [#257]: https://github.com/ergebnis/php-cs-fixer-config/pull/257
 [#258]: https://github.com/ergebnis/php-cs-fixer-config/pull/258
+[#259]: https://github.com/ergebnis/php-cs-fixer-config/pull/259
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

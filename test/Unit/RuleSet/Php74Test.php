@@ -30,7 +30,7 @@ final class Php74Test extends AbstractRuleSetTestCase
             'comment_type' => 'all_multiline',
         ],
         'array_indentation' => true,
-        'array_push' => false,
+        'array_push' => true,
         'array_syntax' => [
             'syntax' => 'short',
         ],

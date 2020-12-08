@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="3.18.2@19aa905f7c3c7350569999a93c40ae91ae4e1626">
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
-    <DeprecatedClass occurrences="1">
-      <code>RuleSet::create($rules)</code>
-    </DeprecatedClass>
-    <DeprecatedMethod occurrences="1">
-      <code>RuleSet::create($rules)</code>
-    </DeprecatedMethod>
     <InternalClass occurrences="2">
       <code>FixerFactory::create()</code>
-      <code>RuleSet::create($rules)</code>
+      <code>new RuleSet\RuleSet($rules)</code>
     </InternalClass>
     <InternalMethod occurrences="4">
       <code>FixerFactory::create()</code>
-      <code>RuleSet::create($rules)</code>
       <code>getFixers</code>
+      <code>getRules</code>
       <code>registerBuiltInFixers</code>
     </InternalMethod>
-    <MixedMethodCall occurrences="1">
-      <code>getRules</code>
-    </MixedMethodCall>
   </file>
 </files>

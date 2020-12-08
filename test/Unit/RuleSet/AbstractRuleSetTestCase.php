@@ -254,17 +254,17 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         $fixers = $fixerFactory->getFixers();
 
-        /** @var array<string, Fixer\FixerInterface> $builtInFixers */
-        $builtInFixers = \array_combine(
+        /** @var array<string, Fixer\FixerInterface> $fixersThatAreBuiltIn */
+        $fixersThatAreBuiltIn = \array_combine(
             \array_map(static function (Fixer\FixerInterface $fixer): string {
                 return $fixer->getName();
             }, $fixers),
             $fixers
         );
 
-        \ksort($builtInFixers);
+        \ksort($fixersThatAreBuiltIn);
 
-        return $builtInFixers;
+        return $fixersThatAreBuiltIn;
     }
 
     /**
@@ -283,12 +283,12 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         $ruleSet = new RuleSet\RuleSet($rules);
 
-        /** @var array<string, Fixer\FixerInterface> $fixers */
-        $fixers = $ruleSet->getRules();
+        /** @var array<string, Fixer\FixerInterface> $fixersThatAreConfigured */
+        $fixersThatAreConfigured = $ruleSet->getRules();
 
-        \ksort($fixers);
+        \ksort($fixersThatAreConfigured);
 
-        return \array_keys($fixers);
+        return \array_keys($fixersThatAreConfigured);
     }
 
     /**

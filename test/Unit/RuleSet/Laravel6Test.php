@@ -79,7 +79,6 @@ final class Laravel6Test extends AbstractRuleSetTestCase
         'final_class' => false,
         'final_internal_class' => false,
         'final_public_method_for_abstract_class' => false,
-        'final_static_access' => false,
         'fopen_flag_order' => false,
         'fopen_flags' => false,
         'full_opening_tag' => true,

@@ -262,6 +262,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             $fixers
         );
 
+        \ksort($builtInFixers);
+
         return $builtInFixers;
     }
 
@@ -283,6 +285,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         /** @var array<string, Fixer\FixerInterface> $fixers */
         $fixers = $ruleSet->getRules();
+
+        \ksort($fixers);
 
         return \array_keys($fixers);
     }

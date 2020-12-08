@@ -305,6 +305,7 @@ final class Php71 extends AbstractRuleSet
                 'covers',
                 'coversNothing',
                 'dataProvider',
+                'depends',
                 'uses',
             ],
         ],

@@ -75,7 +75,7 @@ final class Php73Test extends AbstractRuleSetTestCase
         ],
         'class_definition' => true,
         'class_keyword_remove' => false,
-        'clean_namespace' => false,
+        'clean_namespace' => true,
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,
         'combine_nested_dirname' => true,

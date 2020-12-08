@@ -313,6 +313,7 @@ final class Php71Test extends AbstractRuleSetTestCase
                 'dataProvider',
                 'depends',
                 'group',
+                'internal',
                 'uses',
             ],
         ],

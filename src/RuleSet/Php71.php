@@ -308,6 +308,7 @@ final class Php71 extends AbstractRuleSet
                 'depends',
                 'group',
                 'internal',
+                'requires',
                 'uses',
             ],
         ],

@@ -314,6 +314,7 @@ final class Php74Test extends AbstractRuleSetTestCase
                 'depends',
                 'group',
                 'internal',
+                'requires',
                 'uses',
             ],
         ],

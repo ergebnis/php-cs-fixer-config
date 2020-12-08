@@ -91,17 +91,17 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
-    final public function testRuleSetConfiguresAllFixersThatAreNotDeprecated(): void
+    final public function testRuleSetConfiguresAllRulesThatAreNotDeprecated(): void
     {
-        $namesOfNonDeprecatedFixersWithoutConfiguration = \array_diff(
+        $namesOfRulesThatAreNotDeprecatedAndNotConfigured = \array_diff(
             self::namesOfRulesThatAreNotDeprecated(),
             self::namesOfRulesThatAreBuiltIn()
         );
 
-        self::assertEmpty($namesOfNonDeprecatedFixersWithoutConfiguration, \sprintf(
-            "Failed asserting that rule set \"%s\" configures all non-deprecated fixers. Fixers with the names\n\n%s\n\nare not configured.",
+        self::assertEmpty($namesOfRulesThatAreNotDeprecatedAndNotConfigured, \sprintf(
+            "Failed asserting that rule set \"%s\" configures all non-deprecated fixers. Rules with the names\n\n%s\n\nare not configured.",
             static::className(),
-            ' - ' . \implode("\n - ", $namesOfNonDeprecatedFixersWithoutConfiguration)
+            ' - ' . \implode("\n - ", $namesOfRulesThatAreNotDeprecatedAndNotConfigured)
         ));
     }
 

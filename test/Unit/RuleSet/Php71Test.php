@@ -334,7 +334,9 @@ final class Php71Test extends AbstractRuleSetTestCase
         'phpdoc_var_without_name' => true,
         'pow_to_exponentiation' => true,
         'protected_to_private' => true,
-        'psr4' => true,
+        'psr_autoloading' => [
+            'dir' => null,
+        ],
         'random_api_migration' => true,
         'return_assignment' => true,
         'return_type_declaration' => true,

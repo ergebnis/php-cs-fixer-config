@@ -238,7 +238,9 @@ final class Laravel6 extends AbstractRuleSet
         'phpdoc_var_without_name' => true,
         'pow_to_exponentiation' => false,
         'protected_to_private' => false,
-        'psr4' => true,
+        'psr_autoloading' => [
+            'dir' => null,
+        ],
         'random_api_migration' => false,
         'return_assignment' => false,
         'return_type_declaration' => false,

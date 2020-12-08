@@ -181,7 +181,7 @@ final class Php74Test extends AbstractRuleSetTestCase
         'native_function_type_declaration_casing' => true,
         'new_with_braces' => true,
         'no_alias_functions' => true,
-        'no_alias_language_construct_call' => false,
+        'no_alias_language_construct_call' => true,
         'no_alternative_syntax' => true,
         'no_binary_string' => true,
         'no_blank_lines_after_class_opening' => true,

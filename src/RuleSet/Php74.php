@@ -307,6 +307,7 @@ final class Php74 extends AbstractRuleSet
                 'dataProvider',
                 'depends',
                 'group',
+                'internal',
                 'uses',
             ],
         ],

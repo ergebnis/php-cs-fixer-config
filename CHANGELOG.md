@@ -21,6 +21,7 @@ For a full diff see [`2.6.1...main`][2.6.1...main].
 * Enabled and configured `phpdoc_tag_casing` fixer ([#287]), by [@localheinz]
 * Enabled `regular_callable_call` fixer ([#288]), by [@localheinz]
 * Enabled and configured `single_space_after_construct` fixer ([#289]), by [@localheinz]
+* Enabled `switch_continue_to_break` fixer ([#290]), by [@localheinz]
 
 ## [`2.6.1`][2.6.1]
 
@@ -247,6 +248,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#287]: https://github.com/ergebnis/php-cs-fixer-config/pull/287
 [#288]: https://github.com/ergebnis/php-cs-fixer-config/pull/288
 [#289]: https://github.com/ergebnis/php-cs-fixer-config/pull/289
+[#290]: https://github.com/ergebnis/php-cs-fixer-config/pull/290
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

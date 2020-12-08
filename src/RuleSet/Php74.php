@@ -464,7 +464,7 @@ final class Php74 extends AbstractRuleSet
         'string_line_ending' => true,
         'switch_case_semicolon_to_colon' => true,
         'switch_case_space' => true,
-        'switch_continue_to_break' => false,
+        'switch_continue_to_break' => true,
         'ternary_operator_spaces' => true,
         'ternary_to_elvis_operator' => false,
         'ternary_to_null_coalescing' => true,

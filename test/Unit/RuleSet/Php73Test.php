@@ -309,6 +309,7 @@ final class Php73Test extends AbstractRuleSetTestCase
             'annotations' => [
                 'author',
                 'covers',
+                'coversNothing',
                 'dataProvider',
                 'uses',
             ],

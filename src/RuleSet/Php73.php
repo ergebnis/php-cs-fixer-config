@@ -303,6 +303,7 @@ final class Php73 extends AbstractRuleSet
             'annotations' => [
                 'author',
                 'covers',
+                'coversNothing',
                 'dataProvider',
                 'uses',
             ],

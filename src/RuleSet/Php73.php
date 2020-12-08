@@ -306,6 +306,7 @@ final class Php73 extends AbstractRuleSet
                 'coversNothing',
                 'dataProvider',
                 'depends',
+                'group',
                 'uses',
             ],
         ],

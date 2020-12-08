@@ -312,6 +312,7 @@ final class Php74Test extends AbstractRuleSetTestCase
                 'coversNothing',
                 'dataProvider',
                 'depends',
+                'group',
                 'uses',
             ],
         ],

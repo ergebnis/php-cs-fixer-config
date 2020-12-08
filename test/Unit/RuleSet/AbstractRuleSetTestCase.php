@@ -279,8 +279,10 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             return true;
         }, self::createRuleSet()->rules());
 
+        $ruleSet = new RuleSet\RuleSet($rules);
+
         /** @var array<string, Fixer\FixerInterface> $fixers */
-        $fixers = RuleSet::create($rules)->getRules();
+        $fixers = $ruleSet->getRules();
 
         return \array_keys($fixers);
     }

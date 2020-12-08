@@ -472,7 +472,7 @@ final class Php74Test extends AbstractRuleSetTestCase
         'switch_case_space' => true,
         'switch_continue_to_break' => true,
         'ternary_operator_spaces' => true,
-        'ternary_to_elvis_operator' => false,
+        'ternary_to_elvis_operator' => true,
         'ternary_to_null_coalescing' => true,
         'trailing_comma_in_multiline_array' => true,
         'trim_array_spaces' => true,

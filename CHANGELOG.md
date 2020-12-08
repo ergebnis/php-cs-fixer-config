@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.6.1...main`][2.6.1...main].
+For a full diff see [`2.7.0...main`][2.7.0...main].
+
+## [`2.7.0`][2.7.0]
+
+For a full diff see [`2.6.1...2.7.0`][2.6.1...2.7.0].
 
 ### Changed
 
@@ -22,6 +26,7 @@ For a full diff see [`2.6.1...main`][2.6.1...main].
 * Enabled `regular_callable_call` fixer ([#288]), by [@localheinz]
 * Enabled and configured `single_space_after_construct` fixer ([#289]), by [@localheinz]
 * Enabled `switch_continue_to_break` fixer ([#290]), by [@localheinz]
+* Enabled `ternary_to_elvis_operator` fixer ([#291]), by [@localheinz]
 
 ## [`2.6.1`][2.6.1]
 
@@ -190,6 +195,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.5.3]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.5.3
 [2.6.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.6.0
 [2.6.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.6.1
+[2.7.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.7.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -209,7 +215,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.5.2...2.5.3]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.5.2...2.5.3
 [2.5.3...2.6.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.5.3...2.6.0
 [2.6.0...2.6.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.6.0...2.6.1
-[2.6.1...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.6.1...main
+[2.6.1...2.7.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.6.1...2.7.0
+[2.7.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.7.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -249,6 +256,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#288]: https://github.com/ergebnis/php-cs-fixer-config/pull/288
 [#289]: https://github.com/ergebnis/php-cs-fixer-config/pull/289
 [#290]: https://github.com/ergebnis/php-cs-fixer-config/pull/290
+[#291]: https://github.com/ergebnis/php-cs-fixer-config/pull/291
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

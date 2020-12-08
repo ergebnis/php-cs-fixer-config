@@ -273,9 +273,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     private static function namesOfRulesThatAreConfigured(): array
     {
         /**
-         * RuleSet::create() removes disabled fixers, to let's just enable them to make sure they are not removed.
+         * RuleSet\RuleSet::resolveSet() removes disabled fixers, to let's just enable them to make sure they are not removed.
          *
-         * @see https://github.com/FriendsOfPHP/PHP-CS-Fixer/pull/2361
+         * @see RuleSet\RuleSet::resolveSet()
          */
         $rules = \array_map(static function ($ruleConfiguration): bool {
             return true;

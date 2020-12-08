@@ -328,7 +328,6 @@ final class Php71 extends AbstractRuleSet
         'phpdoc_var_without_name' => true,
         'pow_to_exponentiation' => true,
         'protected_to_private' => true,
-        'psr0' => false,
         'psr4' => true,
         'random_api_migration' => true,
         'return_assignment' => true,

@@ -241,7 +241,6 @@ final class Laravel6Test extends AbstractRuleSetTestCase
         'phpdoc_var_without_name' => true,
         'pow_to_exponentiation' => false,
         'protected_to_private' => false,
-        'psr0' => false,
         'psr4' => true,
         'random_api_migration' => false,
         'return_assignment' => false,

@@ -146,7 +146,7 @@ final class Php74 extends AbstractRuleSet
         ],
         'indentation_type' => true,
         'is_null' => true,
-        'lambda_not_used_import' => false,
+        'lambda_not_used_import' => true,
         'line_ending' => true,
         'linebreak_after_opening_tag' => true,
         'list_syntax' => [

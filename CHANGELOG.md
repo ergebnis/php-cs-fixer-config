@@ -19,6 +19,7 @@ For a full diff see [`2.6.1...main`][2.6.1...main].
 * Enabled and configured `operator_linebreak` fixer ([#285]), by [@localheinz]
 * Enabled and configured `phpdoc_inline_tag_normalizer` fixer ([#286]), by [@localheinz]
 * Enabled and configured `phpdoc_tag_casing` fixer ([#287]), by [@localheinz]
+* Enabled `regular_callable_call` fixer ([#288]), by [@localheinz]
 
 ## [`2.6.1`][2.6.1]
 
@@ -243,6 +244,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#285]: https://github.com/ergebnis/php-cs-fixer-config/pull/285
 [#286]: https://github.com/ergebnis/php-cs-fixer-config/pull/286
 [#287]: https://github.com/ergebnis/php-cs-fixer-config/pull/287
+[#288]: https://github.com/ergebnis/php-cs-fixer-config/pull/288
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

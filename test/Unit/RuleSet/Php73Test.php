@@ -307,6 +307,7 @@ final class Php73Test extends AbstractRuleSetTestCase
         'phpdoc_order' => true,
         'phpdoc_order_by_value' => [
             'annotations' => [
+                'author',
                 'covers',
                 'dataProvider',
                 'uses',

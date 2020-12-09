@@ -79,8 +79,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     final public function testRuleSetDoesNotConfigureRulesThatAreDeprecated(): void
     {
-        $namesOfRulesThatAreConfiguredAndDeprecated = \array_diff(
-            self::namesOfRulesThatAreNotDeprecated(),
+        $namesOfRulesThatAreConfiguredAndDeprecated = \array_intersect(
+            self::namesOfRulesThatAreDeprecated(),
             self::namesOfRulesThatAreConfigured()
         );
 
@@ -293,6 +293,16 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     private static function namesOfRulesThatAreBuiltIn(): array
     {
         return \array_keys(self::fixersThatAreBuiltIn());
+    }
+
+    /**
+     * @return array<int, string>
+     */
+    private static function namesOfRulesThatAreDeprecated(): array
+    {
+        return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
+            return $fixer instanceof Fixer\DeprecatedFixerInterface;
+        }));
     }
 
     /**

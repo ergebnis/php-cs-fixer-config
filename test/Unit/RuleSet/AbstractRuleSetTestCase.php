@@ -95,7 +95,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $namesOfRulesThatAreNotDeprecatedAndNotConfigured = \array_diff(
             self::namesOfRulesThatAreNotDeprecated(),
-            self::namesOfRulesThatAreBuiltIn()
+            self::namesOfRulesThatAreConfigured()
         );
 
         self::assertEmpty($namesOfRulesThatAreNotDeprecatedAndNotConfigured, \sprintf(

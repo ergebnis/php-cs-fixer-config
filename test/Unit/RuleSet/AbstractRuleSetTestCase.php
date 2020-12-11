@@ -63,7 +63,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
-    final public function testRuleSetDoesDoNotConfigureRulesThatAreNotBuiltIn(): void
+    final public function testRuleSetDoesNotConfigureRulesThatAreNotBuiltIn(): void
     {
         $namesOfRulesThatAreConfiguredAndNotBuiltIn = \array_diff(
             self::namesOfRulesThatAreConfigured(),
@@ -80,7 +80,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     final public function testRuleSetDoesNotConfigureRulesThatAreDeprecated(): void
     {
         $namesOfRulesThatAreConfiguredAndDeprecated = \array_intersect(
-            self::namesOfRulesThatAreDeprecated(),
+            self::namesOfRulesThatAreBuiltInAndDeprecated(),
             self::namesOfRulesThatAreConfigured()
         );
 
@@ -94,7 +94,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     final public function testRuleSetConfiguresAllRulesThatAreNotDeprecated(): void
     {
         $namesOfRulesThatAreNotDeprecatedAndNotConfigured = \array_diff(
-            self::namesOfRulesThatAreNotDeprecated(),
+            self::namesOfRulesThatAreBuiltInAndNotDeprecated(),
             self::namesOfRulesThatAreConfigured()
         );
 
@@ -279,12 +279,12 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         $ruleSet = new RuleSet\RuleSet($rules);
 
-        /** @var array<string, Fixer\FixerInterface> $fixersThatAreConfigured */
-        $fixersThatAreConfigured = $ruleSet->getRules();
+        /** @var array<string, bool> $rulesThatAreConfigured */
+        $rulesThatAreConfigured = $ruleSet->getRules();
 
-        \ksort($fixersThatAreConfigured);
+        \ksort($rulesThatAreConfigured);
 
-        return \array_keys($fixersThatAreConfigured);
+        return \array_keys($rulesThatAreConfigured);
     }
 
     /**
@@ -298,7 +298,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @return array<int, string>
      */
-    private static function namesOfRulesThatAreDeprecated(): array
+    private static function namesOfRulesThatAreBuiltInAndDeprecated(): array
     {
         return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
             return $fixer instanceof Fixer\DeprecatedFixerInterface;
@@ -308,7 +308,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @return array<int, string>
      */
-    private static function namesOfRulesThatAreNotDeprecated(): array
+    private static function namesOfRulesThatAreBuiltInAndNotDeprecated(): array
     {
         return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
             return !$fixer instanceof Fixer\DeprecatedFixerInterface;

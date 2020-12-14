@@ -45,7 +45,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertSame($this->name, $ruleSet->name());
         self::assertEquals($this->rules, $ruleSet->rules());
-        self::assertEquals($this->targetPhpVersion, $ruleSet->targetPhpVersion());
+        self::assertSame($this->targetPhpVersion, $ruleSet->targetPhpVersion());
     }
 
     final public function testRuleSetDoesNotConfigureRuleSets(): void

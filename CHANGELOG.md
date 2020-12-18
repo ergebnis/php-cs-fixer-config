@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.7.0...main`][2.7.0...main].
+For a full diff see [`2.8.0...main`][2.8.0...main].
+
+## [`2.8.0`][2.8.0]
+
+For a full diff see [`2.7.0...2.8.0`][2.7.0...2.8.0].
+
+### Added
+
+* Added `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit`, a rule set for `phpunit/phpunit` ([#300]), by [@localheinz]
 
 ## [`2.7.0`][2.7.0]
 
@@ -196,6 +204,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.6.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.6.0
 [2.6.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.6.1
 [2.7.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.7.0
+[2.8.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.8.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -216,7 +225,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.5.3...2.6.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.5.3...2.6.0
 [2.6.0...2.6.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.6.0...2.6.1
 [2.6.1...2.7.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.6.1...2.7.0
-[2.7.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.7.0...main
+[2.7.0...2.8.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.7.0...2.8.0
+[2.8.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.8.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -257,6 +267,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#289]: https://github.com/ergebnis/php-cs-fixer-config/pull/289
 [#290]: https://github.com/ergebnis/php-cs-fixer-config/pull/290
 [#291]: https://github.com/ergebnis/php-cs-fixer-config/pull/291
+[#300]: https://github.com/ergebnis/php-cs-fixer-config/pull/300
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

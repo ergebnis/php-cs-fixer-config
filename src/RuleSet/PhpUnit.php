@@ -258,7 +258,7 @@ final class PhpUnit extends AbstractRuleSet
         'php_unit_mock_short_will_return' => false,
         'php_unit_namespaced' => false,
         'php_unit_no_expectation_annotation' => false,
-        'php_unit_set_up_tear_down_visibility' => false,
+        'php_unit_set_up_tear_down_visibility' => true,
         'php_unit_size_class' => false,
         'php_unit_strict' => false,
         'php_unit_test_annotation' => false,

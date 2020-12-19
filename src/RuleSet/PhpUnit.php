@@ -262,7 +262,9 @@ final class PhpUnit extends AbstractRuleSet
         'php_unit_size_class' => false,
         'php_unit_strict' => false,
         'php_unit_test_annotation' => false,
-        'php_unit_test_case_static_method_calls' => false,
+        'php_unit_test_case_static_method_calls' => [
+            'call_type' => 'this',
+        ],
         'php_unit_test_class_requires_covers' => false,
         'phpdoc_add_missing_param_annotation' => false,
         'phpdoc_align' => true,

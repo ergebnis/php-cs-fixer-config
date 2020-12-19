@@ -342,6 +342,7 @@ final class Php71Test extends AbstractRuleSetTestCase
                 'group',
                 'internal',
                 'requires',
+                'throws',
                 'uses',
             ],
         ],

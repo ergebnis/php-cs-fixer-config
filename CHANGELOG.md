@@ -13,6 +13,10 @@ For a full diff see [`2.8.0...main`][2.8.0...main].
 * Enabled and configured `php_unit_test_case_static_method_calls` fixer for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#301]), by [@localheinz]
 * Enabled `php_unit_set_up_tear_down_visibility` fixer for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#303]), by [@localheinz]
 
+### Fixed
+
+* Updated `friendsofphp/php-cs-fixer` ([#304]), by [@dependabot]
+
 ## [`2.8.0`][2.8.0]
 
 For a full diff see [`2.7.0...2.8.0`][2.7.0...2.8.0].
@@ -275,6 +279,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#300]: https://github.com/ergebnis/php-cs-fixer-config/pull/300
 [#301]: https://github.com/ergebnis/php-cs-fixer-config/pull/301
 [#303]: https://github.com/ergebnis/php-cs-fixer-config/pull/303
+[#304]: https://github.com/ergebnis/php-cs-fixer-config/pull/304
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

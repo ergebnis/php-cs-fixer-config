@@ -80,7 +80,7 @@ For a full diff see [`2.5.1...2.5.2`][2.5.1...2.5.2].
 
 ### Fixed
 
-* Enabled and configured proxied instead of deprecated fixers ([#241]), by [@dependabot]
+* Enabled and configured proxied instead of deprecated fixers ([#241]), by [@localheinz]
 
 ## [`2.5.1`][2.5.1]
 
@@ -112,7 +112,7 @@ For a full diff see [`2.2.2...2.3.0`][2.2.2...2.3.0].
 
 ### Added
 
-* Added `RuleSet\Php74` for use with PHP 7.4 ([#200]), by [@dependabot]
+* Added `RuleSet\Php74` for use with PHP 7.4 ([#200]), by [@localheinz]
 
 ## [`2.2.2`][2.2.2]
 
@@ -120,7 +120,7 @@ For a full diff see [`2.2.1...2.2.2`][2.2.1...2.2.2].
 
 ### Changed
 
-* Dropped support for PHP 7.1 ([#168]), by [@dependabot]
+* Dropped support for PHP 7.1 ([#168]), by [@localheinz]
 
 ## [`2.2.1`][2.2.1]
 

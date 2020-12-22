@@ -65,7 +65,9 @@ final class Php74Test extends AbstractRuleSetTestCase
                 'yield',
             ],
         ],
-        'braces' => true,
+        'braces' => [
+            'allow_single_line_anonymous_class_with_empty_body' => true,
+        ],
         'cast_spaces' => true,
         'class_attributes_separation' => [
             'elements' => [

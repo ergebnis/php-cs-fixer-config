@@ -282,6 +282,7 @@ final class PhpUnit extends AbstractRuleSet
             'annotations' => [
                 'covers',
                 'dataProvider',
+                'throws',
                 'uses',
             ],
         ],

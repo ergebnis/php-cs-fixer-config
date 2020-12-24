@@ -17,6 +17,7 @@ For a full diff see [`2.8.0...main`][2.8.0...main].
 ### Fixed
 
 * Updated `friendsofphp/php-cs-fixer` ([#304]), by [@dependabot]
+* Updated `friendsofphp/php-cs-fixer` ([#309]), by [@dependabot]
 
 ## [`2.8.0`][2.8.0]
 
@@ -282,6 +283,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#303]: https://github.com/ergebnis/php-cs-fixer-config/pull/303
 [#304]: https://github.com/ergebnis/php-cs-fixer-config/pull/304
 [#306]: https://github.com/ergebnis/php-cs-fixer-config/pull/306
+[#309]: https://github.com/ergebnis/php-cs-fixer-config/pull/309
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

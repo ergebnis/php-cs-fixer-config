@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.8.0...main`][2.8.0...main].
+For a full diff see [`2.9.0...main`][2.9.0...main].
+
+## [`2.9.0`][2.9.0]
+
+For a full diff see [`2.8.0...2.9.0`][2.8.0...2.9.0].
 
 ### Changed
 
@@ -14,6 +18,7 @@ For a full diff see [`2.8.0...main`][2.8.0...main].
 * Configured `phpdoc_order_by_value` fixer to order `@throws` annotations ([#302]), by [@localheinz]
 * Enabled `php_unit_set_up_tear_down_visibility` fixer for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#303]), by [@localheinz]
 * Enabled `allow_single_line_anonymous_class_with_empty_body` option for `braces` fixer ([#306]), by [@localheinz]
+* Configured `phpdoc_order_by_value` fixer to order `@throws` annotations for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#310]), by [@localheinz]
 
 ### Fixed
 
@@ -217,6 +222,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.6.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.6.1
 [2.7.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.7.0
 [2.8.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.8.0
+[2.9.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.9.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -238,7 +244,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.6.0...2.6.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.6.0...2.6.1
 [2.6.1...2.7.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.6.1...2.7.0
 [2.7.0...2.8.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.7.0...2.8.0
-[2.8.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.8.0...main
+[2.8.0...2.9.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.8.0...2.9.0
+[2.9.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.9.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -286,6 +293,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#304]: https://github.com/ergebnis/php-cs-fixer-config/pull/304
 [#306]: https://github.com/ergebnis/php-cs-fixer-config/pull/306
 [#309]: https://github.com/ergebnis/php-cs-fixer-config/pull/309
+[#310]: https://github.com/ergebnis/php-cs-fixer-config/pull/310
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

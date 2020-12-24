@@ -285,6 +285,7 @@ final class PhpUnitTest extends AbstractRuleSetTestCase
             'annotations' => [
                 'covers',
                 'dataProvider',
+                'throws',
                 'uses',
             ],
         ],

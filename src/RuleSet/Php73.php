@@ -262,7 +262,14 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'ordered_interfaces' => true,
         'ordered_traits' => false,
-        'php_unit_construct' => true,
+        'php_unit_construct' => [
+            'assertions' => [
+                'assertEquals',
+                'assertNotEquals',
+                'assertNotSame',
+                'assertSame',
+            ],
+        ],
         'php_unit_dedicate_assert' => [
             'target' => 'newest',
         ],

@@ -375,7 +375,9 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
         'random_api_migration' => true,
         'regular_callable_call' => true,
         'return_assignment' => true,
-        'return_type_declaration' => true,
+        'return_type_declaration' => [
+            'space_before' => 'none',
+        ],
         'self_accessor' => true,
         'self_static_accessor' => true,
         'semicolon_after_instruction' => true,

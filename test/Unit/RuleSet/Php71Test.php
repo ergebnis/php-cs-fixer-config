@@ -13,8 +13,6 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
-use PhpCsFixer\Fixer;
-
 /**
  * @internal
  *
@@ -461,9 +459,9 @@ final class Php71Test extends ExplicitRuleSetTestCase
         ],
         'ordered_imports' => [
             'imports_order' => [
-                Fixer\Import\OrderedImportsFixer::IMPORT_TYPE_CLASS,
-                Fixer\Import\OrderedImportsFixer::IMPORT_TYPE_CONST,
-                Fixer\Import\OrderedImportsFixer::IMPORT_TYPE_FUNCTION,
+                'class',
+                'const',
+                'function',
             ],
         ],
         'ordered_interfaces' => [

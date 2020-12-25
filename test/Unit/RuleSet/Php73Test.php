@@ -284,7 +284,9 @@ final class Php73Test extends ExplicitRuleSetTestCase
                 'normal',
             ],
         ],
-        'php_unit_method_casing' => true,
+        'php_unit_method_casing' => [
+            'case' => 'camel_case',
+        ],
         'php_unit_mock' => [
             'target' => 'newest',
         ],

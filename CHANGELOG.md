@@ -8,9 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`2.9.0...main`][2.9.0...main].
 
-### Changed
+### Added
 
 * Added `Config\RuleSet\ExplicitRuleSet` marker interface for rule-sets that should  be configured explicitly ([#311]), by [@localheinz]
+
+### Changed
+
+* Required only implementations of `Config\RuleSet\ExplicitRuleSet` not to configure any rules for rule sets ([#313]), by [@localheinz]
 
 ## [`2.9.0`][2.9.0]
 
@@ -299,6 +303,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#309]: https://github.com/ergebnis/php-cs-fixer-config/pull/309
 [#310]: https://github.com/ergebnis/php-cs-fixer-config/pull/310
 [#311]: https://github.com/ergebnis/php-cs-fixer-config/pull/311
+[#313]: https://github.com/ergebnis/php-cs-fixer-config/pull/313
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

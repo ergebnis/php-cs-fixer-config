@@ -171,7 +171,17 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
         'multiline_whitespace_before_semicolons' => [
             'strategy' => 'no_multi_line',
         ],
-        'native_constant_invocation' => true,
+        'native_constant_invocation' => [
+            'exclude' => [
+                'false',
+                'null',
+                'true',
+            ],
+            'fix_built_in' => true,
+            'include' => [],
+            'scope' => 'all',
+            'strict' => false,
+        ],
         'native_function_casing' => true,
         'native_function_invocation' => [
             'exclude' => [],

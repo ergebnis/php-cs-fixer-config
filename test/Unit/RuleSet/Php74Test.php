@@ -297,8 +297,8 @@ final class Php74Test extends ExplicitRuleSetTestCase
         'magic_method_casing' => true,
         'mb_str_functions' => true,
         'method_argument_space' => [
-            'ensure_fully_multiline' => true,
             'keep_multiple_spaces_after_comma' => false,
+            'on_multiline' => 'ensure_fully_multiline',
         ],
         'method_chaining_indentation' => true,
         'modernize_types_casting' => true,

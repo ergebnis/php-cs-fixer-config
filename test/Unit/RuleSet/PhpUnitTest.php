@@ -145,7 +145,7 @@ final class PhpUnitTest extends AbstractRuleSetTestCase
         'magic_method_casing' => true,
         'mb_str_functions' => false,
         'method_argument_space' => [
-            'ensure_fully_multiline' => true,
+            'on_multiline' => 'ensure_fully_multiline',
         ],
         'method_chaining_indentation' => false,
         'modernize_types_casting' => true,

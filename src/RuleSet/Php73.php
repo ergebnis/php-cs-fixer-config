@@ -123,7 +123,9 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
         'fopen_flags' => true,
         'full_opening_tag' => true,
         'fully_qualified_strict_types' => true,
-        'function_declaration' => true,
+        'function_declaration' => [
+            'closure_function_spacing' => 'one',
+        ],
         'function_to_constant' => [
             'functions' => [
                 'get_class',

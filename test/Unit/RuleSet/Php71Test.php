@@ -129,7 +129,9 @@ final class Php71Test extends ExplicitRuleSetTestCase
         'fopen_flags' => true,
         'full_opening_tag' => true,
         'fully_qualified_strict_types' => true,
-        'function_declaration' => true,
+        'function_declaration' => [
+            'closure_function_spacing' => 'one',
+        ],
         'function_to_constant' => [
             'functions' => [
                 'get_class',

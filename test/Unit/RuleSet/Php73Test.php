@@ -88,7 +88,9 @@ final class Php73Test extends ExplicitRuleSetTestCase
         ],
         'constant_case' => true,
         'date_time_immutable' => true,
-        'declare_equal_normalize' => true,
+        'declare_equal_normalize' => [
+            'space' => 'none',
+        ],
         'declare_strict_types' => true,
         'dir_constant' => true,
         'doctrine_annotation_array_assignment' => [

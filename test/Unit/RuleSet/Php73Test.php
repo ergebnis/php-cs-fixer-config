@@ -81,7 +81,9 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,
         'combine_nested_dirname' => true,
-        'comment_to_phpdoc' => true,
+        'comment_to_phpdoc' => [
+            'ignored_tags' => [],
+        ],
         'compact_nullable_typehint' => true,
         'concat_space' => [
             'spacing' => 'one',

@@ -68,7 +68,9 @@ final class Php74Test extends ExplicitRuleSetTestCase
         'braces' => [
             'allow_single_line_anonymous_class_with_empty_body' => true,
         ],
-        'cast_spaces' => true,
+        'cast_spaces' => [
+            'space' => 'single',
+        ],
         'class_attributes_separation' => [
             'elements' => [
                 'method',

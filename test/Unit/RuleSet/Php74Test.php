@@ -13,7 +13,6 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
-use Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Fixer;
 
 /**
@@ -22,7 +21,7 @@ use PhpCsFixer\Fixer;
  * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\AbstractRuleSet
  * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\Php74
  */
-final class Php74Test extends AbstractRuleSetTestCase
+final class Php74Test extends ExplicitRuleSetTestCase
 {
     protected $name = 'ergebnis (PHP 7.4)';
 
@@ -500,11 +499,4 @@ final class Php74Test extends AbstractRuleSetTestCase
     ];
 
     protected $targetPhpVersion = 70400;
-
-    public function testIsExplicitRuleSet(): void
-    {
-        $ruleSet = new Config\RuleSet\Php74();
-
-        self::assertInstanceOf(Config\RuleSet\ExplicitRuleSet::class, $ruleSet);
-    }
 }

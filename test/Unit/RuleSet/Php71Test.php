@@ -282,9 +282,7 @@ final class Php71Test extends ExplicitRuleSetTestCase
             'style' => 'pre',
         ],
         'indentation_type' => true,
-        'is_null' => [
-            'use_yoda_style' => true,
-        ],
+        'is_null' => true,
         'lambda_not_used_import' => true,
         'line_ending' => true,
         'linebreak_after_opening_tag' => true,
@@ -299,8 +297,8 @@ final class Php71Test extends ExplicitRuleSetTestCase
         'magic_method_casing' => true,
         'mb_str_functions' => true,
         'method_argument_space' => [
-            'ensure_fully_multiline' => true,
             'keep_multiple_spaces_after_comma' => false,
+            'on_multiline' => 'ensure_fully_multiline',
         ],
         'method_chaining_indentation' => true,
         'modernize_types_casting' => true,
@@ -512,7 +510,6 @@ final class Php71Test extends ExplicitRuleSetTestCase
         'php_unit_size_class' => false,
         'php_unit_strict' => false,
         'php_unit_test_annotation' => [
-            'case' => 'camel',
             'style' => 'prefix',
         ],
         'php_unit_test_case_static_method_calls' => [

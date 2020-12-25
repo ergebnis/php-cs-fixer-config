@@ -15,6 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Fixer;
+use PhpCsFixer\FixerConfiguration;
 use PhpCsFixer\FixerFactory;
 use PhpCsFixer\RuleSet;
 use PHPUnit\Framework;
@@ -87,6 +88,52 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             "Failed asserting that rule set \"%s\" configures all non-deprecated fixers. Rules with the names\n\n%s\n\nare not configured.",
             static::className(),
             ' - ' . \implode("\n - ", $namesOfRulesThatAreNotDeprecatedAndNotConfigured)
+        ));
+    }
+
+    final public function testRuleSetDoesNotConfigureRulesUsingDeprecatedConfigurationOptions(): void
+    {
+        $rules = self::createRuleSet()->rules();
+
+        $namesOfRules = \array_keys($rules);
+
+        $fixersThatAreBuiltIn = self::fixersThatAreBuiltIn();
+
+        $rulesWithoutDeprecatedConfigurationOptions = \array_combine(
+            $namesOfRules,
+            \array_map(static function (string $nameOfRule, $ruleConfiguration) use ($fixersThatAreBuiltIn) {
+                if (!\is_array($ruleConfiguration)) {
+                    return $ruleConfiguration;
+                }
+
+                $fixer = $fixersThatAreBuiltIn[$nameOfRule];
+
+                if ($fixer instanceof Fixer\DeprecatedFixerInterface) {
+                    return $ruleConfiguration;
+                }
+
+                if (!$fixer instanceof Fixer\ConfigurationDefinitionFixerInterface) {
+                    return $ruleConfiguration;
+                }
+
+                $configurationOptions = $fixer->getConfigurationDefinition()->getOptions();
+
+                $deprecatedConfigurationOptions = \array_filter($configurationOptions, static function (FixerConfiguration\FixerOptionInterface $fixerOption): bool {
+                    return $fixerOption instanceof FixerConfiguration\DeprecatedFixerOptionInterface;
+                });
+
+                return \array_diff_key(
+                    $ruleConfiguration,
+                    \array_flip(\array_map(static function (FixerConfiguration\FixerOptionInterface $fixerOption): string {
+                        return $fixerOption->getName();
+                    }, $deprecatedConfigurationOptions))
+                );
+            }, $namesOfRules, $rules)
+        );
+
+        self::assertSame($rulesWithoutDeprecatedConfigurationOptions, $rules, \sprintf(
+            'Failed asserting that rule set "%s" does not configure rules using deprecated configuration options.',
+            static::className()
         ));
     }
 

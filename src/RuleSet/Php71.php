@@ -458,7 +458,9 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'single_trait_insert_per_statement' => true,
-        'space_after_semicolon' => true,
+        'space_after_semicolon' => [
+            'remove_in_empty_for_expressions' => false,
+        ],
         'standardize_increment' => true,
         'standardize_not_equals' => true,
         'static_lambda' => true,

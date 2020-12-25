@@ -405,7 +405,9 @@ final class Php71Test extends ExplicitRuleSetTestCase
             ],
         ],
         'single_line_throw' => false,
-        'single_quote' => true,
+        'single_quote' => [
+            'strings_containing_single_quote_chars' => false,
+        ],
         'single_space_after_construct' => [
             'constructs' => [
                 'abstract',

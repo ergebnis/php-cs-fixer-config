@@ -80,7 +80,9 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
         'concat_space' => [
             'spacing' => 'one',
         ],
-        'constant_case' => true,
+        'constant_case' => [
+            'case' => 'lower',
+        ],
         'date_time_immutable' => true,
         'declare_equal_normalize' => [
             'space' => 'none',

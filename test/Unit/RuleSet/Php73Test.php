@@ -86,7 +86,9 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'concat_space' => [
             'spacing' => 'one',
         ],
-        'constant_case' => true,
+        'constant_case' => [
+            'case' => 'lower',
+        ],
         'date_time_immutable' => true,
         'declare_equal_normalize' => [
             'space' => 'none',

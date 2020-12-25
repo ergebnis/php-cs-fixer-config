@@ -117,7 +117,19 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
         'explicit_indirect_variable' => true,
         'explicit_string_variable' => true,
         'final_class' => true,
-        'final_internal_class' => true,
+        'final_internal_class' => [
+            'annotation_exclude' => [
+                '@Entity',
+                '@final',
+                '@Mapping\\Entity',
+                '@ORM\\Entity',
+                '@ORM\\Mapping\\Entity',
+            ],
+            'annotation_include' => [
+                '@internal',
+            ],
+            'consider_absent_docblock_as_internal_class' => false,
+        ],
         'final_public_method_for_abstract_class' => true,
         'fopen_flag_order' => true,
         'fopen_flags' => [

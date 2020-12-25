@@ -8,6 +8,7 @@ parameters:
 		classesAllowedToBeExtended:
 			- Ergebnis\PhpCsFixer\Config\RuleSet\AbstractRuleSet
 			- Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet\AbstractRuleSetTestCase
+			- Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet\ExplicitRuleSetTestCase
 
 	inferPrivatePropertyTypeFromConstructor: true
 

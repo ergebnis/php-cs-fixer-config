@@ -147,7 +147,9 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
             'style' => 'pre',
         ],
         'indentation_type' => true,
-        'is_null' => true,
+        'is_null' => [
+            'use_yoda_style' => true,
+        ],
         'lambda_not_used_import' => true,
         'line_ending' => true,
         'linebreak_after_opening_tag' => true,

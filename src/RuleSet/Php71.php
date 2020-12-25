@@ -176,7 +176,12 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
         'native_function_invocation' => true,
         'native_function_type_declaration_casing' => true,
         'new_with_braces' => true,
-        'no_alias_functions' => true,
+        'no_alias_functions' => [
+            'sets' => [
+                '@IMAP',
+                '@internal',
+            ],
+        ],
         'no_alias_language_construct_call' => true,
         'no_alternative_syntax' => true,
         'no_binary_string' => true,

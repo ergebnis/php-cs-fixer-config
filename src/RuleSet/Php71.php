@@ -360,7 +360,13 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
         'phpdoc_to_return_type' => false,
         'phpdoc_trim' => true,
         'phpdoc_trim_consecutive_blank_line_separation' => true,
-        'phpdoc_types' => true,
+        'phpdoc_types' => [
+            'groups' => [
+                'alias',
+                'meta',
+                'simple',
+            ],
+        ],
         'phpdoc_types_order' => [
             'null_adjustment' => 'always_first',
             'sort_algorithm' => 'alpha',

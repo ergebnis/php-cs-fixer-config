@@ -252,7 +252,25 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
             'only_booleans' => true,
             'position' => 'beginning',
         ],
-        'ordered_class_elements' => true,
+        'ordered_class_elements' => [
+            'order' => [
+                'use_trait',
+                'constant_public',
+                'constant_protected',
+                'constant_private',
+                'property_public',
+                'property_protected',
+                'property_private',
+                'construct',
+                'destruct',
+                'magic',
+                'phpunit',
+                'method_public',
+                'method_protected',
+                'method_private',
+            ],
+            'sort_algorithm' => 'none',
+        ],
         'ordered_imports' => [
             'imports_order' => [
                 Fixer\Import\OrderedImportsFixer::IMPORT_TYPE_CLASS,

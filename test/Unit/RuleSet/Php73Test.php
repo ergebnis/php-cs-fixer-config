@@ -236,7 +236,17 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'no_trailing_whitespace' => true,
         'no_trailing_whitespace_in_comment' => true,
         'no_trailing_whitespace_in_string' => true,
-        'no_unneeded_control_parentheses' => true,
+        'no_unneeded_control_parentheses' => [
+            'statements' => [
+                'break',
+                'clone',
+                'continue',
+                'echo_print',
+                'return',
+                'switch_case',
+                'yield',
+            ],
+        ],
         'no_unneeded_curly_braces' => [
             'namespaces' => false,
         ],

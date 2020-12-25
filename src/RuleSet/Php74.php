@@ -113,7 +113,11 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
             'mute_deprecation_error' => true,
             'noise_remaining_usages' => true,
         ],
-        'escape_implicit_backslashes' => true,
+        'escape_implicit_backslashes' => [
+            'double_quoted' => true,
+            'heredoc_syntax' => true,
+            'single_quoted' => false,
+        ],
         'explicit_indirect_variable' => true,
         'explicit_string_variable' => true,
         'final_class' => true,

@@ -266,7 +266,10 @@ final class Php71Test extends ExplicitRuleSetTestCase
                 Fixer\Import\OrderedImportsFixer::IMPORT_TYPE_FUNCTION,
             ],
         ],
-        'ordered_interfaces' => true,
+        'ordered_interfaces' => [
+            'direction' => 'ascend',
+            'order' => 'alpha',
+        ],
         'ordered_traits' => false,
         'php_unit_construct' => [
             'assertions' => [

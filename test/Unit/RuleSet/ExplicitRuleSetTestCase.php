@@ -15,6 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Fixer;
+use PhpCsFixer\FixerConfiguration;
 
 /**
  * @internal
@@ -49,7 +50,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
         $rulesThatAreConfigurable = \array_intersect_key(
             $rules,
-            \array_flip(self::namesOfRulesThatAreBuiltInAndNotDeprecatedAndConfigurable())
+            \array_flip(self::namesOfRulesThatAreBuiltInAndNotDeprecatedAndHaveNonDeprecatedConfigurationOptions())
         );
 
         $namesOfRulesThatAreNotDeprecatedEnabledAndNotConfiguredExplicitly = \array_keys(\array_filter($rulesThatAreConfigurable, static function ($configuration): bool {
@@ -66,11 +67,24 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
     /**
      * @return array<int, string>
      */
-    private static function namesOfRulesThatAreBuiltInAndNotDeprecatedAndConfigurable(): array
+    private static function namesOfRulesThatAreBuiltInAndNotDeprecatedAndHaveNonDeprecatedConfigurationOptions(): array
     {
         return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
-            return !$fixer instanceof Fixer\DeprecatedFixerInterface
-                && $fixer instanceof Fixer\ConfigurableFixerInterface;
+            if ($fixer instanceof Fixer\DeprecatedFixerInterface) {
+                return false;
+            }
+
+            if (!$fixer instanceof Fixer\ConfigurationDefinitionFixerInterface) {
+                return false;
+            }
+
+            $configurationOptions = $fixer->getConfigurationDefinition()->getOptions();
+
+            $nonDeprecatedConfigurationOptions = \array_filter($configurationOptions, static function (FixerConfiguration\FixerOptionInterface $option): bool {
+                return !$option instanceof FixerConfiguration\DeprecatedFixerOptionInterface;
+            });
+
+            return [] !== $nonDeprecatedConfigurationOptions;
         }));
     }
 }

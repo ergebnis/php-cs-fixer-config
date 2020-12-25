@@ -227,7 +227,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @return array<string, Fixer\FixerInterface>
      */
-    private static function fixersThatAreBuiltIn(): array
+    final protected static function fixersThatAreBuiltIn(): array
     {
         $fixerFactory = FixerFactory::create();
 

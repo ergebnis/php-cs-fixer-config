@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config;
+use PhpCsFixer\Fixer;
 
 /**
  * @internal
@@ -40,5 +41,36 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
             static::className(),
             ' - ' . \implode("\n - ", $namesOfRulesThatAreConfiguredAndReferenceRuleSets)
         ));
+    }
+
+    final public function testRuleSetConfiguresAllRulesThatAreConfigurableAndNotDeprecatedWithAnExplicitConfigurationWhenTheyAreEnabled(): void
+    {
+        $rules = self::createRuleSet()->rules();
+
+        $rulesThatAreConfigurable = \array_intersect_key(
+            $rules,
+            \array_flip(self::namesOfRulesThatAreBuiltInAndNotDeprecatedAndConfigurable())
+        );
+
+        $namesOfRulesThatAreNotDeprecatedEnabledAndNotConfiguredExplicitly = \array_keys(\array_filter($rulesThatAreConfigurable, static function ($configuration): bool {
+            return \is_bool($configuration) && false !== $configuration;
+        }));
+
+        self::assertEmpty($namesOfRulesThatAreNotDeprecatedEnabledAndNotConfiguredExplicitly, \sprintf(
+            "Failed asserting that rule set \"%s\" configures all non-deprecated fixers that are enabled and configurable with an explicit configuration. Rules with the names\n\n%s\n\nare enabled, but not configured explicitly.",
+            static::className(),
+            ' - ' . \implode("\n - ", $namesOfRulesThatAreNotDeprecatedEnabledAndNotConfiguredExplicitly)
+        ));
+    }
+
+    /**
+     * @return array<int, string>
+     */
+    private static function namesOfRulesThatAreBuiltInAndNotDeprecatedAndConfigurable(): array
+    {
+        return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
+            return !$fixer instanceof Fixer\DeprecatedFixerInterface
+                && $fixer instanceof Fixer\ConfigurableFixerInterface;
+        }));
     }
 }

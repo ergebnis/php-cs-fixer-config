@@ -15,6 +15,10 @@ namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 /**
  * Marker interface for explicit rule sets.
+ *
+ * An explicit rule set:
+ *
+ * - does not configure any rules for rule sets (@see https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/v2.17.3/doc/ruleSets/index.rst)
  */
 interface ExplicitRuleSet
 {

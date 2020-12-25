@@ -48,21 +48,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         self::assertSame($this->targetPhpVersion, $ruleSet->targetPhpVersion());
     }
 
-    final public function testRuleSetDoesNotConfigureRuleSets(): void
-    {
-        $namesOfRulesThatAreConfigured = \array_keys(self::createRuleSet()->rules());
-
-        $namesOfRulesThatAreConfiguredAndReferenceRuleSets = \array_filter($namesOfRulesThatAreConfigured, static function (string $ruleName): bool {
-            return '@' === \mb_substr($ruleName, 0, 1);
-        });
-
-        self::assertEmpty($namesOfRulesThatAreConfiguredAndReferenceRuleSets, \sprintf(
-            "Failed asserting that rule set \"%s\" does not configure rule sets. Rule sets with names\n\n%s\n\nshould not be used.",
-            static::className(),
-            ' - ' . \implode("\n - ", $namesOfRulesThatAreConfiguredAndReferenceRuleSets)
-        ));
-    }
-
     final public function testRuleSetDoesNotConfigureRulesThatAreNotBuiltIn(): void
     {
         $namesOfRulesThatAreConfiguredAndNotBuiltIn = \array_diff(

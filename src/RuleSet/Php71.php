@@ -15,7 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 use PhpCsFixer\Fixer;
 
-final class Php71 extends AbstractRuleSet
+final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
 {
     protected $name = 'ergebnis (PHP 7.1)';
 

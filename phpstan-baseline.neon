@@ -25,3 +25,18 @@ parameters:
 			count: 1
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
 
+		-
+			message: "#^Call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertInstanceOf\\(\\) with 'Ergebnis\\\\\\\\PhpCsFixer\\\\\\\\Config\\\\\\\\RuleSet\\\\\\\\ExplicitRuleSet' and Ergebnis\\\\PhpCsFixer\\\\Config\\\\RuleSet\\\\Php71 will always evaluate to true\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/Php71Test.php
+
+		-
+			message: "#^Call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertInstanceOf\\(\\) with 'Ergebnis\\\\\\\\PhpCsFixer\\\\\\\\Config\\\\\\\\RuleSet\\\\\\\\ExplicitRuleSet' and Ergebnis\\\\PhpCsFixer\\\\Config\\\\RuleSet\\\\Php73 will always evaluate to true\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/Php73Test.php
+
+		-
+			message: "#^Call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertInstanceOf\\(\\) with 'Ergebnis\\\\\\\\PhpCsFixer\\\\\\\\Config\\\\\\\\RuleSet\\\\\\\\ExplicitRuleSet' and Ergebnis\\\\PhpCsFixer\\\\Config\\\\RuleSet\\\\Php74 will always evaluate to true\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/Php74Test.php
+

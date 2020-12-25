@@ -504,7 +504,6 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         'php_unit_size_class' => false,
         'php_unit_strict' => false,
         'php_unit_test_annotation' => [
-            'case' => 'camel',
             'style' => 'prefix',
         ],
         'php_unit_test_case_static_method_calls' => [

@@ -327,7 +327,14 @@ final class Php73Test extends ExplicitRuleSetTestCase
             'property' => 'multi',
         ],
         'phpdoc_no_access' => true,
-        'phpdoc_no_alias_tag' => true,
+        'phpdoc_no_alias_tag' => [
+            'replacements' => [
+                'link' => 'see',
+                'property-read' => 'property',
+                'property-write' => 'property',
+                'type' => 'var',
+            ],
+        ],
         'phpdoc_no_empty_return' => true,
         'phpdoc_no_package' => true,
         'phpdoc_no_useless_inheritdoc' => true,

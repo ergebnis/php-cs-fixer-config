@@ -189,7 +189,9 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'no_blank_lines_after_class_opening' => true,
         'no_blank_lines_after_phpdoc' => true,
         'no_blank_lines_before_namespace' => false,
-        'no_break_comment' => true,
+        'no_break_comment' => [
+            'comment_text' => 'no break',
+        ],
         'no_closing_tag' => true,
         'no_empty_comment' => true,
         'no_empty_phpdoc' => true,

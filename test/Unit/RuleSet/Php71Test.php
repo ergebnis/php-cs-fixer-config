@@ -346,7 +346,16 @@ final class Php71Test extends ExplicitRuleSetTestCase
                 'uses',
             ],
         ],
-        'phpdoc_return_self_reference' => true,
+        'phpdoc_return_self_reference' => [
+            'replacements' => [
+                '$self' => 'self',
+                '$static' => 'static',
+                '@self' => 'self',
+                '@static' => 'static',
+                '@this' => '$this',
+                'this' => '$this',
+            ],
+        ],
         'phpdoc_scalar' => [
             'types' => [
                 'boolean',

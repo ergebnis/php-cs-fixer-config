@@ -340,7 +340,16 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
                 'uses',
             ],
         ],
-        'phpdoc_return_self_reference' => true,
+        'phpdoc_return_self_reference' => [
+            'replacements' => [
+                '$self' => 'self',
+                '$static' => 'static',
+                '@self' => 'self',
+                '@static' => 'static',
+                '@this' => '$this',
+                'this' => '$this',
+            ],
+        ],
         'phpdoc_scalar' => [
             'types' => [
                 'boolean',

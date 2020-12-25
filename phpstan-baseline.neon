@@ -25,3 +25,8 @@ parameters:
 			count: 1
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
 
+		-
+			message: "#^Method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:sort\\(\\) should return array but returns array\\|false\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
+

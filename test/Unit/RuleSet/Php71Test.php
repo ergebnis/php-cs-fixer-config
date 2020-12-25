@@ -75,7 +75,11 @@ final class Php71Test extends ExplicitRuleSetTestCase
                 'property',
             ],
         ],
-        'class_definition' => true,
+        'class_definition' => [
+            'multi_line_extends_each_single_line' => false,
+            'single_item_single_line' => false,
+            'single_line' => false,
+        ],
         'class_keyword_remove' => false,
         'clean_namespace' => true,
         'combine_consecutive_issets' => true,

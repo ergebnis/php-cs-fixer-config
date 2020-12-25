@@ -297,7 +297,10 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'php_unit_set_up_tear_down_visibility' => true,
         'php_unit_size_class' => false,
         'php_unit_strict' => false,
-        'php_unit_test_annotation' => true,
+        'php_unit_test_annotation' => [
+            'case' => 'camel',
+            'style' => 'prefix',
+        ],
         'php_unit_test_case_static_method_calls' => [
             'call_type' => 'self',
         ],

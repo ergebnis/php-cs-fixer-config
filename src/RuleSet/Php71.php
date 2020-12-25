@@ -279,7 +279,9 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'php_unit_method_casing' => true,
-        'php_unit_mock' => true,
+        'php_unit_mock' => [
+            'target' => 'newest',
+        ],
         'php_unit_mock_short_will_return' => true,
         'php_unit_namespaced' => [
             'target' => 'newest',

@@ -90,70 +90,26 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
-    final public function testRulesAreSortedByNameInRuleSet(): void
+    final public function testRulesAndConfigurationOptionsAreSortedInRuleSet(): void
     {
-        $ruleNames = \array_keys(self::createRuleSet()->rules());
+        $rules = self::createRuleSet()->rules();
 
-        $sorted = $ruleNames;
+        $sorted = self::sort($rules);
 
-        \sort($sorted);
-
-        self::assertSame($sorted, $ruleNames, \sprintf(
-            'Failed asserting that the rules are sorted by name in rule set "%s".',
+        self::assertSame($sorted, $rules, \sprintf(
+            'Failed asserting that rules and configuration options are sorted by name in rule set "%s".',
             static::className()
         ));
     }
 
-    final public function testRulesAreSortedByNameInRuleSetTest(): void
+    final public function testRulesAndConfigurationOptionsAreSortedInRuleSetTest(): void
     {
-        $ruleNames = \array_keys($this->rules);
+        $rules = $this->rules;
 
-        $sorted = $ruleNames;
+        $sorted = self::sort($rules);
 
-        \sort($sorted);
-
-        self::assertSame($sorted, $ruleNames, \sprintf(
-            'Failed asserting that the rules are sorted by name in rule set test "%s".',
-            static::class
-        ));
-    }
-
-    final public function testRuleConfigurationItemsAreSortedByKeyInRuleSet(): void
-    {
-        $rulesWithConfiguration = \array_filter(self::createRuleSet()->rules(), static function ($ruleConfiguration): bool {
-            return \is_array($ruleConfiguration);
-        });
-
-        $rulesWithConfigurationWithItemsSortedByKey = \array_map(static function (array $ruleConfiguration): array {
-            $ruleConfigurationSortedByKey = $ruleConfiguration;
-
-            \ksort($ruleConfigurationSortedByKey);
-
-            return $ruleConfigurationSortedByKey;
-        }, $rulesWithConfiguration);
-
-        self::assertSame($rulesWithConfigurationWithItemsSortedByKey, $rulesWithConfiguration, \sprintf(
-            'Failed asserting that the configuration items for rules are sorted by name in rule set "%s".',
-            static::class
-        ));
-    }
-
-    final public function testRuleConfigurationItemsAreSortedByKeyInRuleSetTest(): void
-    {
-        $rulesWithConfiguration = \array_filter($this->rules, static function ($ruleConfiguration): bool {
-            return \is_array($ruleConfiguration);
-        });
-
-        $rulesWithConfigurationWithItemsSortedByKey = \array_map(static function (array $ruleConfiguration): array {
-            $ruleConfigurationSortedByKey = $ruleConfiguration;
-
-            \ksort($ruleConfigurationSortedByKey);
-
-            return $ruleConfigurationSortedByKey;
-        }, $rulesWithConfiguration);
-
-        self::assertSame($rulesWithConfigurationWithItemsSortedByKey, $rulesWithConfiguration, \sprintf(
-            'Failed asserting that the configuration items for rules are sorted by name in rule set test "%s".',
+        self::assertSame($sorted, $rules, \sprintf(
+            'Failed asserting that rules and configuration options are sorted by name in rule set test "%s".',
             static::class
         ));
     }
@@ -338,5 +294,31 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
             return !$fixer instanceof Fixer\DeprecatedFixerInterface;
         }));
+    }
+
+    private static function sort(array $data): array
+    {
+        $keys = \array_keys($data);
+
+        $keysThatAreNotStrings = \array_filter($keys, static function ($key): bool {
+            return !\is_string($key);
+        });
+
+        if ([] !== $keysThatAreNotStrings) {
+            return $data;
+        }
+
+        \ksort($data);
+
+        return \array_combine(
+            \array_keys($data),
+            \array_map(static function ($item) {
+                if (!\is_array($item)) {
+                    return $item;
+                }
+
+                return self::sort($item);
+            }, $data)
+        );
     }
 }

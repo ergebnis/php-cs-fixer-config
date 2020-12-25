@@ -126,7 +126,9 @@ final class Php74Test extends ExplicitRuleSetTestCase
         'final_internal_class' => true,
         'final_public_method_for_abstract_class' => true,
         'fopen_flag_order' => true,
-        'fopen_flags' => true,
+        'fopen_flags' => [
+            'b_mode' => true,
+        ],
         'full_opening_tag' => true,
         'fully_qualified_strict_types' => true,
         'function_declaration' => [

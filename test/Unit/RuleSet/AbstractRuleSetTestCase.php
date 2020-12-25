@@ -44,7 +44,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         $ruleSet = self::createRuleSet();
 
         self::assertSame($this->name, $ruleSet->name());
-        self::assertEquals($this->rules, $ruleSet->rules());
+        self::assertSame($this->rules, $ruleSet->rules());
         self::assertSame($this->targetPhpVersion, $ruleSet->targetPhpVersion());
     }
 
@@ -98,7 +98,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         \sort($sorted);
 
-        self::assertEquals($sorted, $ruleNames, \sprintf(
+        self::assertSame($sorted, $ruleNames, \sprintf(
             'Failed asserting that the rules are sorted by name in rule set "%s".',
             static::className()
         ));
@@ -112,7 +112,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         \sort($sorted);
 
-        self::assertEquals($sorted, $ruleNames, \sprintf(
+        self::assertSame($sorted, $ruleNames, \sprintf(
             'Failed asserting that the rules are sorted by name in rule set test "%s".',
             static::class
         ));

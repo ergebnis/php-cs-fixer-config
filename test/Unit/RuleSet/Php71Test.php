@@ -237,7 +237,9 @@ final class Php71Test extends ExplicitRuleSetTestCase
         'no_trailing_whitespace_in_comment' => true,
         'no_trailing_whitespace_in_string' => true,
         'no_unneeded_control_parentheses' => true,
-        'no_unneeded_curly_braces' => true,
+        'no_unneeded_curly_braces' => [
+            'namespaces' => false,
+        ],
         'no_unneeded_final_method' => [
             'private_methods' => true,
         ],

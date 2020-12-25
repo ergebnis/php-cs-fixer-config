@@ -118,6 +118,46 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
+    final public function testRuleConfigurationItemsAreSortedByKeyInRuleSet(): void
+    {
+        $rulesWithConfiguration = \array_filter(self::createRuleSet()->rules(), static function ($ruleConfiguration): bool {
+            return \is_array($ruleConfiguration);
+        });
+
+        $rulesWithConfigurationWithItemsSortedByKey = \array_map(static function (array $ruleConfiguration): array {
+            $ruleConfigurationSortedByKey = $ruleConfiguration;
+
+            \ksort($ruleConfigurationSortedByKey);
+
+            return $ruleConfigurationSortedByKey;
+        }, $rulesWithConfiguration);
+
+        self::assertSame($rulesWithConfigurationWithItemsSortedByKey, $rulesWithConfiguration, \sprintf(
+            'Failed asserting that the configuration items for rules are sorted by name in rule set "%s".',
+            static::class
+        ));
+    }
+
+    final public function testRuleConfigurationItemsAreSortedByKeyInRuleSetTest(): void
+    {
+        $rulesWithConfiguration = \array_filter($this->rules, static function ($ruleConfiguration): bool {
+            return \is_array($ruleConfiguration);
+        });
+
+        $rulesWithConfigurationWithItemsSortedByKey = \array_map(static function (array $ruleConfiguration): array {
+            $ruleConfigurationSortedByKey = $ruleConfiguration;
+
+            \ksort($ruleConfigurationSortedByKey);
+
+            return $ruleConfigurationSortedByKey;
+        }, $rulesWithConfiguration);
+
+        self::assertSame($rulesWithConfigurationWithItemsSortedByKey, $rulesWithConfiguration, \sprintf(
+            'Failed asserting that the configuration items for rules are sorted by name in rule set test "%s".',
+            static::class
+        ));
+    }
+
     final public function testHeaderCommentFixerIsDisabledByDefault(): void
     {
         $rules = self::createRuleSet()->rules();

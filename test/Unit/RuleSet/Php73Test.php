@@ -248,7 +248,9 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'no_useless_sprintf' => true,
         'no_whitespace_before_comma_in_array' => true,
         'no_whitespace_in_blank_line' => true,
-        'non_printable_character' => true,
+        'non_printable_character' => [
+            'use_escape_sequences_in_strings' => false,
+        ],
         'normalize_index_brace' => true,
         'not_operator_with_space' => false,
         'not_operator_with_successor_space' => false,

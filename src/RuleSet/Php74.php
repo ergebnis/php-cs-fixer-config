@@ -266,7 +266,9 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         'php_unit_dedicate_assert' => [
             'target' => 'newest',
         ],
-        'php_unit_dedicate_assert_internal_type' => true,
+        'php_unit_dedicate_assert_internal_type' => [
+            'target' => 'newest',
+        ],
         'php_unit_expectation' => [
             'target' => 'newest',
         ],

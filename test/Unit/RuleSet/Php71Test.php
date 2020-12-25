@@ -272,7 +272,9 @@ final class Php71Test extends ExplicitRuleSetTestCase
         'php_unit_dedicate_assert' => [
             'target' => 'newest',
         ],
-        'php_unit_dedicate_assert_internal_type' => true,
+        'php_unit_dedicate_assert_internal_type' => [
+            'target' => 'newest',
+        ],
         'php_unit_expectation' => [
             'target' => 'newest',
         ],

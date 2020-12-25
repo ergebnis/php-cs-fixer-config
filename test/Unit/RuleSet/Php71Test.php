@@ -305,7 +305,16 @@ final class Php71Test extends ExplicitRuleSetTestCase
         'phpdoc_add_missing_param_annotation' => [
             'only_untyped' => true,
         ],
-        'phpdoc_align' => true,
+        'phpdoc_align' => [
+            'align' => 'vertical',
+            'tags' => [
+                'param',
+                'return',
+                'throws',
+                'type',
+                'var',
+            ],
+        ],
         'phpdoc_annotation_without_dot' => true,
         'phpdoc_indent' => true,
         'phpdoc_inline_tag_normalizer' => [

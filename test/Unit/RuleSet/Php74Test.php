@@ -378,7 +378,13 @@ final class Php74Test extends ExplicitRuleSetTestCase
         'psr_autoloading' => [
             'dir' => null,
         ],
-        'random_api_migration' => true,
+        'random_api_migration' => [
+            'replacements' => [
+                'getrandmax' => 'mt_getrandmax',
+                'rand' => 'mt_rand',
+                'srand' => 'mt_srand',
+            ],
+        ],
         'regular_callable_call' => true,
         'return_assignment' => true,
         'return_type_declaration' => [

@@ -347,7 +347,15 @@ final class Php71Test extends ExplicitRuleSetTestCase
             ],
         ],
         'phpdoc_return_self_reference' => true,
-        'phpdoc_scalar' => true,
+        'phpdoc_scalar' => [
+            'types' => [
+                'boolean',
+                'double',
+                'integer',
+                'real',
+                'str',
+            ],
+        ],
         'phpdoc_separation' => true,
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,

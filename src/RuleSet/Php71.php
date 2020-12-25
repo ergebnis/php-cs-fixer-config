@@ -341,7 +341,15 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'phpdoc_return_self_reference' => true,
-        'phpdoc_scalar' => true,
+        'phpdoc_scalar' => [
+            'types' => [
+                'boolean',
+                'double',
+                'integer',
+                'real',
+                'str',
+            ],
+        ],
         'phpdoc_separation' => true,
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,

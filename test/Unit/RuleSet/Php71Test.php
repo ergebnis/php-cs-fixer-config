@@ -179,7 +179,14 @@ final class Php71Test extends ExplicitRuleSetTestCase
         ],
         'native_constant_invocation' => true,
         'native_function_casing' => true,
-        'native_function_invocation' => true,
+        'native_function_invocation' => [
+            'exclude' => [],
+            'include' => [
+                '@internal',
+            ],
+            'scope' => 'all',
+            'strict' => false,
+        ],
         'native_function_type_declaration_casing' => true,
         'new_with_braces' => true,
         'no_alias_functions' => [

@@ -77,20 +77,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         ));
     }
 
-    final public function testRuleSetConfiguresAllRulesThatAreNotDeprecated(): void
-    {
-        $namesOfRulesThatAreNotDeprecatedAndNotConfigured = \array_diff(
-            self::namesOfRulesThatAreBuiltInAndNotDeprecated(),
-            self::namesOfRulesThatAreConfigured()
-        );
-
-        self::assertEmpty($namesOfRulesThatAreNotDeprecatedAndNotConfigured, \sprintf(
-            "Failed asserting that rule set \"%s\" configures all non-deprecated fixers. Rules with the names\n\n%s\n\nare not configured.",
-            static::className(),
-            ' - ' . \implode("\n - ", $namesOfRulesThatAreNotDeprecatedAndNotConfigured)
-        ));
-    }
-
     final public function testRuleSetDoesNotConfigureRulesUsingDeprecatedConfigurationOptions(): void
     {
         $rules = self::createRuleSet()->rules();
@@ -320,7 +306,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @return array<int, string>
      */
-    private static function namesOfRulesThatAreConfigured(): array
+    final protected static function namesOfRulesThatAreConfigured(): array
     {
         /**
          * RuleSet\RuleSet::resolveSet() removes disabled fixers, to let's just enable them to make sure they are not removed.
@@ -356,16 +342,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
             return $fixer instanceof Fixer\DeprecatedFixerInterface;
-        }));
-    }
-
-    /**
-     * @return array<int, string>
-     */
-    private static function namesOfRulesThatAreBuiltInAndNotDeprecated(): array
-    {
-        return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
-            return !$fixer instanceof Fixer\DeprecatedFixerInterface;
         }));
     }
 }

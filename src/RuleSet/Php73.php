@@ -508,6 +508,7 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'php_unit_test_case_static_method_calls' => [
             'call_type' => 'self',
+            'methods' => [],
         ],
         'php_unit_test_class_requires_covers' => true,
         'phpdoc_add_missing_param_annotation' => [

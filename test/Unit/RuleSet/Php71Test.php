@@ -461,6 +461,7 @@ final class Php71Test extends ExplicitRuleSetTestCase
                 'const',
                 'function',
             ],
+            'sort_algorithm' => 'alpha',
         ],
         'ordered_interfaces' => [
             'direction' => 'ascend',

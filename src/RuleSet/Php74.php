@@ -455,6 +455,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
                 'const',
                 'function',
             ],
+            'sort_algorithm' => 'alpha',
         ],
         'ordered_interfaces' => [
             'direction' => 'ascend',

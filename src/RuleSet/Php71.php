@@ -214,6 +214,7 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
         'error_suppression' => [
             'mute_deprecation_error' => true,
             'noise_remaining_usages' => true,
+            'noise_remaining_usages_exclude' => [],
         ],
         'escape_implicit_backslashes' => [
             'double_quoted' => true,

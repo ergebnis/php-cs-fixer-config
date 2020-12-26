@@ -297,6 +297,7 @@ final class Php71Test extends ExplicitRuleSetTestCase
         'magic_method_casing' => true,
         'mb_str_functions' => true,
         'method_argument_space' => [
+            'after_heredoc' => false,
             'keep_multiple_spaces_after_comma' => false,
             'on_multiline' => 'ensure_fully_multiline',
         ],

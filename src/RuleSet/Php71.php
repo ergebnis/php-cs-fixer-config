@@ -291,6 +291,7 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
         'magic_method_casing' => true,
         'mb_str_functions' => true,
         'method_argument_space' => [
+            'after_heredoc' => false,
             'keep_multiple_spaces_after_comma' => false,
             'on_multiline' => 'ensure_fully_multiline',
         ],

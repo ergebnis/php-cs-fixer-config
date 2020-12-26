@@ -44,47 +44,63 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
         ));
     }
 
-    final public function testRuleSetConfiguresAllRulesThatAreConfigurableAndNotDeprecatedWithAnExplicitConfigurationWhenTheyAreEnabled(): void
+    final public function testRuleSetConfiguresAllRulesThatAreConfigurableAndNotDeprecatedWithAnExplicitConfigurationWithEveryOptionWhenTheyAreEnabled(): void
     {
         $rules = self::createRuleSet()->rules();
 
-        $rulesThatAreConfigurable = \array_intersect_key(
-            $rules,
-            \array_flip(self::namesOfRulesThatAreBuiltInAndNotDeprecatedAndHaveNonDeprecatedConfigurationOptions())
-        );
+        $namesOfRules = \array_keys($rules);
 
-        $namesOfRulesThatAreNotDeprecatedEnabledAndNotConfiguredExplicitly = \array_keys(\array_filter($rulesThatAreConfigurable, static function ($configuration): bool {
-            return \is_bool($configuration) && false !== $configuration;
-        }));
+        $fixersThatAreBuiltIn = self::fixersThatAreBuiltIn();
 
-        self::assertEmpty($namesOfRulesThatAreNotDeprecatedEnabledAndNotConfiguredExplicitly, \sprintf(
-            "Failed asserting that rule set \"%s\" configures all non-deprecated fixers that are enabled and configurable with an explicit configuration. Rules with the names\n\n%s\n\nare enabled, but not configured explicitly.",
-            static::className(),
-            ' - ' . \implode("\n - ", $namesOfRulesThatAreNotDeprecatedEnabledAndNotConfiguredExplicitly)
+        $rulesWithAllNonDeprecatedConfigurationOptions = self::sort(\array_combine(
+            $namesOfRules,
+            \array_map(static function (string $nameOfRule, $ruleConfiguration) use ($fixersThatAreBuiltIn) {
+                if (!\is_array($ruleConfiguration)) {
+                    return $ruleConfiguration;
+                }
+
+                $fixer = $fixersThatAreBuiltIn[$nameOfRule];
+
+                if ($fixer instanceof Fixer\DeprecatedFixerInterface) {
+                    return $ruleConfiguration;
+                }
+
+                if (!$fixer instanceof Fixer\ConfigurationDefinitionFixerInterface) {
+                    return $ruleConfiguration;
+                }
+
+                $configurationOptions = $fixer->getConfigurationDefinition()->getOptions();
+
+                $nonDeprecatedConfigurationOptions = \array_filter($configurationOptions, static function (FixerConfiguration\FixerOptionInterface $fixerOption): bool {
+                    return !$fixerOption instanceof FixerConfiguration\DeprecatedFixerOptionInterface;
+                });
+
+                $diff = \array_diff_key(
+                    \array_combine(
+                        \array_map(static function (FixerConfiguration\FixerOptionInterface $fixerOption): string {
+                            return $fixerOption->getName();
+                        }, $nonDeprecatedConfigurationOptions),
+                        \array_map(static function (FixerConfiguration\FixerOptionInterface $fixerOption) {
+                            return $fixerOption->getDefault();
+                        }, $nonDeprecatedConfigurationOptions)
+                    ),
+                    $ruleConfiguration
+                );
+
+                if ([] === $diff) {
+                    return $ruleConfiguration;
+                }
+
+                return \array_merge(
+                    $ruleConfiguration,
+                    $diff
+                );
+            }, $namesOfRules, $rules)
         ));
-    }
 
-    /**
-     * @return array<int, string>
-     */
-    private static function namesOfRulesThatAreBuiltInAndNotDeprecatedAndHaveNonDeprecatedConfigurationOptions(): array
-    {
-        return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
-            if ($fixer instanceof Fixer\DeprecatedFixerInterface) {
-                return false;
-            }
-
-            if (!$fixer instanceof Fixer\ConfigurationDefinitionFixerInterface) {
-                return false;
-            }
-
-            $configurationOptions = $fixer->getConfigurationDefinition()->getOptions();
-
-            $nonDeprecatedConfigurationOptions = \array_filter($configurationOptions, static function (FixerConfiguration\FixerOptionInterface $option): bool {
-                return !$option instanceof FixerConfiguration\DeprecatedFixerOptionInterface;
-            });
-
-            return [] !== $nonDeprecatedConfigurationOptions;
-        }));
+        self::assertEquals($rulesWithAllNonDeprecatedConfigurationOptions, $rules, \sprintf(
+            'Failed asserting that rule set "%s" configures configurable rules using all non-deprecated configuration options.',
+            static::className()
+        ));
     }
 }

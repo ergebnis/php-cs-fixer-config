@@ -29,6 +29,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         'backtick_to_shell_exec' => true,
         'binary_operator_spaces' => [
             'default' => 'single_space',
+            'operators' => [],
         ],
         'blank_line_after_namespace' => true,
         'blank_line_after_opening_tag' => true,

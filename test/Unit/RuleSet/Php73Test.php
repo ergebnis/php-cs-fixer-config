@@ -35,6 +35,7 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'backtick_to_shell_exec' => true,
         'binary_operator_spaces' => [
             'default' => 'single_space',
+            'operators' => [],
         ],
         'blank_line_after_namespace' => true,
         'blank_line_after_opening_tag' => true,

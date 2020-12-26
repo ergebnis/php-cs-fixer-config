@@ -44,6 +44,20 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
         ));
     }
 
+    final public function testRuleSetConfiguresAllRulesThatAreNotDeprecated(): void
+    {
+        $namesOfRulesThatAreNotDeprecatedAndNotConfigured = \array_diff(
+            self::namesOfRulesThatAreBuiltInAndNotDeprecated(),
+            self::namesOfRulesThatAreConfigured()
+        );
+
+        self::assertEmpty($namesOfRulesThatAreNotDeprecatedAndNotConfigured, \sprintf(
+            "Failed asserting that rule set \"%s\" configures all non-deprecated fixers. Rules with the names\n\n%s\n\nare not configured.",
+            static::className(),
+            ' - ' . \implode("\n - ", $namesOfRulesThatAreNotDeprecatedAndNotConfigured)
+        ));
+    }
+
     final public function testRuleSetConfiguresAllRulesThatAreConfigurableAndNotDeprecatedWithAnExplicitConfigurationWithEveryOptionWhenTheyAreEnabled(): void
     {
         $rules = self::createRuleSet()->rules();
@@ -102,5 +116,18 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
             'Failed asserting that rule set "%s" configures configurable rules using all non-deprecated configuration options.',
             static::className()
         ));
+    }
+
+    /**
+     * @phpstan-return list<string>
+     * @psalm-return list<string>
+     *
+     * @return array<int, string>
+     */
+    private static function namesOfRulesThatAreBuiltInAndNotDeprecated(): array
+    {
+        return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
+            return !$fixer instanceof Fixer\DeprecatedFixerInterface;
+        }));
     }
 }

@@ -21,6 +21,7 @@ For a full diff see [`2.9.0...2.10.0`][2.9.0...2.10.0].
 * Required only implementations of `Config\RuleSet\ExplicitRuleSet` not to configure any rules for rule sets ([#313]), by [@localheinz]
 * Required implementations of `Config\RuleSet\ExplicitRuleSet` to configure non-deprecated rules that are configurable with an explicit configuration when enabled ([#314]), by [@localheinz]
 * Required implementations of `Config\RuleSet\ExplicitRuleSet` to configure non-deprecated rules that are configurable with all non-deprecated configuration options when enabled ([#320]), by [@localheinz]
+* Required only implementations of `Config\RuleSet\ExplicitRuleSet` to configure all non-deprecated rules ([#321]), by [@localheinz]
 
 ### Fixed
 
@@ -319,6 +320,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#314]: https://github.com/ergebnis/php-cs-fixer-config/pull/314
 [#319]: https://github.com/ergebnis/php-cs-fixer-config/pull/319
 [#320]: https://github.com/ergebnis/php-cs-fixer-config/pull/320
+[#321]: https://github.com/ergebnis/php-cs-fixer-config/pull/321
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

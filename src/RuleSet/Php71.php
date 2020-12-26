@@ -59,6 +59,10 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'braces' => [
             'allow_single_line_anonymous_class_with_empty_body' => true,
+            'allow_single_line_closure' => false,
+            'position_after_anonymous_constructs' => 'same',
+            'position_after_control_structures' => 'same',
+            'position_after_functions_and_oop_constructs' => 'next',
         ],
         'cast_spaces' => [
             'space' => 'single',

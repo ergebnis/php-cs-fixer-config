@@ -291,6 +291,32 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         return $fixersThatAreBuiltIn;
     }
 
+    final protected static function sort(array $data): array
+    {
+        $keys = \array_keys($data);
+
+        $keysThatAreNotStrings = \array_filter($keys, static function ($key): bool {
+            return !\is_string($key);
+        });
+
+        if ([] !== $keysThatAreNotStrings) {
+            return $data;
+        }
+
+        \ksort($data);
+
+        return \array_combine(
+            \array_keys($data),
+            \array_map(static function ($item) {
+                if (!\is_array($item)) {
+                    return $item;
+                }
+
+                return self::sort($item);
+            }, $data)
+        );
+    }
+
     /**
      * @return array<int, string>
      */
@@ -341,31 +367,5 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         return \array_keys(\array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
             return !$fixer instanceof Fixer\DeprecatedFixerInterface;
         }));
-    }
-
-    private static function sort(array $data): array
-    {
-        $keys = \array_keys($data);
-
-        $keysThatAreNotStrings = \array_filter($keys, static function ($key): bool {
-            return !\is_string($key);
-        });
-
-        if ([] !== $keysThatAreNotStrings) {
-            return $data;
-        }
-
-        \ksort($data);
-
-        return \array_combine(
-            \array_keys($data),
-            \array_map(static function ($item) {
-                if (!\is_array($item)) {
-                    return $item;
-                }
-
-                return self::sort($item);
-            }, $data)
-        );
     }
 }

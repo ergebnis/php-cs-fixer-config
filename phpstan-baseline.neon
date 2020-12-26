@@ -30,3 +30,13 @@ parameters:
 			count: 1
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
 
+		-
+			message: "#^Parameter \\#1 \\$data of static method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:sort\\(\\) expects array, array\\|false given\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/ExplicitRuleSetTestCase.php
+
+		-
+			message: "#^Parameter \\#1 \\$arr1 of function array_diff_key expects array, array\\|false given\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/ExplicitRuleSetTestCase.php
+

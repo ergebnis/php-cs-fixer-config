@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`2.10.0...main`][2.10.0...main].
 
+### Added
+
+* Added `Ergebnis\PhpCsFixer\Config\RuleSet\Faker`, a rule set for `fakerphp/faker` ([#323]), by [@localheinz]
+
 ## [`2.10.0`][2.10.0]
 
 For a full diff see [`2.9.0...2.10.0`][2.9.0...2.10.0].
@@ -321,6 +325,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#319]: https://github.com/ergebnis/php-cs-fixer-config/pull/319
 [#320]: https://github.com/ergebnis/php-cs-fixer-config/pull/320
 [#321]: https://github.com/ergebnis/php-cs-fixer-config/pull/321
+[#323]: https://github.com/ergebnis/php-cs-fixer-config/pull/323
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

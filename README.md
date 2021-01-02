@@ -1,9 +1,9 @@
 # php-cs-fixer-config
 
-[![Integrate](https://github.com/ergebnis/php-cs-fixer-config/workflows/Integrate/badge.svg?branch=main)](https://github.com/ergebnis/php-cs-fixer-config/actions)
-[![Prune](https://github.com/ergebnis/php-cs-fixer-config/workflows/Prune/badge.svg?branch=main)](https://github.com/ergebnis/php-cs-fixer-config/actions)
-[![Release](https://github.com/ergebnis/php-cs-fixer-config/workflows/Release/badge.svg?branch=main)](https://github.com/ergebnis/php-cs-fixer-config/actions)
-[![Renew](https://github.com/ergebnis/php-cs-fixer-config/workflows/Renew/badge.svg?branch=main)](https://github.com/ergebnis/php-cs-fixer-config/actions)
+[![Integrate](https://github.com/ergebnis/php-cs-fixer-config/workflows/Integrate/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
+[![Prune](https://github.com/ergebnis/php-cs-fixer-config/workflows/Prune/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
+[![Release](https://github.com/ergebnis/php-cs-fixer-config/workflows/Release/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
+[![Renew](https://github.com/ergebnis/php-cs-fixer-config/workflows/Renew/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
 
 [![Code Coverage](https://codecov.io/gh/ergebnis/php-cs-fixer-config/branch/main/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-cs-fixer-config)
 [![Type Coverage](https://shepherd.dev/github/ergebnis/php-cs-fixer-config/coverage.svg)](https://shepherd.dev/github/ergebnis/php-cs-fixer-config)

@@ -114,6 +114,6 @@ final class FactoryTest extends Framework\TestCase
 
         self::assertTrue($config->getUsingCache());
         self::assertTrue($config->getRiskyAllowed());
-        self::assertSame(\array_merge($rules, $overrideRules), $config->getRules());
+        self::assertEquals(\array_merge($rules, $overrideRules), $config->getRules());
     }
 }

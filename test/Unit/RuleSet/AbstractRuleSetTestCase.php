@@ -45,7 +45,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         $ruleSet = self::createRuleSet();
 
         self::assertSame($this->name, $ruleSet->name());
-        self::assertSame($this->rules, $ruleSet->rules());
+        self::assertEquals($this->rules, $ruleSet->rules());
         self::assertSame($this->targetPhpVersion, $ruleSet->targetPhpVersion());
     }
 
@@ -117,7 +117,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             }, $namesOfRules, $rules)
         );
 
-        self::assertSame($rulesWithoutDeprecatedConfigurationOptions, $rules, \sprintf(
+        self::assertEquals($rulesWithoutDeprecatedConfigurationOptions, $rules, \sprintf(
             'Failed asserting that rule set "%s" does not configure rules using deprecated configuration options.',
             static::className()
         ));
@@ -171,7 +171,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             'separate' => 'both',
         ];
 
-        self::assertSame($expected, $rules['header_comment']);
+        self::assertEquals($expected, $rules['header_comment']);
     }
 
     /**

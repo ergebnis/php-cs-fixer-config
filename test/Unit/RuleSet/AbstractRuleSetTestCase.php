@@ -108,12 +108,18 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
                     return $fixerOption instanceof FixerConfiguration\DeprecatedFixerOptionInterface;
                 });
 
-                return \array_diff_key(
+                $ruleConfigurationWithoutDeprecatedConfigurationOptions = \array_diff_key(
                     $ruleConfiguration,
                     \array_flip(\array_map(static function (FixerConfiguration\FixerOptionInterface $fixerOption): string {
                         return $fixerOption->getName();
                     }, $deprecatedConfigurationOptions))
                 );
+
+                if ([] === $ruleConfigurationWithoutDeprecatedConfigurationOptions) {
+                    return true;
+                }
+
+                return $ruleConfigurationWithoutDeprecatedConfigurationOptions;
             }, $namesOfRules, $rules)
         );
 

@@ -13,7 +13,7 @@
   "require": {
     "php": "^7.2 || ^8.0",
     "ext-filter": "*",
-    "friendsofphp/php-cs-fixer": "~2.18.0"
+    "friendsofphp/php-cs-fixer": "~2.18.1"
   },
   "replace": {
     "symfony/polyfill-php70": "*",

@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.11.0...main`][2.11.0...main].
+For a full diff see [`2.11.1...main`][2.11.1...main].
+
+## [`2.11.1`][2.11.1]
+
+For a full diff see [`2.11.0...2.11.1`][2.11.0...2.11.1].
+
+### Fixed
+
+* Updated `friendsofphp/php-cs-fixer` ([#343]), by [@dependabot]
 
 ## [`2.11.0`][2.11.0]
 
@@ -337,6 +345,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#321]: https://github.com/ergebnis/php-cs-fixer-config/pull/321
 [#323]: https://github.com/ergebnis/php-cs-fixer-config/pull/323
 [#337]: https://github.com/ergebnis/php-cs-fixer-config/pull/337
+[#343]: https://github.com/ergebnis/php-cs-fixer-config/pull/343
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

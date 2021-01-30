@@ -15,11 +15,6 @@
     "ext-filter": "*",
     "friendsofphp/php-cs-fixer": "~2.18.2"
   },
-  "replace": {
-    "symfony/polyfill-php70": "*",
-    "symfony/polyfill-php71": "*",
-    "symfony/polyfill-php72": "*"
-  },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.13.2",
     "ergebnis/license": "^1.1.0",

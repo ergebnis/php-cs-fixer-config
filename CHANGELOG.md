@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`2.12.0...main`][2.12.1...main].
 
+### Added
+
+* Added `Ergebnis\PhpCsFixer\Config\RuleSet\Php80`, a rule set for PHP 8.0 ([#350]), by [@localheinz]
+
 ## [`2.12.1`][2.12.1]
 
 For a full diff see [`2.12.0...2.12.1`][2.12.0...2.12.1].
@@ -364,6 +368,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#343]: https://github.com/ergebnis/php-cs-fixer-config/pull/343
 [#344]: https://github.com/ergebnis/php-cs-fixer-config/pull/344
 [#348]: https://github.com/ergebnis/php-cs-fixer-config/pull/348
+[#350]: https://github.com/ergebnis/php-cs-fixer-config/pull/350
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

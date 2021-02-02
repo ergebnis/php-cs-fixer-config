@@ -48,7 +48,7 @@ final class Laravel6Test extends AbstractRuleSetTestCase
         'cast_spaces' => true,
         'class_attributes_separation' => [
             'elements' => [
-                'method',
+                'method' => 'one',
             ],
         ],
         'class_definition' => true,

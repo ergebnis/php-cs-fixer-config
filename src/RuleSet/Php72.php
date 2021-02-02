@@ -70,8 +70,8 @@ final class Php72 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'class_attributes_separation' => [
             'elements' => [
-                'method',
-                'property',
+                'method' => 'one',
+                'property' => 'one',
             ],
         ],
         'class_definition' => [

@@ -67,9 +67,9 @@ final class PhpUnitTest extends AbstractRuleSetTestCase
         'cast_spaces' => true,
         'class_attributes_separation' => [
             'elements' => [
-                'const',
-                'method',
-                'property',
+                'const' => 'one',
+                'method' => 'one',
+                'property' => 'one',
             ],
         ],
         'class_definition' => true,

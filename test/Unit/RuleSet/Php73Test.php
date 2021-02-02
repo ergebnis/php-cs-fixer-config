@@ -76,8 +76,8 @@ final class Php73Test extends ExplicitRuleSetTestCase
         ],
         'class_attributes_separation' => [
             'elements' => [
-                'method',
-                'property',
+                'method' => 'one',
+                'property' => 'one',
             ],
         ],
         'class_definition' => [

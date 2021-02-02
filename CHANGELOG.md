@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`2.13.0...main`][2.13.0...main].
 
+### Fixed
+
+* Stopped using deprecated configuration for `class_attributes_separation` fixer ([#354]), by [@localheinz]
+
 ## [`2.13.0`][2.13.0]
 
 For a full diff see [`2.12.1...2.13.0`][2.12.1...2.13.0].
@@ -377,6 +381,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#348]: https://github.com/ergebnis/php-cs-fixer-config/pull/348
 [#350]: https://github.com/ergebnis/php-cs-fixer-config/pull/350
 [#352]: https://github.com/ergebnis/php-cs-fixer-config/pull/352
+[#354]: https://github.com/ergebnis/php-cs-fixer-config/pull/354
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

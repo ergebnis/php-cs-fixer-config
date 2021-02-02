@@ -64,9 +64,9 @@ final class PhpUnit extends AbstractRuleSet
         'cast_spaces' => true,
         'class_attributes_separation' => [
             'elements' => [
-                'const',
-                'method',
-                'property',
+                'const' => 'one',
+                'method' => 'one',
+                'property' => 'one',
             ],
         ],
         'class_definition' => true,

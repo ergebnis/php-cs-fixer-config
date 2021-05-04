@@ -1019,8 +1019,11 @@ final class Php72 extends AbstractRuleSet implements ExplicitRuleSet
         'ternary_operator_spaces' => true,
         'ternary_to_elvis_operator' => true,
         'ternary_to_null_coalescing' => true,
-        'trailing_comma_in_multiline_array' => [
+        'trailing_comma_in_multiline' => [
             'after_heredoc' => false,
+            'elements' => [
+                'arrays',
+            ],
         ],
         'trim_array_spaces' => true,
         'unary_operator_spaces' => true,

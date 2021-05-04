@@ -157,7 +157,7 @@ If you like [`composer` scripts](https://getcomposer.org/doc/articles/scripts.md
  {
    "name": "foo/bar",
    "require": {
-     "php": "^7.2",
+     "php": "^7.3",
    },
    "require-dev": {
      "ergebnis/php-cs-fixer-config": "~1.0.0"
@@ -201,7 +201,7 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +    strategy:
 +      matrix:
 +        php-version:
-+          - "7.2"
++          - "7.3"
 +
 +    steps:
 +      - name: "Checkout"

@@ -1025,6 +1025,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'elements' => [
                 'arguments',
                 'arrays',
+                'parameters',
             ],
         ],
         'trim_array_spaces' => true,

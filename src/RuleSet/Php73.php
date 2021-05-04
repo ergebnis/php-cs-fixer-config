@@ -869,6 +869,7 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
         'phpdoc_scalar' => [
             'types' => [
                 'boolean',
+                'callback',
                 'double',
                 'integer',
                 'real',

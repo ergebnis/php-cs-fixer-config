@@ -1029,6 +1029,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
         'trailing_comma_in_multiline' => [
             'after_heredoc' => false,
             'elements' => [
+                'arguments',
                 'arrays',
             ],
         ],

@@ -1023,6 +1023,7 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
         'trailing_comma_in_multiline' => [
             'after_heredoc' => false,
             'elements' => [
+                'arguments',
                 'arrays',
             ],
         ],

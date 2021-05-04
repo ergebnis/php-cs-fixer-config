@@ -96,7 +96,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
                     return $ruleConfiguration;
                 }
 
-                if (!$fixer instanceof Fixer\ConfigurationDefinitionFixerInterface) {
+                if (!$fixer instanceof Fixer\ConfigurableFixerInterface) {
                     return $ruleConfiguration;
                 }
 

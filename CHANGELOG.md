@@ -11,7 +11,7 @@ For a full diff see [`2.13.1...main`][2.13.1...main].
 ### Changed
 
 * Updated `friendsofphp/php-cs-fixer` ([#400]), by [@dependabot]
-* Configured `trailing_comma_in_multiline` fixer to add trailing commas for arguments in `Php73`, `Php74`, and `Php80` rule sets ([#401]), by [@localheinz]
+* Configured `trailing_comma_in_multiline` fixer to add trailing commas for arguments in `Php73`, `Php74`, and `Php80` rule sets ([#403]), by [@localheinz]
 * Configured `trailing_comma_in_multiline` fixer to add trailing commas for parameters in `Php80` rule set ([#404]), by [@localheinz]
 
 ## [`2.13.1`][2.13.1]
@@ -397,7 +397,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#354]: https://github.com/ergebnis/php-cs-fixer-config/pull/354
 [#392]: https://github.com/ergebnis/php-cs-fixer-config/pull/392
 [#400]: https://github.com/ergebnis/php-cs-fixer-config/pull/400
-[#401]: https://github.com/ergebnis/php-cs-fixer-config/pull/401
+[#403]: https://github.com/ergebnis/php-cs-fixer-config/pull/403
 [#404]: https://github.com/ergebnis/php-cs-fixer-config/pull/404
 
 [@dependabot]: https://github.com/apps/dependabot

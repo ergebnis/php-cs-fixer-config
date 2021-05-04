@@ -802,7 +802,9 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'phpdoc_align' => [
             'align' => 'vertical',
             'tags' => [
+                'method',
                 'param',
+                'property',
                 'return',
                 'throws',
                 'type',

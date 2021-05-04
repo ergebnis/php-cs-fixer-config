@@ -796,7 +796,9 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
         'phpdoc_align' => [
             'align' => 'vertical',
             'tags' => [
+                'method',
                 'param',
+                'property',
                 'return',
                 'throws',
                 'type',

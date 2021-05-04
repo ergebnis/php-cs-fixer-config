@@ -41,7 +41,6 @@ final class PhpUnit extends AbstractRuleSet
                 'continue',
                 'declare',
                 'default',
-                'die',
                 'do',
                 'exit',
                 'for',

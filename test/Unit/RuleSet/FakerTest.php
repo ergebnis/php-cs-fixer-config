@@ -36,7 +36,6 @@ final class FakerTest extends AbstractRuleSetTestCase
                 'break',
                 'continue',
                 'default',
-                'die',
                 'do',
                 'exit',
                 'for',

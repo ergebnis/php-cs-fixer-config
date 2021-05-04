@@ -33,7 +33,6 @@ final class Faker extends AbstractRuleSet
                 'break',
                 'continue',
                 'default',
-                'die',
                 'do',
                 'exit',
                 'for',

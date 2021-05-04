@@ -45,7 +45,6 @@ final class Php71Test extends ExplicitRuleSetTestCase
                 'continue',
                 'declare',
                 'default',
-                'die',
                 'do',
                 'exit',
                 'for',

@@ -44,7 +44,6 @@ final class PhpUnitTest extends AbstractRuleSetTestCase
                 'continue',
                 'declare',
                 'default',
-                'die',
                 'do',
                 'exit',
                 'for',

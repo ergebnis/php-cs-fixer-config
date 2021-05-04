@@ -39,7 +39,6 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'continue',
                 'declare',
                 'default',
-                'die',
                 'do',
                 'exit',
                 'for',

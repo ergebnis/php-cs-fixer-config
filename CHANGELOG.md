@@ -6,13 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`2.13.1...main`][2.13.1...main].
+For a full diff see [`2.14.0...main`][2.14.0...main].
+
+## [`2.14.0`][2.14.0]
+
+For a full diff see [`2.13.1...2.14.0`][2.13.1...2.14.0].
 
 ### Changed
 
 * Updated `friendsofphp/php-cs-fixer` ([#400]), by [@dependabot]
 * Configured `trailing_comma_in_multiline` fixer to add trailing commas for arguments in `Php73`, `Php74`, and `Php80` rule sets ([#403]), by [@localheinz]
 * Configured `trailing_comma_in_multiline` fixer to add trailing commas for parameters in `Php80` rule set ([#404]), by [@localheinz]
+* Enabled and configured `phpdoc_to_property_type` fixer in `Php74` and `Php80` rule sets ([#406]), by [@localheinz]
 
 ## [`2.13.1`][2.13.1]
 
@@ -304,6 +309,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.12.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.12.1
 [2.13.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.13.0
 [2.13.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.13.1
+[2.14.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.14.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -332,7 +338,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.12.0...2.12.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.12.0...2.12.1
 [2.12.1...2.13.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.12.1...2.13.0
 [2.13.0...2.13.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.13.0...2.13.1
-[2.13.1...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.13.0...main
+[2.13.1...2.14.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.13.1...2.14.0
+[2.14.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.14.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -399,6 +406,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#400]: https://github.com/ergebnis/php-cs-fixer-config/pull/400
 [#403]: https://github.com/ergebnis/php-cs-fixer-config/pull/403
 [#404]: https://github.com/ergebnis/php-cs-fixer-config/pull/404
+[#406]: https://github.com/ergebnis/php-cs-fixer-config/pull/406
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

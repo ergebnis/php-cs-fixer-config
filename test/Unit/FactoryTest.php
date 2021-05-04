@@ -33,14 +33,14 @@ final class FactoryTest extends Framework\TestCase
         $ruleSet = new Config\Test\Double\Config\RuleSet\DummyRuleSet(
             self::faker()->word,
             [],
-            $targetPhpVersion
+            $targetPhpVersion,
         );
 
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage(\sprintf(
             'Current PHP version "%s" is less than targeted PHP version "%s".',
             \PHP_VERSION_ID,
-            $targetPhpVersion
+            $targetPhpVersion,
         ));
 
         Config\Factory::fromRuleSet($ruleSet);
@@ -61,7 +61,7 @@ final class FactoryTest extends Framework\TestCase
         $ruleSet = new Config\Test\Double\Config\RuleSet\DummyRuleSet(
             self::faker()->word,
             $rules,
-            $targetPhpVersion
+            $targetPhpVersion,
         );
 
         $config = Config\Factory::fromRuleSet($ruleSet);
@@ -100,7 +100,7 @@ final class FactoryTest extends Framework\TestCase
         $ruleSet = new Config\Test\Double\Config\RuleSet\DummyRuleSet(
             self::faker()->word,
             $rules,
-            \PHP_VERSION_ID
+            \PHP_VERSION_ID,
         );
 
         $overrideRules = [
@@ -109,7 +109,7 @@ final class FactoryTest extends Framework\TestCase
 
         $config = Config\Factory::fromRuleSet(
             $ruleSet,
-            $overrideRules
+            $overrideRules,
         );
 
         self::assertTrue($config->getUsingCache());

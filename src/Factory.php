@@ -30,7 +30,7 @@ final class Factory
             throw new \RuntimeException(\sprintf(
                 'Current PHP version "%s" is less than targeted PHP version "%s".',
                 \PHP_VERSION_ID,
-                $ruleSet->targetPhpVersion()
+                $ruleSet->targetPhpVersion(),
             ));
         }
 
@@ -39,7 +39,7 @@ final class Factory
         $config->setRiskyAllowed(true);
         $config->setRules(\array_merge(
             $ruleSet->rules(),
-            $overrideRules
+            $overrideRules,
         ));
 
         return $config;

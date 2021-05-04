@@ -30,7 +30,7 @@ final class SrcCodeTest extends Framework\TestCase
         self::assertClassesHaveTests(
             __DIR__ . '/../../src',
             'Ergebnis\\PhpCsFixer\\Config\\',
-            'Ergebnis\\PhpCsFixer\\Config\\Test\\Unit\\'
+            'Ergebnis\\PhpCsFixer\\Config\\Test\\Unit\\',
         );
     }
 }

@@ -36,7 +36,7 @@ Pick one of the rule sets:
 * [`Ergebnis\PhpCsFixer\RuleSet\Php80`](src/RuleSet/Php80.php)
 * [`Ergebnis\PhpCsFixer\RuleSet\PhpUnit`](src/RuleSet/PhpUnit.php)
 
-Create a configuration file `.php_cs` in the root of your project:
+Create a configuration file `.php-cs-fixer.php` in the root of your project:
 
 ```php
 <?php
@@ -134,7 +134,7 @@ If you like [`Makefile`](https://www.gnu.org/software/make/manual/make.html#Intr
 +.PHONY: coding-standards
 +coding-standards: vendor
 +	 mkdir -p .build/php-cs-fixer
-+    vendor/bin/php-cs-fixer fix --config=.php_cs --diff --verbose
++    vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --verbose
 
  vendor: composer.json composer.lock
      composer validate
@@ -234,7 +234,7 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +          restore-keys: "php-${{ matrix.php-version }}-php-cs-fixer-"
 +
 +      - name: "Run friendsofphp/php-cs-fixer"
-+       run: "vendor/bin/php-cs-fixer fix --config=.php_cs --diff --diff-format=udiff --dry-run --verbose"
++       run: "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --diff-format=udiff --dry-run --verbose"
 ```
 
 ## Changelog

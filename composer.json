@@ -20,7 +20,7 @@
     "ergebnis/license": "^1.1.0",
     "ergebnis/phpstan-rules": "~0.15.3",
     "ergebnis/test-util": "^1.5.0",
-    "infection/infection": "~0.15.3",
+    "infection/infection": "~0.18.2",
     "phpstan/extension-installer": "^1.1.0",
     "phpstan/phpstan": "~0.12.85",
     "phpstan/phpstan-deprecation-rules": "~0.12.6",

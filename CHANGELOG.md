@@ -11,6 +11,7 @@ For a full diff see [`2.14.0...main`][2.14.0...main].
 ### Fixed
 
 * Dropped support for PHP 7.2 ([#407]), by [@localheinz]
+* Removed `Php71` rule set ([#409]), by [@localheinz]
 
 ## [`2.14.0`][2.14.0]
 
@@ -412,6 +413,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#404]: https://github.com/ergebnis/php-cs-fixer-config/pull/404
 [#406]: https://github.com/ergebnis/php-cs-fixer-config/pull/406
 [#407]: https://github.com/ergebnis/php-cs-fixer-config/pull/407
+[#409]: https://github.com/ergebnis/php-cs-fixer-config/pull/409
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

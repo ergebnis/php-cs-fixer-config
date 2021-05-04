@@ -29,7 +29,6 @@ Pick one of the rule sets:
 
 * [`Ergebnis\PhpCsFixer\RuleSet\Faker`](src/RuleSet/Faker.php)
 * [`Ergebnis\PhpCsFixer\RuleSet\Laravel6`](src/RuleSet/Laravel6.php)
-* [`Ergebnis\PhpCsFixer\RuleSet\Php72`](src/RuleSet/Php72.php)
 * [`Ergebnis\PhpCsFixer\RuleSet\Php73`](src/RuleSet/Php73.php)
 * [`Ergebnis\PhpCsFixer\RuleSet\Php74`](src/RuleSet/Php74.php)
 * [`Ergebnis\PhpCsFixer\RuleSet\Php80`](src/RuleSet/Php80.php)

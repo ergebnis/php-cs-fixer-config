@@ -15,6 +15,7 @@ For a full diff see [`2.14.0...main`][2.14.0...main].
 * Removed `Php72` rule set ([#410]), by [@localheinz]
 * Removed `Laravel6` rule set ([#413]), by [@localheinz]
 * Removed `Faker` rule set ([#415]), by [@localheinz]
+* Removed `PhpUnit` rule set ([#416]), by [@localheinz]
 
 ## [`2.14.0`][2.14.0]
 
@@ -420,6 +421,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#410]: https://github.com/ergebnis/php-cs-fixer-config/pull/410
 [#413]: https://github.com/ergebnis/php-cs-fixer-config/pull/413
 [#415]: https://github.com/ergebnis/php-cs-fixer-config/pull/415
+[#416]: https://github.com/ergebnis/php-cs-fixer-config/pull/416
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

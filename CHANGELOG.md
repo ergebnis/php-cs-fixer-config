@@ -11,7 +11,7 @@ For a full diff see [`2.14.0...main`][2.14.0...main].
 ### Changed
 
 * Updated `friendsofphp/php-cs-fixer` ([#420]), by [@localheinz]
-* Configured `function_to_constant` to include `get_called_class()` ([#421]), by [@localheinz]
+* Configured `function_to_constant` fixer to include `get_called_class()` ([#421]), by [@localheinz]
 * Configured `phpdoc_align` fixer to include `@method` and `@property` annotations ([#422]), by [@localheinz]
 
 ### Fixed

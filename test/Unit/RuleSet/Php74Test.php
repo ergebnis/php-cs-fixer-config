@@ -875,6 +875,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
         'phpdoc_scalar' => [
             'types' => [
                 'boolean',
+                'callback',
                 'double',
                 'integer',
                 'real',

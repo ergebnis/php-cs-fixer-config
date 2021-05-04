@@ -869,6 +869,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'phpdoc_scalar' => [
             'types' => [
                 'boolean',
+                'callback',
                 'double',
                 'integer',
                 'real',

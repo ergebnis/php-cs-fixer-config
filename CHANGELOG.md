@@ -13,6 +13,7 @@ For a full diff see [`2.14.0...main`][2.14.0...main].
 * Updated `friendsofphp/php-cs-fixer` ([#420]), by [@localheinz]
 * Configured `function_to_constant` fixer to include `get_called_class()` ([#421]), by [@localheinz]
 * Configured `phpdoc_align` fixer to include `@method` and `@property` annotations ([#422]), by [@localheinz]
+* Configured `phpdoc_scalar` fixer to include `callback` ([#424]), by [@localheinz]
 
 ### Fixed
 
@@ -431,6 +432,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#420]: https://github.com/ergebnis/php-cs-fixer-config/pull/420
 [#421]: https://github.com/ergebnis/php-cs-fixer-config/pull/421
 [#422]: https://github.com/ergebnis/php-cs-fixer-config/pull/422
+[#424]: https://github.com/ergebnis/php-cs-fixer-config/pull/424
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

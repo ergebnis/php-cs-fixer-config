@@ -892,9 +892,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'phpdoc_to_comment' => false,
         'phpdoc_to_param_type' => false,
         'phpdoc_to_property_type' => [
-            'scalar_types' => [
-                'bool',
-            ],
+            'scalar_types' => true,
         ],
         'phpdoc_to_return_type' => false,
         'phpdoc_trim' => true,

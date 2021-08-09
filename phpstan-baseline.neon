@@ -31,12 +31,12 @@ parameters:
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
 
 		-
-			message: "#^Parameter \\#1 \\$arr1 of function array_merge expects array, array\\<string, false\\>\\|false given\\.$#"
+			message: "#^Parameter \\#1 \\$arr1 of function array_diff_key expects array, array\\<string, mixed\\>\\|false given\\.$#"
 			count: 1
 			path: test/Unit/RuleSet/ExplicitRuleSetTestCase.php
 
 		-
-			message: "#^Parameter \\#1 \\$arr1 of function array_diff_key expects array, array\\<string, mixed\\>\\|false given\\.$#"
+			message: "#^Parameter \\#1 \\$arr1 of function array_merge expects array, array\\<string, false\\>\\|false given\\.$#"
 			count: 1
 			path: test/Unit/RuleSet/ExplicitRuleSetTestCase.php
 

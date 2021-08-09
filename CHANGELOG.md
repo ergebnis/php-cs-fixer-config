@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`3.0.1...main`][3.0.1...main].
+For a full diff see [`3.0.2...main`][3.0.2...main].
+
+## [`3.0.2`][3.0.2]
+
+For a full diff see [`3.0.1...3.0.2`][3.0.1...3.0.2].
+
+### Fixed
+
+* Updated `friendsofphp/php-cs-fixer` ([#462]), by [@dependabot]
 
 ## [`3.0.1`][3.0.1]
 
@@ -340,6 +348,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.14.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/2.14.0
 [3.0.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/3.0.0
 [3.0.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/3.0.1
+[3.0.2]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/3.0.2
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -371,7 +380,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [2.13.1...2.14.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.13.1...2.14.0
 [2.14.0...3.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.14.0...3.0.0
 [3.0.0...3.0.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.0.0...3.0.1
-[3.0.1...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.0.1...main
+[3.0.1...3.0.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.0.1...3.0.2
+[3.0.2...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.0.2...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -450,6 +460,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#422]: https://github.com/ergebnis/php-cs-fixer-config/pull/422
 [#424]: https://github.com/ergebnis/php-cs-fixer-config/pull/424
 [#428]: https://github.com/ergebnis/php-cs-fixer-config/pull/428
+[#462]: https://github.com/ergebnis/php-cs-fixer-config/pull/462
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -490,6 +490,7 @@ final class Php73Test extends ExplicitRuleSetTestCase
             'shorten_simple_statements_only' => true,
         ],
         'elseif' => true,
+        'empty_loop_body' => false,
         'encoding' => true,
         'ereg_to_preg' => true,
         'error_suppression' => [

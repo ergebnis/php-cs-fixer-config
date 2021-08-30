@@ -69,8 +69,9 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'class_attributes_separation' => [
             'elements' => [
+                'const' => 'only_if_meta',
                 'method' => 'one',
-                'property' => 'one',
+                'property' => 'only_if_meta',
             ],
         ],
         'class_definition' => [

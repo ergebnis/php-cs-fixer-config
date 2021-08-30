@@ -14,6 +14,7 @@ For a full diff see [`3.0.2...main`][3.0.2...main].
 * Enabled `declare_parentheses` fixer ([#476]), by [@localheinz]
 * Enabled and configured `empty_loop_body` fixer ([#477]), by [@localheinz]
 * Enabled and configured `types_spaces` fixer ([#478]), by [@localheinz]
+* Configured `class_attributes_separation` fixer to use newly added `only_if_meta` option for elements `const` and `property` ([#479]), by [@localheinz]
 
 ## [`3.0.2`][3.0.2]
 
@@ -472,6 +473,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#476]: https://github.com/ergebnis/php-cs-fixer-config/pull/476
 [#477]: https://github.com/ergebnis/php-cs-fixer-config/pull/477
 [#478]: https://github.com/ergebnis/php-cs-fixer-config/pull/478
+[#479]: https://github.com/ergebnis/php-cs-fixer-config/pull/479
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

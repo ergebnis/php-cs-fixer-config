@@ -71,6 +71,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'const' => 'only_if_meta',
                 'method' => 'one',
                 'property' => 'only_if_meta',
+                'trait_import' => 'none',
             ],
         ],
         'class_definition' => [

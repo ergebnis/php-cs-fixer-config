@@ -1042,6 +1042,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
             ],
         ],
         'trim_array_spaces' => true,
+        'types_spaces' => false,
         'unary_operator_spaces' => true,
         'use_arrow_functions' => false,
         'visibility_required' => [

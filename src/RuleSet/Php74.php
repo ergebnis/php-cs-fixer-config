@@ -1035,6 +1035,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'trim_array_spaces' => true,
+        'types_spaces' => false,
         'unary_operator_spaces' => true,
         'use_arrow_functions' => false,
         'visibility_required' => [

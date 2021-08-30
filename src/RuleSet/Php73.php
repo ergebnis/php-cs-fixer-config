@@ -78,7 +78,6 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
             'single_item_single_line' => false,
             'single_line' => false,
         ],
-        'class_keyword_remove' => false,
         'clean_namespace' => true,
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,

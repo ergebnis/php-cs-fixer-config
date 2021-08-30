@@ -13,6 +13,7 @@ For a full diff see [`3.0.2...main`][3.0.2...main].
 * Updated `friendsofphp/php-cs-fixer` ([#475]), by [@dependabot]
 * Enabled `declare_parentheses` fixer ([#476]), by [@localheinz]
 * Enabled and configured `empty_loop_body` fixer ([#477]), by [@localheinz]
+* Enabled and configured `types_spaces` fixer ([#478]), by [@localheinz]
 
 ## [`3.0.2`][3.0.2]
 
@@ -470,6 +471,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#475]: https://github.com/ergebnis/php-cs-fixer-config/pull/475
 [#476]: https://github.com/ergebnis/php-cs-fixer-config/pull/476
 [#477]: https://github.com/ergebnis/php-cs-fixer-config/pull/477
+[#478]: https://github.com/ergebnis/php-cs-fixer-config/pull/478
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -1036,7 +1036,9 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'trim_array_spaces' => true,
-        'types_spaces' => false,
+        'types_spaces' => [
+            'space' => 'none',
+        ],
         'unary_operator_spaces' => true,
         'use_arrow_functions' => false,
         'visibility_required' => [

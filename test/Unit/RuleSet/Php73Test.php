@@ -103,7 +103,7 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'declare_equal_normalize' => [
             'space' => 'none',
         ],
-        'declare_parentheses' => false,
+        'declare_parentheses' => true,
         'declare_strict_types' => true,
         'dir_constant' => true,
         'doctrine_annotation_array_assignment' => [

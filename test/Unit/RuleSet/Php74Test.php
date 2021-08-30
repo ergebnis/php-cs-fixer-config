@@ -22,7 +22,6 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 final class Php74Test extends ExplicitRuleSetTestCase
 {
     protected $name = 'ergebnis (PHP 7.4)';
-
     protected $rules = [
         'align_multiline_comment' => [
             'comment_type' => 'all_multiline',
@@ -1066,6 +1065,5 @@ final class Php74Test extends ExplicitRuleSetTestCase
             'less_and_greater' => true,
         ],
     ];
-
     protected $targetPhpVersion = 70400;
 }

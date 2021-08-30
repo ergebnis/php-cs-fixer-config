@@ -16,7 +16,6 @@ namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
 {
     protected $name = 'ergebnis (PHP 8.0)';
-
     protected $rules = [
         'align_multiline_comment' => [
             'comment_type' => 'all_multiline',
@@ -1061,6 +1060,5 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'less_and_greater' => true,
         ],
     ];
-
     protected $targetPhpVersion = 80000;
 }

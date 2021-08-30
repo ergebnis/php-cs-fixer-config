@@ -485,7 +485,9 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
             'shorten_simple_statements_only' => true,
         ],
         'elseif' => true,
-        'empty_loop_body' => false,
+        'empty_loop_body' => [
+            'style' => 'braces',
+        ],
         'encoding' => true,
         'ereg_to_preg' => true,
         'error_suppression' => [

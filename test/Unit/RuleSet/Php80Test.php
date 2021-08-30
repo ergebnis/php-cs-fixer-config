@@ -102,6 +102,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
         'declare_equal_normalize' => [
             'space' => 'none',
         ],
+        'declare_parentheses' => false,
         'declare_strict_types' => true,
         'dir_constant' => true,
         'doctrine_annotation_array_assignment' => [

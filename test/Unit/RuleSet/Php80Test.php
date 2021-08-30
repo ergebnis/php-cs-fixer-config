@@ -83,8 +83,8 @@ final class Php80Test extends ExplicitRuleSetTestCase
             'multi_line_extends_each_single_line' => false,
             'single_item_single_line' => false,
             'single_line' => false,
+            'space_before_parenthesis' => false,
         ],
-        'class_keyword_remove' => false,
         'clean_namespace' => true,
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,
@@ -103,6 +103,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
         'declare_equal_normalize' => [
             'space' => 'none',
         ],
+        'declare_parentheses' => false,
         'declare_strict_types' => true,
         'dir_constant' => true,
         'doctrine_annotation_array_assignment' => [
@@ -490,6 +491,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
             'shorten_simple_statements_only' => true,
         ],
         'elseif' => true,
+        'empty_loop_body' => false,
         'encoding' => true,
         'ereg_to_preg' => true,
         'error_suppression' => [
@@ -1041,6 +1043,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
             ],
         ],
         'trim_array_spaces' => true,
+        'types_spaces' => false,
         'unary_operator_spaces' => true,
         'use_arrow_functions' => false,
         'visibility_required' => [

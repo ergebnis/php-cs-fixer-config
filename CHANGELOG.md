@@ -11,6 +11,7 @@ For a full diff see [`3.0.2...main`][3.0.2...main].
 ### Changed
 
 * Updated `friendsofphp/php-cs-fixer` ([#475]), by [@dependabot]
+* Enabled `declare_parentheses` fixer ([#476]), by [@localheinz]
 
 ## [`3.0.2`][3.0.2]
 
@@ -466,6 +467,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#428]: https://github.com/ergebnis/php-cs-fixer-config/pull/428
 [#462]: https://github.com/ergebnis/php-cs-fixer-config/pull/462
 [#475]: https://github.com/ergebnis/php-cs-fixer-config/pull/475
+[#476]: https://github.com/ergebnis/php-cs-fixer-config/pull/476
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

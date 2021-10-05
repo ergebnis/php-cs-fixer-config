@@ -15,6 +15,7 @@ For a full diff see [`3.0.2...main`][3.0.2...main].
 * Enabled and configured `control_structure_continuation_position` fixer ([#498]), by [@localheinz]
 * Enabled and configured `empty_loop_condition` fixer ([#499]), by [@localheinz]
 * Enabled `integer_literal_case` fixer ([#500]), by [@localheinz]
+* Enabled `modernize_strpos` fixer for `Php80` rule set ([#501]), by [@localheinz]
 
 ### Fixed
 
@@ -504,6 +505,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#498]: https://github.com/ergebnis/php-cs-fixer-config/pull/498
 [#499]: https://github.com/ergebnis/php-cs-fixer-config/pull/499
 [#500]: https://github.com/ergebnis/php-cs-fixer-config/pull/500
+[#501]: https://github.com/ergebnis/php-cs-fixer-config/pull/501
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

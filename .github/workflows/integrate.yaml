@@ -12,6 +12,56 @@ env:
   PHP_EXTENSIONS: "mbstring"
 
 jobs:
+  code-coverage:
+    name: "Code Coverage"
+
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        php-version:
+          - "7.3"
+
+        dependencies:
+          - "locked"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2.3.4"
+
+      - name: "Install PHP with extensions"
+        uses: "shivammathur/setup-php@2.15.0"
+        with:
+          coverage: "xdebug"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
+          php-version: "${{ matrix.php-version }}"
+
+      - name: "Set up problem matchers for phpunit/phpunit"
+        run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
+
+      - name: "Determine composer cache directory"
+        uses: "./.github/actions/composer/composer/determine-cache-directory"
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v2.1.6"
+        with:
+          path: "${{ env.COMPOSER_CACHE_DIR }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
+        uses: "./.github/actions/composer/composer/install"
+        with:
+          dependencies: "${{ matrix.dependencies }}"
+
+      - name: "Collect code coverage with Xdebug and phpunit/phpunit"
+        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=.build/phpunit/logs/clover.xml"
+
+      - name: "Send code coverage report to Codecov.io"
+        env:
+          CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
+        run: "bash <(curl -s https://codecov.io/bash)"
+
   coding-standards:
     name: "Coding Standards"
 
@@ -239,52 +289,3 @@ jobs:
       - name: "Run integration tests with phpunit/phpunit"
         run: "vendor/bin/phpunit --configuration=test/Integration/phpunit.xml"
 
-  code-coverage:
-    name: "Code Coverage"
-
-    runs-on: "ubuntu-latest"
-
-    strategy:
-      matrix:
-        php-version:
-          - "7.3"
-
-        dependencies:
-          - "locked"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v2.3.4"
-
-      - name: "Install PHP with extensions"
-        uses: "shivammathur/setup-php@2.15.0"
-        with:
-          coverage: "xdebug"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          php-version: "${{ matrix.php-version }}"
-
-      - name: "Set up problem matchers for phpunit/phpunit"
-        run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
-
-      - name: "Determine composer cache directory"
-        uses: "./.github/actions/composer/composer/determine-cache-directory"
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.6"
-        with:
-          path: "${{ env.COMPOSER_CACHE_DIR }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
-
-      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-        uses: "./.github/actions/composer/composer/install"
-        with:
-          dependencies: "${{ matrix.dependencies }}"
-
-      - name: "Collect code coverage with Xdebug and phpunit/phpunit"
-        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=.build/phpunit/logs/clover.xml"
-
-      - name: "Send code coverage report to Codecov.io"
-        env:
-          CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
-        run: "bash <(curl -s https://codecov.io/bash)"

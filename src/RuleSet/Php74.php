@@ -287,7 +287,6 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
                 'switch',
                 'throw',
                 'use',
-                'use_trait',
             ],
         ],
         'no_homoglyph_names' => true,

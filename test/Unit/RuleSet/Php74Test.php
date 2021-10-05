@@ -143,7 +143,9 @@ final class Php74Test extends ExplicitRuleSetTestCase
         'empty_loop_body' => [
             'style' => 'braces',
         ],
-        'empty_loop_condition' => false,
+        'empty_loop_condition' => [
+            'style' => 'while',
+        ],
         'encoding' => true,
         'ereg_to_preg' => true,
         'error_suppression' => [

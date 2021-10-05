@@ -25,7 +25,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'array_syntax' => [
             'syntax' => 'short',
         ],
-        'assign_null_coalescing_to_coalesce_equal' => false,
+        'assign_null_coalescing_to_coalesce_equal' => true,
         'backtick_to_shell_exec' => true,
         'binary_operator_spaces' => [
             'default' => 'single_space',

@@ -12,6 +12,7 @@ For a full diff see [`3.0.2...main`][3.0.2...main].
 
 * Updated `friendsofphp/php-cs-fixer` ([#495]), by [@dependabot]
 * Enabled `assign_null_coalescing_to_coalesce_equal` fixer in `Php74` and `Php80` rule sets ([#497]), by [@localheinz]
+* Enabled and configured `control_structure_continuation_position` fixer ([#498]), by [@localheinz]
 
 ### Fixed
 
@@ -498,6 +499,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#495]: https://github.com/ergebnis/php-cs-fixer-config/pull/495
 [#496]: https://github.com/ergebnis/php-cs-fixer-config/pull/496
 [#497]: https://github.com/ergebnis/php-cs-fixer-config/pull/497
+[#498]: https://github.com/ergebnis/php-cs-fixer-config/pull/498
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

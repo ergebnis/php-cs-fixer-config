@@ -209,7 +209,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'style' => 'pre',
         ],
         'indentation_type' => true,
-        'integer_literal_case' => false,
+        'integer_literal_case' => true,
         'is_null' => true,
         'lambda_not_used_import' => true,
         'line_ending' => true,

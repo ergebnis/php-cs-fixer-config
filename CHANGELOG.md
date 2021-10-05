@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`3.0.2...main`][3.0.2...main].
+For a full diff see [`3.2.0...main`][3.2.0...main].
+
+## [`3.2.0`][3.2.0]
+
+For a full diff see [`3.1.0...3.2.0`][3.1.0...3.2.0].
 
 ### Changed
 
@@ -17,6 +21,7 @@ For a full diff see [`3.0.2...main`][3.0.2...main].
 * Enabled `integer_literal_case` fixer ([#500]), by [@localheinz]
 * Enabled `modernize_strpos` fixer for `Php80` rule set ([#501]), by [@localheinz]
 * Enabled `no_space_around_double_colon` fixer ([#502]), by [@localheinz]
+* Enabled `string_length_to_empty` fixer ([#503]), by [@localheinz]
 
 ### Fixed
 
@@ -379,6 +384,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [3.0.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/3.0.1
 [3.0.2]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/3.0.2
 [3.1.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/3.1.0
+[3.2.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/3.2.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -412,7 +418,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [3.0.0...3.0.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.0.0...3.0.1
 [3.0.1...3.0.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.0.1...3.0.2
 [3.0.2...3.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.0.2...3.1.0
-[3.1.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.1.0...main
+[3.1.0...3.2.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.1.0...3.2.0
+[3.2.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.2.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -508,6 +515,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#500]: https://github.com/ergebnis/php-cs-fixer-config/pull/500
 [#501]: https://github.com/ergebnis/php-cs-fixer-config/pull/501
 [#502]: https://github.com/ergebnis/php-cs-fixer-config/pull/502
+[#503]: https://github.com/ergebnis/php-cs-fixer-config/pull/503
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

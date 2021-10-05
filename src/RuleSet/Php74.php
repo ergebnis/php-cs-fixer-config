@@ -95,7 +95,9 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         'constant_case' => [
             'case' => 'lower',
         ],
-        'control_structure_continuation_position' => false,
+        'control_structure_continuation_position' => [
+            'position' => 'same_line',
+        ],
         'date_time_immutable' => true,
         'declare_equal_normalize' => [
             'space' => 'none',

@@ -25,6 +25,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'array_syntax' => [
             'syntax' => 'short',
         ],
+        'assign_null_coalescing_to_coalesce_equal' => false,
         'backtick_to_shell_exec' => true,
         'binary_operator_spaces' => [
             'default' => 'single_space',
@@ -94,6 +95,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'constant_case' => [
             'case' => 'lower',
         ],
+        'control_structure_continuation_position' => false,
         'date_time_immutable' => true,
         'declare_equal_normalize' => [
             'space' => 'none',
@@ -133,6 +135,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'empty_loop_body' => [
             'style' => 'braces',
         ],
+        'empty_loop_condition' => false,
         'encoding' => true,
         'ereg_to_preg' => true,
         'error_suppression' => [
@@ -202,6 +205,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'style' => 'pre',
         ],
         'indentation_type' => true,
+        'integer_literal_case' => false,
         'is_null' => true,
         'lambda_not_used_import' => true,
         'line_ending' => true,
@@ -222,6 +226,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'on_multiline' => 'ensure_fully_multiline',
         ],
         'method_chaining_indentation' => true,
+        'modernize_strpos' => false,
         'modernize_types_casting' => true,
         'multiline_comment_opening_closing' => true,
         'multiline_whitespace_before_semicolons' => [
@@ -296,6 +301,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'no_php4_constructor' => false,
         'no_short_bool_cast' => true,
         'no_singleline_whitespace_before_semicolons' => true,
+        'no_space_around_double_colon' => false,
         'no_spaces_after_function_name' => true,
         'no_spaces_around_offset' => [
             'positions' => [
@@ -353,6 +359,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'use_nullable_type_declaration' => true,
         ],
         'object_operator_without_whitespace' => true,
+        'octal_notation' => false,
         'operator_linebreak' => [
             'only_booleans' => true,
             'position' => 'beginning',
@@ -672,6 +679,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'static_lambda' => true,
         'strict_comparison' => true,
         'strict_param' => true,
+        'string_length_to_empty' => false,
         'string_line_ending' => true,
         'switch_case_semicolon_to_colon' => true,
         'switch_case_space' => true,

@@ -236,7 +236,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
             'on_multiline' => 'ensure_fully_multiline',
         ],
         'method_chaining_indentation' => true,
-        'modernize_strpos' => false,
+        'modernize_strpos' => true,
         'modernize_types_casting' => true,
         'multiline_comment_opening_closing' => true,
         'multiline_whitespace_before_semicolons' => [

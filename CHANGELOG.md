@@ -12,6 +12,10 @@ For a full diff see [`3.0.2...main`][3.0.2...main].
 
 * Updated `friendsofphp/php-cs-fixer` ([#495]), by [@dependabot]
 
+### Fixed
+
+* Stopped using deprecated `use_trait` option for `no_extra_blank_lines` fixer ([#496]), by [@dependabot]
+
 ## [`3.1.0`][3.1.0]
 
 For a full diff see [`3.0.2...3.1.0`][3.0.2...3.1.0].
@@ -491,6 +495,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#481]: https://github.com/ergebnis/php-cs-fixer-config/pull/481
 [#483]: https://github.com/ergebnis/php-cs-fixer-config/pull/483
 [#495]: https://github.com/ergebnis/php-cs-fixer-config/pull/495
+[#496]: https://github.com/ergebnis/php-cs-fixer-config/pull/496
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

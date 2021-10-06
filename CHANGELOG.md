@@ -25,7 +25,7 @@ For a full diff see [`3.1.0...3.2.0`][3.1.0...3.2.0].
 
 ### Fixed
 
-* Stopped using deprecated `use_trait` option for `no_extra_blank_lines` fixer ([#496]), by [@dependabot]
+* Stopped using deprecated `use_trait` option for `no_extra_blank_lines` fixer ([#496]), by [@localheinz]
 
 ## [`3.1.0`][3.1.0]
 

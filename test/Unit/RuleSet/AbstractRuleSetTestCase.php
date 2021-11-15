@@ -322,8 +322,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     /**
-     * @phpstan-return class-string
-     *
      * @psalm-return class-string
      *
      * @throws \RuntimeException

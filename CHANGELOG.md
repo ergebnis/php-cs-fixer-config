@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`3.3.0...main`][3.3.0...main].
 
+### Changed
+
+* Updated `friendsofphp/php-cs-fixer` ([#527]), by [@dependabot]
+
 ## [`3.3.0`][3.3.0]
 
 For a full diff see [`3.2.0...3.3.0`][3.2.0...3.3.0].
@@ -534,6 +538,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#510]: https://github.com/ergebnis/php-cs-fixer-config/pull/510
 [#513]: https://github.com/ergebnis/php-cs-fixer-config/pull/513
 [#521]: https://github.com/ergebnis/php-cs-fixer-config/pull/521
+[#527]: https://github.com/ergebnis/php-cs-fixer-config/pull/527
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

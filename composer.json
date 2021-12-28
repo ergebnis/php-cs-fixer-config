@@ -20,7 +20,7 @@
     "friendsofphp/php-cs-fixer": "~3.4.0"
   },
   "require-dev": {
-    "ergebnis/composer-normalize": "^2.18.0",
+    "ergebnis/composer-normalize": "^2.20.0",
     "ergebnis/license": "^1.1.0",
     "ergebnis/test-util": "^1.5.0",
     "phpunit/phpunit": "^9.5.11",

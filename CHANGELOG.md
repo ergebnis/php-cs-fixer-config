@@ -10,16 +10,16 @@ For a full diff see [`3.4.0...main`][3.4.0...main].
 
 ### Changed
 
-* Updated `friendsofphp/php-cs-fixer` ([#545]), by [@dependabot]
-* Enabled `get_class_to_class_keyword` fixer, ([#553]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#545]), by [@dependabot]
+- Enabled `get_class_to_class_keyword` fixer, ([#553]), by [@localheinz]
 
 ### Fixed
 
-* Dropped support for PHP 7.3 ([#540]), by [@localheinz]
+- Dropped support for PHP 7.3 ([#540]), by [@localheinz]
 
 ### Removed
 
-* Removed `Php73` rule set ([#544]), by [@localheinz]
+- Removed `Php73` rule set ([#544]), by [@localheinz]
 
 ## [`3.4.0`][3.4.0]
 
@@ -27,7 +27,7 @@ For a full diff see [`3.3.0...3.4.0`][3.3.0...3.4.0].
 
 ### Changed
 
-* Updated `friendsofphp/php-cs-fixer` ([#527]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#527]), by [@dependabot]
 
 ## [`3.3.0`][3.3.0]
 
@@ -35,12 +35,12 @@ For a full diff see [`3.2.0...3.3.0`][3.2.0...3.3.0].
 
 ### Added
 
-* Added `Php80` rule set  ([#521]), by [@dependabot]
+- Added `Php80` rule set  ([#521]), by [@dependabot]
 
 ### Changed
 
-* Updated `friendsofphp/php-cs-fixer` ([#510]), by [@dependabot]
-* Updated `friendsofphp/php-cs-fixer` ([#513]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#510]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#513]), by [@dependabot]
 
 ## [`3.2.0`][3.2.0]
 
@@ -48,18 +48,18 @@ For a full diff see [`3.1.0...3.2.0`][3.1.0...3.2.0].
 
 ### Changed
 
-* Updated `friendsofphp/php-cs-fixer` ([#495]), by [@dependabot]
-* Enabled `assign_null_coalescing_to_coalesce_equal` fixer in `Php74` and `Php80` rule sets ([#497]), by [@localheinz]
-* Enabled and configured `control_structure_continuation_position` fixer ([#498]), by [@localheinz]
-* Enabled and configured `empty_loop_condition` fixer ([#499]), by [@localheinz]
-* Enabled `integer_literal_case` fixer ([#500]), by [@localheinz]
-* Enabled `modernize_strpos` fixer for `Php80` rule set ([#501]), by [@localheinz]
-* Enabled `no_space_around_double_colon` fixer ([#502]), by [@localheinz]
-* Enabled `string_length_to_empty` fixer ([#503]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#495]), by [@dependabot]
+- Enabled `assign_null_coalescing_to_coalesce_equal` fixer in `Php74` and `Php80` rule sets ([#497]), by [@localheinz]
+- Enabled and configured `control_structure_continuation_position` fixer ([#498]), by [@localheinz]
+- Enabled and configured `empty_loop_condition` fixer ([#499]), by [@localheinz]
+- Enabled `integer_literal_case` fixer ([#500]), by [@localheinz]
+- Enabled `modernize_strpos` fixer for `Php80` rule set ([#501]), by [@localheinz]
+- Enabled `no_space_around_double_colon` fixer ([#502]), by [@localheinz]
+- Enabled `string_length_to_empty` fixer ([#503]), by [@localheinz]
 
 ### Fixed
 
-* Stopped using deprecated `use_trait` option for `no_extra_blank_lines` fixer ([#496]), by [@localheinz]
+- Stopped using deprecated `use_trait` option for `no_extra_blank_lines` fixer ([#496]), by [@localheinz]
 
 ## [`3.1.0`][3.1.0]
 
@@ -67,14 +67,14 @@ For a full diff see [`3.0.2...3.1.0`][3.0.2...3.1.0].
 
 ### Changed
 
-* Updated `friendsofphp/php-cs-fixer` ([#475]), by [@dependabot]
-* Enabled `declare_parentheses` fixer ([#476]), by [@localheinz]
-* Enabled and configured `empty_loop_body` fixer ([#477]), by [@localheinz]
-* Enabled and configured `types_spaces` fixer ([#478]), by [@localheinz]
-* Configured `class_attributes_separation` fixer to use newly added `only_if_meta` option for elements `const` and `property` ([#479]), by [@localheinz]
-* Configured `class_attributes_separation` fixer to use `none` option for element `trait_import` ([#480]), by [@localheinz]
-* Added `template` to `ignored_tags` configuration of `doctrine_*` fixers ([#481]), by [@localheinz]
-* Configured `single_space_after_construct` fixer to enforce single space after additional constructs ([#483]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#475]), by [@dependabot]
+- Enabled `declare_parentheses` fixer ([#476]), by [@localheinz]
+- Enabled and configured `empty_loop_body` fixer ([#477]), by [@localheinz]
+- Enabled and configured `types_spaces` fixer ([#478]), by [@localheinz]
+- Configured `class_attributes_separation` fixer to use newly added `only_if_meta` option for elements `const` and `property` ([#479]), by [@localheinz]
+- Configured `class_attributes_separation` fixer to use `none` option for element `trait_import` ([#480]), by [@localheinz]
+- Added `template` to `ignored_tags` configuration of `doctrine_*` fixers ([#481]), by [@localheinz]
+- Configured `single_space_after_construct` fixer to enforce single space after additional constructs ([#483]), by [@localheinz]
 
 ## [`3.0.2`][3.0.2]
 
@@ -82,7 +82,7 @@ For a full diff see [`3.0.1...3.0.2`][3.0.1...3.0.2].
 
 ### Fixed
 
-* Updated `friendsofphp/php-cs-fixer` ([#462]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#462]), by [@dependabot]
 
 ## [`3.0.1`][3.0.1]
 
@@ -90,7 +90,7 @@ For a full diff see [`3.0.0...3.0.1`][3.0.0...3.0.1].
 
 ### Fixed
 
-* Fixed invalid configuration of `phpdoc_to_property_type` fixer in `Php74` and `Php80` rule sets ([#428]), by [@OskarStark]
+- Fixed invalid configuration of `phpdoc_to_property_type` fixer in `Php74` and `Php80` rule sets ([#428]), by [@OskarStark]
 
 ## [`3.0.0`][3.0.0]
 
@@ -98,19 +98,19 @@ For a full diff see [`2.14.0...3.0.0`][2.14.0...3.0.0].
 
 ### Changed
 
-* Updated `friendsofphp/php-cs-fixer` ([#420]), by [@localheinz]
-* Configured `function_to_constant` fixer to include `get_called_class()` ([#421]), by [@localheinz]
-* Configured `phpdoc_align` fixer to include `@method` and `@property` annotations ([#422]), by [@localheinz]
-* Configured `phpdoc_scalar` fixer to include `callback` ([#424]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#420]), by [@localheinz]
+- Configured `function_to_constant` fixer to include `get_called_class()` ([#421]), by [@localheinz]
+- Configured `phpdoc_align` fixer to include `@method` and `@property` annotations ([#422]), by [@localheinz]
+- Configured `phpdoc_scalar` fixer to include `callback` ([#424]), by [@localheinz]
 
 ### Fixed
 
-* Dropped support for PHP 7.2 ([#407]), by [@localheinz]
-* Removed `Php71` rule set ([#409]), by [@localheinz]
-* Removed `Php72` rule set ([#410]), by [@localheinz]
-* Removed `Laravel6` rule set ([#413]), by [@localheinz]
-* Removed `Faker` rule set ([#415]), by [@localheinz]
-* Removed `PhpUnit` rule set ([#416]), by [@localheinz]
+- Dropped support for PHP 7.2 ([#407]), by [@localheinz]
+- Removed `Php71` rule set ([#409]), by [@localheinz]
+- Removed `Php72` rule set ([#410]), by [@localheinz]
+- Removed `Laravel6` rule set ([#413]), by [@localheinz]
+- Removed `Faker` rule set ([#415]), by [@localheinz]
+- Removed `PhpUnit` rule set ([#416]), by [@localheinz]
 
 ## [`2.14.0`][2.14.0]
 
@@ -118,10 +118,10 @@ For a full diff see [`2.13.1...2.14.0`][2.13.1...2.14.0].
 
 ### Changed
 
-* Updated `friendsofphp/php-cs-fixer` ([#400]), by [@dependabot]
-* Configured `trailing_comma_in_multiline` fixer to add trailing commas for arguments in `Php73`, `Php74`, and `Php80` rule sets ([#403]), by [@localheinz]
-* Configured `trailing_comma_in_multiline` fixer to add trailing commas for parameters in `Php80` rule set ([#404]), by [@localheinz]
-* Enabled and configured `phpdoc_to_property_type` fixer in `Php74` and `Php80` rule sets ([#406]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#400]), by [@dependabot]
+- Configured `trailing_comma_in_multiline` fixer to add trailing commas for arguments in `Php73`, `Php74`, and `Php80` rule sets ([#403]), by [@localheinz]
+- Configured `trailing_comma_in_multiline` fixer to add trailing commas for parameters in `Php80` rule set ([#404]), by [@localheinz]
+- Enabled and configured `phpdoc_to_property_type` fixer in `Php74` and `Php80` rule sets ([#406]), by [@localheinz]
 
 ## [`2.13.1`][2.13.1]
 
@@ -129,8 +129,8 @@ For a full diff see [`2.13.0...2.13.1`][2.13.0...2.13.1].
 
 ### Fixed
 
-* Stopped using deprecated configuration for `class_attributes_separation` fixer ([#354]), by [@localheinz]
-* Updated `friendsofphp/php-cs-fixer` ([#392]), by [@dependabot]
+- Stopped using deprecated configuration for `class_attributes_separation` fixer ([#354]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#392]), by [@dependabot]
 
 ## [`2.13.0`][2.13.0]
 
@@ -138,8 +138,8 @@ For a full diff see [`2.12.1...2.13.0`][2.12.1...2.13.0].
 
 ### Added
 
-* Added `Ergebnis\PhpCsFixer\Config\RuleSet\Php80`, a rule set for PHP 8.0 ([#350]), by [@localheinz]
-* Added `Ergebnis\PhpCsFixer\Config\RuleSet\Php72`, a rule set for PHP 7.2 ([#352]), by [@localheinz]
+- Added `Ergebnis\PhpCsFixer\Config\RuleSet\Php80`, a rule set for PHP 8.0 ([#350]), by [@localheinz]
+- Added `Ergebnis\PhpCsFixer\Config\RuleSet\Php72`, a rule set for PHP 7.2 ([#352]), by [@localheinz]
 
 ## [`2.12.1`][2.12.1]
 
@@ -147,7 +147,7 @@ For a full diff see [`2.12.0...2.12.1`][2.12.0...2.12.1].
 
 ### Fixed
 
-* Updated `friendsofphp/php-cs-fixer` ([#348]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#348]), by [@dependabot]
 
 ## [`2.12.0`][2.12.0]
 
@@ -155,11 +155,11 @@ For a full diff see [`2.11.0...2.12.0`][2.11.0...2.12.0].
 
 ### Changed
 
-* Configured `phpdoc_order_by_value` fixer to sort `@method`, `@property`, `@property-read`, and `@property-write` annotations in the `Php71`, `Php73`, `Php74` rule sets ([#344]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to sort `@method`, `@property`, `@property-read`, and `@property-write` annotations in the `Php71`, `Php73`, `Php74` rule sets ([#344]), by [@localheinz]
 
 ### Fixed
 
-* Updated `friendsofphp/php-cs-fixer` ([#343]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#343]), by [@dependabot]
 
 ## [`2.11.0`][2.11.0]
 
@@ -167,11 +167,11 @@ For a full diff see [`2.10.0...2.11.0`][2.10.0...2.11.0].
 
 ### Added
 
-* Added `Ergebnis\PhpCsFixer\Config\RuleSet\Faker`, a rule set for `fakerphp/faker` ([#323]), by [@localheinz]
+- Added `Ergebnis\PhpCsFixer\Config\RuleSet\Faker`, a rule set for `fakerphp/faker` ([#323]), by [@localheinz]
 
 ### Changed
 
-* Updated `friendsofphp/php-cs-fixer` ([#337]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#337]), by [@dependabot]
 
 ## [`2.10.0`][2.10.0]
 
@@ -179,18 +179,18 @@ For a full diff see [`2.9.0...2.10.0`][2.9.0...2.10.0].
 
 ### Added
 
-* Added `Config\RuleSet\ExplicitRuleSet` marker interface for rule-sets that should  be configured explicitly ([#311]), by [@localheinz]
+- Added `Config\RuleSet\ExplicitRuleSet` marker interface for rule-sets that should  be configured explicitly ([#311]), by [@localheinz]
 
 ### Changed
 
-* Required only implementations of `Config\RuleSet\ExplicitRuleSet` not to configure any rules for rule sets ([#313]), by [@localheinz]
-* Required implementations of `Config\RuleSet\ExplicitRuleSet` to configure non-deprecated rules that are configurable with an explicit configuration when enabled ([#314]), by [@localheinz]
-* Required implementations of `Config\RuleSet\ExplicitRuleSet` to configure non-deprecated rules that are configurable with all non-deprecated configuration options when enabled ([#320]), by [@localheinz]
-* Required only implementations of `Config\RuleSet\ExplicitRuleSet` to configure all non-deprecated rules ([#321]), by [@localheinz]
+- Required only implementations of `Config\RuleSet\ExplicitRuleSet` not to configure any rules for rule sets ([#313]), by [@localheinz]
+- Required implementations of `Config\RuleSet\ExplicitRuleSet` to configure non-deprecated rules that are configurable with an explicit configuration when enabled ([#314]), by [@localheinz]
+- Required implementations of `Config\RuleSet\ExplicitRuleSet` to configure non-deprecated rules that are configurable with all non-deprecated configuration options when enabled ([#320]), by [@localheinz]
+- Required only implementations of `Config\RuleSet\ExplicitRuleSet` to configure all non-deprecated rules ([#321]), by [@localheinz]
 
 ### Fixed
 
-* Stopped configuring rules using deprecated configuration options ([#319]), by [@localheinz]
+- Stopped configuring rules using deprecated configuration options ([#319]), by [@localheinz]
 
 ## [`2.9.0`][2.9.0]
 
@@ -198,16 +198,16 @@ For a full diff see [`2.8.0...2.9.0`][2.8.0...2.9.0].
 
 ### Changed
 
-* Enabled and configured `php_unit_test_case_static_method_calls` fixer for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#301]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@throws` annotations ([#302]), by [@localheinz]
-* Enabled `php_unit_set_up_tear_down_visibility` fixer for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#303]), by [@localheinz]
-* Enabled `allow_single_line_anonymous_class_with_empty_body` option for `braces` fixer ([#306]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@throws` annotations for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#310]), by [@localheinz]
+- Enabled and configured `php_unit_test_case_static_method_calls` fixer for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#301]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@throws` annotations ([#302]), by [@localheinz]
+- Enabled `php_unit_set_up_tear_down_visibility` fixer for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#303]), by [@localheinz]
+- Enabled `allow_single_line_anonymous_class_with_empty_body` option for `braces` fixer ([#306]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@throws` annotations for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#310]), by [@localheinz]
 
 ### Fixed
 
-* Updated `friendsofphp/php-cs-fixer` ([#304]), by [@dependabot]
-* Updated `friendsofphp/php-cs-fixer` ([#309]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#304]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#309]), by [@dependabot]
 
 ## [`2.8.0`][2.8.0]
 
@@ -215,7 +215,7 @@ For a full diff see [`2.7.0...2.8.0`][2.7.0...2.8.0].
 
 ### Added
 
-* Added `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit`, a rule set for `phpunit/phpunit` ([#300]), by [@localheinz]
+- Added `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit`, a rule set for `phpunit/phpunit` ([#300]), by [@localheinz]
 
 ## [`2.7.0`][2.7.0]
 
@@ -223,19 +223,19 @@ For a full diff see [`2.6.1...2.7.0`][2.6.1...2.7.0].
 
 ### Changed
 
-* Enabled `array_push` fixer ([#279]), by [@localheinz]
-* Enabled `clean_namespace` fixer ([#280]), by [@localheinz]
-* Enabled `lambda_not_used_import` fixer ([#281]), by [@localheinz]
-* Enabled `no_alias_language_construct_call` fixer ([#282]), by [@localheinz]
-* Enabled `no_trailing_whitespace_in_string` fixer ([#283]), by [@localheinz]
-* Enabled `no_useless_sprintf` fixer ([#284]), by [@localheinz]
-* Enabled and configured `operator_linebreak` fixer ([#285]), by [@localheinz]
-* Enabled and configured `phpdoc_inline_tag_normalizer` fixer ([#286]), by [@localheinz]
-* Enabled and configured `phpdoc_tag_casing` fixer ([#287]), by [@localheinz]
-* Enabled `regular_callable_call` fixer ([#288]), by [@localheinz]
-* Enabled and configured `single_space_after_construct` fixer ([#289]), by [@localheinz]
-* Enabled `switch_continue_to_break` fixer ([#290]), by [@localheinz]
-* Enabled `ternary_to_elvis_operator` fixer ([#291]), by [@localheinz]
+- Enabled `array_push` fixer ([#279]), by [@localheinz]
+- Enabled `clean_namespace` fixer ([#280]), by [@localheinz]
+- Enabled `lambda_not_used_import` fixer ([#281]), by [@localheinz]
+- Enabled `no_alias_language_construct_call` fixer ([#282]), by [@localheinz]
+- Enabled `no_trailing_whitespace_in_string` fixer ([#283]), by [@localheinz]
+- Enabled `no_useless_sprintf` fixer ([#284]), by [@localheinz]
+- Enabled and configured `operator_linebreak` fixer ([#285]), by [@localheinz]
+- Enabled and configured `phpdoc_inline_tag_normalizer` fixer ([#286]), by [@localheinz]
+- Enabled and configured `phpdoc_tag_casing` fixer ([#287]), by [@localheinz]
+- Enabled `regular_callable_call` fixer ([#288]), by [@localheinz]
+- Enabled and configured `single_space_after_construct` fixer ([#289]), by [@localheinz]
+- Enabled `switch_continue_to_break` fixer ([#290]), by [@localheinz]
+- Enabled `ternary_to_elvis_operator` fixer ([#291]), by [@localheinz]
 
 ## [`2.6.1`][2.6.1]
 
@@ -243,7 +243,7 @@ For a full diff see [`2.6.0...2.6.1`][2.6.0...2.6.1].
 
 ### Fixed
 
-* Updated `friendsofphp/php-cs-fixer` ([#276]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#276]), by [@localheinz]
 
 ## [`2.6.0`][2.6.0]
 
@@ -251,16 +251,16 @@ For a full diff see [`2.5.3...2.6.0`][2.5.3...2.6.0].
 
 ### Changed
 
-* Updated `friendsofphp/php-cs-fixer` ([#255]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@dataProvider` annotations by value ([#257]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@uses` annotations by value ([#258]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@author` annotations by value ([#259]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@coversNothing` annotations by value ([#260]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@depends` annotations by value ([#261]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@group` annotations by value ([#262]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@internal` annotations by value ([#263]), by [@localheinz]
-* Configured `phpdoc_order_by_value` fixer to order `@requires` annotations by value ([#264]), by [@localheinz]
-* Allowed installation on PHP 8.0 ([#265]), by [@Nyholm]
+- Updated `friendsofphp/php-cs-fixer` ([#255]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@dataProvider` annotations by value ([#257]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@uses` annotations by value ([#258]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@author` annotations by value ([#259]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@coversNothing` annotations by value ([#260]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@depends` annotations by value ([#261]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@group` annotations by value ([#262]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@internal` annotations by value ([#263]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@requires` annotations by value ([#264]), by [@localheinz]
+- Allowed installation on PHP 8.0 ([#265]), by [@Nyholm]
 
 ## [`2.5.3`][2.5.3]
 
@@ -268,7 +268,7 @@ For a full diff see [`2.5.2...2.5.3`][2.5.2...2.5.3].
 
 ### Fixed
 
-* Disabled `heredoc_indentaton` fixer ([#247]), by [@localheinz]
+- Disabled `heredoc_indentaton` fixer ([#247]), by [@localheinz]
 
 ## [`2.5.2`][2.5.2]
 
@@ -276,7 +276,7 @@ For a full diff see [`2.5.1...2.5.2`][2.5.1...2.5.2].
 
 ### Fixed
 
-* Enabled and configured proxied instead of deprecated fixers ([#241]), by [@localheinz]
+- Enabled and configured proxied instead of deprecated fixers ([#241]), by [@localheinz]
 
 ## [`2.5.1`][2.5.1]
 
@@ -284,7 +284,7 @@ For a full diff see [`2.5.0...2.5.1`][2.5.0...2.5.1].
 
 ### Fixed
 
-* Updated `friendsofphp/php-cs-fixer` ([#226]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#226]), by [@dependabot]
 
 ## [`2.5.0`][2.5.0]
 
@@ -292,7 +292,7 @@ For a full diff see [`2.4.0...2.5.0`][2.4.0...2.5.0].
 
 ### Changed
 
-* Configured the `phpdoc_add_missing_param_annotation` fixer to add annotation for untyped parameters only ([#220]), by [@localheinz]
+- Configured the `phpdoc_add_missing_param_annotation` fixer to add annotation for untyped parameters only ([#220]), by [@localheinz]
 
 ## [`2.4.0`][2.4.0]
 
@@ -300,7 +300,7 @@ For a full diff see [`2.3.0...2.4.0`][2.3.0...2.4.0].
 
 ### Changed
 
-* Enabled `no_superfluous_phpdoc_tags` fixer ([#215]), by [@localheinz]
+- Enabled `no_superfluous_phpdoc_tags` fixer ([#215]), by [@localheinz]
 
 ## [`2.3.0`][2.3.0]
 
@@ -308,7 +308,7 @@ For a full diff see [`2.2.2...2.3.0`][2.2.2...2.3.0].
 
 ### Added
 
-* Added `RuleSet\Php74` for use with PHP 7.4 ([#200]), by [@localheinz]
+- Added `RuleSet\Php74` for use with PHP 7.4 ([#200]), by [@localheinz]
 
 ## [`2.2.2`][2.2.2]
 
@@ -316,7 +316,7 @@ For a full diff see [`2.2.1...2.2.2`][2.2.1...2.2.2].
 
 ### Changed
 
-* Dropped support for PHP 7.1 ([#168]), by [@localheinz]
+- Dropped support for PHP 7.1 ([#168]), by [@localheinz]
 
 ## [`2.2.1`][2.2.1]
 
@@ -324,7 +324,7 @@ For a full diff see [`2.2.0...2.2.1`][2.2.0...2.2.1].
 
 ### Fixed
 
-* Updated `friendsofphp/php-cs-fixer` ([#135]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#135]), by [@dependabot]
 
 ## [`2.2.0`][2.2.0]
 
@@ -332,7 +332,7 @@ For a full diff see [`2.1.2...2.2.0`][2.1.2...2.2.0].
 
 ### Changed
 
-* Configured `ordered_imports` fixer to group imports by kind ([#133]), by [@localheinz]
+- Configured `ordered_imports` fixer to group imports by kind ([#133]), by [@localheinz]
 
 ## [`2.1.0`][2.1.0]
 
@@ -340,7 +340,7 @@ For a full diff see [`2.0.0...2.1.0`][2.0.0...2.1.0].
 
 ### Changed
 
-* Configured `php_unit_dedicate_assert` fixer to target `newest` versions of `phpunit/phpunit` ([#73]), by [@localheinz]
+- Configured `php_unit_dedicate_assert` fixer to target `newest` versions of `phpunit/phpunit` ([#73]), by [@localheinz]
 
 ## [`2.0.0`][2.0.0]
 
@@ -348,7 +348,7 @@ For a full diff see [`1.1.3...2.0.0`][1.1.3...2.0.0].
 
 ### Removed
 
-* Removed classes uses for construction of header, use [`ergebnis/license`](https://github.com/ergebnis/license) instead ([#50]), by [@localheinz]
+- Removed classes uses for construction of header, use [`ergebnis/license`](https://github.com/ergebnis/license) instead ([#50]), by [@localheinz]
 
 ## [`1.1.3`][1.1.3]
 
@@ -356,7 +356,7 @@ For a full diff see [`1.1.2...1.1.3`][1.1.2...1.1.3].
 
 ### Added
 
-* Allowed construction of header ([#23]), by [@localheinz]
+- Allowed construction of header ([#23]), by [@localheinz]
 
 ## [`1.1.2`][1.1.2]
 
@@ -364,7 +364,7 @@ For a full diff see [`1.1.1...1.1.2`][1.1.1...1.1.2].
 
 ### Fixed
 
-* Brought back support for PHP 7.1 ([#17]), by [@localheinz]
+- Brought back support for PHP 7.1 ([#17]), by [@localheinz]
 
 ## [`1.1.1`][1.1.1]
 
@@ -372,7 +372,7 @@ For a full diff see [`1.1.0...1.1.1`][1.1.0...1.1.1].
 
 ### Fixed
 
-* Removed an inappropriate `replace` configuration from `composer.json` ([#14]), by [@localheinz]
+- Removed an inappropriate `replace` configuration from `composer.json` ([#14]), by [@localheinz]
 
 ## [`1.1.0`][1.1.0]
 
@@ -380,7 +380,7 @@ For a full diff see [`1.0.0...1.1.0`][1.0.0...1.1.0].
 
 ### Added
 
-* Added `Ergebnis\PhpCsFixer\Config\RuleSet\Laravel6`, a rule set for Laravel 6 ([#3]), by [@linuxjuggler]
+- Added `Ergebnis\PhpCsFixer\Config\RuleSet\Laravel6`, a rule set for Laravel 6 ([#3]), by [@linuxjuggler]
 
 ## [`1.0.0`][1.0.0]
 

@@ -120,20 +120,14 @@ abstract class AbstractRuleSet implements RuleSet
         'version',
     ];
 
-    /**
-     * @var string
-     */
-    protected $name = '';
+    protected string $name = '';
 
     /**
      * @var array<string, array|bool>
      */
-    protected $rules = [];
+    protected array $rules = [];
 
-    /**
-     * @var int
-     */
-    protected $targetPhpVersion = 0;
+    protected int $targetPhpVersion = 0;
 
     final public function __construct(?string $header = null)
     {

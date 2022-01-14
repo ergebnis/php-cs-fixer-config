@@ -13,7 +13,8 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
-use Ergebnis\PhpCsFixer\Config;
+use Ergebnis\PhpCsFixer\Config\Factory;
+use Ergebnis\PhpCsFixer\Config\Test;
 use Ergebnis\Test\Util;
 use PHPUnit\Framework;
 
@@ -30,7 +31,7 @@ final class FactoryTest extends Framework\TestCase
     {
         $targetPhpVersion = \PHP_VERSION_ID + 1;
 
-        $ruleSet = new Config\Test\Double\Config\RuleSet\DummyRuleSet(
+        $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             self::faker()->word,
             [],
             $targetPhpVersion,
@@ -43,7 +44,7 @@ final class FactoryTest extends Framework\TestCase
             $targetPhpVersion,
         ));
 
-        Config\Factory::fromRuleSet($ruleSet);
+        Factory::fromRuleSet($ruleSet);
     }
 
     /**
@@ -58,13 +59,13 @@ final class FactoryTest extends Framework\TestCase
             ],
         ];
 
-        $ruleSet = new Config\Test\Double\Config\RuleSet\DummyRuleSet(
+        $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             self::faker()->word,
             $rules,
             $targetPhpVersion,
         );
 
-        $config = Config\Factory::fromRuleSet($ruleSet);
+        $config = Factory::fromRuleSet($ruleSet);
 
         self::assertTrue($config->getUsingCache());
         self::assertTrue($config->getRiskyAllowed());
@@ -97,7 +98,7 @@ final class FactoryTest extends Framework\TestCase
             ],
         ];
 
-        $ruleSet = new Config\Test\Double\Config\RuleSet\DummyRuleSet(
+        $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             self::faker()->word,
             $rules,
             \PHP_VERSION_ID,
@@ -107,7 +108,7 @@ final class FactoryTest extends Framework\TestCase
             'foo' => false,
         ];
 
-        $config = Config\Factory::fromRuleSet(
+        $config = Factory::fromRuleSet(
             $ruleSet,
             $overrideRules,
         );

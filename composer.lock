@@ -2884,6 +2884,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": "ergebnis/data-provider",
             "time": "2021-03-30T15:07:05+00:00"
         },
         {
@@ -3198,9 +3199,6 @@
             },
             "require": {
                 "php": "^7.1 || ^8.0"
-            },
-            "replace": {
-                "myclabs/deep-copy": "self.version"
             },
             "require-dev": {
                 "doctrine/collections": "^1.0",
@@ -5462,5 +5460,5 @@
     "platform-overrides": {
         "php": "7.3.28"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }

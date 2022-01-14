@@ -23,7 +23,6 @@ final class DummyRuleSet implements Config\RuleSet
      * @var array<string, array|bool>
      */
     private array $rules;
-
     private int $phpVersion;
 
     /**

@@ -123,11 +123,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         'var',
         'version',
     ];
-
     protected string $name;
-
     protected array $rules;
-
     protected int $targetPhpVersion;
 
     final public function testDefaults(): void

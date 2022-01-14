@@ -12,6 +12,10 @@ For a full diff see [`3.4.0...main`][3.4.0...main].
 
 * Dropped support for PHP 7.3 ([#540]), by [@localheinz]
 
+### Removed
+
+* Removed `Php73` rule set ([#544]), by [@localheinz]
+
 ## [`3.4.0`][3.4.0]
 
 For a full diff see [`3.3.0...3.4.0`][3.3.0...3.4.0].
@@ -550,6 +554,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#521]: https://github.com/ergebnis/php-cs-fixer-config/pull/521
 [#527]: https://github.com/ergebnis/php-cs-fixer-config/pull/527
 [#540]: https://github.com/ergebnis/php-cs-fixer-config/pull/540
+[#544]: https://github.com/ergebnis/php-cs-fixer-config/pull/544
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

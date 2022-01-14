@@ -15,7 +15,7 @@
     "source": "https://github.com/ergebnis/php-cs-fixer-config"
   },
   "require": {
-    "php": "^7.3 || ^8.0",
+    "php": "^7.4 || ^8.0",
     "ext-filter": "*",
     "friendsofphp/php-cs-fixer": "~3.4.0"
   },
@@ -44,7 +44,7 @@
       "ergebnis/composer-normalize": true
     },
     "platform": {
-      "php": "7.3.28"
+      "php": "7.4.26"
     },
     "preferred-install": "dist",
     "sort-packages": true

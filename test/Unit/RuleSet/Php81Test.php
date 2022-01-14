@@ -204,6 +204,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
                 'inheritdocs' => 'inheritdoc',
             ],
         ],
+        'get_class_to_class_keyword' => false,
         'global_namespace_import' => false,
         'group_import' => false,
         'header_comment' => false,

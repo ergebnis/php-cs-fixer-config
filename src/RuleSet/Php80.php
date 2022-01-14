@@ -198,7 +198,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'inheritdocs' => 'inheritdoc',
             ],
         ],
-        'get_class_to_class_keyword' => false,
+        'get_class_to_class_keyword' => true,
         'global_namespace_import' => false,
         'group_import' => false,
         'header_comment' => false,

@@ -11,6 +11,7 @@ For a full diff see [`3.4.0...main`][3.4.0...main].
 ### Changed
 
 * Updated `friendsofphp/php-cs-fixer` ([#545]), by [@dependabot]
+* Enabled `get_class_to_class_keyword` fixer, ([#553]), by [@localheinz]
 
 ### Fixed
 
@@ -560,6 +561,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#540]: https://github.com/ergebnis/php-cs-fixer-config/pull/540
 [#544]: https://github.com/ergebnis/php-cs-fixer-config/pull/544
 [#545]: https://github.com/ergebnis/php-cs-fixer-config/pull/545
+[#553]: https://github.com/ergebnis/php-cs-fixer-config/pull/553
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

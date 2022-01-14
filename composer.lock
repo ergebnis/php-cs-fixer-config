@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7837a11da30019de2b71b1dbcbd9613",
+    "content-hash": "736ceb12d1c25eacd7377f500a9394a6",
     "packages": [
         {
             "name": "composer/pcre",
@@ -2452,78 +2452,6 @@
             "time": "2020-11-10T18:47:58+00:00"
         },
         {
-            "name": "ergebnis/classy",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ergebnis/classy.git",
-                "reference": "e3bac43b56273ac7c4d13c839185ce96871e7a87"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/classy/zipball/e3bac43b56273ac7c4d13c839185ce96871e7a87",
-                "reference": "e3bac43b56273ac7c4d13c839185ce96871e7a87",
-                "shasum": ""
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": "^7.4 || ^8.0"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.22.0",
-                "ergebnis/license": "^1.1.0",
-                "ergebnis/php-cs-fixer-config": "^3.4.0",
-                "fakerphp/faker": "^1.17.0",
-                "infection/infection": "~0.25.5",
-                "phpunit/phpunit": "^9.5.11",
-                "psalm/plugin-phpunit": "~0.16.1",
-                "vimeo/psalm": "^4.16.1",
-                "zendframework/zend-file": "^2.8.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ergebnis\\Classy\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andreas Möller",
-                    "email": "am@localheinz.com"
-                }
-            ],
-            "description": "Provides a finder for classy constructs (classes, interfaces, and traits).",
-            "homepage": "https://github.com/ergebnis/classy",
-            "keywords": [
-                "classes",
-                "classy",
-                "constructs",
-                "finder",
-                "interfaces",
-                "traits"
-            ],
-            "support": {
-                "issues": "https://github.com/ergebnis/classy/issues",
-                "source": "https://github.com/ergebnis/classy"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/localheinz",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-12-30T17:07:33+00:00"
-        },
-        {
             "name": "ergebnis/composer-normalize",
             "version": "2.23.0",
             "source": {
@@ -2858,83 +2786,6 @@
                 }
             ],
             "time": "2022-01-03T16:47:19+00:00"
-        },
-        {
-            "name": "ergebnis/test-util",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ergebnis/test-util.git",
-                "reference": "2f4a9b0670535ab88d64bd77cb50c218e49e6823"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/test-util/zipball/2f4a9b0670535ab88d64bd77cb50c218e49e6823",
-                "reference": "2f4a9b0670535ab88d64bd77cb50c218e49e6823",
-                "shasum": ""
-            },
-            "require": {
-                "ergebnis/classy": "^1.3.0",
-                "fakerphp/faker": "^1.17.0",
-                "php": "^7.4 || ^8.0"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.22.0",
-                "ergebnis/license": "^1.2.0",
-                "ergebnis/php-cs-fixer-config": "^3.4.0",
-                "ergebnis/phpstan-rules": "~0.15.3",
-                "infection/infection": "~0.25.5",
-                "phpstan/extension-installer": "^1.1.0",
-                "phpstan/phpstan": "~0.12.84",
-                "phpstan/phpstan-deprecation-rules": "~0.12.6",
-                "phpstan/phpstan-phpunit": "~0.12.22",
-                "phpstan/phpstan-strict-rules": "~0.12.11",
-                "phpunit/phpunit": "^9.5.11",
-                "psalm/plugin-phpunit": "~0.16.1",
-                "vimeo/psalm": "^4.17.0"
-            },
-            "type": "library",
-            "extra": {
-                "composer-normalize": {
-                    "indent-size": 2,
-                    "indent-style": "space"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ergebnis\\Test\\Util\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andreas Möller",
-                    "email": "am@localheinz.com"
-                }
-            ],
-            "description": "Provides a helper trait and generic data providers for tests.",
-            "homepage": "https://github.com/ergebnis/test-util",
-            "keywords": [
-                "assertion",
-                "faker",
-                "phpunit",
-                "test"
-            ],
-            "support": {
-                "issues": "https://github.com/ergebnis/test-util/issues",
-                "source": "https://github.com/ergebnis/test-util"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/localheinz",
-                    "type": "github"
-                }
-            ],
-            "abandoned": "ergebnis/data-provider",
-            "time": "2022-01-03T18:31:15+00:00"
         },
         {
             "name": "fakerphp/faker",

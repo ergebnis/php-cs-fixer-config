@@ -15,8 +15,8 @@ namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
 {
-    protected $name = 'ergebnis (PHP 8.1)';
-    protected $rules = [
+    protected string $name = 'ergebnis (PHP 8.1)';
+    protected array $rules = [
         'align_multiline_comment' => [
             'comment_type' => 'all_multiline',
         ],
@@ -720,5 +720,5 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
             'less_and_greater' => true,
         ],
     ];
-    protected $targetPhpVersion = 80100;
+    protected int $targetPhpVersion = 80100;
 }

@@ -15,8 +15,8 @@ namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
 {
-    protected $name = 'ergebnis (PHP 7.4)';
-    protected $rules = [
+    protected string $name = 'ergebnis (PHP 7.4)';
+    protected array $rules = [
         'align_multiline_comment' => [
             'comment_type' => 'all_multiline',
         ],
@@ -719,5 +719,5 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
             'less_and_greater' => true,
         ],
     ];
-    protected $targetPhpVersion = 70400;
+    protected int $targetPhpVersion = 70400;
 }

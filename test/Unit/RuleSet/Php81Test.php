@@ -21,8 +21,8 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
  */
 final class Php81Test extends ExplicitRuleSetTestCase
 {
-    protected $name = 'ergebnis (PHP 8.1)';
-    protected $rules = [
+    protected string $name = 'ergebnis (PHP 8.1)';
+    protected array $rules = [
         'align_multiline_comment' => [
             'comment_type' => 'all_multiline',
         ],
@@ -726,5 +726,5 @@ final class Php81Test extends ExplicitRuleSetTestCase
             'less_and_greater' => true,
         ],
     ];
-    protected $targetPhpVersion = 80100;
+    protected int $targetPhpVersion = 80100;
 }

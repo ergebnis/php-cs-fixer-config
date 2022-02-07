@@ -11,6 +11,7 @@ For a full diff see [`4.0.0...main`][4.0.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#565]), by [@dependabot]
+- Enabled `class_reference_name_casing` fixer, ([#566]), by [@localheinz]
 
 ## [`4.0.0`][4.0.0]
 
@@ -573,6 +574,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#545]: https://github.com/ergebnis/php-cs-fixer-config/pull/545
 [#553]: https://github.com/ergebnis/php-cs-fixer-config/pull/553
 [#565]: https://github.com/ergebnis/php-cs-fixer-config/pull/565
+[#566]: https://github.com/ergebnis/php-cs-fixer-config/pull/566
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -81,7 +81,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'single_line' => false,
             'space_before_parenthesis' => false,
         ],
-        'class_reference_name_casing' => false,
+        'class_reference_name_casing' => true,
         'clean_namespace' => true,
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,

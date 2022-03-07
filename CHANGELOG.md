@@ -19,8 +19,8 @@ For a full diff see [`4.0.0...4.1.0`][4.0.0...4.1.0].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#565]), by [@dependabot]
-- Enabled `class_reference_name_casing` fixer, ([#566]), by [@localheinz]
-- Enabled `no_unneeded_import_alias` fixer, ([#567]), by [@localheinz]
+- Enabled `class_reference_name_casing` fixer ([#566]), by [@localheinz]
+- Enabled `no_unneeded_import_alias` fixer ([#567]), by [@localheinz]
 
 ## [`4.0.0`][4.0.0]
 
@@ -29,7 +29,7 @@ For a full diff see [`3.4.0...4.0.0`][3.4.0...4.0.0].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#545]), by [@dependabot]
-- Enabled `get_class_to_class_keyword` fixer, ([#553]), by [@localheinz]
+- Enabled `get_class_to_class_keyword` fixer ([#553]), by [@localheinz]
 
 ### Fixed
 

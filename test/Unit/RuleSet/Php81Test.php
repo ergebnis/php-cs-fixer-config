@@ -82,6 +82,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
             ],
         ],
         'class_definition' => [
+            'inline_constructor_arguments' => true,
             'multi_line_extends_each_single_line' => false,
             'single_item_single_line' => false,
             'single_line' => false,
@@ -184,6 +185,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
         'fully_qualified_strict_types' => true,
         'function_declaration' => [
             'closure_function_spacing' => 'one',
+            'trailing_comma_single_line' => false,
         ],
         'function_to_constant' => [
             'functions' => [

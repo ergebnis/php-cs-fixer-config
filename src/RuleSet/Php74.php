@@ -76,6 +76,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'class_definition' => [
+            'inline_constructor_arguments' => true,
             'multi_line_extends_each_single_line' => false,
             'single_item_single_line' => false,
             'single_line' => false,
@@ -178,6 +179,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         'fully_qualified_strict_types' => true,
         'function_declaration' => [
             'closure_function_spacing' => 'one',
+            'trailing_comma_single_line' => false,
         ],
         'function_to_constant' => [
             'functions' => [
@@ -323,6 +325,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'no_trailing_comma_in_list_call' => true,
         'no_trailing_comma_in_singleline_array' => true,
+        'no_trailing_comma_in_singleline_function_call' => false,
         'no_trailing_whitespace' => true,
         'no_trailing_whitespace_in_comment' => true,
         'no_trailing_whitespace_in_string' => true,
@@ -606,6 +609,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'single_import_per_statement' => true,
         'single_line_after_imports' => true,
+        'single_line_comment_spacing' => false,
         'single_line_comment_style' => [
             'comment_types' => [
                 'hash',

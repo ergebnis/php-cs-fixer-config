@@ -609,7 +609,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'single_import_per_statement' => true,
         'single_line_after_imports' => true,
-        'single_line_comment_spacing' => false,
+        'single_line_comment_spacing' => true,
         'single_line_comment_style' => [
             'comment_types' => [
                 'hash',

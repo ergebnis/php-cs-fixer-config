@@ -11,6 +11,7 @@ For a full diff see [`4.1.0...main`][4.1.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#578]), by [@dependabot]
+- Enabled `no_trailing_comma_in_singleline_function_call` fixer ([#579]), by [@localheinz]
 
 ## [`4.1.0`][4.1.0]
 
@@ -588,6 +589,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#566]: https://github.com/ergebnis/php-cs-fixer-config/pull/566
 [#567]: https://github.com/ergebnis/php-cs-fixer-config/pull/567
 [#578]: https://github.com/ergebnis/php-cs-fixer-config/pull/578
+[#579]: https://github.com/ergebnis/php-cs-fixer-config/pull/579
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`4.1.0...main`][4.1.0...main].
+For a full diff see [`4.2.0...main`][4.2.0...main].
+
+## [`4.2.0`][4.2.0]
+
+For a full diff see [`4.1.0...4.2.0`][4.1.0...4.2.0].
 
 ### Changed
 
@@ -443,6 +447,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [3.4.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/3.4.0
 [4.0.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.0.0
 [4.1.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.1.0
+[4.2.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.2.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -481,7 +486,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [3.3.0...3.4.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.3.0...3.4.0
 [3.4.0...3.4.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.4.0...4.0.0
 [4.0.0...4.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.0.0...4.1.0
-[4.1.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.1.0...main
+[4.1.0...4.2.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.1.0...4.2.0
+[4.2.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.2.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14

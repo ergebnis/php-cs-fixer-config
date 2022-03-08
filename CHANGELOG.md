@@ -14,6 +14,7 @@ For a full diff see [`4.2.0...main`][4.2.0...main].
 - Configured `no_unneeded_control_parentheses` fixer to include additional statements ([#583]), by [@localheinz]
 - Configured `ordered_class_elements` fixer to order more elements ([#584]), by [@localheinz]
 - Configured `phpdoc_align` fixer to align more tags ([#586]), by [@localheinz]
+- Configured `single_class_element_per_statement` fixer to enforce single class element for `const` statements ([#587]), by [@localheinz]
 
 ## [`4.2.0`][4.2.0]
 
@@ -609,6 +610,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#583]: https://github.com/ergebnis/php-cs-fixer-config/pull/583
 [#584]: https://github.com/ergebnis/php-cs-fixer-config/pull/584
 [#586]: https://github.com/ergebnis/php-cs-fixer-config/pull/586
+[#587]: https://github.com/ergebnis/php-cs-fixer-config/pull/587
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

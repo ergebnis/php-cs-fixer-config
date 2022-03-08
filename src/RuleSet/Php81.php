@@ -611,6 +611,7 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
         'single_blank_line_before_namespace' => true,
         'single_class_element_per_statement' => [
             'elements' => [
+                'const',
                 'property',
             ],
         ],

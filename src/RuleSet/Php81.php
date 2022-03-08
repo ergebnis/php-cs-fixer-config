@@ -380,6 +380,7 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
         'ordered_class_elements' => [
             'order' => [
                 'use_trait',
+                'case',
                 'constant_public',
                 'constant_protected',
                 'constant_private',

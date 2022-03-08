@@ -42,6 +42,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
         'blank_line_before_statement' => [
             'statements' => [
                 'break',
+                'case',
                 'continue',
                 'declare',
                 'default',
@@ -53,6 +54,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
                 'if',
                 'include',
                 'include_once',
+                'phpdoc',
                 'require',
                 'require_once',
                 'return',
@@ -61,6 +63,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
                 'try',
                 'while',
                 'yield',
+                'yield_from',
             ],
         ],
         'braces' => [

@@ -341,6 +341,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'return',
                 'switch_case',
                 'yield',
+                'yield_from',
             ],
         ],
         'no_unneeded_curly_braces' => [

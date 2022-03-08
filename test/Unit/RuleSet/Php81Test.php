@@ -347,6 +347,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
                 'return',
                 'switch_case',
                 'yield',
+                'yield_from',
             ],
         ],
         'no_unneeded_curly_braces' => [

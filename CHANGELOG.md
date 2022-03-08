@@ -13,7 +13,7 @@ For a full diff see [`4.2.0...main`][4.2.0...main].
 - Configured `blank_line_before_statement` fixer to include additional statements ([#581]), by [@localheinz]
 - Configured `no_unneeded_control_parentheses` fixer to include additional statements ([#583]), by [@localheinz]
 - Configured `ordered_class_elements` fixer to order more elements ([#584]), by [@localheinz]
-- Configured `phpdoc_aling` fixer to align more tags ([#586]), by [@localheinz]
+- Configured `phpdoc_align` fixer to align more tags ([#586]), by [@localheinz]
 
 ## [`4.2.0`][4.2.0]
 

@@ -36,7 +36,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
         $rulesWithoutRulesForRuleSets = \array_filter(
             $rules,
             static function (string $nameOfRule): bool {
-                return '@' !== \mb_substr($nameOfRule, 0, 1);
+                return 0 !== \mb_strpos($nameOfRule, '@');
             },
             \ARRAY_FILTER_USE_KEY,
         );

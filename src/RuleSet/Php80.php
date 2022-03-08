@@ -675,6 +675,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'require_once',
                 'return',
                 'static',
+                'switch',
                 'throw',
                 'trait',
                 'try',

@@ -675,6 +675,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
                 'require_once',
                 'return',
                 'static',
+                'switch',
                 'throw',
                 'trait',
                 'try',

@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`4.2.0...main`][4.2.0...main].
+For a full diff see [`4.3.0...main`][4.3.0...main].
+
+## [`4.3.0`][4.3.0]
+
+For a full diff see [`4.2.0...4.3.0`][4.2.0...4.3.0].
 
 ### Changed
 
@@ -15,6 +19,7 @@ For a full diff see [`4.2.0...main`][4.2.0...main].
 - Configured `ordered_class_elements` fixer to order more elements ([#584]), by [@localheinz]
 - Configured `phpdoc_align` fixer to align more tags ([#586]), by [@localheinz]
 - Configured `single_class_element_per_statement` fixer to enforce single class element for `const` statements ([#587]), by [@localheinz]
+- Configured `single_space_after_construct` fixer to enforce a single space after additional constructs ([#588]), by [@localheinz]
 
 ## [`4.2.0`][4.2.0]
 
@@ -456,6 +461,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [4.0.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.0.0
 [4.1.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.1.0
 [4.2.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.2.0
+[4.3.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.3.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -495,7 +501,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [3.4.0...3.4.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/3.4.0...4.0.0
 [4.0.0...4.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.0.0...4.1.0
 [4.1.0...4.2.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.1.0...4.2.0
-[4.2.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.2.0...main
+[4.2.0...4.3.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.2.0...4.3.0
+[4.3.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.3.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -611,6 +618,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#584]: https://github.com/ergebnis/php-cs-fixer-config/pull/584
 [#586]: https://github.com/ergebnis/php-cs-fixer-config/pull/586
 [#587]: https://github.com/ergebnis/php-cs-fixer-config/pull/587
+[#588]: https://github.com/ergebnis/php-cs-fixer-config/pull/588
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -475,6 +475,8 @@ final class Php81Test extends ExplicitRuleSetTestCase
                 'method',
                 'param',
                 'property',
+                'property-read',
+                'property-write',
                 'return',
                 'throws',
                 'type',

@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`4.2.0...main`][4.2.0...main].
 
+### Changed
+
+- Configured `blank_line_before_statement` fixer to include additional statements ([#581]), by [@localheinz]
+
 ## [`4.2.0`][4.2.0]
 
 For a full diff see [`4.1.0...4.2.0`][4.1.0...4.2.0].
@@ -598,6 +602,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#578]: https://github.com/ergebnis/php-cs-fixer-config/pull/578
 [#579]: https://github.com/ergebnis/php-cs-fixer-config/pull/579
 [#580]: https://github.com/ergebnis/php-cs-fixer-config/pull/580
+[#581]: https://github.com/ergebnis/php-cs-fixer-config/pull/581
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

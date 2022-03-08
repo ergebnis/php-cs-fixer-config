@@ -469,6 +469,8 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
                 'method',
                 'param',
                 'property',
+                'property-read',
+                'property-write',
                 'return',
                 'throws',
                 'type',

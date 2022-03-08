@@ -681,6 +681,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
                 'require_once',
                 'return',
                 'static',
+                'switch',
                 'throw',
                 'trait',
                 'try',

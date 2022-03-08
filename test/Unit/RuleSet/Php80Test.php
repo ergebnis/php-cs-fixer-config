@@ -616,6 +616,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
         'single_blank_line_before_namespace' => true,
         'single_class_element_per_statement' => [
             'elements' => [
+                'const',
                 'property',
             ],
         ],

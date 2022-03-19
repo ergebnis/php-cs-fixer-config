@@ -109,7 +109,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
         'control_structure_continuation_position' => [
             'position' => 'same_line',
         ],
-        'date_time_create_from_format_call' => false,
+        'date_time_create_from_format_call' => true,
         'date_time_immutable' => true,
         'declare_equal_normalize' => [
             'space' => 'none',

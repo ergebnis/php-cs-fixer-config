@@ -716,6 +716,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         'trim_array_spaces' => true,
         'types_spaces' => [
             'space' => 'none',
+            'space_multiple_catch' => null,
         ],
         'unary_operator_spaces' => true,
         'use_arrow_functions' => false,

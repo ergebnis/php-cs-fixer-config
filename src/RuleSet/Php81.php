@@ -103,6 +103,7 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
         'control_structure_continuation_position' => [
             'position' => 'same_line',
         ],
+        'date_time_create_from_format_call' => false,
         'date_time_immutable' => true,
         'declare_equal_normalize' => [
             'space' => 'none',
@@ -719,6 +720,7 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
         'trim_array_spaces' => true,
         'types_spaces' => [
             'space' => 'none',
+            'space_multiple_catch' => null,
         ],
         'unary_operator_spaces' => true,
         'use_arrow_functions' => false,

@@ -103,6 +103,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'control_structure_continuation_position' => [
             'position' => 'same_line',
         ],
+        'date_time_create_from_format_call' => false,
         'date_time_immutable' => true,
         'declare_equal_normalize' => [
             'space' => 'none',

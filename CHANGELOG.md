@@ -6,13 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`4.3.0...main`][4.3.0...main].
+For a full diff see [`4.4.0...main`][4.4.0...main].
+
+## [`4.4.0`][4.4.0]
+
+For a full diff see [`4.3.0...4.4.0`][4.3.0...4.4.0].
 
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#591]), by [@dependabot]
 - Enabled `date_time_create_from_format_call` fixer ([#592]), by [@localheinz]
-
+- Configured `types_spaces` fixer to enforce no spaces between exception types when catching multiple exceptions with one `catch` statement ([#593]), by [@localheinz]
 
 ## [`4.3.0`][4.3.0]
 
@@ -468,6 +472,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [4.1.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.1.0
 [4.2.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.2.0
 [4.3.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.3.0
+[4.4.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.4.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -508,7 +513,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [4.0.0...4.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.0.0...4.1.0
 [4.1.0...4.2.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.1.0...4.2.0
 [4.2.0...4.3.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.2.0...4.3.0
-[4.3.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.3.0...main
+[4.3.0...4.4.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.3.0...4.4.0
+[4.4.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.4.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -627,6 +633,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#588]: https://github.com/ergebnis/php-cs-fixer-config/pull/588
 [#591]: https://github.com/ergebnis/php-cs-fixer-config/pull/591
 [#592]: https://github.com/ergebnis/php-cs-fixer-config/pull/592
+[#593]: https://github.com/ergebnis/php-cs-fixer-config/pull/593
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

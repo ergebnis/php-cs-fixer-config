@@ -726,6 +726,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'elements' => [
                 'arguments',
                 'arrays',
+                'match',
                 'parameters',
             ],
         ],

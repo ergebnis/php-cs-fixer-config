@@ -732,6 +732,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
             'elements' => [
                 'arguments',
                 'arrays',
+                'match',
                 'parameters',
             ],
         ],

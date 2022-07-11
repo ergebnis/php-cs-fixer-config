@@ -304,6 +304,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
         'no_empty_statement' => true,
         'no_extra_blank_lines' => [
             'tokens' => [
+                'attribute',
                 'break',
                 'case',
                 'continue',

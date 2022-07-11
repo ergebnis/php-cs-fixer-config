@@ -534,6 +534,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
                 'group',
                 'internal',
                 'method',
+                'mixin',
                 'property',
                 'property-read',
                 'property-write',

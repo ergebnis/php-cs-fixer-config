@@ -541,6 +541,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
                 'group',
                 'internal',
                 'method',
+                'mixin',
                 'property',
                 'property-read',
                 'property-write',

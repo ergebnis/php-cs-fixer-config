@@ -18,6 +18,7 @@ For a full diff see [`4.4.0...main`][4.4.0...main].
 - Configured `no_unneeded_control_parentheses` fixer to include `negative_instanceof` and `others` in the `statements` option ([#625]), by [@localheinz]
 - Configured `trailing_comma_in_multiline` fixer to include `match` in the `elements` option ([#626]), by [@localheinz]
 - Configured `single_space_after_construct` fixer to include `type_colon` in the `constructs` option ([#627]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to include `mixin` in the `annotations` option ([#628]), by [@localheinz]
 
 ## [`4.4.0`][4.4.0]
 
@@ -653,6 +654,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#625]: https://github.com/ergebnis/php-cs-fixer-config/pull/625
 [#626]: https://github.com/ergebnis/php-cs-fixer-config/pull/626
 [#627]: https://github.com/ergebnis/php-cs-fixer-config/pull/627
+[#628]: https://github.com/ergebnis/php-cs-fixer-config/pull/628
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

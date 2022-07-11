@@ -350,6 +350,8 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
                 'clone',
                 'continue',
                 'echo_print',
+                'negative_instanceof',
+                'others',
                 'return',
                 'switch_case',
                 'yield',

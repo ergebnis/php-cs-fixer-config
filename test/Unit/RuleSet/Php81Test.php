@@ -66,6 +66,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
                 'yield_from',
             ],
         ],
+        'blank_line_between_import_groups' => false,
         'braces' => [
             'allow_single_line_anonymous_class_with_empty_body' => true,
             'allow_single_line_closure' => false,
@@ -106,9 +107,11 @@ final class Php81Test extends ExplicitRuleSetTestCase
         'constant_case' => [
             'case' => 'lower',
         ],
+        'control_structure_braces' => false,
         'control_structure_continuation_position' => [
             'position' => 'same_line',
         ],
+        'curly_braces_position' => false,
         'date_time_create_from_format_call' => true,
         'date_time_immutable' => true,
         'declare_equal_normalize' => [
@@ -363,6 +366,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
         'no_unset_on_property' => true,
         'no_unused_imports' => true,
         'no_useless_else' => true,
+        'no_useless_nullsafe_operator' => false,
         'no_useless_return' => true,
         'no_useless_sprintf' => true,
         'no_whitespace_before_comma_in_array' => [
@@ -704,6 +708,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
         ],
         'standardize_increment' => true,
         'standardize_not_equals' => true,
+        'statement_indentation' => false,
         'static_lambda' => true,
         'strict_comparison' => true,
         'strict_param' => true,

@@ -107,7 +107,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
         'constant_case' => [
             'case' => 'lower',
         ],
-        'control_structure_braces' => false,
+        'control_structure_braces' => true,
         'control_structure_continuation_position' => [
             'position' => 'same_line',
         ],

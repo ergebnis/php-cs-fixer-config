@@ -17,6 +17,7 @@ For a full diff see [`4.4.0...main`][4.4.0...main].
 - Enabled `statement_indentation` fixer ([#624]), by [@localheinz]
 - Configured `no_unneeded_control_parentheses` fixer to include `negative_instanceof` and `others` in the `statements` option ([#625]), by [@localheinz]
 - Configured `trailing_comma_in_multiline` fixer to include `match` in the `elements` option ([#626]), by [@localheinz]
+- Configured `single_space_after_construct` fixer to include `type_colon` in the `constructs` option ([#627]), by [@localheinz]
 
 ## [`4.4.0`][4.4.0]
 
@@ -651,6 +652,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#624]: https://github.com/ergebnis/php-cs-fixer-config/pull/624
 [#625]: https://github.com/ergebnis/php-cs-fixer-config/pull/625
 [#626]: https://github.com/ergebnis/php-cs-fixer-config/pull/626
+[#627]: https://github.com/ergebnis/php-cs-fixer-config/pull/627
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

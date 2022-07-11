@@ -298,6 +298,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'no_empty_statement' => true,
         'no_extra_blank_lines' => [
             'tokens' => [
+                'attribute',
                 'break',
                 'case',
                 'continue',

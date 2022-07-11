@@ -229,7 +229,7 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +          restore-keys: "php-${{ matrix.php-version }}-php-cs-fixer-"
 +
 +      - name: "Run friendsofphp/php-cs-fixer"
-+       run: "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --dry-run --verbose"
++        run: "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --dry-run --verbose"
 ```
 
 ## Changelog

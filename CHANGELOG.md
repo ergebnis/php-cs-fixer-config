@@ -11,6 +11,7 @@ For a full diff see [`4.4.0...main`][4.4.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#620]), by [@dependabot]
+- Enabled `control_structure_braces` fixer ([#621]), by [@localheinz]
 
 ## [`4.4.0`][4.4.0]
 
@@ -639,6 +640,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#592]: https://github.com/ergebnis/php-cs-fixer-config/pull/592
 [#593]: https://github.com/ergebnis/php-cs-fixer-config/pull/593
 [#620]: https://github.com/ergebnis/php-cs-fixer-config/pull/620
+[#621]: https://github.com/ergebnis/php-cs-fixer-config/pull/621
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -700,6 +700,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
                 'throw',
                 'trait',
                 'try',
+                'type_colon',
                 'use',
                 'use_lambda',
                 'use_trait',

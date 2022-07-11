@@ -694,6 +694,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'throw',
                 'trait',
                 'try',
+                'type_colon',
                 'use',
                 'use_lambda',
                 'use_trait',

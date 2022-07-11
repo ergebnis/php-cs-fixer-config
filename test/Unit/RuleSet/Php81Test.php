@@ -356,6 +356,8 @@ final class Php81Test extends ExplicitRuleSetTestCase
                 'clone',
                 'continue',
                 'echo_print',
+                'negative_instanceof',
+                'others',
                 'return',
                 'switch_case',
                 'yield',

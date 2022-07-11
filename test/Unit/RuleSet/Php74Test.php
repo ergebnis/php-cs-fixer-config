@@ -713,7 +713,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
         ],
         'standardize_increment' => true,
         'standardize_not_equals' => true,
-        'statement_indentation' => false,
+        'statement_indentation' => true,
         'static_lambda' => true,
         'strict_comparison' => true,
         'strict_param' => true,

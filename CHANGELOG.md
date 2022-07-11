@@ -14,6 +14,7 @@ For a full diff see [`4.4.0...main`][4.4.0...main].
 - Enabled `control_structure_braces` fixer ([#621]), by [@localheinz]
 - Enabled and configured `curly_braces_position` fixer ([#622]), by [@localheinz]
 - Enabled `no_useless_nullsafe_operator` fixer ([#623]), by [@localheinz]
+- Enabled `statement_indentation` fixer ([#624]), by [@localheinz]
 
 ## [`4.4.0`][4.4.0]
 
@@ -645,6 +646,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#621]: https://github.com/ergebnis/php-cs-fixer-config/pull/621
 [#622]: https://github.com/ergebnis/php-cs-fixer-config/pull/622
 [#623]: https://github.com/ergebnis/php-cs-fixer-config/pull/623
+[#624]: https://github.com/ergebnis/php-cs-fixer-config/pull/624
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

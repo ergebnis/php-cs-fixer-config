@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`4.5.0...main`][4.5.0...main].
+For a full diff see [`4.5.1...main`][4.5.1...main].
+
+## [`4.5.1`][4.5.1]
+
+For a full diff see [`4.5.0...4.5.1`][4.5.0...4.5.1].
+
+### Fixed
+
+- Updated `friendsofphp/php-cs-fixer` ([#630]), by [@dependabot]
 
 ## [`4.5.0`][4.5.0]
 
@@ -491,6 +499,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [4.3.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.3.0
 [4.4.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.4.0
 [4.5.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.5.0
+[4.5.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.5.1
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -533,7 +542,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [4.2.0...4.3.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.2.0...4.3.0
 [4.3.0...4.4.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.3.0...4.4.0
 [4.4.0...4.5.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.4.0...4.5.0
-[4.5.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.5.0...main
+[4.5.0...4.5.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.5.0...4.5.1
+[4.5.1...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.5.1...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -663,6 +673,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#627]: https://github.com/ergebnis/php-cs-fixer-config/pull/627
 [#628]: https://github.com/ergebnis/php-cs-fixer-config/pull/628
 [#629]: https://github.com/ergebnis/php-cs-fixer-config/pull/629
+[#630]: https://github.com/ergebnis/php-cs-fixer-config/pull/630
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

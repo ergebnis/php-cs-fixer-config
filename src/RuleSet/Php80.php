@@ -320,6 +320,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'use' => 'echo',
         ],
         'no_multiline_whitespace_around_double_arrow' => true,
+        'no_multiple_statements_per_line' => true,
         'no_null_property_initialization' => true,
         'no_php4_constructor' => false,
         'no_short_bool_cast' => true,

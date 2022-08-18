@@ -524,7 +524,13 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         'phpdoc_no_empty_return' => true,
         'phpdoc_no_package' => true,
         'phpdoc_no_useless_inheritdoc' => true,
-        'phpdoc_order' => true,
+        'phpdoc_order' => [
+            'order' => [
+                'param',
+                'throws',
+                'return',
+            ],
+        ],
         'phpdoc_order_by_value' => [
             'annotations' => [
                 'author',

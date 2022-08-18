@@ -11,6 +11,7 @@ For a full diff see [`4.6.0...main`][4.6.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#642]), by [@dependabot]
+- Configured `phpdoc_order` fixer ([#643]), by [@localheinz]
 
 ## [`4.6.0`][4.6.0]
 
@@ -717,6 +718,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#636]: https://github.com/ergebnis/php-cs-fixer-config/pull/636
 [#637]: https://github.com/ergebnis/php-cs-fixer-config/pull/637
 [#642]: https://github.com/ergebnis/php-cs-fixer-config/pull/642
+[#643]: https://github.com/ergebnis/php-cs-fixer-config/pull/643
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

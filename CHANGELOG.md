@@ -6,12 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`4.6.0...main`][4.6.0...main].
+For a full diff see [`4.7.0...main`][4.7.0...main].
+
+## [`4.7.0`][4.7.0]
+
+For a full diff see [`4.6.0...4.7.0`][4.6.0...4.7.0].
 
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#642]), by [@dependabot]
 - Configured the `whitespace_after_comma_in_array` fixer to ensure a single space using the `ensure_single_space` option ([#645]), by [@localheinz]
+- Configured the `no_alternative_syntax` fixer to ensure a single space using the `fix_non_monolithic_code` option ([#646]), by [@localheinz]
 
 ### Fixed
 
@@ -540,6 +545,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [4.5.2]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.5.2
 [4.5.3]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.5.3
 [4.6.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.6.0
+[4.7.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/4.7.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -586,7 +592,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [4.5.1...4.5.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.5.1...4.5.2
 [4.5.2...4.5.3]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.5.2...4.5.3
 [4.5.3...4.6.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.5.3...4.6.0
-[4.6.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.6.0...main
+[4.6.0...4.7.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.6.0...4.7.0
+[4.7.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.7.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -724,6 +731,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#642]: https://github.com/ergebnis/php-cs-fixer-config/pull/642
 [#644]: https://github.com/ergebnis/php-cs-fixer-config/pull/644
 [#645]: https://github.com/ergebnis/php-cs-fixer-config/pull/645
+[#646]: https://github.com/ergebnis/php-cs-fixer-config/pull/646
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

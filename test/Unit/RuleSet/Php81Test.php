@@ -294,7 +294,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
         ],
         'no_alias_language_construct_call' => true,
         'no_alternative_syntax' => [
-            'fix_non_monolithic_code' => false,
+            'fix_non_monolithic_code' => true,
         ],
         'no_binary_string' => true,
         'no_blank_lines_after_class_opening' => true,

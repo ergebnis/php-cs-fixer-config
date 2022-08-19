@@ -11,6 +11,7 @@ For a full diff see [`4.6.0...main`][4.6.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#642]), by [@dependabot]
+- Configured the `whitespace_after_comma_in_array` fixer to ensure a single space using the `'ensure_single_space` option ([#645]), by [@localheinz]
 
 ### Fixed
 
@@ -722,6 +723,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#637]: https://github.com/ergebnis/php-cs-fixer-config/pull/637
 [#642]: https://github.com/ergebnis/php-cs-fixer-config/pull/642
 [#644]: https://github.com/ergebnis/php-cs-fixer-config/pull/644
+[#645]: https://github.com/ergebnis/php-cs-fixer-config/pull/645
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

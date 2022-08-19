@@ -282,7 +282,10 @@ final class Php74Test extends ExplicitRuleSetTestCase
             'strict' => false,
         ],
         'native_function_type_declaration_casing' => true,
-        'new_with_braces' => true,
+        'new_with_braces' => [
+            'anonymous_class' => true,
+            'named_class' => true,
+        ],
         'no_alias_functions' => [
             'sets' => [
                 '@IMAP',

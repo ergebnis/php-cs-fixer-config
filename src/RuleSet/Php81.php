@@ -752,7 +752,9 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'void_return' => true,
-        'whitespace_after_comma_in_array' => true,
+        'whitespace_after_comma_in_array' => [
+            'ensure_single_space' => false,
+        ],
         'yoda_style' => [
             'always_move_variable' => true,
             'equal' => true,

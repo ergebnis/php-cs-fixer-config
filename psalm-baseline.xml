@@ -25,9 +25,4 @@
       <code>registerBuiltInFixers</code>
     </InternalMethod>
   </file>
-  <file src="test/Unit/RuleSet/ExplicitRuleSetTestCase.php">
-    <MissingClosureReturnType occurrences="1">
-      <code>static function (FixerConfiguration\FixerOptionInterface $fixerOption) {</code>
-    </MissingClosureReturnType>
-  </file>
 </files>

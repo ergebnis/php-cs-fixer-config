@@ -766,7 +766,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
         ],
         'void_return' => true,
         'whitespace_after_comma_in_array' => [
-            'ensure_single_space' => false,
+            'ensure_single_space' => true,
         ],
         'yoda_style' => [
             'always_move_variable' => true,

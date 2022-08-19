@@ -633,7 +633,9 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
                 'property',
             ],
         ],
-        'single_import_per_statement' => true,
+        'single_import_per_statement' => [
+            'group_to_single_imports' => true,
+        ],
         'single_line_after_imports' => true,
         'single_line_comment_spacing' => true,
         'single_line_comment_style' => [

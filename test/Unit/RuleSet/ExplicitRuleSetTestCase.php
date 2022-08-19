@@ -86,8 +86,8 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
         $rulesWithAllNonDeprecatedConfigurationOptions = \array_combine(
             $namesOfRules,
             \array_map(static function (string $nameOfRule, $ruleConfiguration) use ($fixersThatAreBuiltIn) {
-                if (!\is_array($ruleConfiguration)) {
-                    return $ruleConfiguration;
+                if (false === $ruleConfiguration) {
+                    return false;
                 }
 
                 $fixer = $fixersThatAreBuiltIn[$nameOfRule];
@@ -106,15 +106,25 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
                     return !$fixerOption instanceof FixerConfiguration\DeprecatedFixerOptionInterface;
                 });
 
+                $ruleConfigurationWithAllNonDeprecatedConfigurationOptionsAndDefaultValues = \array_combine(
+                    \array_map(static function (FixerConfiguration\FixerOptionInterface $fixerOption): string {
+                        return $fixerOption->getName();
+                    }, $nonDeprecatedConfigurationOptions),
+                    \array_map(static function (FixerConfiguration\FixerOptionInterface $fixerOption) {
+                        if (!$fixerOption->hasDefault()) {
+                            return null;
+                        }
+
+                        return $fixerOption->getDefault();
+                    }, $nonDeprecatedConfigurationOptions),
+                );
+
+                if (!\is_array($ruleConfiguration)) {
+                    return $ruleConfigurationWithAllNonDeprecatedConfigurationOptionsAndDefaultValues;
+                }
+
                 $diff = \array_diff_key(
-                    \array_combine(
-                        \array_map(static function (FixerConfiguration\FixerOptionInterface $fixerOption): string {
-                            return $fixerOption->getName();
-                        }, $nonDeprecatedConfigurationOptions),
-                        \array_map(static function (FixerConfiguration\FixerOptionInterface $fixerOption) {
-                            return $fixerOption->getDefault();
-                        }, $nonDeprecatedConfigurationOptions),
-                    ),
+                    $ruleConfigurationWithAllNonDeprecatedConfigurationOptionsAndDefaultValues,
                     $ruleConfiguration,
                 );
 

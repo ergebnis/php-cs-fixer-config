@@ -12,6 +12,10 @@ For a full diff see [`4.6.0...main`][4.6.0...main].
 
 - Updated `friendsofphp/php-cs-fixer` ([#642]), by [@dependabot]
 
+### Fixed
+
+- Require all configurable rules to be explicitly configured when enabled and part of an `ExplicitRuleSet` ([#644]), by [@localheinz]
+
 ## [`4.6.0`][4.6.0]
 
 For a full diff see [`4.5.3...4.6.0`][4.5.3...4.6.0].
@@ -717,6 +721,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#636]: https://github.com/ergebnis/php-cs-fixer-config/pull/636
 [#637]: https://github.com/ergebnis/php-cs-fixer-config/pull/637
 [#642]: https://github.com/ergebnis/php-cs-fixer-config/pull/642
+[#644]: https://github.com/ergebnis/php-cs-fixer-config/pull/644
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

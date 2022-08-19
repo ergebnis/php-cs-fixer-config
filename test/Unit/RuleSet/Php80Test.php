@@ -282,7 +282,10 @@ final class Php80Test extends ExplicitRuleSetTestCase
             'strict' => false,
         ],
         'native_function_type_declaration_casing' => true,
-        'new_with_braces' => true,
+        'new_with_braces' => [
+            'anonymous_class' => true,
+            'named_class' => true,
+        ],
         'no_alias_functions' => [
             'sets' => [
                 '@IMAP',
@@ -290,7 +293,9 @@ final class Php80Test extends ExplicitRuleSetTestCase
             ],
         ],
         'no_alias_language_construct_call' => true,
-        'no_alternative_syntax' => true,
+        'no_alternative_syntax' => [
+            'fix_non_monolithic_code' => false,
+        ],
         'no_binary_string' => true,
         'no_blank_lines_after_class_opening' => true,
         'no_blank_lines_after_phpdoc' => true,
@@ -531,7 +536,13 @@ final class Php80Test extends ExplicitRuleSetTestCase
         'phpdoc_no_empty_return' => true,
         'phpdoc_no_package' => true,
         'phpdoc_no_useless_inheritdoc' => true,
-        'phpdoc_order' => true,
+        'phpdoc_order' => [
+            'order' => [
+                'param',
+                'throws',
+                'return',
+            ],
+        ],
         'phpdoc_order_by_value' => [
             'annotations' => [
                 'author',
@@ -638,7 +649,9 @@ final class Php80Test extends ExplicitRuleSetTestCase
                 'property',
             ],
         ],
-        'single_import_per_statement' => true,
+        'single_import_per_statement' => [
+            'group_to_single_imports' => true,
+        ],
         'single_line_after_imports' => true,
         'single_line_comment_spacing' => true,
         'single_line_comment_style' => [
@@ -755,7 +768,9 @@ final class Php80Test extends ExplicitRuleSetTestCase
             ],
         ],
         'void_return' => true,
-        'whitespace_after_comma_in_array' => true,
+        'whitespace_after_comma_in_array' => [
+            'ensure_single_space' => false,
+        ],
         'yoda_style' => [
             'always_move_variable' => true,
             'equal' => true,

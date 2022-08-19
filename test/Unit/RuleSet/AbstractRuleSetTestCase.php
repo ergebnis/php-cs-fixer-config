@@ -149,7 +149,10 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
                     return true;
                 }
 
-                return \array_key_exists($nameOfRule, $fixersThatAreBuiltIn);
+                return \array_key_exists(
+                    $nameOfRule,
+                    $fixersThatAreBuiltIn,
+                );
             },
             \ARRAY_FILTER_USE_KEY,
         );

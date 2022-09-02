@@ -345,9 +345,13 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'allow_unused_params' => false,
             'remove_inheritdoc' => false,
         ],
-        'no_trailing_comma_in_list_call' => true,
-        'no_trailing_comma_in_singleline_array' => true,
-        'no_trailing_comma_in_singleline_function_call' => true,
+        'no_trailing_comma_in_singleline' => [
+            'elements' => [
+                'arguments',
+                'array',
+                'array_destructuring',
+            ],
+        ],
         'no_trailing_whitespace' => true,
         'no_trailing_whitespace_in_comment' => true,
         'no_trailing_whitespace_in_string' => true,
@@ -576,7 +580,31 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'str',
             ],
         ],
-        'phpdoc_separation' => true,
+        'phpdoc_separation' => [
+            'groups' => [
+                [
+                    'deprecated',
+                    'link',
+                    'see',
+                    'since',
+                ],
+                [
+                    'author',
+                    'copyright',
+                    'license',
+                ],
+                [
+                    'category',
+                    'package',
+                    'subpackage',
+                ],
+                [
+                    'property',
+                    'property-read',
+                    'property-write',
+                ],
+            ],
+        ],
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,
         'phpdoc_tag_casing' => [

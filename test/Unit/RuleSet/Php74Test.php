@@ -350,9 +350,13 @@ final class Php74Test extends ExplicitRuleSetTestCase
             'allow_unused_params' => false,
             'remove_inheritdoc' => false,
         ],
-        'no_trailing_comma_in_list_call' => true,
-        'no_trailing_comma_in_singleline_array' => true,
-        'no_trailing_comma_in_singleline_function_call' => true,
+        'no_trailing_comma_in_singleline' => [
+            'elements' => [
+                'arguments',
+                'array',
+                'array_destructuring',
+            ],
+        ],
         'no_trailing_whitespace' => true,
         'no_trailing_whitespace_in_comment' => true,
         'no_trailing_whitespace_in_string' => true,

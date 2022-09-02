@@ -580,7 +580,31 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'str',
             ],
         ],
-        'phpdoc_separation' => true,
+        'phpdoc_separation' => [
+            'groups' => [
+                [
+                    'deprecated',
+                    'link',
+                    'see',
+                    'since',
+                ],
+                [
+                    'author',
+                    'copyright',
+                    'license',
+                ],
+                [
+                    'category',
+                    'package',
+                    'subpackage',
+                ],
+                [
+                    'property',
+                    'property-read',
+                    'property-write',
+                ],
+            ],
+        ],
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,
         'phpdoc_tag_casing' => [

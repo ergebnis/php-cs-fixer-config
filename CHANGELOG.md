@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`4.8.0...main`][4.8.0...main].
+For a full diff see [`4.9.0...main`][4.9.0...main].
+
+## [`4.9.0`][4.9.0]
+
+For a full diff see [`4.8.0...4.9.0`][4.7.0...4.9.0].
+
+### Changed
+
+- Configured `no_trailing_comma_in_singleline` fixer to include `group_import`  ([#655]), by [@dependabot]
 
 ## [`4.8.0`][4.8.0]
 
@@ -603,7 +611,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [4.5.3...4.6.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.5.3...4.6.0
 [4.6.0...4.7.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.6.0...4.7.0
 [4.7.0...4.8.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.7.0...4.8.0
-[4.8.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.8.0...main
+[4.8.0...4.9.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.8.0...4.9.0
+[4.9.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/4.9.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -743,6 +752,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#645]: https://github.com/ergebnis/php-cs-fixer-config/pull/645
 [#646]: https://github.com/ergebnis/php-cs-fixer-config/pull/646
 [#651]: https://github.com/ergebnis/php-cs-fixer-config/pull/651
+[#655]: https://github.com/ergebnis/php-cs-fixer-config/pull/655
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

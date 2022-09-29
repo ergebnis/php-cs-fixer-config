@@ -350,6 +350,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'arguments',
                 'array',
                 'array_destructuring',
+                'group_import',
             ],
         ],
         'no_trailing_whitespace' => true,

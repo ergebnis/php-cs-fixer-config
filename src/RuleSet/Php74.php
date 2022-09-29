@@ -349,6 +349,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
                 'arguments',
                 'array',
                 'array_destructuring',
+                'group_import',
             ],
         ],
         'no_trailing_whitespace' => true,

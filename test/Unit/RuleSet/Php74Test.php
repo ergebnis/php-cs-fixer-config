@@ -355,6 +355,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
                 'arguments',
                 'array',
                 'array_destructuring',
+                'group_import',
             ],
         ],
         'no_trailing_whitespace' => true,

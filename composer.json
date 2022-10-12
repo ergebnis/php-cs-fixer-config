@@ -26,7 +26,7 @@
     "phpunit/phpunit": "^9.5.25",
     "psalm/plugin-phpunit": "~0.17.0",
     "symfony/filesystem": "^4.4.0 || ^5.0.0",
-    "vimeo/psalm": "^4.28"
+    "vimeo/psalm": "^4.29"
   },
   "autoload": {
     "psr-4": {

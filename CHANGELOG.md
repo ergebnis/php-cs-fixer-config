@@ -15,7 +15,7 @@ For a full diff see [`4.9.0...main`][4.9.0...main].
 
 ## [`4.9.0`][4.9.0]
 
-For a full diff see [`4.8.0...4.9.0`][4.7.0...4.9.0].
+For a full diff see [`4.8.0...4.9.0`][4.8.0...4.9.0].
 
 ### Changed
 

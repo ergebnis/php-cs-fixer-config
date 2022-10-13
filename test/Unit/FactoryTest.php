@@ -54,7 +54,7 @@ final class FactoryTest extends Framework\TestCase
         $rules = [
             'foo' => true,
             'bar' => [
-                'baz',
+                'baz' => true,
             ],
         ];
 
@@ -93,7 +93,7 @@ final class FactoryTest extends Framework\TestCase
         $rules = [
             'foo' => true,
             'bar' => [
-                'baz',
+                'baz' => true,
             ],
         ];
 

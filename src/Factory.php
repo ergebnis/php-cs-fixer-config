@@ -20,7 +20,7 @@ final class Factory
     /**
      * Creates a configuration based on a rule set.
      *
-     * @param array<string, array|bool> $overrideRules
+     * @param array<string, array<string, mixed>|bool> $overrideRules
      *
      * @throws \RuntimeException
      */

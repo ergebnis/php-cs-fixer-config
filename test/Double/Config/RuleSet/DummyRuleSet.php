@@ -28,8 +28,11 @@ final class DummyRuleSet implements Config\RuleSet
     /**
      * @param array<string, array|bool> $rules
      */
-    public function __construct(string $name, array $rules, int $phpVersion)
-    {
+    public function __construct(
+        string $name,
+        array $rules,
+        int $phpVersion
+    ) {
         $this->name = $name;
         $this->rules = $rules;
         $this->phpVersion = $phpVersion;

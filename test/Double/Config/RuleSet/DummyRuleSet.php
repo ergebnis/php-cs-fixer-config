@@ -20,13 +20,13 @@ final class DummyRuleSet implements Config\RuleSet
     private string $name;
 
     /**
-     * @var array<string, array|bool>
+     * @var array<string, array<string, mixed>|bool>
      */
     private array $rules;
     private int $phpVersion;
 
     /**
-     * @param array<string, array|bool> $rules
+     * @param array<string, array<string, mixed>|bool> $rules
      */
     public function __construct(string $name, array $rules, int $phpVersion)
     {

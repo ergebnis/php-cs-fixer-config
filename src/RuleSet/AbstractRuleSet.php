@@ -122,7 +122,7 @@ abstract class AbstractRuleSet implements RuleSet
     protected string $name = '';
 
     /**
-     * @var array<string, array|bool>
+     * @var array<string, array<string, mixed>|bool>
      */
     protected array $rules = [];
     protected int $targetPhpVersion = 0;

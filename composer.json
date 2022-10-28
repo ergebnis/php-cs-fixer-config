@@ -23,7 +23,7 @@
     "ergebnis/composer-normalize": "^2.28.3",
     "ergebnis/license": "^2.0.0",
     "fakerphp/faker": "^1.20.0",
-    "phpunit/phpunit": "^9.5.25",
+    "phpunit/phpunit": "^9.5.26",
     "psalm/plugin-phpunit": "~0.17.0",
     "symfony/filesystem": "^4.4.0 || ^5.0.0",
     "vimeo/psalm": "^4.29"

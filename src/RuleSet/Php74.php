@@ -193,6 +193,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         'full_opening_tag' => true,
         'fully_qualified_strict_types' => true,
         'function_declaration' => [
+            'closure_fn_spacing' => 'one',
             'closure_function_spacing' => 'one',
             'trailing_comma_single_line' => false,
         ],

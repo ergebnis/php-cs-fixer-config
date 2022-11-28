@@ -224,8 +224,10 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +        uses: "actions/cache@v2"
 +        with:
 +          path: "~/.build/php-cs-fixer"
-+          key: "php-${{ matrix.php-version }}-php-cs-fixer-${{ github.sha }}"
-+          restore-keys: "php-${{ matrix.php-version }}-php-cs-fixer-"
++          key: "php-${{ matrix.php-version }}-php-cs-fixer-${{ github.ref_name }}"
++          restore-keys: |
++            php-${{ matrix.php-version }}-php-cs-fixer-main
++            php-${{ matrix.php-version }}-php-cs-fixer-
 +
 +      - name: "Run friendsofphp/php-cs-fixer"
 +        run: "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --dry-run --verbose"

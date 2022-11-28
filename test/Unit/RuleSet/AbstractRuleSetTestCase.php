@@ -380,7 +380,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         $fixers = $fixerFactory->getFixers();
 
-        /** @var array<string, Fixer\FixerInterface> $fixersThatAreBuiltIn */
         $fixersThatAreBuiltIn = \array_combine(
             \array_map(static function (Fixer\FixerInterface $fixer): string {
                 return $fixer->getName();

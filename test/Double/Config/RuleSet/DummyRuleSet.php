@@ -31,7 +31,7 @@ final class DummyRuleSet implements Config\RuleSet
     public function __construct(
         string $name,
         array $rules,
-        int $phpVersion
+        int $phpVersion,
     ) {
         $this->name = $name;
         $this->rules = $rules;

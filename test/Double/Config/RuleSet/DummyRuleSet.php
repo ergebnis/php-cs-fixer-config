@@ -17,25 +17,14 @@ use Ergebnis\PhpCsFixer\Config;
 
 final class DummyRuleSet implements Config\RuleSet
 {
-    private string $name;
-
-    /**
-     * @var array<string, array<string, mixed>|bool>
-     */
-    private array $rules;
-    private int $phpVersion;
-
     /**
      * @param array<string, array<string, mixed>|bool> $rules
      */
     public function __construct(
-        string $name,
-        array $rules,
-        int $phpVersion,
+        private string $name,
+        private array $rules,
+        private int $phpVersion,
     ) {
-        $this->name = $name;
-        $this->rules = $rules;
-        $this->phpVersion = $phpVersion;
     }
 
     public function name(): string

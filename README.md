@@ -27,7 +27,6 @@ $ composer require --dev ergebnis/php-cs-fixer-config
 
 Pick one of the rule sets:
 
-- [`Ergebnis\PhpCsFixer\RuleSet\Php74`](src/RuleSet/Php74.php)
 - [`Ergebnis\PhpCsFixer\RuleSet\Php80`](src/RuleSet/Php80.php)
 - [`Ergebnis\PhpCsFixer\RuleSet\Php81`](src/RuleSet/Php81.php)
 
@@ -38,7 +37,7 @@ Create a configuration file `.php-cs-fixer.php` in the root of your project:
 
 use Ergebnis\PhpCsFixer\Config;
 
-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74());
+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php80());
 
 $config->getFinder()->in(__DIR__);
 $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
@@ -75,8 +74,8 @@ All configuration examples use the caching feature, and if you want to use it as
 +@see https://github.com/ergebnis/php-cs-fixer-config
 +EOF;
 
--$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74());
-+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74($header));
+-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php80());
++$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php80($header));
 
  $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
@@ -109,8 +108,8 @@ file headers will be added to PHP files, for example:
 
  use Ergebnis\PhpCsFixer\Config;
 
--$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74());
-+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php74(), [
+-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php80());
++$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php80(), [
 +    'mb_str_functions' => false,
 +    'strict_comparison' => false,
 +]);

@@ -22,7 +22,7 @@
   "require-dev": {
     "ergebnis/composer-normalize": "^2.29.0",
     "ergebnis/license": "^2.1.0",
-    "fakerphp/faker": "^1.20.0",
+    "fakerphp/faker": "^1.21.0",
     "phpunit/phpunit": "^9.5.27",
     "psalm/plugin-phpunit": "~0.18.4",
     "symfony/filesystem": "^4.4.0 || ^5.0.0",

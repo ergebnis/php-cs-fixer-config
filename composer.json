@@ -23,8 +23,10 @@
     "ergebnis/composer-normalize": "^2.29.0",
     "ergebnis/license": "^2.1.0",
     "fakerphp/faker": "^1.21.0",
+    "infection/infection": "~0.26.6",
     "phpunit/phpunit": "^9.5.27",
     "psalm/plugin-phpunit": "~0.18.4",
+    "rector/rector": "~0.15.2",
     "symfony/filesystem": "^5.0.0 || ^6.0.0",
     "symfony/process": "^5.0.0 || ^6.0.0",
     "vimeo/psalm": "^5.4.0"
@@ -42,7 +44,8 @@
   "config": {
     "allow-plugins": {
       "composer/package-versions-deprecated": true,
-      "ergebnis/composer-normalize": true
+      "ergebnis/composer-normalize": true,
+      "infection/extension-installer": true
     },
     "platform": {
       "php": "8.0.25"

@@ -10,6 +10,11 @@
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
+  <file src="test/EndToEnd/RuleSet/AbstractRuleSetTestCase.php">
+    <InternalClass occurrences="1">
+      <code>Console\Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG</code>
+    </InternalClass>
+  </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass occurrences="1">
       <code>new FixerFactory()</code>

@@ -202,7 +202,7 @@ For a full diff see [`3.2.0...3.3.0`][3.2.0...3.3.0].
 
 ### Added
 
-- Added `Php80` rule set  ([#521]), by [@dependabot]
+- Added `Config\Ruleset\Php81` rule set ([#521]), by [@localheinz]
 
 ### Changed
 
@@ -305,8 +305,8 @@ For a full diff see [`2.12.1...2.13.0`][2.12.1...2.13.0].
 
 ### Added
 
-- Added `Ergebnis\PhpCsFixer\Config\RuleSet\Php80`, a rule set for PHP 8.0 ([#350]), by [@localheinz]
-- Added `Ergebnis\PhpCsFixer\Config\RuleSet\Php72`, a rule set for PHP 7.2 ([#352]), by [@localheinz]
+- Added `Config\RuleSet\Php80`, a rule set for PHP 8.0 ([#350]), by [@localheinz]
+- Added `Config\RuleSet\Php72`, a rule set for PHP 7.2 ([#352]), by [@localheinz]
 
 ## [`2.12.1`][2.12.1]
 
@@ -334,7 +334,7 @@ For a full diff see [`2.10.0...2.11.0`][2.10.0...2.11.0].
 
 ### Added
 
-- Added `Ergebnis\PhpCsFixer\Config\RuleSet\Faker`, a rule set for `fakerphp/faker` ([#323]), by [@localheinz]
+- Added `Config\RuleSet\Faker`, a rule set for `fakerphp/faker` ([#323]), by [@localheinz]
 
 ### Changed
 
@@ -365,11 +365,11 @@ For a full diff see [`2.8.0...2.9.0`][2.8.0...2.9.0].
 
 ### Changed
 
-- Enabled and configured `php_unit_test_case_static_method_calls` fixer for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#301]), by [@localheinz]
+- Enabled and configured `php_unit_test_case_static_method_calls` fixer for `Config\RuleSet\PhpUnit` ([#301]), by [@localheinz]
 - Configured `phpdoc_order_by_value` fixer to order `@throws` annotations ([#302]), by [@localheinz]
-- Enabled `php_unit_set_up_tear_down_visibility` fixer for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#303]), by [@localheinz]
+- Enabled `php_unit_set_up_tear_down_visibility` fixer for `Config\RuleSet\PhpUnit` ([#303]), by [@localheinz]
 - Enabled `allow_single_line_anonymous_class_with_empty_body` option for `braces` fixer ([#306]), by [@localheinz]
-- Configured `phpdoc_order_by_value` fixer to order `@throws` annotations for `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit` ([#310]), by [@localheinz]
+- Configured `phpdoc_order_by_value` fixer to order `@throws` annotations for `Config\RuleSet\PhpUnit` ([#310]), by [@localheinz]
 
 ### Fixed
 
@@ -382,7 +382,7 @@ For a full diff see [`2.7.0...2.8.0`][2.7.0...2.8.0].
 
 ### Added
 
-- Added `Ergebnis\PhpCsFixer\Config\RuleSet\PhpUnit`, a rule set for `phpunit/phpunit` ([#300]), by [@localheinz]
+- Added `Config\RuleSet\PhpUnit`, a rule set for `phpunit/phpunit` ([#300]), by [@localheinz]
 
 ## [`2.7.0`][2.7.0]
 
@@ -475,7 +475,7 @@ For a full diff see [`2.2.2...2.3.0`][2.2.2...2.3.0].
 
 ### Added
 
-- Added `RuleSet\Php74` for use with PHP 7.4 ([#200]), by [@localheinz]
+- Added `Config\RuleSet\Php74` for use with PHP 7.4 ([#200]), by [@localheinz]
 
 ## [`2.2.2`][2.2.2]
 
@@ -547,7 +547,7 @@ For a full diff see [`1.0.0...1.1.0`][1.0.0...1.1.0].
 
 ### Added
 
-- Added `Ergebnis\PhpCsFixer\Config\RuleSet\Laravel6`, a rule set for Laravel 6 ([#3]), by [@linuxjuggler]
+- Added `Config\RuleSet\Laravel6`, a rule set for Laravel 6 ([#3]), by [@linuxjuggler]
 
 ## [`1.0.0`][1.0.0]
 

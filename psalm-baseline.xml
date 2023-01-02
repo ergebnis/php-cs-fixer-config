@@ -10,9 +10,14 @@
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
+  <file src="src/RuleSet/Php82.php">
+    <NonInvariantDocblockPropertyType occurrences="1">
+      <code>$rules</code>
+    </NonInvariantDocblockPropertyType>
+  </file>
   <file src="test/EndToEnd/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass occurrences="1">
-      <code>Console\Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG</code>
+      <code>Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG</code>
     </InternalClass>
   </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">

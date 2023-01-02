@@ -13,8 +13,9 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
-use PhpCsFixer\Console;
+use PhpCsFixer\Console\Command;
 use PHPUnit\Framework;
+use Symfony\Component\Console;
 use Symfony\Component\Filesystem;
 use Symfony\Component\Process;
 
@@ -40,22 +41,35 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     final public function testConfigurationIsConsideredValid(): void
     {
-        $process = new Process\Process([
-            'vendor/bin/php-cs-fixer',
-            'fix',
-            \sprintf(
-                '--config=%s',
-                self::configPath(),
-            ),
-            '--dry-run',
-        ]);
+        $process = new Process\Process(
+            [
+                'vendor/bin/php-cs-fixer',
+                'fix',
+                \sprintf(
+                    '--config=%s',
+                    self::configPath(),
+                ),
+                '--dry-run',
+            ],
+            null,
+            [
+                /**
+                 * @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/v3.13.1/php-cs-fixer#L31-L44
+                 */
+                'PHP_CS_FIXER_IGNORE_ENV' => true,
+            ],
+        );
 
         $process->run();
 
         $exitCode = $process->getExitCode();
 
         self::assertNotNull($exitCode);
-        self::assertSame(0, Console\Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG & $exitCode, \sprintf(
+        self::assertSame(0, Console\Command\Command::FAILURE & $exitCode, \sprintf(
+            'Failed asserting that running friendsofphp/php-cs-fixer with the configuration in "%s" did not result in failure.',
+            self::className(),
+        ));
+        self::assertSame(0, Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG & $exitCode, \sprintf(
             'Failed asserting that the configuration in "%s" is considered valid by friendsofphp/php-cs-fixer.',
             self::className(),
         ));

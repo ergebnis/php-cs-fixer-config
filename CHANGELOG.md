@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`5.0.1...main`][5.0.1...main].
 
+### Added
+
+- Added `Config\Ruleset\Php82` rule set ([#690]), by [@localheinz]
+
 ## [`5.0.1`][5.0.1]
 
 For a full diff see [`5.0.0...5.0.1`][5.0.0...5.0.1].

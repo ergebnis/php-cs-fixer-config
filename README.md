@@ -128,7 +128,7 @@ If you like [`Makefile`](https://www.gnu.org/software/make/manual/make.html#Intr
 ```diff
 +.PHONY: coding-standards
 +coding-standards: vendor
-+	 mkdir -p .build/php-cs-fixer
++	   mkdir -p .build/php-cs-fixer
 +    vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --verbose
 
  vendor: composer.json composer.lock
@@ -138,8 +138,8 @@ If you like [`Makefile`](https://www.gnu.org/software/make/manual/make.html#Intr
 
 Run
 
-```
-$ make coding-standards
+```sh
+make coding-standards
 ```
 
 to automatically fix coding standard violations.
@@ -152,10 +152,10 @@ If you like [`composer` scripts](https://getcomposer.org/doc/articles/scripts.md
  {
    "name": "foo/bar",
    "require": {
-     "php": "^7.3",
+     "php": "^8.0",
    },
    "require-dev": {
-     "ergebnis/php-cs-fixer-config": "~1.0.0"
+     "ergebnis/php-cs-fixer-config": "~5.1.0"
 +  },
 +  "scripts": {
 +    "coding-standards": [
@@ -168,8 +168,8 @@ If you like [`composer` scripts](https://getcomposer.org/doc/articles/scripts.md
 
 Run
 
-```
-$ composer coding-standards
+```sh
+composer coding-standards
 ```
 
 to automatically fix coding standard violations.
@@ -196,13 +196,13 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +    strategy:
 +      matrix:
 +        php-version:
-+          - "7.3"
++          - "8.0"
 +
 +    steps:
 +      - name: "Checkout"
 +        uses: "actions/checkout@v2"
 +
-+      - name: "Install PHP with extensions"
++      - name: "Set up PHP"
 +        uses: "shivammathur/setup-php@v2"
 +        with:
 +          coverage: "none"
@@ -231,7 +231,7 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +            php-${{ matrix.php-version }}-php-cs-fixer-
 +
 +      - name: "Run friendsofphp/php-cs-fixer"
-+        run: "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --dry-run --verbose"
++        run: "vendor/bin/php-cs-fixer fix --ansi --config=.php-cs-fixer.php --diff --dry-run --verbose"
 ```
 
 ## Changelog

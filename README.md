@@ -128,7 +128,7 @@ If you like [`Makefile`](https://www.gnu.org/software/make/manual/make.html#Intr
 ```diff
 +.PHONY: coding-standards
 +coding-standards: vendor
-+	   mkdir -p .build/php-cs-fixer
++    mkdir -p .build/php-cs-fixer
 +    vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --verbose
 
  vendor: composer.json composer.lock

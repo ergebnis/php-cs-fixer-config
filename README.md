@@ -216,7 +216,7 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +          restore-keys: "php-${{ matrix.php-version }}-composer-"
 +
 +      - name: "Install locked dependencies with composer"
-+        run: "composer install --no-interaction --no-progress --no-suggest"
++        run: "composer install --ansi --no-interaction --no-progress --no-suggest"
 +
 +      - name: "Create cache directory for friendsofphp/php-cs-fixer"
 +        run: mkdir -p .build/php-cs-fixer

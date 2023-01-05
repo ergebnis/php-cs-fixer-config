@@ -542,6 +542,11 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
         'phpdoc_no_useless_inheritdoc' => true,
         'phpdoc_order' => [
             'order' => [
+                'deprecated',
+                'internal',
+                'covers',
+                'uses',
+                'dataProvider',
                 'param',
                 'throws',
                 'return',

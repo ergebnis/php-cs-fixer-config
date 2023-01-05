@@ -547,6 +547,11 @@ final class Php80Test extends ExplicitRuleSetTestCase
         'phpdoc_no_useless_inheritdoc' => true,
         'phpdoc_order' => [
             'order' => [
+                'deprecated',
+                'internal',
+                'covers',
+                'uses',
+                'dataProvider',
                 'param',
                 'throws',
                 'return',

@@ -615,6 +615,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                     'property-write',
                 ],
             ],
+            'skip_unlisted_annotations' => false,
         ],
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,

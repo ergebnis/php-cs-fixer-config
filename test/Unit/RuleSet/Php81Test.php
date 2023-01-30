@@ -622,6 +622,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
                     'property-write',
                 ],
             ],
+            'skip_unlisted_annotations' => false,
         ],
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,

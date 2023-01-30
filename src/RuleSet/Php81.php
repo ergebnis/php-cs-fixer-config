@@ -449,6 +449,7 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
                 'assertSame',
             ],
         ],
+        'php_unit_data_provider_static' => false,
         'php_unit_dedicate_assert' => [
             'target' => 'newest',
         ],

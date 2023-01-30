@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.4.0@62db5d4f6a7ae0a20f7cc5a4952d730272fc0863">
+<files psalm-version="5.6.0@e784128902dfe01d489c4123d69918a9f3c1eac5">
   <file src="src/RuleSet/Php80.php">
-    <NonInvariantDocblockPropertyType occurrences="1">
+    <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php81.php">
-    <NonInvariantDocblockPropertyType occurrences="1">
+    <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php82.php">
-    <NonInvariantDocblockPropertyType occurrences="1">
+    <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="test/EndToEnd/RuleSet/AbstractRuleSetTestCase.php">
-    <InternalClass occurrences="1">
+    <InternalClass>
       <code>Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG</code>
     </InternalClass>
   </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
-    <InternalClass occurrences="1">
+    <InternalClass>
       <code>new FixerFactory()</code>
     </InternalClass>
-    <InternalMethod occurrences="3">
+    <InternalMethod>
       <code>getFixers</code>
       <code>new FixerFactory()</code>
       <code>registerBuiltInFixers</code>

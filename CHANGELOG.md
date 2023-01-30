@@ -11,6 +11,7 @@ For a full diff see [`5.2.0...main`][5.2.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#710]), by [@dependabot]
+- Enabled `no_multiple_statements_per_line` fixer ([#711]), by [@localheinz]
 
 ## [`5.2.0`][5.2.0]
 

@@ -448,6 +448,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'assertSame',
             ],
         ],
+        'php_unit_data_provider_static' => false,
         'php_unit_dedicate_assert' => [
             'target' => 'newest',
         ],
@@ -614,6 +615,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                     'property-write',
                 ],
             ],
+            'skip_unlisted_annotations' => false,
         ],
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,

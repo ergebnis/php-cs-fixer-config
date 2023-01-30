@@ -454,7 +454,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
                 'assertSame',
             ],
         ],
-        'php_unit_data_provider_static' => false,
+        'php_unit_data_provider_static' => true,
         'php_unit_dedicate_assert' => [
             'target' => 'newest',
         ],

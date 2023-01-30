@@ -295,7 +295,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @return \Generator<string, array{0: string}>
      */
-    final public function provideValidHeader(): \Generator
+    final public static function provideValidHeader(): \Generator
     {
         $values = [
             'string-empty' => '',

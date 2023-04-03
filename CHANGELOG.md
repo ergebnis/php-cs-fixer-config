@@ -10,6 +10,7 @@ For a full diff see [`5.3.3...main`][5.3.3...main].
 
 ### Changed
 
+- Updated `friendsofphp/php-cs-fixer` ([#746]), by [@dependabot]
 - Enabled and configured the `single_space_around_construct` fixer as a replacement for the deprecated `single_space_after_construct` fixer ([#746]), by [@localheinz]
 
 ### Fixed

@@ -740,6 +740,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
                 'private',
                 'protected',
                 'public',
+                'readonly',
                 'require',
                 'require_once',
                 'return',

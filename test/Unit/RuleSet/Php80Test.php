@@ -746,6 +746,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
                 'private',
                 'protected',
                 'public',
+                'readonly',
                 'require',
                 'require_once',
                 'return',

@@ -16,6 +16,7 @@ For a full diff see [`5.3.3...main`][5.3.3...main].
 
 - Stopped configuring the deprecated `braces` fixer ([#746]), by [@localheinz]
 - Stopped configuring the deprecated `single_space_after_construct` fixer ([#746]), by [@localheinz]
+- Configured the newly added `force` option of the `php_unit_data_provider_static` fixer ([#746]), by [@localheinz]
 
 ## [`5.3.3`][5.3.3]
 

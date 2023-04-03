@@ -700,7 +700,9 @@ final class Php82Test extends ExplicitRuleSetTestCase
             'strings_containing_single_quote_chars' => false,
         ],
         'single_space_around_construct' => [
-            'constructs_contain_a_single_space' => [],
+            'constructs_contain_a_single_space' => [
+                'yield_from',
+            ],
             'constructs_followed_by_a_single_space' => [
                 'abstract',
                 'as',

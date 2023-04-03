@@ -61,13 +61,6 @@ final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'blank_line_between_import_groups' => false,
-        'braces' => [
-            'allow_single_line_anonymous_class_with_empty_body' => true,
-            'allow_single_line_closure' => false,
-            'position_after_anonymous_constructs' => 'same',
-            'position_after_control_structures' => 'same',
-            'position_after_functions_and_oop_constructs' => 'next',
-        ],
         'cast_spaces' => [
             'space' => 'single',
         ],
@@ -449,7 +442,9 @@ final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
                 'assertSame',
             ],
         ],
-        'php_unit_data_provider_static' => true,
+        'php_unit_data_provider_static' => [
+            'force' => false,
+        ],
         'php_unit_dedicate_assert' => [
             'target' => 'newest',
         ],
@@ -698,8 +693,9 @@ final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
         'single_quote' => [
             'strings_containing_single_quote_chars' => false,
         ],
-        'single_space_after_construct' => [
-            'constructs' => [
+        'single_space_around_construct' => [
+            'constructs_contain_a_single_space' => [],
+            'constructs_followed_by_a_single_space' => [
                 'abstract',
                 'as',
                 'attribute',
@@ -716,7 +712,6 @@ final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
                 'echo',
                 'else',
                 'elseif',
-                'enum',
                 'extends',
                 'final',
                 'finally',
@@ -744,7 +739,6 @@ final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
                 'private',
                 'protected',
                 'public',
-                'readonly',
                 'require',
                 'require_once',
                 'return',
@@ -762,6 +756,7 @@ final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
                 'yield',
                 'yield_from',
             ],
+            'constructs_preceded_by_a_single_space' => [],
         ],
         'single_trait_insert_per_statement' => true,
         'space_after_semicolon' => [

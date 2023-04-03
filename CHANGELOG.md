@@ -12,6 +12,7 @@ For a full diff see [`5.3.3...main`][5.3.3...main].
 
 - Updated `friendsofphp/php-cs-fixer` ([#746]), by [@dependabot]
 - Enabled and configured the `single_space_around_construct` fixer as a replacement for the deprecated `single_space_after_construct` fixer ([#746]), by [@localheinz]
+- Configured `constructs_contain_a_single_space` option of the `single_space_around_construct` fixer to enforce a single space in `yield from` constructs ([#747]), by [@localheinz]
 
 ### Fixed
 
@@ -894,6 +895,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#737]: https://github.com/ergebnis/php-cs-fixer-config/pull/737
 [#738]: https://github.com/ergebnis/php-cs-fixer-config/pull/738
 [#746]: https://github.com/ergebnis/php-cs-fixer-config/pull/746
+[#747]: https://github.com/ergebnis/php-cs-fixer-config/pull/747
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

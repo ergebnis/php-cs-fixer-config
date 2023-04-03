@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`5.3.3...main`][5.3.3...main].
 
+### Fixed
+
+- Stopped configuring the deprecated `braces` fixer ([#746]), by [@localheinz]
+
 ## [`5.3.3`][5.3.3]
 
 For a full diff see [`5.3.2...5.3.3`][5.3.2...5.3.3].
@@ -882,6 +886,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#718]: https://github.com/ergebnis/php-cs-fixer-config/pull/718
 [#737]: https://github.com/ergebnis/php-cs-fixer-config/pull/737
 [#738]: https://github.com/ergebnis/php-cs-fixer-config/pull/738
+[#746]: https://github.com/ergebnis/php-cs-fixer-config/pull/746
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

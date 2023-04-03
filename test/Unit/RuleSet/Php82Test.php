@@ -766,7 +766,9 @@ final class Php82Test extends ExplicitRuleSetTestCase
                 'yield',
                 'yield_from',
             ],
-            'constructs_preceded_by_a_single_space' => [],
+            'constructs_preceded_by_a_single_space' => [
+                'use_lambda',
+            ],
         ],
         'single_trait_insert_per_statement' => true,
         'space_after_semicolon' => [

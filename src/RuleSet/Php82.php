@@ -591,6 +591,8 @@ final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
             'groups' => [
                 [
                     'deprecated',
+                ],
+                [
                     'link',
                     'see',
                     'since',

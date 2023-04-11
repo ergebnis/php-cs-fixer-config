@@ -590,6 +590,8 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'groups' => [
                 [
                     'deprecated',
+                ],
+                [
                     'link',
                     'see',
                     'since',

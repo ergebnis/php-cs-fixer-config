@@ -596,6 +596,8 @@ final class Php80Test extends ExplicitRuleSetTestCase
             'groups' => [
                 [
                     'deprecated',
+                ],
+                [
                     'link',
                     'see',
                     'since',

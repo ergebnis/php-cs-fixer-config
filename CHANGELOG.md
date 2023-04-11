@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`5.4.0...main`][5.4.0...main].
 
+### Changed
+
+- Configured `phpdoc_separation` fixer to group `@deprecated` annotations into a separate group ([#751]), by [@localheinz]
+
 ## [`5.4.0`][5.4.0]
 
 For a full diff see [`5.3.3...5.4.0`][5.3.3...5.4.0].
@@ -904,6 +908,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#746]: https://github.com/ergebnis/php-cs-fixer-config/pull/746
 [#747]: https://github.com/ergebnis/php-cs-fixer-config/pull/747
 [#748]: https://github.com/ergebnis/php-cs-fixer-config/pull/748
+[#751]: https://github.com/ergebnis/php-cs-fixer-config/pull/751
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

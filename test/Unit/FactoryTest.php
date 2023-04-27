@@ -18,8 +18,6 @@ use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
 
 /**
- * @internal
- *
  * @covers \Ergebnis\PhpCsFixer\Config\Factory
  */
 final class FactoryTest extends Framework\TestCase

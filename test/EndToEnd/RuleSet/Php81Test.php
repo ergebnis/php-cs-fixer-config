@@ -14,8 +14,6 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
 /**
- * @internal
- *
  * @coversNothing
  *
  * @requires PHP 8.1

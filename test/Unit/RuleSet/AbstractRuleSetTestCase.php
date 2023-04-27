@@ -19,9 +19,6 @@ use PhpCsFixer\FixerConfiguration;
 use PhpCsFixer\FixerFactory;
 use PHPUnit\Framework;
 
-/**
- * @internal
- */
 abstract class AbstractRuleSetTestCase extends Framework\TestCase
 {
     /**

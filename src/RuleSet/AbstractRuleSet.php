@@ -15,9 +15,6 @@ namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 
-/**
- * @internal
- */
 abstract class AbstractRuleSet implements RuleSet
 {
     /**

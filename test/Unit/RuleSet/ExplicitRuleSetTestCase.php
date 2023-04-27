@@ -17,9 +17,6 @@ use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\FixerConfiguration;
 
-/**
- * @internal
- */
 abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 {
     final public function testIsExplicitRuleSet(): void

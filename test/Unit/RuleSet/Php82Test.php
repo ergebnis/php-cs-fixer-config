@@ -14,8 +14,6 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 /**
- * @internal
- *
  * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\AbstractRuleSet
  * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\Php81
  */

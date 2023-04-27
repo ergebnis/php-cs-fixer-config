@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`5.5.1...main`][5.5.1...main].
 
+### Changed
+
+- Disabled `php_unit_test_class_requires_covers` fixer ([#765]), by [@localheinz]
+
 ## [`5.5.1`][5.5.1]
 
 For a full diff see [`5.5.0...5.5.1`][5.5.0...5.5.1].
@@ -926,6 +930,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#748]: https://github.com/ergebnis/php-cs-fixer-config/pull/748
 [#751]: https://github.com/ergebnis/php-cs-fixer-config/pull/751
 [#764]: https://github.com/ergebnis/php-cs-fixer-config/pull/764
+[#765]: https://github.com/ergebnis/php-cs-fixer-config/pull/765
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

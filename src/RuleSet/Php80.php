@@ -479,7 +479,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'call_type' => 'self',
             'methods' => [],
         ],
-        'php_unit_test_class_requires_covers' => true,
+        'php_unit_test_class_requires_covers' => false,
         'phpdoc_add_missing_param_annotation' => [
             'only_untyped' => true,
         ],

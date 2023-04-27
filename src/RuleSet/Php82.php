@@ -455,13 +455,7 @@ final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
             'target' => 'newest',
         ],
         'php_unit_fqcn_annotation' => true,
-        'php_unit_internal_class' => [
-            'types' => [
-                'abstract',
-                'final',
-                'normal',
-            ],
-        ],
+        'php_unit_internal_class' => false,
         'php_unit_method_casing' => [
             'case' => 'camel_case',
         ],

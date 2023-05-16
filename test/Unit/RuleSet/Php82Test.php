@@ -15,7 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 /**
  * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\AbstractRuleSet
- * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\Php81
+ * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\Php82
  */
 final class Php82Test extends ExplicitRuleSetTestCase
 {

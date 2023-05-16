@@ -67,10 +67,6 @@ labels:
     color: "ee0701"
     description: ""
 
-  - name: "stale"
-    color: "eeeeee"
-    description: ""
-
 # https://docs.github.com/en/rest/reference/repos#update-a-repository
 
 repository:
@@ -83,6 +79,7 @@ repository:
   description: ":notebook: Provides a configuration factory and multiple rule sets for friendsofphp/php-cs-fixer."
   enable_automated_security_fixes: true
   enable_vulnerability_alerts: true
+  has_discussions: false
   has_downloads: true
   has_issues: true
   has_pages: false

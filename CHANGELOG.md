@@ -11,6 +11,7 @@ For a full diff see [`5.5.2...main`][5.5.2...main].
 ### Changed
 
 - Reverted removal of `Config\Ruleset\Php74` rule set ([#773]), by [@localheinz]
+- Reverted removal of `Config\Ruleset\Php73` rule set ([#774]), by [@localheinz]
 
 ## [`5.5.2`][5.5.2]
 
@@ -942,6 +943,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#764]: https://github.com/ergebnis/php-cs-fixer-config/pull/764
 [#765]: https://github.com/ergebnis/php-cs-fixer-config/pull/765
 [#773]: https://github.com/ergebnis/php-cs-fixer-config/pull/773
+[#774]: https://github.com/ergebnis/php-cs-fixer-config/pull/774
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

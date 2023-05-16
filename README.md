@@ -1,7 +1,7 @@
 # php-cs-fixer-config
 
 [![Integrate](https://github.com/ergebnis/php-cs-fixer-config/workflows/Integrate/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
-[![Prune](https://github.com/ergebnis/php-cs-fixer-config/workflows/Prune/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
+[![Merge](https://github.com/ergebnis/php-cs-fixer-config/workflows/Merge/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
 [![Release](https://github.com/ergebnis/php-cs-fixer-config/workflows/Release/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
 [![Renew](https://github.com/ergebnis/php-cs-fixer-config/workflows/Renew/badge.svg)](https://github.com/ergebnis/php-cs-fixer-config/actions)
 
@@ -10,6 +10,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/ergebnis/php-cs-fixer-config/v/stable)](https://packagist.org/packages/ergebnis/php-cs-fixer-config)
 [![Total Downloads](https://poser.pugx.org/ergebnis/php-cs-fixer-config/downloads)](https://packagist.org/packages/ergebnis/php-cs-fixer-config)
+[![Monthly Downloads](http://poser.pugx.org/ergebnis/php-cs-fixer-config/d/monthly)](https://packagist.org/packages/ergebnis/php-cs-fixer-config)
 
 Provides a configuration factory and multiple rule sets for [`friendsofphp/php-cs-fixer`](http://github.com/FriendsOfPHP/PHP-CS-Fixer).
 
@@ -248,6 +249,10 @@ Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
 
 Please have a look at [`CODE_OF_CONDUCT.md`](https://github.com/ergebnis/.github/blob/main/CODE_OF_CONDUCT.md).
 
+## Security Policy
+
+Please have a look at [`SECURITY.md`](.github/SECURITY.md).
+
 ## License
 
 This package is licensed using the MIT License.
@@ -260,4 +265,4 @@ This project is inspired by and also replaces [`localheinz/php-cs-fixer-config`]
 
 ## Curious what I am up to?
 
-Follow me on [Twitter](https://twitter.com/localheinz)!
+Follow me on [Twitter](https://twitter.com/intent/follow?screen_name=localheinz)!

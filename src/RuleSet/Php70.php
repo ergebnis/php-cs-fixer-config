@@ -228,7 +228,7 @@ final class Php70 extends AbstractRuleSet implements ExplicitRuleSet
         'line_ending' => true,
         'linebreak_after_opening_tag' => true,
         'list_syntax' => [
-            'syntax' => 'short',
+            'syntax' => 'long',
         ],
         'logical_operators' => true,
         'lowercase_cast' => true,

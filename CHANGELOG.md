@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`5.5.2...main`][5.5.2...main].
 
-### Changed
+### Added
 
 - Reverted removal of `Config\Ruleset\Php74` rule set ([#773]), by [@localheinz]
 - Reverted removal of `Config\Ruleset\Php73` rule set ([#774]), by [@localheinz]

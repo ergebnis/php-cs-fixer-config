@@ -93,7 +93,7 @@ final class Php70Test extends ExplicitRuleSetTestCase
         'comment_to_phpdoc' => [
             'ignored_tags' => [],
         ],
-        'compact_nullable_typehint' => true,
+        'compact_nullable_typehint' => false,
         'concat_space' => [
             'spacing' => 'one',
         ],

@@ -694,7 +694,6 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
             'constructs_followed_by_a_single_space' => [
                 'abstract',
                 'as',
-                'attribute',
                 'break',
                 'case',
                 'catch',
@@ -724,8 +723,6 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
                 'instanceof',
                 'insteadof',
                 'interface',
-                'match',
-                'named_argument',
                 'namespace',
                 'new',
                 'open_tag_with_echo',

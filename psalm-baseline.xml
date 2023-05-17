@@ -5,6 +5,14 @@
       <code>__construct</code>
     </PossiblyUnusedMethod>
   </file>
+  <file src="src/RuleSet/Php53.php">
+    <NonInvariantDocblockPropertyType>
+      <code>$rules</code>
+    </NonInvariantDocblockPropertyType>
+    <UnusedClass>
+      <code>Php53</code>
+    </UnusedClass>
+  </file>
   <file src="src/RuleSet/Php54.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>

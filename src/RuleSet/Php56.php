@@ -652,9 +652,7 @@ final class Php56 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'regular_callable_call' => true,
         'return_assignment' => true,
-        'return_type_declaration' => [
-            'space_before' => 'none',
-        ],
+        'return_type_declaration' => false,
         'self_accessor' => true,
         'self_static_accessor' => true,
         'semicolon_after_instruction' => true,

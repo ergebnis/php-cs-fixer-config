@@ -705,7 +705,6 @@ final class Php54Test extends ExplicitRuleSetTestCase
                 'elseif',
                 'extends',
                 'final',
-                'finally',
                 'for',
                 'foreach',
                 'function',

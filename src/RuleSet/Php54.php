@@ -699,7 +699,6 @@ final class Php54 extends AbstractRuleSet implements ExplicitRuleSet
                 'elseif',
                 'extends',
                 'final',
-                'finally',
                 'for',
                 'foreach',
                 'function',

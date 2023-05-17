@@ -18,6 +18,7 @@ For a full diff see [`5.5.2...main`][5.5.2...main].
 - Added `Config\Ruleset\Php56` rule set ([#783]), by [@localheinz]
 - Added `Config\Ruleset\Php55` rule set ([#784]), by [@localheinz]
 - Added `Config\Ruleset\Php54` rule set ([#785]), by [@localheinz]
+- Added `Config\Ruleset\Php53` rule set ([#786]), by [@localheinz]
 
 ## [`5.5.2`][5.5.2]
 
@@ -956,6 +957,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#783]: https://github.com/ergebnis/php-cs-fixer-config/pull/783
 [#784]: https://github.com/ergebnis/php-cs-fixer-config/pull/784
 [#785]: https://github.com/ergebnis/php-cs-fixer-config/pull/785
+[#786]: https://github.com/ergebnis/php-cs-fixer-config/pull/786
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

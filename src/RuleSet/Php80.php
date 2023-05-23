@@ -433,7 +433,10 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'order' => 'alpha',
         ],
         'ordered_traits' => false,
-        'ordered_types' => false,
+        'ordered_types' => [
+            'null_adjustment' => 'always_first',
+            'sort_algorithm' => 'alpha',
+        ],
         'php_unit_construct' => [
             'assertions' => [
                 'assertEquals',

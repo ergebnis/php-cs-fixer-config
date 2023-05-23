@@ -11,6 +11,7 @@ For a full diff see [`5.6.0...main`][5.6.0...main].
 ## Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#787]), by [@dependabot]
+- Enabled and configured `ordered_types` fixer ([#788]), by [@localheinz]
 
 ## [`5.6.0`][5.6.0]
 
@@ -969,6 +970,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#785]: https://github.com/ergebnis/php-cs-fixer-config/pull/785
 [#786]: https://github.com/ergebnis/php-cs-fixer-config/pull/786
 [#787]: https://github.com/ergebnis/php-cs-fixer-config/pull/787
+[#788]: https://github.com/ergebnis/php-cs-fixer-config/pull/788
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

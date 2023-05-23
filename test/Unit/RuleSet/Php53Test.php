@@ -433,6 +433,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'order' => 'alpha',
         ],
         'ordered_traits' => false,
+        'ordered_types' => false,
         'php_unit_construct' => [
             'assertions' => [
                 'assertEquals',
@@ -560,6 +561,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'uses',
             ],
         ],
+        'phpdoc_param_order' => false,
         'phpdoc_return_self_reference' => [
             'replacements' => [
                 '$self' => 'self',
@@ -680,6 +682,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'hash',
             ],
         ],
+        'single_line_empty_body' => false,
         'single_line_throw' => false,
         'single_quote' => [
             'strings_containing_single_quote_chars' => false,

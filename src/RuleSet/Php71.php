@@ -563,7 +563,7 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
                 'uses',
             ],
         ],
-        'phpdoc_param_order' => false,
+        'phpdoc_param_order' => true,
         'phpdoc_return_self_reference' => [
             'replacements' => [
                 '$self' => 'self',

@@ -76,7 +76,7 @@ repository:
   archived: false
   default_branch: "main"
   delete_branch_on_merge: true
-  description: ":notebook: Provides a configuration factory and multiple rule sets for friendsofphp/php-cs-fixer."
+  description: ":notebook: Provides a configuration factory and rule sets for friendsofphp/php-cs-fixer."
   enable_automated_security_fixes: true
   enable_vulnerability_alerts: true
   has_discussions: false

@@ -401,6 +401,7 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
             'position' => 'beginning',
         ],
         'ordered_class_elements' => [
+            'case_sensitive' => false,
             'order' => [
                 'use_trait',
                 'constant_public',

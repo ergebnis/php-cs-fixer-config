@@ -65,6 +65,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
             ],
         ],
         'blank_line_between_import_groups' => false,
+        'blank_lines_before_namespace' => false,
         'cast_spaces' => [
             'space' => 'single',
         ],

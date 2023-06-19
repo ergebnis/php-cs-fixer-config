@@ -173,17 +173,17 @@ final class Php56Test extends ExplicitRuleSetTestCase
         'explicit_string_variable' => true,
         'final_class' => true,
         'final_internal_class' => [
-            'annotation_exclude' => [
+            'consider_absent_docblock_as_internal_class' => false,
+            'exclude' => [
                 '@Entity',
                 '@final',
                 '@Mapping\\Entity',
                 '@ORM\\Entity',
                 '@ORM\\Mapping\\Entity',
             ],
-            'annotation_include' => [
+            'include' => [
                 '@internal',
             ],
-            'consider_absent_docblock_as_internal_class' => false,
         ],
         'final_public_method_for_abstract_class' => true,
         'fopen_flag_order' => true,

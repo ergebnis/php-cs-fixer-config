@@ -294,7 +294,6 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'no_binary_string' => true,
         'no_blank_lines_after_class_opening' => true,
         'no_blank_lines_after_phpdoc' => true,
-        'no_blank_lines_before_namespace' => false,
         'no_break_comment' => [
             'comment_text' => 'no break',
         ],
@@ -676,7 +675,6 @@ final class Php73Test extends ExplicitRuleSetTestCase
         'simplified_if_return' => false,
         'simplified_null_return' => false,
         'single_blank_line_at_eof' => true,
-        'single_blank_line_before_namespace' => true,
         'single_class_element_per_statement' => [
             'elements' => [
                 'const',

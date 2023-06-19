@@ -59,7 +59,10 @@ final class Php53 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'blank_line_between_import_groups' => false,
-        'blank_lines_before_namespace' => false,
+        'blank_lines_before_namespace' => [
+            'max_line_breaks' => 2,
+            'min_line_breaks' => 2,
+        ],
         'cast_spaces' => [
             'space' => 'single',
         ],

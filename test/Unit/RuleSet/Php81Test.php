@@ -65,6 +65,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
             ],
         ],
         'blank_line_between_import_groups' => false,
+        'blank_lines_before_namespace' => false,
         'cast_spaces' => [
             'space' => 'single',
         ],
@@ -170,17 +171,17 @@ final class Php81Test extends ExplicitRuleSetTestCase
         'explicit_string_variable' => true,
         'final_class' => true,
         'final_internal_class' => [
-            'annotation_exclude' => [
+            'consider_absent_docblock_as_internal_class' => false,
+            'exclude' => [
                 '@Entity',
                 '@final',
                 '@Mapping\\Entity',
                 '@ORM\\Entity',
                 '@ORM\\Mapping\\Entity',
             ],
-            'annotation_include' => [
+            'include' => [
                 '@internal',
             ],
-            'consider_absent_docblock_as_internal_class' => false,
         ],
         'final_public_method_for_abstract_class' => true,
         'fopen_flag_order' => true,
@@ -291,7 +292,6 @@ final class Php81Test extends ExplicitRuleSetTestCase
         'no_binary_string' => true,
         'no_blank_lines_after_class_opening' => true,
         'no_blank_lines_after_phpdoc' => true,
-        'no_blank_lines_before_namespace' => false,
         'no_break_comment' => [
             'comment_text' => 'no break',
         ],
@@ -406,6 +406,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
             'position' => 'beginning',
         ],
         'ordered_class_elements' => [
+            'case_sensitive' => false,
             'order' => [
                 'use_trait',
                 'case',
@@ -677,7 +678,6 @@ final class Php81Test extends ExplicitRuleSetTestCase
         'simplified_if_return' => false,
         'simplified_null_return' => false,
         'single_blank_line_at_eof' => true,
-        'single_blank_line_before_namespace' => true,
         'single_class_element_per_statement' => [
             'elements' => [
                 'const',

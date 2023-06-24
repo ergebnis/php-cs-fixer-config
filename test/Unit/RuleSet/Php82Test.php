@@ -454,6 +454,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
                 'assertSame',
             ],
         ],
+        'php_unit_data_provider_name' => false,
         'php_unit_data_provider_static' => [
             'force' => false,
         ],

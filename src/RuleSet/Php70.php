@@ -446,6 +446,7 @@ final class Php70 extends AbstractRuleSet implements ExplicitRuleSet
                 'assertSame',
             ],
         ],
+        'php_unit_data_provider_name' => false,
         'php_unit_data_provider_static' => [
             'force' => false,
         ],

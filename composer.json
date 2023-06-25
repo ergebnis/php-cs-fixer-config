@@ -17,7 +17,7 @@
   "require": {
     "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
     "ext-filter": "*",
-    "friendsofphp/php-cs-fixer": "~3.19.1"
+    "friendsofphp/php-cs-fixer": "~3.19.2"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.31.0",

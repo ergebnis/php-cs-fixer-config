@@ -4,16 +4,13 @@
 
 The following versions of `ergebnis/php-cs-fixer-config` have active support:
 
-- `^5.5.2`
+- `^5.9.2`
 
 ## Unsupported Versions
 
 The following versions of `ergebnis/php-cs-fixer-config` have reached their end of life:
 
-- `^4.0.0`
-- `^3.0.0`
-- `^2.0.0`
-- `^1.0.0`
+- `<5.9.2`
 
 ## Reporting a Vulnerability
 

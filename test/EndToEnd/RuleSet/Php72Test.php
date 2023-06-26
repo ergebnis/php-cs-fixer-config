@@ -13,11 +13,10 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
-/**
- * @coversNothing
- *
- * @requires PHP 7.2
- */
+use PHPUnit\Framework;
+
+#[Framework\Attributes\CoversNothing]
+#[Framework\Attributes\RequiresPhp('7.2')]
 final class Php72Test extends AbstractRuleSetTestCase
 {
 }

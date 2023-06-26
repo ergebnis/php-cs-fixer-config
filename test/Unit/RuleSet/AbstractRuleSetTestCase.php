@@ -270,9 +270,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         self::assertFalse($rules['header_comment']);
     }
 
-    /**
-     * @dataProvider provideValidHeader
-     */
+    #[Framework\Attributes\DataProvider('provideValidHeader')]
     final public function testHeaderCommentFixerIsEnabledIfHeaderIsProvided(string $header): void
     {
         $rules = self::createRuleSet($header)->rules();

@@ -17,9 +17,7 @@ use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
 
-/**
- * @covers \Ergebnis\PhpCsFixer\Config\Factory
- */
+#[Framework\Attributes\CoversClass(Factory::class)]
 final class FactoryTest extends Framework\TestCase
 {
     use Test\Util\Helper;
@@ -44,9 +42,7 @@ final class FactoryTest extends Framework\TestCase
         Factory::fromRuleSet($ruleSet);
     }
 
-    /**
-     * @dataProvider provideTargetPhpVersion
-     */
+    #[Framework\Attributes\DataProvider('provideTargetPhpVersion')]
     public function testFromRuleSetCreatesConfig(int $targetPhpVersion): void
     {
         $rules = [

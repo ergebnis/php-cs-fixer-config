@@ -21,9 +21,9 @@ final class DummyRuleSet implements Config\RuleSet
      * @param array<string, array<string, mixed>|bool> $rules
      */
     public function __construct(
-        private string $name,
-        private array $rules,
-        private int $phpVersion,
+        private readonly string $name,
+        private readonly array $rules,
+        private readonly int $phpVersion,
     ) {
     }
 

@@ -13,11 +13,10 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
-/**
- * @coversNothing
- *
- * @requires PHP 5.6
- */
+use PHPUnit\Framework;
+
+#[Framework\Attributes\CoversNothing]
+#[Framework\Attributes\RequiresPhp('5.6')]
 final class Php56Test extends AbstractRuleSetTestCase
 {
 }

@@ -13,12 +13,11 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
-/**
- * @internal
- *
- * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\AbstractRuleSet
- * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\Php70
- */
+use Ergebnis\PhpCsFixer\Config\RuleSet;
+use PHPUnit\Framework;
+
+#[Framework\Attributes\CoversClass(RuleSet\AbstractRuleSet::class)]
+#[Framework\Attributes\CoversClass(RuleSet\Php70::class)]
 final class Php70Test extends ExplicitRuleSetTestCase
 {
     protected string $name = 'ergebnis (PHP 7.0)';

@@ -9,102 +9,71 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php53</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php54.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php54</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php55.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php55</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php56.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php56</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php70.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php70</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php71.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php71</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php72.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php72</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php73.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php73</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php74.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php74</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php80.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php80</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php81.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php81</code>
-    </UnusedClass>
   </file>
   <file src="src/RuleSet/Php82.php">
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
-    <UnusedClass>
-      <code>Php82</code>
-    </UnusedClass>
   </file>
   <file src="test/EndToEnd/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass>
       <code>Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG</code>
     </InternalClass>
+  </file>
+  <file src="test/Unit/FactoryTest.php">
+    <PossiblyUnusedMethod>
+      <code>provideTargetPhpVersion</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass>
@@ -115,5 +84,8 @@
       <code>new FixerFactory()</code>
       <code>registerBuiltInFixers</code>
     </InternalMethod>
+    <PossiblyUnusedMethod>
+      <code>provideValidHeader</code>
+    </PossiblyUnusedMethod>
   </file>
 </files>

@@ -17,6 +17,9 @@
     stopOnIncomplete="false"
     stopOnSkipped="false"
 >
+    <extensions>
+        <bootstrap class="Ergebnis\PHPUnit\SlowTestDetector\Extension"/>
+    </extensions>
     <testsuites>
         <testsuite name="EndToEnd">
             <directory>.</directory>

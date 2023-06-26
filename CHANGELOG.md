@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`5.9.2...main`][5.9.2...main].
 
+## Changed
+
+- Dropped support for PHP 8.0 ([#805]), by [@localheinz]
+
 ## [`5.9.2`][5.9.2]
 
 For a full diff see [`5.9.1...5.9.2`][5.9.1...5.9.2].
@@ -1023,6 +1027,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#802]: https://github.com/ergebnis/php-cs-fixer-config/pull/802
 [#803]: https://github.com/ergebnis/php-cs-fixer-config/pull/803
 [#804]: https://github.com/ergebnis/php-cs-fixer-config/pull/804
+[#805]: https://github.com/ergebnis/php-cs-fixer-config/pull/805
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

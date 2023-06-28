@@ -16,7 +16,6 @@ namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversNothing]
-#[Framework\Attributes\RequiresPhp('5.3')]
 final class Php53Test extends AbstractRuleSetTestCase
 {
 }

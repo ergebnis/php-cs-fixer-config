@@ -16,7 +16,6 @@ namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversNothing]
-#[Framework\Attributes\RequiresPhp('7.0')]
 final class Php70Test extends AbstractRuleSetTestCase
 {
 }

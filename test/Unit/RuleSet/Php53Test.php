@@ -205,7 +205,6 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'pi',
             ],
         ],
-        'function_typehint_space' => true,
         'general_phpdoc_annotation_remove' => false,
         'general_phpdoc_tag_rename' => [
             'case_sensitive' => false,
@@ -394,6 +393,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
         'normalize_index_brace' => true,
         'not_operator_with_space' => false,
         'not_operator_with_successor_space' => false,
+        'nullable_type_declaration' => false,
         'nullable_type_declaration_for_default_null_value' => [
             'use_nullable_type_declaration' => true,
         ],
@@ -778,6 +778,11 @@ final class Php53Test extends ExplicitRuleSetTestCase
             ],
         ],
         'trim_array_spaces' => true,
+        'type_declaration_spaces' => [
+            'elements' => [
+                'function',
+            ],
+        ],
         'types_spaces' => [
             'space' => 'none',
             'space_multiple_catch' => 'none',

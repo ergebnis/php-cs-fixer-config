@@ -797,6 +797,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
         'type_declaration_spaces' => [
             'elements' => [
                 'function',
+                'property',
             ],
         ],
         'types_spaces' => [

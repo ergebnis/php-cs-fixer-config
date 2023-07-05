@@ -394,7 +394,9 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'normalize_index_brace' => true,
         'not_operator_with_space' => false,
         'not_operator_with_successor_space' => false,
-        'nullable_type_declaration' => false,
+        'nullable_type_declaration' => [
+            'syntax' => 'question_mark',
+        ],
         'nullable_type_declaration_for_default_null_value' => [
             'use_nullable_type_declaration' => true,
         ],

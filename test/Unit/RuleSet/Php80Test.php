@@ -806,6 +806,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
         'type_declaration_spaces' => [
             'elements' => [
                 'function',
+                'property',
             ],
         ],
         'types_spaces' => [

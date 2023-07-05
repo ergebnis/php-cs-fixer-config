@@ -801,6 +801,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         'type_declaration_spaces' => [
             'elements' => [
                 'function',
+                'property',
             ],
         ],
         'types_spaces' => [

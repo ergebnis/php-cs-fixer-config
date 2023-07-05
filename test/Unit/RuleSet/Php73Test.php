@@ -208,7 +208,6 @@ final class Php73Test extends ExplicitRuleSetTestCase
                 'pi',
             ],
         ],
-        'function_typehint_space' => true,
         'general_phpdoc_annotation_remove' => false,
         'general_phpdoc_tag_rename' => [
             'case_sensitive' => false,
@@ -792,6 +791,11 @@ final class Php73Test extends ExplicitRuleSetTestCase
             ],
         ],
         'trim_array_spaces' => true,
+        'type_declaration_spaces' => [
+            'elements' => [
+                'function',
+            ],
+        ],
         'types_spaces' => [
             'space' => 'none',
             'space_multiple_catch' => 'none',

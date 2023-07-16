@@ -445,6 +445,7 @@ final class Php54 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'php_unit_data_provider_name' => false,
+        'php_unit_data_provider_return_type' => false,
         'php_unit_data_provider_static' => [
             'force' => false,
         ],
@@ -796,6 +797,7 @@ final class Php54 extends AbstractRuleSet implements ExplicitRuleSet
         'whitespace_after_comma_in_array' => [
             'ensure_single_space' => true,
         ],
+        'yield_from_array_to_yields' => false,
         'yoda_style' => [
             'always_move_variable' => true,
             'equal' => true,

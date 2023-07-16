@@ -449,6 +449,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             ],
         ],
         'php_unit_data_provider_name' => false,
+        'php_unit_data_provider_return_type' => false,
         'php_unit_data_provider_static' => [
             'force' => false,
         ],
@@ -799,6 +800,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
         'whitespace_after_comma_in_array' => [
             'ensure_single_space' => true,
         ],
+        'yield_from_array_to_yields' => false,
         'yoda_style' => [
             'always_move_variable' => true,
             'equal' => true,

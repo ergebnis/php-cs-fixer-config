@@ -28,6 +28,10 @@ composer require --dev ergebnis/php-cs-fixer-config
 
 Pick one of the rule sets:
 
+- [`Ergebnis\PhpCsFixer\RuleSet\Php53`](src/RuleSet/Php53.php)
+- [`Ergebnis\PhpCsFixer\RuleSet\Php54`](src/RuleSet/Php54.php)
+- [`Ergebnis\PhpCsFixer\RuleSet\Php55`](src/RuleSet/Php55.php)
+- [`Ergebnis\PhpCsFixer\RuleSet\Php56`](src/RuleSet/Php56.php)
 - [`Ergebnis\PhpCsFixer\RuleSet\Php70`](src/RuleSet/Php70.php)
 - [`Ergebnis\PhpCsFixer\RuleSet\Php71`](src/RuleSet/Php71.php)
 - [`Ergebnis\PhpCsFixer\RuleSet\Php72`](src/RuleSet/Php72.php)

@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`5.11.1...main`][5.11.1...main].
+For a full diff see [`5.12.0...main`][5.12.0...main].
+
+## [`5.12.0`][5.12.0]
+
+For a full diff see [`5.11.1...5.12.0`][5.11.1...5.12.0].
 
 ## Changed
 
@@ -813,6 +817,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [5.10.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/5.10.0
 [5.11.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/5.11.0
 [5.11.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/5.11.1
+[5.12.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/5.12.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -886,7 +891,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [5.9.2...5.10.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.9.2...5.10.0
 [5.10.0...5.11.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.10.0...5.11.0
 [5.11.0...5.11.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.11.0...5.11.1
-[5.11.1...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.11.1...main
+[5.11.1...5.12.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.11.1...5.12.0
+[5.12.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.12.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14

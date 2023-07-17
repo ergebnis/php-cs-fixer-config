@@ -454,7 +454,7 @@ final class Php73Test extends ExplicitRuleSetTestCase
             ],
         ],
         'php_unit_data_provider_name' => false,
-        'php_unit_data_provider_return_type' => false,
+        'php_unit_data_provider_return_type' => true,
         'php_unit_data_provider_static' => [
             'force' => false,
         ],

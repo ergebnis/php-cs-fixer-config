@@ -101,19 +101,19 @@ All configuration examples use the caching feature, and if you want to use it as
 This will enable and configure the [`HeaderCommentFixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/v2.1.1/src/Fixer/Comment/HeaderCommentFixer.php), so that
 file headers will be added to PHP files, for example:
 
-```php
-<?php
+```diff
+ <?php
 
-declare(strict_types=1);
+ declare(strict_types=1);
 
-/**
- * Copyright (c) 2023 Andreas Möller
- *
- * For the full copyright and license information, please view
- * the LICENSE file that was distributed with this source code.
- *
- * @see https://github.com/ergebnis/php-cs-fixer-config
- */
++/**
++ * Copyright (c) 2023 Andreas Möller
++ *
++ * For the full copyright and license information, please view
++ * the LICENSE file that was distributed with this source code.
++ *
++ * @see https://github.com/ergebnis/php-cs-fixer-config
++ */
 ```
 
 ### Configuration with override rules

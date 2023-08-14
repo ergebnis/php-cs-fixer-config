@@ -333,7 +333,6 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
                 'outside',
             ],
         ],
-        'no_spaces_inside_parenthesis' => true,
         'no_superfluous_elseif' => true,
         'no_superfluous_phpdoc_tags' => [
             'allow_mixed' => true,
@@ -665,6 +664,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'regular_callable_call' => true,
         'return_assignment' => true,
+        'return_to_yield_from' => false,
         'return_type_declaration' => [
             'space_before' => 'none',
         ],
@@ -767,6 +767,9 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         'single_trait_insert_per_statement' => true,
         'space_after_semicolon' => [
             'remove_in_empty_for_expressions' => false,
+        ],
+        'spaces_inside_parentheses' => [
+            'space' => 'none',
         ],
         'standardize_increment' => true,
         'standardize_not_equals' => true,

@@ -673,7 +673,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
         ],
         'regular_callable_call' => true,
         'return_assignment' => true,
-        'return_to_yield_from' => false,
+        'return_to_yield_from' => true,
         'return_type_declaration' => [
             'space_before' => 'none',
         ],

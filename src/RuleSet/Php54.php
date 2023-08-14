@@ -658,6 +658,7 @@ final class Php54 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'regular_callable_call' => true,
         'return_assignment' => true,
+        'return_to_yield_from' => false,
         'return_type_declaration' => false,
         'self_accessor' => true,
         'self_static_accessor' => true,

@@ -662,6 +662,7 @@ final class Php72 extends AbstractRuleSet implements ExplicitRuleSet
         ],
         'regular_callable_call' => true,
         'return_assignment' => true,
+        'return_to_yield_from' => false,
         'return_type_declaration' => [
             'space_before' => 'none',
         ],

@@ -426,6 +426,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'sort_algorithm' => 'none',
         ],
         'ordered_imports' => [
+            'case_sensitive' => false,
             'imports_order' => [
                 'class',
                 'const',
@@ -434,11 +435,13 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             'sort_algorithm' => 'alpha',
         ],
         'ordered_interfaces' => [
+            'case_sensitive' => false,
             'direction' => 'ascend',
             'order' => 'alpha',
         ],
         'ordered_traits' => false,
         'ordered_types' => [
+            'case_sensitive' => false,
             'null_adjustment' => 'always_first',
             'sort_algorithm' => 'alpha',
         ],
@@ -648,6 +651,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
             ],
         ],
         'phpdoc_types_order' => [
+            'case_sensitive' => false,
             'null_adjustment' => 'always_first',
             'sort_algorithm' => 'alpha',
         ],

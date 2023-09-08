@@ -12,7 +12,7 @@
 [![Total Downloads](https://poser.pugx.org/ergebnis/php-cs-fixer-config/downloads)](https://packagist.org/packages/ergebnis/php-cs-fixer-config)
 [![Monthly Downloads](http://poser.pugx.org/ergebnis/php-cs-fixer-config/d/monthly)](https://packagist.org/packages/ergebnis/php-cs-fixer-config)
 
-Provides a configuration factory and rule sets for [`friendsofphp/php-cs-fixer`](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer).
+This package provides a configuration factory and a rule set for [`friendsofphp/php-cs-fixer`](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer).
 
 ## Installation
 
@@ -66,8 +66,6 @@ All configuration examples use the caching feature, and if you want to use it as
 + /.build/
  /vendor/
 ```
-
-:bulb: I prefer to use a `.build/` directory for storing build artifacts.
 
 ### Configuration with header
 
@@ -170,7 +168,7 @@ If you like [`composer` scripts](https://getcomposer.org/doc/articles/scripts.md
  {
    "name": "foo/bar",
    "require": {
-     "php": "^8.0",
+     "php": "^8.1",
    },
    "require-dev": {
      "ergebnis/php-cs-fixer-config": "~5.1.0"
@@ -214,7 +212,7 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +    strategy:
 +      matrix:
 +        php-version:
-+          - "8.0"
++          - "8.1"
 +
 +    steps:
 +      - name: "Checkout"
@@ -254,32 +252,40 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 
 ## Changelog
 
-Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
+The maintainers of this package record notable changes to this project in a [changelog](CHANGELOG.md).
 
 ## Contributing
 
-Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
-
-:bulb: Do you want to add a rule for personal use or use in your organization? Instead of opening a pull request here, perhaps consider creating a new package based on [`ergebnis/php-cs-fixer-config-template`](https://github.com/ergebnis/php-cs-fixer-config-template), a GitHub repository template that provides a good starting point for creating and sharing your own rule sets.
+The maintainers of this package suggest following the [contribution guide](.github/CONTRIBUTING.md).
 
 ## Code of Conduct
 
-Please have a look at [`CODE_OF_CONDUCT.md`](https://github.com/ergebnis/.github/blob/main/CODE_OF_CONDUCT.md).
+The maintainers of this package ask contributors to follow the [code of conduct](https://github.com/ergebnis/.github/blob/main/CODE_OF_CONDUCT.md).
+
+## General Support Policy
+
+The maintainers of this package provide limited support.
+
+You can support the maintenance of this package by [sponsoring @localheinz](https://github.com/sponsors/localheinz) or [requesting an invoice for services related to this package](mailto:am@localheinz.com?subject=ergebnis/php-cs-fixer-config:%20Requesting%20invoice%20for%20services).
+
+## PHP Version Support Policy
+
+This package supports PHP versions with [active support](https://www.php.net/supported-versions.php).
+
+The maintainers of this package add support for a PHP version following its initial release and drop support for a PHP version when it has reached its end of active support.
 
 ## Security Policy
 
-Please have a look at [`SECURITY.md`](.github/SECURITY.md).
+This package has a [security policy](.github/SECURITY.md).
 
 ## License
 
-This package is licensed using the MIT License.
-
-Please have a look at [`LICENSE.md`](LICENSE.md).
+This package uses the [MIT license](LICENSE.md).
 
 ## Credits
 
-This project is inspired by and also replaces [`localheinz/php-cs-fixer-config`](https://github.com/localheinz/php-cs-fixer-config).
+This package is inspired by and also replaces [`localheinz/php-cs-fixer-config`](https://github.com/localheinz/php-cs-fixer-config).
 
-## Curious what I am up to?
+## Social
 
-Follow me on [Twitter](https://twitter.com/intent/follow?screen_name=localheinz)!
+Follow [@localheinz](https://twitter.com/intent/follow?screen_name=localheinz) and [@ergebnis](https://twitter.com/intent/follow?screen_name=ergebnis) on Twitter.

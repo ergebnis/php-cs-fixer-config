@@ -23,7 +23,6 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(Factory::class)]
 final class Php55Test extends ExplicitRuleSetTestCase
 {
-    protected string $name = 'ergebnis (PHP 5.5)';
     protected array $rules = [
         'align_multiline_comment' => [
             'comment_type' => 'all_multiline',
@@ -829,6 +828,11 @@ final class Php55Test extends ExplicitRuleSetTestCase
             'less_and_greater' => true,
         ],
     ];
+
+    protected function expectedName(): string
+    {
+        return 'ergebnis (PHP 5.5)';
+    }
 
     protected function expectedTargetPhpVersion(): int
     {

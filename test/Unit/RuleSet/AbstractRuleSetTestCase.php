@@ -121,14 +121,13 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         'var',
         'version',
     ];
-    protected string $name;
     protected array $rules;
 
     final public function testDefaults(): void
     {
         $ruleSet = self::createRuleSet();
 
-        self::assertSame($this->name, $ruleSet->name());
+        self::assertSame($this->expectedName(), $ruleSet->name());
         self::assertEquals($this->rules, $ruleSet->rules());
         self::assertSame($this->expectedTargetPhpVersion(), $ruleSet->targetPhpVersion());
     }
@@ -306,6 +305,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             ];
         }
     }
+
+    abstract protected function expectedName(): string;
 
     abstract protected function expectedTargetPhpVersion(): int;
 

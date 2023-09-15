@@ -16,7 +16,7 @@ For a full diff see [`5.15.1...main`][5.15.1...main].
 
 For a full diff see [`5.15.0...5.15.1`][5.15.0...5.15.1].
 
-## Fixed
+### Fixed
 
 - Updated `friendsofphp/php-cs-fixer` ([#857]), by [@dependabot]
 
@@ -24,7 +24,7 @@ For a full diff see [`5.15.0...5.15.1`][5.15.0...5.15.1].
 
 For a full diff see [`5.14.2...5.15.0`][5.14.2...5.15.0].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#856]), by [@dependabot]
 
@@ -32,7 +32,7 @@ For a full diff see [`5.14.2...5.15.0`][5.14.2...5.15.0].
 
 For a full diff see [`5.14.1...5.14.2`][5.14.1...5.14.2].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#850]), by [@dependabot]
 
@@ -40,7 +40,7 @@ For a full diff see [`5.14.1...5.14.2`][5.14.1...5.14.2].
 
 For a full diff see [`5.14.0...5.14.1`][5.14.0...5.14.1].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#849]), by [@dependabot]
 
@@ -48,7 +48,7 @@ For a full diff see [`5.14.0...5.14.1`][5.14.0...5.14.1].
 
 For a full diff see [`5.13.0...5.14.0`][5.13.0...5.14.0].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#848]), by [@dependabot]
 
@@ -56,7 +56,7 @@ For a full diff see [`5.13.0...5.14.0`][5.13.0...5.14.0].
 
 For a full diff see [`5.12.0...5.13.0`][5.12.0...5.13.0].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#840]), by [@dependabot]
 - Enabled the `return_to_yield_from` fixer ([#841]), by [@localheinz]
@@ -65,7 +65,7 @@ For a full diff see [`5.12.0...5.13.0`][5.12.0...5.13.0].
 
 For a full diff see [`5.11.1...5.12.0`][5.11.1...5.12.0].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#825]), by [@dependabot]
 - Enabled the `php_unit_data_provider_return_type` fixer ([#826]), by [@localheinz]
@@ -74,7 +74,7 @@ For a full diff see [`5.11.1...5.12.0`][5.11.1...5.12.0].
 
 For a full diff see [`5.11.0...5.11.1`][5.11.0...5.11.1].
 
-## Fixed
+### Fixed
 
 - Updated `friendsofphp/php-cs-fixer` ([#824]), by [@dependabot]
 
@@ -82,7 +82,7 @@ For a full diff see [`5.11.0...5.11.1`][5.11.0...5.11.1].
 
 For a full diff see [`5.10.0...5.11.0`][5.10.0...5.11.0].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#815]), by [@dependabot]
 - Enabled and configured the `nullable_type_declaration` fixer ([#816]), by [@localheinz]
@@ -92,7 +92,7 @@ For a full diff see [`5.10.0...5.11.0`][5.10.0...5.11.0].
 
 For a full diff see [`5.9.2...5.10.0`][5.9.2...5.10.0].
 
-## Changed
+### Changed
 
 - Dropped support for PHP 8.0 ([#805]), by [@localheinz]
 - Updated `friendsofphp/php-cs-fixer` ([#810]), by [@dependabot]
@@ -101,7 +101,7 @@ For a full diff see [`5.9.2...5.10.0`][5.9.2...5.10.0].
 
 For a full diff see [`5.9.1...5.9.2`][5.9.1...5.9.2].
 
-## Fixed
+### Fixed
 
 - Updated `friendsofphp/php-cs-fixer` ([#804]), by [@dependabot]
 
@@ -109,7 +109,7 @@ For a full diff see [`5.9.1...5.9.2`][5.9.1...5.9.2].
 
 For a full diff see [`5.9.0...5.9.1`][5.9.0...5.9.1].
 
-## Fixed
+### Fixed
 
 - Updated `friendsofphp/php-cs-fixer` ([#803]), by [@dependabot]
 
@@ -117,7 +117,7 @@ For a full diff see [`5.9.0...5.9.1`][5.9.0...5.9.1].
 
 For a full diff see [`5.8.0...5.9.0`][5.8.0...5.9.0].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#802]), by [@dependabot]
 
@@ -125,7 +125,7 @@ For a full diff see [`5.8.0...5.9.0`][5.8.0...5.9.0].
 
 For a full diff see [`5.7.0...5.8.0`][5.7.0...5.8.0].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#800]), by [@dependabot]
 
@@ -133,7 +133,7 @@ For a full diff see [`5.7.0...5.8.0`][5.7.0...5.8.0].
 
 For a full diff see [`5.6.0...5.7.0`][5.6.0...5.7.0].
 
-## Changed
+### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#787]), by [@dependabot]
 - Enabled and configured `ordered_types` fixer ([#788]), by [@localheinz]

@@ -848,7 +848,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
         ],
     ];
 
-    protected function targetPhpVersion(): int
+    protected function expectedTargetPhpVersion(): int
     {
         return 80200;
     }

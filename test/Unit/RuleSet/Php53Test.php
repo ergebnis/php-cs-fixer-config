@@ -819,7 +819,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
         ],
     ];
 
-    protected function targetPhpVersion(): int
+    protected function expectedTargetPhpVersion(): int
     {
         return 50300;
     }

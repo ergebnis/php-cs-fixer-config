@@ -837,7 +837,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
         ],
     ];
 
-    protected function targetPhpVersion(): int
+    protected function expectedTargetPhpVersion(): int
     {
         return 70400;
     }

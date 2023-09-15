@@ -136,27 +136,6 @@ abstract class AbstractRuleSet implements RuleSet
         ];
     }
 
-    final public function name(): string
-    {
-        $targetPhpVersion = $this->targetPhpVersion();
-
-        $major = \intdiv(
-            $targetPhpVersion,
-            10_000,
-        );
-
-        $minor = \intdiv(
-            $targetPhpVersion % 10_000,
-            100,
-        );
-
-        return \sprintf(
-            'ergebnis (PHP %d.%s)',
-            $major,
-            $minor,
-        );
-    }
-
     final public function rules(): array
     {
         return $this->rules;

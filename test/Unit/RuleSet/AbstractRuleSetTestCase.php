@@ -142,7 +142,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         $rulesWithoutRulesThatAreNotBuiltIn = \array_filter(
             $rules,
             static function (string $nameOfRule) use ($fixersThatAreBuiltIn): bool {
-                if ('@' === \mb_substr($nameOfRule, 0, 1)) {
+                if (\str_starts_with($nameOfRule, '@')) {
                     return true;
                 }
 

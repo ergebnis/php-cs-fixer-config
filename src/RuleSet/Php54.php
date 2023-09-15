@@ -15,7 +15,6 @@ namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 final class Php54 extends AbstractRuleSet implements ExplicitRuleSet
 {
-    protected string $name = 'ergebnis (PHP 5.4)';
     protected array $rules = [
         'align_multiline_comment' => [
             'comment_type' => 'all_multiline',

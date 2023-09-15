@@ -116,7 +116,6 @@ abstract class AbstractRuleSet implements RuleSet
         'var',
         'version',
     ];
-    protected string $name = '';
 
     /**
      * @var array<string, array<string, mixed>|bool>
@@ -140,7 +139,21 @@ abstract class AbstractRuleSet implements RuleSet
 
     final public function name(): string
     {
-        return $this->name;
+        $major = \intdiv(
+            $this->targetPhpVersion,
+            10_000,
+        );
+
+        $minor = \intdiv(
+            $this->targetPhpVersion % 10_000,
+            100,
+        );
+
+        return \sprintf(
+            'ergebnis (PHP %d.%s)',
+            $major,
+            $minor,
+        );
     }
 
     final public function rules(): array

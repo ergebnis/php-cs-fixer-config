@@ -12,6 +12,10 @@ For a full diff see [`5.15.1...main`][5.15.1...main].
 
 - Fixed target PHP versions in `Config\Ruleset\Php53`, `Config\Ruleset\Php54`, `Config\Ruleset\Php55`, `Config\Ruleset\Php56`, and `Config\Ruleset\Php70` ([#864]), by [@localheinz]
 
+### Removed
+
+- Removed `$name` field from `Config\Ruleset\AbstractRuleSet` ([#865]), by [@localheinz]
+
 ## [`5.15.1`][5.15.1]
 
 For a full diff see [`5.15.0...5.15.1`][5.15.0...5.15.1].

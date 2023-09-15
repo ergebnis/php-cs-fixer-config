@@ -126,7 +126,7 @@
   </file>
   <file src="test/Unit/FactoryTest.php">
     <PossiblyUnusedMethod>
-      <code>provideTargetPhpVersion</code>
+      <code>provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion</code>
     </PossiblyUnusedMethod>
   </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">

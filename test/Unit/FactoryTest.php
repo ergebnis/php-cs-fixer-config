@@ -22,7 +22,7 @@ final class FactoryTest extends Framework\TestCase
 {
     use Test\Util\Helper;
 
-    public function testFromRuleSetThrowsRuntimeExceptionIfCurrentPhpVersionIsLessThanTargetPhpVersion(): void
+    public function testFromRuleSetThrowsRuntimeExceptionWhenCurrentPhpVersionIsLessThanTargetPhpVersion(): void
     {
         $targetPhpVersion = \PHP_VERSION_ID + 1;
 
@@ -42,8 +42,8 @@ final class FactoryTest extends Framework\TestCase
         Factory::fromRuleSet($ruleSet);
     }
 
-    #[Framework\Attributes\DataProvider('provideTargetPhpVersion')]
-    public function testFromRuleSetCreatesConfig(int $targetPhpVersion): void
+    #[Framework\Attributes\DataProvider('provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion')]
+    public function testFromRuleSetCreatesConfigWhenCurrentPhpVersionIsEqualToOrGreaterThanTargetPhpVersion(int $targetPhpVersion): void
     {
         $rules = [
             'foo' => true,
@@ -68,7 +68,7 @@ final class FactoryTest extends Framework\TestCase
     /**
      * @return \Generator<int, array{0: int}>
      */
-    public static function provideTargetPhpVersion(): \Generator
+    public static function provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion(): \Generator
     {
         $values = [
             \PHP_VERSION_ID - 1,

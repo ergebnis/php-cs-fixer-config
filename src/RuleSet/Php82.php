@@ -839,6 +839,11 @@ final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
         ],
     ];
 
+    public function name(): string
+    {
+        return 'ergebnis (PHP 8.2)';
+    }
+
     public function targetPhpVersion(): int
     {
         return 80200;

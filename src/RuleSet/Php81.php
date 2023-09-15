@@ -839,6 +839,11 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
         ],
     ];
 
+    public function name(): string
+    {
+        return 'ergebnis (PHP 8.1)';
+    }
+
     public function targetPhpVersion(): int
     {
         return 80100;

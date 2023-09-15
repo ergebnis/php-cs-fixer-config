@@ -821,6 +821,11 @@ final class Php70 extends AbstractRuleSet implements ExplicitRuleSet
         ],
     ];
 
+    public function name(): string
+    {
+        return 'ergebnis (PHP 7.0)';
+    }
+
     public function targetPhpVersion(): int
     {
         return 70000;

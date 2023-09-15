@@ -827,5 +827,9 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
             'less_and_greater' => true,
         ],
     ];
-    protected int $targetPhpVersion = 70400;
+
+    public function targetPhpVersion(): int
+    {
+        return 70400;
+    }
 }

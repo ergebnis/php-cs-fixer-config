@@ -121,7 +121,6 @@ abstract class AbstractRuleSet implements RuleSet
      * @var array<string, array<string, mixed>|bool>
      */
     protected array $rules = [];
-    protected int $targetPhpVersion = 0;
 
     final public function __construct(?string $header = null)
     {
@@ -139,13 +138,15 @@ abstract class AbstractRuleSet implements RuleSet
 
     final public function name(): string
     {
+        $targetPhpVersion = $this->targetPhpVersion();
+
         $major = \intdiv(
-            $this->targetPhpVersion,
+            $targetPhpVersion,
             10_000,
         );
 
         $minor = \intdiv(
-            $this->targetPhpVersion % 10_000,
+            $targetPhpVersion % 10_000,
             100,
         );
 
@@ -159,10 +160,5 @@ abstract class AbstractRuleSet implements RuleSet
     final public function rules(): array
     {
         return $this->rules;
-    }
-
-    final public function targetPhpVersion(): int
-    {
-        return $this->targetPhpVersion;
     }
 }

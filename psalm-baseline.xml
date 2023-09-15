@@ -113,6 +113,12 @@
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
+  <file src="test/Double/Config/RuleSet/DummyRuleSet.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
+  </file>
   <file src="test/EndToEnd/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass>
       <code>Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG</code>

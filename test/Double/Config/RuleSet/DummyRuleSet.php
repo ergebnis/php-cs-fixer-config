@@ -17,9 +17,6 @@ use Ergebnis\PhpCsFixer\Config;
 
 final class DummyRuleSet implements Config\RuleSet
 {
-    /**
-     * @param array<string, array<string, mixed>|bool> $rules
-     */
     public function __construct(
         private readonly string $name,
         private readonly array $rules,

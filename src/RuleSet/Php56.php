@@ -826,6 +826,11 @@ final class Php56 extends AbstractRuleSet implements ExplicitRuleSet
         return 'ergebnis (PHP 5.6)';
     }
 
+    public function rules(): array
+    {
+        return $this->rules;
+    }
+
     public function targetPhpVersion(): int
     {
         return 50600;

@@ -842,6 +842,11 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         return 'ergebnis (PHP 8.0)';
     }
 
+    public function rules(): array
+    {
+        return $this->rules;
+    }
+
     public function targetPhpVersion(): int
     {
         return 80000;

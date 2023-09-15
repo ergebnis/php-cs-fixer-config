@@ -6,61 +6,109 @@
     </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php53.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php54.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php55.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php56.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php70.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php71.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php72.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php73.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php74.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php80.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php81.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
   </file>
   <file src="src/RuleSet/Php82.php">
+    <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->rules]]></code>
+      <code>array</code>
+    </MixedReturnTypeCoercion>
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>

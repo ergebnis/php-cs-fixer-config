@@ -817,6 +817,11 @@ final class Php54 extends AbstractRuleSet implements ExplicitRuleSet
         return 'ergebnis (PHP 5.4)';
     }
 
+    public function rules(): array
+    {
+        return $this->rules;
+    }
+
     public function targetPhpVersion(): int
     {
         return 50400;

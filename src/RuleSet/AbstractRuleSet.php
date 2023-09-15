@@ -135,9 +135,4 @@ abstract class AbstractRuleSet implements RuleSet
             'separate' => 'both',
         ];
     }
-
-    final public function rules(): array
-    {
-        return $this->rules;
-    }
 }

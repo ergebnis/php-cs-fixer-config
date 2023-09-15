@@ -815,6 +815,11 @@ final class Php53 extends AbstractRuleSet implements ExplicitRuleSet
         return 'ergebnis (PHP 5.3)';
     }
 
+    public function rules(): array
+    {
+        return $this->rules;
+    }
+
     public function targetPhpVersion(): int
     {
         return 50300;

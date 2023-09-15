@@ -830,6 +830,11 @@ final class Php73 extends AbstractRuleSet implements ExplicitRuleSet
         return 'ergebnis (PHP 7.3)';
     }
 
+    public function rules(): array
+    {
+        return $this->rules;
+    }
+
     public function targetPhpVersion(): int
     {
         return 70300;

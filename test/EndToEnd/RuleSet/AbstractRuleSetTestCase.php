@@ -47,6 +47,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
                     self::configPath(),
                 ),
                 '--dry-run',
+                self::configPath(),
             ],
             null,
             [

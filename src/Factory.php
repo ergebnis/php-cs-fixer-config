@@ -36,7 +36,7 @@ final class Factory
             ));
         }
 
-        $config = new Config($ruleSet->name());
+        $config = new Config($ruleSet->name()->toString());
 
         $config->setRiskyAllowed(true);
         $config->setRules(\array_merge(

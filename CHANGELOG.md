@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`5.15.1...main`][5.15.1...main].
 
+### Added
+
+- Extracted `Name` as a value object ([#870]), by [@localheinz]
+
 ### Fixed
 
 - Fixed target PHP versions in `Config\Ruleset\Php53`, `Config\Ruleset\Php54`, `Config\Ruleset\Php55`, `Config\Ruleset\Php56`, and `Config\Ruleset\Php70` ([#864]), by [@localheinz]
@@ -1158,6 +1162,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#866]: https://github.com/ergebnis/php-cs-fixer-config/pull/866
 [#867]: https://github.com/ergebnis/php-cs-fixer-config/pull/867
 [#868]: https://github.com/ergebnis/php-cs-fixer-config/pull/868
+[#870]: https://github.com/ergebnis/php-cs-fixer-config/pull/870
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

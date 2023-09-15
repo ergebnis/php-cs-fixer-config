@@ -13,18 +13,19 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Double\Config\RuleSet;
 
-use Ergebnis\PhpCsFixer\Config;
+use Ergebnis\PhpCsFixer\Config\Name;
+use Ergebnis\PhpCsFixer\Config\RuleSet;
 
-final class DummyRuleSet implements Config\RuleSet
+final class DummyRuleSet implements RuleSet
 {
     public function __construct(
-        private readonly string $name,
+        private readonly Name $name,
         private readonly array $rules,
         private readonly int $phpVersion,
     ) {
     }
 
-    public function name(): string
+    public function name(): Name
     {
         return $this->name;
     }

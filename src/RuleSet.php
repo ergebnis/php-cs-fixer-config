@@ -18,7 +18,7 @@ interface RuleSet
     /**
      * Returns the name of the rule set.
      */
-    public function name(): string;
+    public function name(): Name;
 
     /**
      * Returns an array of rules along with their configuration.

@@ -818,5 +818,9 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'less_and_greater' => true,
         ],
     ];
-    protected int $targetPhpVersion = 50300;
+
+    protected function targetPhpVersion(): int
+    {
+        return 50300;
+    }
 }

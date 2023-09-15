@@ -845,5 +845,9 @@ final class Php80Test extends ExplicitRuleSetTestCase
             'less_and_greater' => true,
         ],
     ];
-    protected int $targetPhpVersion = 80000;
+
+    protected function targetPhpVersion(): int
+    {
+        return 80000;
+    }
 }

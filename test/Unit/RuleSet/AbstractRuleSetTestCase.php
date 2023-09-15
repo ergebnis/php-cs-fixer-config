@@ -123,7 +123,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     ];
     protected string $name;
     protected array $rules;
-    protected int $targetPhpVersion;
 
     final public function testDefaults(): void
     {
@@ -131,7 +130,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertSame($this->name, $ruleSet->name());
         self::assertEquals($this->rules, $ruleSet->rules());
-        self::assertSame($this->targetPhpVersion, $ruleSet->targetPhpVersion());
+        self::assertSame($this->targetPhpVersion(), $ruleSet->targetPhpVersion());
     }
 
     final public function testRuleSetDoesNotConfigureRulesThatAreNotRegistered(): void
@@ -307,6 +306,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             ];
         }
     }
+
+    abstract protected function targetPhpVersion(): int;
 
     /**
      * @psalm-return class-string

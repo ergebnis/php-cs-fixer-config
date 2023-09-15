@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`5.15.1...main`][5.15.1...main].
 
+### Fixed
+
+- Fixed target PHP versions in `Config\Ruleset\Php53`, `Config\Ruleset\Php54`, `Config\Ruleset\Php55`, `Config\Ruleset\Php56`, and `Config\Ruleset\Php70` ([#864]), by [@localheinz]
+
 ## [`5.15.1`][5.15.1]
 
 For a full diff see [`5.15.0...5.15.1`][5.15.0...5.15.1].
@@ -1143,6 +1147,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#850]: https://github.com/ergebnis/php-cs-fixer-config/pull/850
 [#856]: https://github.com/ergebnis/php-cs-fixer-config/pull/856
 [#857]: https://github.com/ergebnis/php-cs-fixer-config/pull/857
+[#864]: https://github.com/ergebnis/php-cs-fixer-config/pull/864
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

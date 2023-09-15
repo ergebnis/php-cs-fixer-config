@@ -13,11 +13,14 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
+use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversClass(RuleSet\AbstractRuleSet::class)]
 #[Framework\Attributes\CoversClass(RuleSet\Php56::class)]
+#[Framework\Attributes\RequiresPhp('>=5.6')]
+#[Framework\Attributes\UsesClass(Factory::class)]
 final class Php56Test extends ExplicitRuleSetTestCase
 {
     protected string $name = 'ergebnis (PHP 5.6)';

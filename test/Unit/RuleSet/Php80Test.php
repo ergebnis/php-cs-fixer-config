@@ -13,11 +13,14 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
+use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversClass(RuleSet\AbstractRuleSet::class)]
 #[Framework\Attributes\CoversClass(RuleSet\Php80::class)]
+#[Framework\Attributes\RequiresPhp('>=8.0')]
+#[Framework\Attributes\UsesClass(Factory::class)]
 final class Php80Test extends ExplicitRuleSetTestCase
 {
     protected string $name = 'ergebnis (PHP 8.0)';

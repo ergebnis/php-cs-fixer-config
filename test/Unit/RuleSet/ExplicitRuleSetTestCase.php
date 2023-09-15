@@ -48,15 +48,15 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
     {
         $rules = self::createRuleSet()->rules();
 
-        $fixersThatAreBuiltInAndNotDeprecated = \array_filter(self::fixersThatAreBuiltIn(), static function (Fixer\FixerInterface $fixer): bool {
+        $fixersThatAreRegisteredAndNotDeprecated = \array_filter(self::fixersThatAreRegistered(), static function (Fixer\FixerInterface $fixer): bool {
             return !$fixer instanceof Fixer\DeprecatedFixerInterface;
         });
 
         $rulesThatAreNotDeprecated = \array_combine(
-            \array_keys($fixersThatAreBuiltInAndNotDeprecated),
+            \array_keys($fixersThatAreRegisteredAndNotDeprecated),
             \array_fill(
                 0,
-                \count($fixersThatAreBuiltInAndNotDeprecated),
+                \count($fixersThatAreRegisteredAndNotDeprecated),
                 false,
             ),
         );
@@ -78,16 +78,16 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
         $namesOfRules = \array_keys($rules);
 
-        $fixersThatAreBuiltIn = self::fixersThatAreBuiltIn();
+        $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
         $rulesWithAllNonDeprecatedConfigurationOptions = \array_combine(
             $namesOfRules,
-            \array_map(static function (string $nameOfRule, $ruleConfiguration) use ($fixersThatAreBuiltIn) {
+            \array_map(static function (string $nameOfRule, $ruleConfiguration) use ($fixersThatAreRegistered) {
                 if (false === $ruleConfiguration) {
                     return false;
                 }
 
-                $fixer = $fixersThatAreBuiltIn[$nameOfRule];
+                $fixer = $fixersThatAreRegistered[$nameOfRule];
 
                 if ($fixer instanceof Fixer\DeprecatedFixerInterface) {
                     return $ruleConfiguration;

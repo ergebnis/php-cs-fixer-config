@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
+use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\FixerConfiguration;
@@ -133,29 +134,29 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         self::assertSame($this->targetPhpVersion, $ruleSet->targetPhpVersion());
     }
 
-    final public function testRuleSetDoesNotConfigureRulesThatAreNotBuiltIn(): void
+    final public function testRuleSetDoesNotConfigureRulesThatAreNotRegistered(): void
     {
         $rules = self::createRuleSet()->rules();
 
-        $fixersThatAreBuiltIn = self::fixersThatAreBuiltIn();
+        $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
-        $rulesWithoutRulesThatAreNotBuiltIn = \array_filter(
+        $rulesWithoutRulesThatAreNotRegistered = \array_filter(
             $rules,
-            static function (string $nameOfRule) use ($fixersThatAreBuiltIn): bool {
+            static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
                 if (\str_starts_with($nameOfRule, '@')) {
                     return true;
                 }
 
                 return \array_key_exists(
                     $nameOfRule,
-                    $fixersThatAreBuiltIn,
+                    $fixersThatAreRegistered,
                 );
             },
             \ARRAY_FILTER_USE_KEY,
         );
 
-        self::assertEquals($rulesWithoutRulesThatAreNotBuiltIn, $rules, \sprintf(
-            'Failed asserting that rule set "%s" does not configure rules that are not built-in.',
+        self::assertEquals($rulesWithoutRulesThatAreNotRegistered, $rules, \sprintf(
+            'Failed asserting that rule set "%s" does not configure rules that are not registered.',
             static::className(),
         ));
     }
@@ -164,16 +165,16 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $rules = self::createRuleSet()->rules();
 
-        $fixersThatAreBuiltIn = self::fixersThatAreBuiltIn();
+        $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
         $rulesWithoutRulesThatAreDeprecated = \array_filter(
             $rules,
-            static function (string $nameOfRule) use ($fixersThatAreBuiltIn): bool {
-                if (!\array_key_exists($nameOfRule, $fixersThatAreBuiltIn)) {
+            static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
+                if (!\array_key_exists($nameOfRule, $fixersThatAreRegistered)) {
                     return true;
                 }
 
-                $fixer = $fixersThatAreBuiltIn[$nameOfRule];
+                $fixer = $fixersThatAreRegistered[$nameOfRule];
 
                 return !$fixer instanceof Fixer\DeprecatedFixerInterface;
             },
@@ -192,16 +193,16 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         $namesOfRules = \array_keys($rules);
 
-        $fixersThatAreBuiltIn = self::fixersThatAreBuiltIn();
+        $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
         $rulesWithoutDeprecatedConfigurationOptions = \array_combine(
             $namesOfRules,
-            \array_map(static function (string $nameOfRule, $ruleConfiguration) use ($fixersThatAreBuiltIn) {
+            \array_map(static function (string $nameOfRule, $ruleConfiguration) use ($fixersThatAreRegistered) {
                 if (!\is_array($ruleConfiguration)) {
                     return $ruleConfiguration;
                 }
 
-                $fixer = $fixersThatAreBuiltIn[$nameOfRule];
+                $fixer = $fixersThatAreRegistered[$nameOfRule];
 
                 if ($fixer instanceof Fixer\DeprecatedFixerInterface) {
                     return $ruleConfiguration;
@@ -367,24 +368,27 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @return array<string, Fixer\FixerInterface>
      */
-    final protected static function fixersThatAreBuiltIn(): array
+    final protected static function fixersThatAreRegistered(): array
     {
         $fixerFactory = new FixerFactory();
 
         $fixerFactory->registerBuiltInFixers();
 
-        $fixers = $fixerFactory->getFixers();
+        $fixers = \array_merge(
+            $fixerFactory->getFixers(),
+            Factory::fromRuleSet(self::createRuleSet())->getCustomFixers(),
+        );
 
-        $fixersThatAreBuiltIn = \array_combine(
+        $fixersThatAreRegistered = \array_combine(
             \array_map(static function (Fixer\FixerInterface $fixer): string {
                 return $fixer->getName();
             }, $fixers),
             $fixers,
         );
 
-        \ksort($fixersThatAreBuiltIn);
+        \ksort($fixersThatAreRegistered);
 
-        return $fixersThatAreBuiltIn;
+        return $fixersThatAreRegistered;
     }
 
     final protected static function sort(array $data): array

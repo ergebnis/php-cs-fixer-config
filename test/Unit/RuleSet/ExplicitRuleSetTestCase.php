@@ -31,14 +31,14 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
         $rules = self::createRuleSet()->rules();
 
         $rulesWithoutRulesForRuleSets = \array_filter(
-            $rules,
+            $rules->toArray(),
             static function (string $nameOfRule): bool {
                 return !\str_starts_with($nameOfRule, '@');
             },
             \ARRAY_FILTER_USE_KEY,
         );
 
-        self::assertEquals($rulesWithoutRulesForRuleSets, $rules, \sprintf(
+        self::assertEquals($rulesWithoutRulesForRuleSets, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules for rule sets.',
             static::className(),
         ));
@@ -63,10 +63,10 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
         $rulesWithRulesThatAreNotDeprecated = \array_merge(
             $rulesThatAreNotDeprecated,
-            $rules,
+            $rules->toArray(),
         );
 
-        self::assertEquals($rulesWithRulesThatAreNotDeprecated, $rules, \sprintf(
+        self::assertEquals($rulesWithRulesThatAreNotDeprecated, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" configures all non-deprecated fixers.',
             static::className(),
         ));
@@ -76,7 +76,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
     {
         $rules = self::createRuleSet()->rules();
 
-        $namesOfRules = \array_keys($rules);
+        $namesOfRules = \array_keys($rules->toArray());
 
         $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
@@ -133,10 +133,10 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
                     $ruleConfiguration,
                     $diff,
                 );
-            }, $namesOfRules, $rules),
+            }, $namesOfRules, $rules->toArray()),
         );
 
-        self::assertEquals($rulesWithAllNonDeprecatedConfigurationOptions, $rules, \sprintf(
+        self::assertEquals($rulesWithAllNonDeprecatedConfigurationOptions, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" configures configurable rules using all non-deprecated configuration options.',
             static::className(),
         ));

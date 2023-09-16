@@ -307,9 +307,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         }
     }
 
-    abstract protected function expectedRules(): array;
-
     abstract protected function expectedName(): Name;
+
+    abstract protected function expectedRules(): array;
 
     abstract protected function expectedTargetPhpVersion(): PhpVersion;
 

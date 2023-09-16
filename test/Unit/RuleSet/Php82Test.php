@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
+use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PHPUnit\Framework;
 
@@ -21,11 +22,12 @@ use PHPUnit\Framework;
 #[Framework\Attributes\CoversClass(RuleSet\Php82::class)]
 #[Framework\Attributes\RequiresPhp('>=8.2')]
 #[Framework\Attributes\UsesClass(Factory::class)]
+#[Framework\Attributes\UsesClass(Name::class)]
 final class Php82Test extends ExplicitRuleSetTestCase
 {
-    protected function expectedName(): string
+    protected function expectedName(): Name
     {
-        return 'ergebnis (PHP 8.2)';
+        return Name::fromString('ergebnis (PHP 8.2)');
     }
 
     protected function expectedRules(): array

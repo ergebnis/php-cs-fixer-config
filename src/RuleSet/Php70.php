@@ -13,6 +13,8 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
+use Ergebnis\PhpCsFixer\Config\Name;
+
 final class Php70 extends AbstractRuleSet implements ExplicitRuleSet
 {
     protected array $rules = [
@@ -821,9 +823,9 @@ final class Php70 extends AbstractRuleSet implements ExplicitRuleSet
         ],
     ];
 
-    public function name(): string
+    public function name(): Name
     {
-        return 'ergebnis (PHP 7.0)';
+        return Name::fromString('ergebnis (PHP 7.0)');
     }
 
     public function rules(): array

@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
+use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\FixerConfiguration;
@@ -126,7 +127,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $ruleSet = self::createRuleSet();
 
-        self::assertSame($this->expectedName(), $ruleSet->name());
+        self::assertEquals($this->expectedName(), $ruleSet->name());
         self::assertEquals($this->expectedRules(), $ruleSet->rules());
         self::assertSame($this->expectedTargetPhpVersion(), $ruleSet->targetPhpVersion());
     }
@@ -307,7 +308,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     abstract protected function expectedRules(): array;
 
-    abstract protected function expectedName(): string;
+    abstract protected function expectedName(): Name;
 
     abstract protected function expectedTargetPhpVersion(): int;
 

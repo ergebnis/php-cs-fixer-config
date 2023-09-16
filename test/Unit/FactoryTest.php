@@ -14,10 +14,12 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
+use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversClass(Factory::class)]
+#[Framework\Attributes\UsesClass(Name::class)]
 final class FactoryTest extends Framework\TestCase
 {
     use Test\Util\Helper;
@@ -27,7 +29,7 @@ final class FactoryTest extends Framework\TestCase
         $targetPhpVersion = \PHP_VERSION_ID + 1;
 
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
-            self::faker()->word(),
+            Name::fromString(self::faker()->word()),
             [],
             $targetPhpVersion,
         );
@@ -53,7 +55,7 @@ final class FactoryTest extends Framework\TestCase
         ];
 
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
-            self::faker()->word(),
+            Name::fromString(self::faker()->word()),
             $rules,
             $targetPhpVersion,
         );
@@ -92,7 +94,7 @@ final class FactoryTest extends Framework\TestCase
         ];
 
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
-            self::faker()->word(),
+            Name::fromString(self::faker()->word()),
             $rules,
             \PHP_VERSION_ID,
         );

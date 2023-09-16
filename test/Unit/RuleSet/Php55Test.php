@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
+use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PHPUnit\Framework;
 
@@ -21,11 +22,12 @@ use PHPUnit\Framework;
 #[Framework\Attributes\CoversClass(RuleSet\Php55::class)]
 #[Framework\Attributes\RequiresPhp('>=5.5')]
 #[Framework\Attributes\UsesClass(Factory::class)]
+#[Framework\Attributes\UsesClass(Name::class)]
 final class Php55Test extends ExplicitRuleSetTestCase
 {
-    protected function expectedName(): string
+    protected function expectedName(): Name
     {
-        return 'ergebnis (PHP 5.5)';
+        return Name::fromString('ergebnis (PHP 5.5)');
     }
 
     protected function expectedRules(): array

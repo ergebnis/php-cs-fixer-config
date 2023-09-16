@@ -21,7 +21,6 @@ use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversClass(RuleSet\AbstractRuleSet::class)]
 #[Framework\Attributes\CoversClass(RuleSet\Php72::class)]
-#[Framework\Attributes\RequiresPhp('>=7.2')]
 #[Framework\Attributes\UsesClass(Factory::class)]
 #[Framework\Attributes\UsesClass(Name::class)]
 #[Framework\Attributes\UsesClass(PhpVersion::class)]

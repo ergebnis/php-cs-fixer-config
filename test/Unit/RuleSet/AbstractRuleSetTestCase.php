@@ -13,7 +13,6 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
-use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
@@ -382,9 +381,13 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         $fixerFactory->registerBuiltInFixers();
 
+        $fixersThatAreBuiltIn = $fixerFactory->getFixers();
+        $fixersThatShouldBeRegistered = \iterator_to_array(self::createRuleSet()->customFixers());
+
+        /** @var array<Fixer\FixerInterface> $fixers */
         $fixers = \array_merge(
-            $fixerFactory->getFixers(),
-            Factory::fromRuleSet(self::createRuleSet())->getCustomFixers(),
+            $fixersThatAreBuiltIn,
+            $fixersThatShouldBeRegistered,
         );
 
         $fixersThatAreRegistered = \array_combine(

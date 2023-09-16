@@ -10,8 +10,8 @@ For a full diff see [`5.15.1...main`][5.15.1...main].
 
 ### Added
 
-- Extracted `Name` as a value object ([#870]), by [@localheinz]
-- Extracted `PhpVersion` as a value object ([#871]), by [@localheinz]
+- Extracted `Config\Name` as a value object ([#870]), by [@localheinz]
+- Extracted `Config\PhpVersion` as a value object ([#871]), by [@localheinz]
 
 ### Fixed
 

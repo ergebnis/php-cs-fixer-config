@@ -129,6 +129,18 @@
       <code>provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion</code>
     </PossiblyUnusedMethod>
   </file>
+  <file src="test/Unit/PhpVersion/MinorTest.php">
+    <PossiblyUnusedMethod>
+      <code>provideValidValue</code>
+      <code>provideValueGreaterThanNinetyNine</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="test/Unit/PhpVersion/PatchTest.php">
+    <PossiblyUnusedMethod>
+      <code>provideValidValue</code>
+      <code>provideValueGreaterThanNinetyNine</code>
+    </PossiblyUnusedMethod>
+  </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass>
       <code>new FixerFactory()</code>

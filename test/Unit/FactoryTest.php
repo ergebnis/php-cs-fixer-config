@@ -15,18 +15,27 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\Name;
+use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversClass(Factory::class)]
 #[Framework\Attributes\UsesClass(Name::class)]
+#[Framework\Attributes\UsesClass(PhpVersion::class)]
+#[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
+#[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
+#[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
 final class FactoryTest extends Framework\TestCase
 {
     use Test\Util\Helper;
 
     public function testFromRuleSetThrowsRuntimeExceptionWhenCurrentPhpVersionIsLessThanTargetPhpVersion(): void
     {
-        $targetPhpVersion = \PHP_VERSION_ID + 1;
+        $targetPhpVersion = PhpVersion::create(
+            PhpVersion\Major::fromInt(\PHP_MAJOR_VERSION),
+            PhpVersion\Minor::fromInt(\PHP_MINOR_VERSION),
+            PhpVersion\Patch::fromInt(\PHP_RELEASE_VERSION + 1),
+        );
 
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             Name::fromString(self::faker()->word()),
@@ -36,16 +45,16 @@ final class FactoryTest extends Framework\TestCase
 
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage(\sprintf(
-            'Current PHP version "%d" is less than targeted PHP version "%d".',
-            \PHP_VERSION_ID,
-            $targetPhpVersion,
+            'Current PHP version "%s" is less than targeted PHP version "%s".',
+            PhpVersion::current()->toString(),
+            $targetPhpVersion->toString(),
         ));
 
         Factory::fromRuleSet($ruleSet);
     }
 
     #[Framework\Attributes\DataProvider('provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion')]
-    public function testFromRuleSetCreatesConfigWhenCurrentPhpVersionIsEqualToOrGreaterThanTargetPhpVersion(int $targetPhpVersion): void
+    public function testFromRuleSetCreatesConfigWhenCurrentPhpVersionIsEqualToOrGreaterThanTargetPhpVersion(PhpVersion $targetPhpVersion): void
     {
         $rules = [
             'foo' => true,
@@ -68,13 +77,13 @@ final class FactoryTest extends Framework\TestCase
     }
 
     /**
-     * @return \Generator<int, array{0: int}>
+     * @return \Generator<int, array{0: PhpVersion}>
      */
     public static function provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion(): \Generator
     {
         $values = [
-            \PHP_VERSION_ID - 1,
-            \PHP_VERSION_ID,
+            PhpVersion::fromInt(\PHP_VERSION_ID - 1),
+            PhpVersion::fromInt(\PHP_VERSION_ID),
         ];
 
         foreach ($values as $value) {
@@ -96,7 +105,11 @@ final class FactoryTest extends Framework\TestCase
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             Name::fromString(self::faker()->word()),
             $rules,
-            \PHP_VERSION_ID,
+            PhpVersion::create(
+                PhpVersion\Major::fromInt(\PHP_MAJOR_VERSION),
+                PhpVersion\Minor::fromInt(\PHP_MINOR_VERSION),
+                PhpVersion\Patch::fromInt(\PHP_RELEASE_VERSION),
+            ),
         );
 
         $overrideRules = [

@@ -15,6 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\Name;
+use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\FixerConfiguration;
@@ -129,7 +130,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertEquals($this->expectedName(), $ruleSet->name());
         self::assertEquals($this->expectedRules(), $ruleSet->rules());
-        self::assertSame($this->expectedTargetPhpVersion(), $ruleSet->targetPhpVersion());
+        self::assertEquals($this->expectedTargetPhpVersion(), $ruleSet->targetPhpVersion());
     }
 
     final public function testRuleSetDoesNotConfigureRulesThatAreNotRegistered(): void
@@ -310,7 +311,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     abstract protected function expectedName(): Name;
 
-    abstract protected function expectedTargetPhpVersion(): int;
+    abstract protected function expectedTargetPhpVersion(): PhpVersion;
 
     /**
      * @psalm-return class-string

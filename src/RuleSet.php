@@ -28,9 +28,7 @@ interface RuleSet
     public function rules(): array;
 
     /**
-     * Returns the minimum required PHP version (PHP_VERSION_ID).
-     *
-     * @see http://php.net/manual/en/reserved.constants.php
+     * Returns the minimum required PHP version.
      */
-    public function targetPhpVersion(): int;
+    public function targetPhpVersion(): PhpVersion;
 }

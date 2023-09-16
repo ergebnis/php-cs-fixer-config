@@ -13,10 +13,15 @@ declare(strict_types=1);
 
 use Ergebnis\DataProvider;
 use Ergebnis\PhpCsFixer\Config\Name;
+use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversClass(Name::class)]
+#[Framework\Attributes\UsesClass(PhpVersion::class)]
+#[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
+#[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
+#[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
 final class NameTest extends Framework\TestCase
 {
     use Test\Util\Helper;
@@ -38,5 +43,20 @@ final class NameTest extends Framework\TestCase
         $name = Name::fromString($value);
 
         self::assertSame($value, $name->toString());
+    }
+
+    public function testFromPhpVersionReturnsName(): void
+    {
+        $phpVersion = PhpVersion::current();
+
+        $name = Name::fromPhpVersion($phpVersion);
+
+        $expected = \sprintf(
+            'ergebnis (PHP %d.%d)',
+            $phpVersion->major()->toInt(),
+            $phpVersion->minor()->toInt(),
+        );
+
+        self::assertSame($expected, $name->toString());
     }
 }

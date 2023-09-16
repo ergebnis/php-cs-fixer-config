@@ -15,6 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\Name;
+use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PHPUnit\Framework;
 
@@ -23,6 +24,10 @@ use PHPUnit\Framework;
 #[Framework\Attributes\RequiresPhp('>=5.3')]
 #[Framework\Attributes\UsesClass(Factory::class)]
 #[Framework\Attributes\UsesClass(Name::class)]
+#[Framework\Attributes\UsesClass(PhpVersion::class)]
+#[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
+#[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
+#[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
 final class Php53Test extends ExplicitRuleSetTestCase
 {
     protected function expectedName(): Name
@@ -828,8 +833,12 @@ final class Php53Test extends ExplicitRuleSetTestCase
         ];
     }
 
-    protected function expectedTargetPhpVersion(): int
+    protected function expectedTargetPhpVersion(): PhpVersion
     {
-        return 50300;
+        return PhpVersion::create(
+            PhpVersion\Major::fromInt(5),
+            PhpVersion\Minor::fromInt(3),
+            PhpVersion\Patch::fromInt(0),
+        );
     }
 }

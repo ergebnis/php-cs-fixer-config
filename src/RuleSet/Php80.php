@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Name;
+use Ergebnis\PhpCsFixer\Config\PhpVersion;
 
 final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
 {
@@ -841,7 +842,7 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
 
     public function name(): Name
     {
-        return Name::fromString('ergebnis (PHP 8.0)');
+        return Name::fromPhpVersion($this->targetPhpVersion());
     }
 
     public function rules(): array
@@ -849,8 +850,12 @@ final class Php80 extends AbstractRuleSet implements ExplicitRuleSet
         return $this->rules;
     }
 
-    public function targetPhpVersion(): int
+    public function targetPhpVersion(): PhpVersion
     {
-        return 80000;
+        return PhpVersion::create(
+            PhpVersion\Major::fromInt(8),
+            PhpVersion\Minor::fromInt(0),
+            PhpVersion\Patch::fromInt(0),
+        );
     }
 }

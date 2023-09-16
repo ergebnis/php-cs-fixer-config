@@ -28,11 +28,13 @@ final class Factory
         RuleSet $ruleSet,
         array $overrideRules = [],
     ): Config {
-        if (\PHP_VERSION_ID < $ruleSet->targetPhpVersion()) {
+        $currentPhpVersion = PhpVersion::current();
+
+        if ($currentPhpVersion->isSmallerThan($ruleSet->targetPhpVersion())) {
             throw new \RuntimeException(\sprintf(
-                'Current PHP version "%d" is less than targeted PHP version "%d".',
-                \PHP_VERSION_ID,
-                $ruleSet->targetPhpVersion(),
+                'Current PHP version "%s" is less than targeted PHP version "%s".',
+                $currentPhpVersion->toString(),
+                $ruleSet->targetPhpVersion()->toString(),
             ));
         }
 

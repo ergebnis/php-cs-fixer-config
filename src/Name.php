@@ -22,6 +22,15 @@ final class Name
         $this->value = $value;
     }
 
+    public static function fromPhpVersion(PhpVersion $phpVersion): self
+    {
+        return new self(\sprintf(
+            'ergebnis (PHP %d.%d)',
+            $phpVersion->major()->toInt(),
+            $phpVersion->minor()->toInt(),
+        ));
+    }
+
     /**
      * @throws \InvalidArgumentException
      */

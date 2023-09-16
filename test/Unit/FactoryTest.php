@@ -45,7 +45,7 @@ final class FactoryTest extends Framework\TestCase
 
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage(\sprintf(
-            'Current PHP version "%s" is less than targeted PHP version "%s".',
+            'Current PHP version "%s" is smaller than targeted PHP version "%s".',
             PhpVersion::current()->toString(),
             $targetPhpVersion->toString(),
         ));

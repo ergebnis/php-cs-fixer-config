@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Name;
+use Ergebnis\PhpCsFixer\Config\PhpVersion;
 
 final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
 {
@@ -832,7 +833,7 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
 
     public function name(): Name
     {
-        return Name::fromString('ergebnis (PHP 7.4)');
+        return Name::fromPhpVersion($this->targetPhpVersion());
     }
 
     public function rules(): array
@@ -840,8 +841,12 @@ final class Php74 extends AbstractRuleSet implements ExplicitRuleSet
         return $this->rules;
     }
 
-    public function targetPhpVersion(): int
+    public function targetPhpVersion(): PhpVersion
     {
-        return 70400;
+        return PhpVersion::create(
+            PhpVersion\Major::fromInt(7),
+            PhpVersion\Minor::fromInt(4),
+            PhpVersion\Patch::fromInt(0),
+        );
     }
 }

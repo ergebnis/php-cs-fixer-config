@@ -71,9 +71,9 @@ final class FactoryTest extends Framework\TestCase
 
         $config = Factory::fromRuleSet($ruleSet);
 
-        self::assertTrue($config->getUsingCache());
         self::assertTrue($config->getRiskyAllowed());
         self::assertSame($rules, $config->getRules());
+        self::assertTrue($config->getUsingCache());
     }
 
     /**

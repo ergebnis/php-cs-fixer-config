@@ -20,10 +20,16 @@ use Ergebnis\PhpCsFixer\Config\RuleSet;
 final class DummyRuleSet implements RuleSet
 {
     public function __construct(
+        private readonly iterable $customFixers,
         private readonly Name $name,
         private readonly array $rules,
         private readonly PhpVersion $phpVersion,
     ) {
+    }
+
+    public function customFixers(): iterable
+    {
+        return $this->customFixers;
     }
 
     public function name(): Name

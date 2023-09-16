@@ -30,6 +30,11 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
 final class Php72Test extends ExplicitRuleSetTestCase
 {
+    protected function expectedCustomFixers(): iterable
+    {
+        yield from [];
+    }
+
     protected function expectedName(): Name
     {
         return Name::fromString('ergebnis (PHP 7.2)');

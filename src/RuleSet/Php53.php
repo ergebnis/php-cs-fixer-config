@@ -813,6 +813,11 @@ final class Php53 extends AbstractRuleSet implements ExplicitRuleSet
         ],
     ];
 
+    public function customFixers(): iterable
+    {
+        yield from [];
+    }
+
     public function name(): Name
     {
         return Name::fromPhpVersion($this->targetPhpVersion());

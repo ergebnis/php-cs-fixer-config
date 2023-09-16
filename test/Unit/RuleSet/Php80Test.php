@@ -30,6 +30,11 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
 final class Php80Test extends ExplicitRuleSetTestCase
 {
+    protected function expectedCustomFixers(): iterable
+    {
+        yield from [];
+    }
+
     protected function expectedName(): Name
     {
         return Name::fromString('ergebnis (PHP 8.0)');

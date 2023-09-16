@@ -40,6 +40,7 @@ final class Factory
 
         $config = new Config($ruleSet->name()->toString());
 
+        $config->registerCustomFixers($ruleSet->customFixers());
         $config->setRiskyAllowed(true);
         $config->setRules(\array_merge(
             $ruleSet->rules(),

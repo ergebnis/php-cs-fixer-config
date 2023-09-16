@@ -152,6 +152,9 @@
       <code>new FixerFactory()</code>
       <code>registerBuiltInFixers</code>
     </InternalMethod>
+    <InvalidArgument>
+      <code><![CDATA[self::createRuleSet()->customFixers()]]></code>
+    </InvalidArgument>
     <PossiblyUnusedMethod>
       <code>provideValidHeader</code>
     </PossiblyUnusedMethod>

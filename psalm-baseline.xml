@@ -115,8 +115,10 @@
   </file>
   <file src="test/Double/Config/RuleSet/DummyRuleSet.php">
     <MixedReturnTypeCoercion>
+      <code><![CDATA[$this->customFixers]]></code>
       <code><![CDATA[$this->rules]]></code>
       <code>array</code>
+      <code>iterable</code>
     </MixedReturnTypeCoercion>
   </file>
   <file src="test/EndToEnd/RuleSet/AbstractRuleSetTestCase.php">

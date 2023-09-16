@@ -128,6 +128,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $ruleSet = self::createRuleSet();
 
+        self::assertEquals($this->expectedCustomFixers(), $ruleSet->customFixers());
         self::assertEquals($this->expectedName(), $ruleSet->name());
         self::assertEquals($this->expectedRules(), $ruleSet->rules());
         self::assertEquals($this->expectedTargetPhpVersion(), $ruleSet->targetPhpVersion());
@@ -306,6 +307,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             ];
         }
     }
+
+    abstract protected function expectedCustomFixers(): iterable;
 
     abstract protected function expectedName(): Name;
 

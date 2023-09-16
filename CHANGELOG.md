@@ -13,6 +13,10 @@ For a full diff see [`5.15.1...main`][5.15.1...main].
 - Extracted `Config\Name` as a value object ([#870]), by [@localheinz]
 - Extracted `Config\PhpVersion` as a value object ([#871]), by [@localheinz]
 
+### Changed
+
+- Allow implementations of  `Config\RuleSet` to declare and configure custom fixers ([#872]), by [@localheinz]
+
 ### Fixed
 
 - Fixed target PHP versions in `Config\Ruleset\Php53`, `Config\Ruleset\Php54`, `Config\Ruleset\Php55`, `Config\Ruleset\Php56`, and `Config\Ruleset\Php70` ([#864]), by [@localheinz]
@@ -1165,6 +1169,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#868]: https://github.com/ergebnis/php-cs-fixer-config/pull/868
 [#870]: https://github.com/ergebnis/php-cs-fixer-config/pull/870
 [#871]: https://github.com/ergebnis/php-cs-fixer-config/pull/871
+[#872]: https://github.com/ergebnis/php-cs-fixer-config/pull/872
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

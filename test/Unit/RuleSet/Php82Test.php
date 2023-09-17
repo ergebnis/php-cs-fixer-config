@@ -16,6 +16,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
+use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PHPUnit\Framework;
 
@@ -27,6 +28,7 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
 #[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
 #[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
+#[Framework\Attributes\UsesClass(Rules::class)]
 final class Php82Test extends ExplicitRuleSetTestCase
 {
     protected function expectedCustomFixers(): iterable
@@ -39,9 +41,9 @@ final class Php82Test extends ExplicitRuleSetTestCase
         return Name::fromString('ergebnis (PHP 8.2)');
     }
 
-    protected function expectedRules(): array
+    protected function expectedRules(): Rules
     {
-        return [
+        return Rules::fromArray([
             'align_multiline_comment' => [
                 'comment_type' => 'all_multiline',
             ],
@@ -863,7 +865,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
                 'identical' => true,
                 'less_and_greater' => true,
             ],
-        ];
+        ]);
     }
 
     protected function expectedTargetPhpVersion(): PhpVersion

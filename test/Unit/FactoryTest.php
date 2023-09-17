@@ -16,6 +16,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
+use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PhpCsFixer\Fixer;
 use PHPUnit\Framework;
@@ -26,6 +27,7 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
 #[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
 #[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
+#[Framework\Attributes\UsesClass(Rules::class)]
 final class FactoryTest extends Framework\TestCase
 {
     use Test\Util\Helper;
@@ -41,7 +43,7 @@ final class FactoryTest extends Framework\TestCase
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             [],
             Name::fromString(self::faker()->word()),
-            [],
+            Rules::fromArray([]),
             $targetPhpVersion,
         );
 
@@ -64,12 +66,12 @@ final class FactoryTest extends Framework\TestCase
             $this->createStub(Fixer\FixerInterface::class),
         ];
 
-        $rules = [
+        $rules = Rules::fromArray([
             'foo' => true,
             'bar' => [
                 'baz' => true,
             ],
-        ];
+        ]);
 
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             $customFixers,
@@ -82,7 +84,7 @@ final class FactoryTest extends Framework\TestCase
 
         self::assertEquals($customFixers, $config->getCustomFixers());
         self::assertTrue($config->getRiskyAllowed());
-        self::assertSame($rules, $config->getRules());
+        self::assertSame($rules->toArray(), $config->getRules());
         self::assertTrue($config->getUsingCache());
     }
 
@@ -111,12 +113,12 @@ final class FactoryTest extends Framework\TestCase
             $this->createStub(Fixer\FixerInterface::class),
         ];
 
-        $rules = [
+        $rules = Rules::fromArray([
             'foo' => true,
             'bar' => [
                 'baz' => true,
             ],
-        ];
+        ]);
 
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             $customFixers,
@@ -129,9 +131,9 @@ final class FactoryTest extends Framework\TestCase
             ),
         );
 
-        $overrideRules = [
+        $overrideRules = Rules::fromArray([
             'foo' => false,
-        ];
+        ]);
 
         $config = Factory::fromRuleSet(
             $ruleSet,
@@ -140,7 +142,7 @@ final class FactoryTest extends Framework\TestCase
 
         self::assertEquals($customFixers, $config->getCustomFixers());
         self::assertTrue($config->getRiskyAllowed());
-        self::assertEquals(\array_merge($rules, $overrideRules), $config->getRules());
+        self::assertEquals($rules->merge($overrideRules)->toArray(), $config->getRules());
         self::assertTrue($config->getUsingCache());
     }
 }

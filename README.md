@@ -126,10 +126,10 @@ file headers will be added to PHP files, for example:
  use Ergebnis\PhpCsFixer\Config;
 
 -$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php82());
-+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php82(), [
++$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php82(), Config\Rules::fromArray([
 +    'mb_str_functions' => false,
 +    'strict_comparison' => false,
-+]);
++]));
 
  $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');

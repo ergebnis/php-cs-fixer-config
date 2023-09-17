@@ -15,6 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Double\Config\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
+use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 
 final class DummyRuleSet implements RuleSet
@@ -22,7 +23,7 @@ final class DummyRuleSet implements RuleSet
     public function __construct(
         private readonly iterable $customFixers,
         private readonly Name $name,
-        private readonly array $rules,
+        private readonly Rules $rules,
         private readonly PhpVersion $phpVersion,
     ) {
     }
@@ -37,7 +38,7 @@ final class DummyRuleSet implements RuleSet
         return $this->name;
     }
 
-    public function rules(): array
+    public function rules(): Rules
     {
         return $this->rules;
     }

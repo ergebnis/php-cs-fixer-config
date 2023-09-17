@@ -28,11 +28,9 @@ interface RuleSet
     public function name(): Name;
 
     /**
-     * Returns an array of rules along with their configuration.
-     *
-     * @return array<string, array<string, mixed>|bool>
+     * Returns rules along with their configuration.
      */
-    public function rules(): array;
+    public function rules(): Rules;
 
     /**
      * Returns the minimum required PHP version.

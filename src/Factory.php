@@ -20,13 +20,11 @@ final class Factory
     /**
      * Creates a configuration based on a rule set.
      *
-     * @param array<string, array<string, mixed>|bool> $overrideRules
-     *
      * @throws \RuntimeException
      */
     public static function fromRuleSet(
         RuleSet $ruleSet,
-        array $overrideRules = [],
+        ?Rules $overrideRules = null,
     ): Config {
         $currentPhpVersion = PhpVersion::current();
 
@@ -42,10 +40,11 @@ final class Factory
 
         $config->registerCustomFixers($ruleSet->customFixers());
         $config->setRiskyAllowed(true);
-        $config->setRules(\array_merge(
-            $ruleSet->rules(),
-            $overrideRules,
-        ));
+        $config->setRules($ruleSet->rules()->toArray());
+
+        if ($overrideRules instanceof Rules) {
+            $config->setRules($ruleSet->rules()->merge($overrideRules)->toArray());
+        }
 
         return $config;
     }

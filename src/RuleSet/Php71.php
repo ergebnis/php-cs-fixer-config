@@ -15,6 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
+use Ergebnis\PhpCsFixer\Config\Rules;
 
 final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
 {
@@ -837,9 +838,9 @@ final class Php71 extends AbstractRuleSet implements ExplicitRuleSet
         return Name::fromPhpVersion($this->targetPhpVersion());
     }
 
-    public function rules(): array
+    public function rules(): Rules
     {
-        return $this->rules;
+        return Rules::fromArray($this->rules);
     }
 
     public function targetPhpVersion(): PhpVersion

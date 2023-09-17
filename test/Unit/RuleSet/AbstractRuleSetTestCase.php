@@ -15,6 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
+use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\FixerConfiguration;
@@ -140,7 +141,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
         $rulesWithoutRulesThatAreNotRegistered = \array_filter(
-            $rules,
+            $rules->toArray(),
             static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
                 if (\str_starts_with($nameOfRule, '@')) {
                     return true;
@@ -154,7 +155,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             \ARRAY_FILTER_USE_KEY,
         );
 
-        self::assertEquals($rulesWithoutRulesThatAreNotRegistered, $rules, \sprintf(
+        self::assertEquals($rulesWithoutRulesThatAreNotRegistered, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules that are not registered.',
             static::className(),
         ));
@@ -167,7 +168,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
         $rulesWithoutRulesThatAreDeprecated = \array_filter(
-            $rules,
+            $rules->toArray(),
             static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
                 if (!\array_key_exists($nameOfRule, $fixersThatAreRegistered)) {
                     return true;
@@ -180,7 +181,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             \ARRAY_FILTER_USE_KEY,
         );
 
-        self::assertEquals($rulesWithoutRulesThatAreDeprecated, $rules, \sprintf(
+        self::assertEquals($rulesWithoutRulesThatAreDeprecated, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules that are deprecated.',
             static::className(),
         ));
@@ -190,7 +191,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $rules = self::createRuleSet()->rules();
 
-        $namesOfRules = \array_keys($rules);
+        $namesOfRules = \array_keys($rules->toArray());
 
         $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
@@ -229,10 +230,10 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
                 }
 
                 return $ruleConfigurationWithoutDeprecatedConfigurationOptions;
-            }, $namesOfRules, $rules),
+            }, $namesOfRules, $rules->toArray()),
         );
 
-        self::assertEquals($rulesWithoutDeprecatedConfigurationOptions, $rules, \sprintf(
+        self::assertEquals($rulesWithoutDeprecatedConfigurationOptions, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules using deprecated configuration options.',
             static::className(),
         ));
@@ -242,9 +243,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $rules = self::createRuleSet()->rules();
 
-        $sorted = self::sort($rules);
+        $sorted = self::sort($rules->toArray());
 
-        self::assertSame($sorted, $rules, \sprintf(
+        self::assertSame($sorted, $rules->toArray(), \sprintf(
             'Failed asserting that rules and configuration options are sorted by name in rule set "%s".',
             static::className(),
         ));
@@ -254,9 +255,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $rules = $this->expectedRules();
 
-        $sorted = self::sort($rules);
+        $sorted = self::sort($rules->toArray());
 
-        self::assertSame($sorted, $rules, \sprintf(
+        self::assertSame($sorted, $rules->toArray(), \sprintf(
             'Failed asserting that rules and configuration options are sorted by name in rule set test "%s".',
             static::class,
         ));
@@ -266,8 +267,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $rules = self::createRuleSet()->rules();
 
-        self::assertArrayHasKey('header_comment', $rules);
-        self::assertFalse($rules['header_comment']);
+        self::assertArrayHasKey('header_comment', $rules->toArray());
+        self::assertFalse($rules->toArray()['header_comment']);
     }
 
     #[Framework\Attributes\DataProvider('provideValidHeader')]
@@ -275,7 +276,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $rules = self::createRuleSet($header)->rules();
 
-        self::assertArrayHasKey('header_comment', $rules);
+        self::assertArrayHasKey('header_comment', $rules->toArray());
 
         $expected = [
             'comment_type' => 'PHPDoc',
@@ -284,7 +285,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
             'separate' => 'both',
         ];
 
-        self::assertEquals($expected, $rules['header_comment']);
+        self::assertEquals($expected, $rules->toArray()['header_comment']);
     }
 
     /**
@@ -311,7 +312,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     abstract protected function expectedName(): Name;
 
-    abstract protected function expectedRules(): array;
+    abstract protected function expectedRules(): Rules;
 
     abstract protected function expectedTargetPhpVersion(): PhpVersion;
 

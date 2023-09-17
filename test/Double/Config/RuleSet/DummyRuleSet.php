@@ -48,4 +48,12 @@ final class DummyRuleSet implements RuleSet
     {
         return $this->rules;
     }
+
+    public function withHeader(string $header): RuleSet
+    {
+        throw new \BadMethodCallException(\sprintf(
+            'Method "%s" is not implemented yet.',
+            __METHOD__,
+        ));
+    }
 }

@@ -34,4 +34,11 @@ interface RuleSet
      * Returns rules along with their configuration.
      */
     public function rules(): Rules;
+
+    /**
+     * Returns rules along with the header_comment fixer enabled to add a header.
+     *
+     * @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/v3.27.0/doc/rules/comment/header_comment.rst
+     */
+    public function withHeader(string $header): self;
 }

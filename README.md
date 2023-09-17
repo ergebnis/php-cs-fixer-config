@@ -88,7 +88,7 @@ All configuration examples use the caching feature, and if you want to use it as
 +EOF;
 
 -$config = Config\Factory::fromRuleSet(Config\RuleSet\Php82::create());
-+$config = Config\Factory::fromRuleSet(Config\RuleSet\Php82::create($header));
++$config = Config\Factory::fromRuleSet(Config\RuleSet\Php82::create()->withHeader($header)));
 
  $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');

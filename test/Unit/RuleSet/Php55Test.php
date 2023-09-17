@@ -37,9 +37,9 @@ final class Php55Test extends ExplicitRuleSetTestCase
         return Fixers::empty();
     }
 
-    protected static function createRuleSet(?string $header = null): RuleSet
+    protected static function createRuleSet(): RuleSet
     {
-        return RuleSet\Php55::create($header);
+        return RuleSet\Php55::create();
     }
 
     protected function expectedName(): Name

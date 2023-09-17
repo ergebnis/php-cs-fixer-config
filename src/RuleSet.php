@@ -28,12 +28,12 @@ interface RuleSet
     public function name(): Name;
 
     /**
-     * Returns rules along with their configuration.
-     */
-    public function rules(): Rules;
-
-    /**
      * Returns the minimum required PHP version.
      */
     public function phpVersion(): PhpVersion;
+
+    /**
+     * Returns rules along with their configuration.
+     */
+    public function rules(): Rules;
 }

@@ -853,13 +853,13 @@ final class Php53 implements ExplicitRuleSet, RuleSet
         return $this->name;
     }
 
-    public function rules(): Rules
-    {
-        return Rules::fromArray($this->rules);
-    }
-
     public function phpVersion(): PhpVersion
     {
         return $this->phpVersion;
+    }
+
+    public function rules(): Rules
+    {
+        return Rules::fromArray($this->rules);
     }
 }

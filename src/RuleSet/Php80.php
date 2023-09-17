@@ -844,15 +844,19 @@ final class Php80 implements ExplicitRuleSet, RuleSet
             'less_and_greater' => true,
         ],
     ];
+    private readonly Name $name;
     private readonly PhpVersion $targetPhpVersion;
 
     public function __construct(?string $header = null)
     {
-        $this->targetPhpVersion = PhpVersion::create(
+        $phpVersion = PhpVersion::create(
             PhpVersion\Major::fromInt(8),
             PhpVersion\Minor::fromInt(0),
             PhpVersion\Patch::fromInt(0),
         );
+
+        $this->name = Name::fromPhpVersion($phpVersion);
+        $this->targetPhpVersion = $phpVersion;
 
         if (null === $header) {
             return;
@@ -873,7 +877,7 @@ final class Php80 implements ExplicitRuleSet, RuleSet
 
     public function name(): Name
     {
-        return Name::fromPhpVersion($this->targetPhpVersion);
+        return $this->name;
     }
 
     public function rules(): Rules

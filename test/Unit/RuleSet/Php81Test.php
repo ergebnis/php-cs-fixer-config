@@ -20,7 +20,6 @@ use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(RuleSet\AbstractRuleSet::class)]
 #[Framework\Attributes\CoversClass(RuleSet\Php81::class)]
 #[Framework\Attributes\UsesClass(Factory::class)]
 #[Framework\Attributes\UsesClass(Name::class)]

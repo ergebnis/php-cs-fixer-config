@@ -16,10 +16,14 @@ namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
+use Ergebnis\PhpCsFixer\Config\RuleSet;
 
-final class Php82 extends AbstractRuleSet implements ExplicitRuleSet
+final class Php82 implements ExplicitRuleSet, RuleSet
 {
-    protected array $rules = [
+    /**
+     * @var array<string, array<string, mixed>|bool>
+     */
+    private array $rules = [
         'align_multiline_comment' => [
             'comment_type' => 'all_multiline',
         ],

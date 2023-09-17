@@ -36,7 +36,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     final public function testRuleSetDoesNotConfigureRulesThatAreNotRegistered(): void
     {
-        $rules = static::createRuleSet()->rules();
+        $ruleSet = static::createRuleSet();
+
+        $rules = $ruleSet->rules();
 
         $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
@@ -57,13 +59,15 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertEquals($rulesWithoutRulesThatAreNotRegistered, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules that are not registered.',
-            static::className(),
+            $ruleSet::class,
         ));
     }
 
     final public function testRuleSetDoesNotConfigureRulesThatAreDeprecated(): void
     {
-        $rules = static::createRuleSet()->rules();
+        $ruleSet = static::createRuleSet();
+
+        $rules = $ruleSet->rules();
 
         $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
@@ -83,13 +87,15 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertEquals($rulesWithoutRulesThatAreDeprecated, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules that are deprecated.',
-            static::className(),
+            $ruleSet::class,
         ));
     }
 
     final public function testRuleSetDoesNotConfigureRulesUsingDeprecatedConfigurationOptions(): void
     {
-        $rules = static::createRuleSet()->rules();
+        $ruleSet = static::createRuleSet();
+
+        $rules = $ruleSet->rules();
 
         $namesOfRules = \array_keys($rules->toArray());
 
@@ -135,19 +141,21 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertEquals($rulesWithoutDeprecatedConfigurationOptions, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules using deprecated configuration options.',
-            static::className(),
+            $ruleSet::class,
         ));
     }
 
     final public function testRulesAndConfigurationOptionsAreSortedInRuleSet(): void
     {
-        $rules = static::createRuleSet()->rules();
+        $ruleSet = static::createRuleSet();
+
+        $rules = $ruleSet->rules();
 
         $sorted = self::sort($rules->toArray());
 
         self::assertSame($sorted, $rules->toArray(), \sprintf(
             'Failed asserting that rules and configuration options are sorted by name in rule set "%s".',
-            static::className(),
+            $ruleSet::class,
         ));
     }
 
@@ -215,41 +223,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     abstract protected function expectedRules(): Rules;
 
     abstract protected function expectedTargetPhpVersion(): PhpVersion;
-
-    /**
-     * @psalm-return class-string
-     *
-     * @throws \RuntimeException
-     */
-    final protected static function className(): string
-    {
-        $className = \preg_replace(
-            '/Test$/',
-            '',
-            \str_replace(
-                '\Test\Unit',
-                '',
-                static::class,
-            ),
-        );
-
-        if (!\is_string($className)) {
-            throw new \RuntimeException(\sprintf(
-                'Failed resolving class name from test class name "%s".',
-                static::class,
-            ));
-        }
-
-        if (!\class_exists($className)) {
-            throw new \RuntimeException(\sprintf(
-                'Class name "%s" resolved from test class name "%s" does not reference a class that exists.',
-                $className,
-                static::class,
-            ));
-        }
-
-        return $className;
-    }
 
     /**
      * @throws \RuntimeException

@@ -28,7 +28,9 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
     final public function testRuleSetDoesNotConfigureRuleSets(): void
     {
-        $rules = static::createRuleSet()->rules();
+        $ruleSet = static::createRuleSet();
+
+        $rules = $ruleSet->rules();
 
         $rulesWithoutRulesForRuleSets = \array_filter(
             $rules->toArray(),
@@ -40,13 +42,15 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
         self::assertEquals($rulesWithoutRulesForRuleSets, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules for rule sets.',
-            static::className(),
+            $ruleSet::class,
         ));
     }
 
     final public function testRuleSetConfiguresAllRulesThatAreNotDeprecated(): void
     {
-        $rules = static::createRuleSet()->rules();
+        $ruleSet = static::createRuleSet();
+
+        $rules = $ruleSet->rules();
 
         $fixersThatAreRegisteredAndNotDeprecated = \array_filter(self::fixersThatAreRegistered(), static function (Fixer\FixerInterface $fixer): bool {
             return !$fixer instanceof Fixer\DeprecatedFixerInterface;
@@ -68,13 +72,15 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
         self::assertEquals($rulesWithRulesThatAreNotDeprecated, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" configures all non-deprecated fixers.',
-            static::className(),
+            $ruleSet::class,
         ));
     }
 
     final public function testRuleSetConfiguresAllRulesThatAreConfigurableAndNotDeprecatedWithAnExplicitConfigurationWithEveryOptionWhenTheyAreEnabled(): void
     {
-        $rules = static::createRuleSet()->rules();
+        $ruleSet = static::createRuleSet();
+
+        $rules = $ruleSet->rules();
 
         $namesOfRules = \array_keys($rules->toArray());
 
@@ -138,7 +144,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
         self::assertEquals($rulesWithAllNonDeprecatedConfigurationOptions, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" configures configurable rules using all non-deprecated configuration options.',
-            static::className(),
+            $ruleSet::class,
         ));
     }
 }

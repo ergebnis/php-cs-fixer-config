@@ -29,6 +29,7 @@ For a full diff see [`5.15.1...main`][5.15.1...main].
 - Removed `name()` method from `Config\Ruleset\AbstractRuleSet` ([#867]), by [@localheinz]
 - Removed `rules()` method from `Config\Ruleset\AbstractRuleSet` ([#868]), by [@localheinz]
 - Removed `DOCTRINE_IGNORED_TAGS` constant from `Config\Ruleset\AbstractRuleSet` ([#875]), by [@localheinz]
+- Removed constructor from `Config\Ruleset\AbstractRuleSet` ([#876]), by [@localheinz]
 
 ## [`5.15.1`][5.15.1]
 
@@ -1174,6 +1175,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#872]: https://github.com/ergebnis/php-cs-fixer-config/pull/872
 [#874]: https://github.com/ergebnis/php-cs-fixer-config/pull/874
 [#875]: https://github.com/ergebnis/php-cs-fixer-config/pull/875
+[#876]: https://github.com/ergebnis/php-cs-fixer-config/pull/876
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

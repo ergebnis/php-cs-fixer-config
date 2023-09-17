@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="5.15.0@5c774aca4746caf3d239d9c8cadb9f882ca29352">
   <file src="src/RuleSet/AbstractRuleSet.php">
-    <PossiblyUnusedMethod>
-      <code>__construct</code>
-    </PossiblyUnusedMethod>
+    <PossiblyUnusedProperty>
+      <code>$rules</code>
+    </PossiblyUnusedProperty>
   </file>
   <file src="src/RuleSet/Php53.php">
     <MixedArgumentTypeCoercion>
@@ -12,6 +12,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php54.php">
     <MixedArgumentTypeCoercion>
@@ -20,6 +23,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php55.php">
     <MixedArgumentTypeCoercion>
@@ -28,6 +34,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php56.php">
     <MixedArgumentTypeCoercion>
@@ -36,6 +45,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php70.php">
     <MixedArgumentTypeCoercion>
@@ -44,6 +56,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php71.php">
     <MixedArgumentTypeCoercion>
@@ -52,6 +67,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php72.php">
     <MixedArgumentTypeCoercion>
@@ -60,6 +78,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php73.php">
     <MixedArgumentTypeCoercion>
@@ -68,6 +89,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php74.php">
     <MixedArgumentTypeCoercion>
@@ -76,6 +100,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php80.php">
     <MixedArgumentTypeCoercion>
@@ -84,6 +111,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php81.php">
     <MixedArgumentTypeCoercion>
@@ -92,6 +122,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/RuleSet/Php82.php">
     <MixedArgumentTypeCoercion>
@@ -100,6 +133,9 @@
     <NonInvariantDocblockPropertyType>
       <code>$rules</code>
     </NonInvariantDocblockPropertyType>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="src/Rules.php">
     <MixedArgumentTypeCoercion>

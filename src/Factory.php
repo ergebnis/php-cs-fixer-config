@@ -28,11 +28,11 @@ final class Factory
     ): Config {
         $currentPhpVersion = PhpVersion::current();
 
-        if ($currentPhpVersion->isSmallerThan($ruleSet->targetPhpVersion())) {
+        if ($currentPhpVersion->isSmallerThan($ruleSet->phpVersion())) {
             throw new \RuntimeException(\sprintf(
                 'Current PHP version "%s" is smaller than targeted PHP version "%s".',
                 $currentPhpVersion->toString(),
-                $ruleSet->targetPhpVersion()->toString(),
+                $ruleSet->phpVersion()->toString(),
             ));
         }
 

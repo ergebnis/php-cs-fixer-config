@@ -845,7 +845,7 @@ final class Php54Test extends ExplicitRuleSetTestCase
         ]);
     }
 
-    protected function expectedTargetPhpVersion(): PhpVersion
+    protected function expectedPhpVersion(): PhpVersion
     {
         return PhpVersion::create(
             PhpVersion\Major::fromInt(5),

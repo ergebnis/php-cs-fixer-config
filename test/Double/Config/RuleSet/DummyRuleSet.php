@@ -43,7 +43,7 @@ final class DummyRuleSet implements RuleSet
         return $this->rules;
     }
 
-    public function targetPhpVersion(): PhpVersion
+    public function phpVersion(): PhpVersion
     {
         return $this->phpVersion;
     }

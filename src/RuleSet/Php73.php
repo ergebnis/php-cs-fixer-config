@@ -833,7 +833,7 @@ final class Php73 implements ExplicitRuleSet, RuleSet
         ],
     ];
     private readonly Name $name;
-    private readonly PhpVersion $targetPhpVersion;
+    private readonly PhpVersion $phpVersion;
 
     public function __construct(?string $header = null)
     {
@@ -844,7 +844,7 @@ final class Php73 implements ExplicitRuleSet, RuleSet
         );
 
         $this->name = Name::fromPhpVersion($phpVersion);
-        $this->targetPhpVersion = $phpVersion;
+        $this->phpVersion = $phpVersion;
 
         if (null === $header) {
             return;
@@ -875,6 +875,6 @@ final class Php73 implements ExplicitRuleSet, RuleSet
 
     public function phpVersion(): PhpVersion
     {
-        return $this->targetPhpVersion;
+        return $this->phpVersion;
     }
 }

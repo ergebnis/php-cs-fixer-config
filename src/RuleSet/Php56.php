@@ -234,6 +234,7 @@ final class Php56 extends AbstractRuleSet implements ExplicitRuleSet
             'syntax' => 'short',
         ],
         'logical_operators' => true,
+        'long_to_shorthand_operator' => false,
         'lowercase_cast' => true,
         'lowercase_keywords' => true,
         'lowercase_static_reference' => true,

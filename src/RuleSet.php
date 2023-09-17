@@ -35,5 +35,5 @@ interface RuleSet
     /**
      * Returns the minimum required PHP version.
      */
-    public function targetPhpVersion(): PhpVersion;
+    public function phpVersion(): PhpVersion;
 }

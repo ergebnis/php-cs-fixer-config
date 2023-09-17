@@ -872,7 +872,7 @@ final class Php72 implements ExplicitRuleSet, RuleSet
         return Rules::fromArray($this->rules);
     }
 
-    public function targetPhpVersion(): PhpVersion
+    public function phpVersion(): PhpVersion
     {
         return $this->targetPhpVersion;
     }

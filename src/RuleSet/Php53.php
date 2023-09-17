@@ -858,7 +858,7 @@ final class Php53 implements ExplicitRuleSet, RuleSet
         return Rules::fromArray($this->rules);
     }
 
-    public function targetPhpVersion(): PhpVersion
+    public function phpVersion(): PhpVersion
     {
         return $this->targetPhpVersion;
     }

@@ -147,15 +147,15 @@ final class Php81Test extends ExplicitRuleSetTestCase
             'declare_strict_types' => true,
             'dir_constant' => true,
             'doctrine_annotation_array_assignment' => [
-                'ignored_tags' => self::DOCTRINE_IGNORED_TAGS,
+                'ignored_tags' => RuleSet\Doctrine::IGNORED_TAGS,
                 'operator' => ':',
             ],
             'doctrine_annotation_braces' => [
-                'ignored_tags' => self::DOCTRINE_IGNORED_TAGS,
+                'ignored_tags' => RuleSet\Doctrine::IGNORED_TAGS,
                 'syntax' => 'without_braces',
             ],
             'doctrine_annotation_indentation' => [
-                'ignored_tags' => self::DOCTRINE_IGNORED_TAGS,
+                'ignored_tags' => RuleSet\Doctrine::IGNORED_TAGS,
                 'indent_mixed_lines' => false,
             ],
             'doctrine_annotation_spaces' => [
@@ -167,7 +167,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
                 'before_argument_assignments' => false,
                 'before_array_assignments_colon' => false,
                 'before_array_assignments_equals' => false,
-                'ignored_tags' => self::DOCTRINE_IGNORED_TAGS,
+                'ignored_tags' => RuleSet\Doctrine::IGNORED_TAGS,
             ],
             'echo_tag_syntax' => [
                 'format' => 'long',

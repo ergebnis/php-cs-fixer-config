@@ -23,8 +23,8 @@ final class DummyRuleSet implements RuleSet
     public function __construct(
         private readonly iterable $customFixers,
         private readonly Name $name,
-        private readonly Rules $rules,
         private readonly PhpVersion $phpVersion,
+        private readonly Rules $rules,
     ) {
     }
 
@@ -38,13 +38,13 @@ final class DummyRuleSet implements RuleSet
         return $this->name;
     }
 
-    public function rules(): Rules
-    {
-        return $this->rules;
-    }
-
     public function phpVersion(): PhpVersion
     {
         return $this->phpVersion;
+    }
+
+    public function rules(): Rules
+    {
+        return $this->rules;
     }
 }

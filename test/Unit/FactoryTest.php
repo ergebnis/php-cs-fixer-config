@@ -43,8 +43,8 @@ final class FactoryTest extends Framework\TestCase
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             [],
             Name::fromString(self::faker()->word()),
-            Rules::fromArray([]),
             $targetPhpVersion,
+            Rules::fromArray([]),
         );
 
         $this->expectException(\RuntimeException::class);
@@ -76,8 +76,8 @@ final class FactoryTest extends Framework\TestCase
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             $customFixers,
             Name::fromString(self::faker()->word()),
-            $rules,
             $targetPhpVersion,
+            $rules,
         );
 
         $config = Factory::fromRuleSet($ruleSet);
@@ -123,12 +123,12 @@ final class FactoryTest extends Framework\TestCase
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
             $customFixers,
             Name::fromString(self::faker()->word()),
-            $rules,
             PhpVersion::create(
                 PhpVersion\Major::fromInt(\PHP_MAJOR_VERSION),
                 PhpVersion\Minor::fromInt(\PHP_MINOR_VERSION),
                 PhpVersion\Patch::fromInt(\PHP_RELEASE_VERSION),
             ),
+            $rules,
         );
 
         $overrideRules = Rules::fromArray([

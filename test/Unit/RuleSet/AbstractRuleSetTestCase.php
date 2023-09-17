@@ -26,7 +26,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 {
     final public function testDefaults(): void
     {
-        $ruleSet = self::createRuleSet();
+        $ruleSet = static::createRuleSet();
 
         self::assertEquals($this->expectedCustomFixers(), $ruleSet->customFixers());
         self::assertEquals($this->expectedName(), $ruleSet->name());
@@ -36,7 +36,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     final public function testRuleSetDoesNotConfigureRulesThatAreNotRegistered(): void
     {
-        $rules = self::createRuleSet()->rules();
+        $rules = static::createRuleSet()->rules();
 
         $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
@@ -63,7 +63,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     final public function testRuleSetDoesNotConfigureRulesThatAreDeprecated(): void
     {
-        $rules = self::createRuleSet()->rules();
+        $rules = static::createRuleSet()->rules();
 
         $fixersThatAreRegistered = self::fixersThatAreRegistered();
 
@@ -89,7 +89,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     final public function testRuleSetDoesNotConfigureRulesUsingDeprecatedConfigurationOptions(): void
     {
-        $rules = self::createRuleSet()->rules();
+        $rules = static::createRuleSet()->rules();
 
         $namesOfRules = \array_keys($rules->toArray());
 
@@ -141,7 +141,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     final public function testRulesAndConfigurationOptionsAreSortedInRuleSet(): void
     {
-        $rules = self::createRuleSet()->rules();
+        $rules = static::createRuleSet()->rules();
 
         $sorted = self::sort($rules->toArray());
 
@@ -165,7 +165,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     final public function testHeaderCommentFixerIsDisabledByDefault(): void
     {
-        $rules = self::createRuleSet()->rules();
+        $rules = static::createRuleSet()->rules();
 
         self::assertArrayHasKey('header_comment', $rules->toArray());
         self::assertFalse($rules->toArray()['header_comment']);
@@ -174,7 +174,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     #[Framework\Attributes\DataProvider('provideValidHeader')]
     final public function testHeaderCommentFixerIsEnabledIfHeaderIsProvided(string $header): void
     {
-        $rules = self::createRuleSet($header)->rules();
+        $rules = static::createRuleSet($header)->rules();
 
         self::assertArrayHasKey('header_comment', $rules->toArray());
 
@@ -254,24 +254,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @throws \RuntimeException
      */
-    final protected static function createRuleSet(?string $header = null): RuleSet
-    {
-        $className = self::className();
-
-        $reflection = new \ReflectionClass($className);
-
-        $ruleSet = $reflection->newInstance($header);
-
-        if (!$ruleSet instanceof RuleSet) {
-            throw new \RuntimeException(\sprintf(
-                'Class %s" does not implement interface "%s".',
-                $className,
-                RuleSet::class,
-            ));
-        }
-
-        return $ruleSet;
-    }
+    abstract protected static function createRuleSet(?string $header = null): RuleSet;
 
     /**
      * @return array<string, Fixer\FixerInterface>
@@ -283,7 +266,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         $fixerFactory->registerBuiltInFixers();
 
         $fixersThatAreBuiltIn = $fixerFactory->getFixers();
-        $fixersThatShouldBeRegistered = \iterator_to_array(self::createRuleSet()->customFixers());
+        $fixersThatShouldBeRegistered = \iterator_to_array(static::createRuleSet()->customFixers());
 
         /** @var array<Fixer\FixerInterface> $fixers */
         $fixers = \array_merge(

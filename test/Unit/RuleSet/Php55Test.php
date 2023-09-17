@@ -36,6 +36,11 @@ final class Php55Test extends ExplicitRuleSetTestCase
         yield from [];
     }
 
+    protected static function createRuleSet(?string $header = null): RuleSet
+    {
+        return new RuleSet\Php55($header);
+    }
+
     protected function expectedName(): Name
     {
         return Name::fromString('ergebnis (PHP 5.5)');

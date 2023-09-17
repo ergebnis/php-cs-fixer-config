@@ -21,14 +21,14 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 {
     final public function testIsExplicitRuleSet(): void
     {
-        $ruleSet = self::createRuleSet();
+        $ruleSet = static::createRuleSet();
 
         self::assertInstanceOf(RuleSet\ExplicitRuleSet::class, $ruleSet);
     }
 
     final public function testRuleSetDoesNotConfigureRuleSets(): void
     {
-        $rules = self::createRuleSet()->rules();
+        $rules = static::createRuleSet()->rules();
 
         $rulesWithoutRulesForRuleSets = \array_filter(
             $rules->toArray(),
@@ -46,7 +46,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
     final public function testRuleSetConfiguresAllRulesThatAreNotDeprecated(): void
     {
-        $rules = self::createRuleSet()->rules();
+        $rules = static::createRuleSet()->rules();
 
         $fixersThatAreRegisteredAndNotDeprecated = \array_filter(self::fixersThatAreRegistered(), static function (Fixer\FixerInterface $fixer): bool {
             return !$fixer instanceof Fixer\DeprecatedFixerInterface;
@@ -74,7 +74,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
     final public function testRuleSetConfiguresAllRulesThatAreConfigurableAndNotDeprecatedWithAnExplicitConfigurationWithEveryOptionWhenTheyAreEnabled(): void
     {
-        $rules = self::createRuleSet()->rules();
+        $rules = static::createRuleSet()->rules();
 
         $namesOfRules = \array_keys($rules->toArray());
 

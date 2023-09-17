@@ -31,6 +31,11 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(Rules::class)]
 final class Php82Test extends ExplicitRuleSetTestCase
 {
+    protected static function createRuleSet(?string $header = null): RuleSet
+    {
+        return new RuleSet\Php82($header);
+    }
+
     protected function expectedCustomFixers(): iterable
     {
         yield from [];

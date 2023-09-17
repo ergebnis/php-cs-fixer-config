@@ -16,7 +16,7 @@ For a full diff see [`5.15.1...main`][5.15.1...main].
 
 ### Changed
 
-- Allow implementations of  `Config\RuleSet` to declare and configure custom fixers ([#872]), by [@localheinz]
+- Allow implementations of `Config\RuleSet` to declare and configure custom fixers ([#872]), by [@localheinz]
 
 ### Fixed
 

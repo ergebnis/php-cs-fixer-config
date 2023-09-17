@@ -843,6 +843,20 @@ final class Php81 extends AbstractRuleSet implements ExplicitRuleSet
         ],
     ];
 
+    public function __construct(?string $header = null)
+    {
+        if (null === $header) {
+            return;
+        }
+
+        $this->rules['header_comment'] = [
+            'comment_type' => 'PHPDoc',
+            'header' => \trim($header),
+            'location' => 'after_declare_strict',
+            'separate' => 'both',
+        ];
+    }
+
     public function customFixers(): iterable
     {
         yield from [];

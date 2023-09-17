@@ -21,18 +21,4 @@ abstract class AbstractRuleSet implements RuleSet
      * @var array<string, array<string, mixed>|bool>
      */
     protected array $rules = [];
-
-    final public function __construct(?string $header = null)
-    {
-        if (null === $header) {
-            return;
-        }
-
-        $this->rules['header_comment'] = [
-            'comment_type' => 'PHPDoc',
-            'header' => \trim($header),
-            'location' => 'after_declare_strict',
-            'separate' => 'both',
-        ];
-    }
 }

@@ -53,6 +53,8 @@
       <code>new FixerFactory()</code>
       <code>registerBuiltInFixers</code>
     </InternalMethod>
+  </file>
+  <file src="test/Unit/RuleSetTest.php">
     <PossiblyUnusedMethod>
       <code>provideValidHeader</code>
     </PossiblyUnusedMethod>

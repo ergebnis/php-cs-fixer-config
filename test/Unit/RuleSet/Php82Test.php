@@ -30,6 +30,7 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
 #[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
 #[Framework\Attributes\UsesClass(Rules::class)]
+#[Framework\Attributes\UsesClass(RuleSet::class)]
 final class Php82Test extends ExplicitRuleSetTestCase
 {
     protected static function createRuleSet(): RuleSet

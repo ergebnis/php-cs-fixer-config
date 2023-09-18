@@ -19,26 +19,9 @@ use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 
-final class Php56 implements RuleSet
+final class Php56
 {
-    private readonly Fixers $customFixers;
-    private readonly Name $name;
-    private readonly PhpVersion $phpVersion;
-    private readonly Rules $rules;
-
-    private function __construct(
-        Fixers $customFixers,
-        Name $name,
-        PhpVersion $phpVersion,
-        Rules $rules,
-    ) {
-        $this->customFixers = $customFixers;
-        $this->name = $name;
-        $this->phpVersion = $phpVersion;
-        $this->rules = $rules;
-    }
-
-    public static function create(): self
+    public static function create(): RuleSet
     {
         $phpVersion = PhpVersion::create(
             PhpVersion\Major::fromInt(5),
@@ -46,7 +29,7 @@ final class Php56 implements RuleSet
             PhpVersion\Patch::fromInt(0),
         );
 
-        return new self(
+        return RuleSet::create(
             Fixers::empty(),
             Name::fromString(\sprintf(
                 'ergebnis (PHP %d.%d)',
@@ -860,43 +843,6 @@ final class Php56 implements RuleSet
                     'less_and_greater' => true,
                 ],
             ]),
-        );
-    }
-
-    public function customFixers(): Fixers
-    {
-        return $this->customFixers;
-    }
-
-    public function name(): Name
-    {
-        return $this->name;
-    }
-
-    public function phpVersion(): PhpVersion
-    {
-        return $this->phpVersion;
-    }
-
-    public function rules(): Rules
-    {
-        return $this->rules;
-    }
-
-    public function withHeader(string $header): RuleSet
-    {
-        return new self(
-            $this->customFixers,
-            $this->name,
-            $this->phpVersion,
-            $this->rules->merge(Rules::fromArray([
-                'header_comment' => [
-                    'comment_type' => 'PHPDoc',
-                    'header' => \trim($header),
-                    'location' => 'after_declare_strict',
-                    'separate' => 'both',
-                ],
-            ])),
         );
     }
 }

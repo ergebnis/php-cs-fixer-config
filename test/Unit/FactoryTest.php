@@ -18,6 +18,7 @@ use Ergebnis\PhpCsFixer\Config\Fixers;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
+use Ergebnis\PhpCsFixer\Config\RuleSet;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PhpCsFixer\Fixer;
 use PHPUnit\Framework;
@@ -30,6 +31,7 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
 #[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
 #[Framework\Attributes\UsesClass(Rules::class)]
+#[Framework\Attributes\UsesClass(RuleSet::class)]
 final class FactoryTest extends Framework\TestCase
 {
     use Test\Util\Helper;
@@ -42,7 +44,7 @@ final class FactoryTest extends Framework\TestCase
             PhpVersion\Patch::fromInt(\PHP_RELEASE_VERSION + 1),
         );
 
-        $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
+        $ruleSet = RuleSet::create(
             Fixers::empty(),
             Name::fromString(self::faker()->word()),
             $phpVersion,
@@ -75,7 +77,7 @@ final class FactoryTest extends Framework\TestCase
             ],
         ]);
 
-        $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
+        $ruleSet = RuleSet::create(
             $customFixers,
             Name::fromString(self::faker()->word()),
             $targetPhpVersion,
@@ -122,7 +124,7 @@ final class FactoryTest extends Framework\TestCase
             ],
         ]);
 
-        $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
+        $ruleSet = RuleSet::create(
             $customFixers,
             Name::fromString(self::faker()->word()),
             PhpVersion::create(

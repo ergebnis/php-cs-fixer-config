@@ -69,7 +69,7 @@ All configuration examples use the caching feature, and if you want to use it as
  /vendor/
 ```
 
-### Configuration with header
+### Configuring a rule set with header
 
 :bulb: Optionally specify a header:
 
@@ -100,8 +100,7 @@ All configuration examples use the caching feature, and if you want to use it as
  return $config;
 ```
 
-This will enable and configure the [`HeaderCommentFixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/v2.1.1/src/Fixer/Comment/HeaderCommentFixer.php), so that
-file headers will be added to PHP files, for example:
+This will enable and configure the [`HeaderCommentFixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/v2.1.1/src/Fixer/Comment/HeaderCommentFixer.php), so that file headers will be added to PHP files, for example:
 
 ```diff
  <?php
@@ -118,7 +117,7 @@ file headers will be added to PHP files, for example:
 + */
 ```
 
-### Configuration with override rules
+### Configuring a rule set that overrides rules
 
 :bulb: Optionally override rules from a rule set by passing in an array of rules to be merged in:
 

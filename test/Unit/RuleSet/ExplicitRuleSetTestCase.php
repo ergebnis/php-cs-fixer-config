@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
-use Ergebnis\PhpCsFixer\Config\RuleSet;
+use Ergebnis\PhpCsFixer\Config\ExplicitRuleSet;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\FixerConfiguration;
 
@@ -23,7 +23,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
     {
         $ruleSet = static::createRuleSet();
 
-        self::assertInstanceOf(RuleSet\ExplicitRuleSet::class, $ruleSet);
+        self::assertInstanceOf(ExplicitRuleSet::class, $ruleSet);
     }
 
     final public function testRuleSetDoesNotConfigureRuleSets(): void

@@ -20,6 +20,13 @@ final class RulesTest extends Framework\TestCase
 {
     use Test\Util\Helper;
 
+    public function testEmptyReturnsRules(): void
+    {
+        $rules = Rules::empty();
+
+        self::assertSame([], $rules->toArray());
+    }
+
     public function testFromArrayReturnsRules(): void
     {
         $value = [

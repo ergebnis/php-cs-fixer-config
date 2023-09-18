@@ -25,6 +25,11 @@ final class Rules
         $this->value = $value;
     }
 
+    public static function empty(): self
+    {
+        return new self([]);
+    }
+
     /**
      * @param array<string, array<string, mixed>|bool> $value
      */

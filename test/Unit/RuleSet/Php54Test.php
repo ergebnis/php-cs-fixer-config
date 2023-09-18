@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
+use Ergebnis\PhpCsFixer\Config\Fixers;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
@@ -22,6 +23,7 @@ use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversClass(RuleSet\Php54::class)]
 #[Framework\Attributes\UsesClass(Factory::class)]
+#[Framework\Attributes\UsesClass(Fixers::class)]
 #[Framework\Attributes\UsesClass(Name::class)]
 #[Framework\Attributes\UsesClass(PhpVersion::class)]
 #[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
@@ -35,9 +37,9 @@ final class Php54Test extends ExplicitRuleSetTestCase
         return new RuleSet\Php54($header);
     }
 
-    protected function expectedCustomFixers(): iterable
+    protected function expectedCustomFixers(): Fixers
     {
-        yield from [];
+        return Fixers::empty();
     }
 
     protected function expectedName(): Name

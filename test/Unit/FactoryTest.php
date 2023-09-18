@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
 use Ergebnis\PhpCsFixer\Config\Factory;
+use Ergebnis\PhpCsFixer\Config\Fixers;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
@@ -22,6 +23,7 @@ use PhpCsFixer\Fixer;
 use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversClass(Factory::class)]
+#[Framework\Attributes\UsesClass(Fixers::class)]
 #[Framework\Attributes\UsesClass(Name::class)]
 #[Framework\Attributes\UsesClass(PhpVersion::class)]
 #[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
@@ -41,7 +43,7 @@ final class FactoryTest extends Framework\TestCase
         );
 
         $ruleSet = new Test\Double\Config\RuleSet\DummyRuleSet(
-            [],
+            Fixers::empty(),
             Name::fromString(self::faker()->word()),
             $phpVersion,
             Rules::fromArray([]),
@@ -60,11 +62,11 @@ final class FactoryTest extends Framework\TestCase
     #[Framework\Attributes\DataProvider('provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion')]
     public function testFromRuleSetCreatesConfigWhenCurrentPhpVersionIsEqualToOrGreaterThanTargetPhpVersion(PhpVersion $targetPhpVersion): void
     {
-        $customFixers = [
+        $customFixers = Fixers::fromFixers(
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
-        ];
+        );
 
         $rules = Rules::fromArray([
             'foo' => true,
@@ -82,7 +84,7 @@ final class FactoryTest extends Framework\TestCase
 
         $config = Factory::fromRuleSet($ruleSet);
 
-        self::assertEquals($customFixers, $config->getCustomFixers());
+        self::assertEquals($customFixers->toArray(), $config->getCustomFixers());
         self::assertTrue($config->getRiskyAllowed());
         self::assertSame($rules->toArray(), $config->getRules());
         self::assertTrue($config->getUsingCache());
@@ -107,11 +109,11 @@ final class FactoryTest extends Framework\TestCase
 
     public function testFromRuleSetCreatesConfigWithOverrideRules(): void
     {
-        $customFixers = [
+        $customFixers = Fixers::fromFixers(
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
-        ];
+        );
 
         $rules = Rules::fromArray([
             'foo' => true,
@@ -140,7 +142,7 @@ final class FactoryTest extends Framework\TestCase
             $overrideRules,
         );
 
-        self::assertEquals($customFixers, $config->getCustomFixers());
+        self::assertEquals($customFixers->toArray(), $config->getCustomFixers());
         self::assertTrue($config->getRiskyAllowed());
         self::assertEquals($rules->merge($overrideRules)->toArray(), $config->getRules());
         self::assertTrue($config->getUsingCache());

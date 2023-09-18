@@ -38,7 +38,7 @@ final class Factory
 
         $config = new Config($ruleSet->name()->toString());
 
-        $config->registerCustomFixers($ruleSet->customFixers());
+        $config->registerCustomFixers($ruleSet->customFixers()->toArray());
         $config->setRiskyAllowed(true);
         $config->setRules($ruleSet->rules()->toArray());
 

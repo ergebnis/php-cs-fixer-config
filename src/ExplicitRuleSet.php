@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\RuleSet;
+namespace Ergebnis\PhpCsFixer\Config;
 
 /**
  * Marker interface for explicit rule sets.

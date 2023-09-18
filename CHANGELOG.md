@@ -18,6 +18,7 @@ For a full diff see [`5.16.0...main`][5.16.0...main].
 
 - Allow implementations of `Config\RuleSet` to declare and configure custom fixers ([#872]), by [@localheinz]
 - Renamed `Config\RuleSet::targetPhpVersion()` to `Config\RuleSet::phpVersion()` ([#878]), by [@localheinz]
+- Renamed `Config\RuleSet\ExplicitRuleSet` to `Config\ExplicitRuleSet` ([#882]), by [@localheinz]
 
 ### Fixed
 
@@ -1192,6 +1193,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#877]: https://github.com/ergebnis/php-cs-fixer-config/pull/877
 [#880]: https://github.com/ergebnis/php-cs-fixer-config/pull/880
 [#881]: https://github.com/ergebnis/php-cs-fixer-config/pull/881
+[#882]: https://github.com/ergebnis/php-cs-fixer-config/pull/882
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

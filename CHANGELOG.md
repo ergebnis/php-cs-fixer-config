@@ -14,6 +14,7 @@ For a full diff see [`5.16.0...main`][5.16.0...main].
 - Extracted `Config\PhpVersion` as a value object ([#871]), by [@localheinz]
 - Extracted `Config\Rules` as a value object ([#874]), by [@localheinz]
 - Extracted `Config\Fixers` as a value object ([#883]), by [@localheinz]
+- Added `Config\RuleSet::withRules()` to allow overriding `Config\Rules` ([#891]), by [@localheinz]
 
 ### Changed
 
@@ -1202,6 +1203,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#886]: https://github.com/ergebnis/php-cs-fixer-config/pull/886
 [#887]: https://github.com/ergebnis/php-cs-fixer-config/pull/887
 [#888]: https://github.com/ergebnis/php-cs-fixer-config/pull/888
+[#891]: https://github.com/ergebnis/php-cs-fixer-config/pull/891
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

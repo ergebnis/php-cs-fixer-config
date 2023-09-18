@@ -11,6 +11,7 @@ For a full diff see [`5.15.1...main`][5.15.1...main].
 ## Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#880]), by [@dependabot]
+- Enabled `long_to_shorthand_operator` fixer ([#881]), by [@localheinz]
 
 ## [`5.15.1`][5.15.1]
 
@@ -1148,6 +1149,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#856]: https://github.com/ergebnis/php-cs-fixer-config/pull/856
 [#857]: https://github.com/ergebnis/php-cs-fixer-config/pull/857
 [#880]: https://github.com/ergebnis/php-cs-fixer-config/pull/880
+[#881]: https://github.com/ergebnis/php-cs-fixer-config/pull/881
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

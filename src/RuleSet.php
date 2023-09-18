@@ -18,6 +18,8 @@ use PhpCsFixer\Fixer;
 interface RuleSet
 {
     /**
+     * Returns custom fixers required by this rule set.
+     *
      * @return iterable<Fixer\FixerInterface>
      */
     public function customFixers(): iterable;

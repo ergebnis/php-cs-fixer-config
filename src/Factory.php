@@ -22,10 +22,8 @@ final class Factory
      *
      * @throws \RuntimeException
      */
-    public static function fromRuleSet(
-        RuleSet $ruleSet,
-        ?Rules $overrideRules = null,
-    ): Config {
+    public static function fromRuleSet(RuleSet $ruleSet): Config
+    {
         $currentPhpVersion = PhpVersion::current();
 
         if ($currentPhpVersion->isSmallerThan($ruleSet->phpVersion())) {
@@ -41,10 +39,6 @@ final class Factory
         $config->registerCustomFixers($ruleSet->customFixers()->toArray());
         $config->setRiskyAllowed(true);
         $config->setRules($ruleSet->rules()->toArray());
-
-        if ($overrideRules instanceof Rules) {
-            $config->setRules($ruleSet->rules()->merge($overrideRules)->toArray());
-        }
 
         return $config;
     }

@@ -108,45 +108,4 @@ final class FactoryTest extends Framework\TestCase
             ];
         }
     }
-
-    public function testFromRuleSetCreatesConfigWithOverrideRules(): void
-    {
-        $customFixers = Fixers::fromFixers(
-            $this->createStub(Fixer\FixerInterface::class),
-            $this->createStub(Fixer\FixerInterface::class),
-            $this->createStub(Fixer\FixerInterface::class),
-        );
-
-        $rules = Rules::fromArray([
-            'foo' => true,
-            'bar' => [
-                'baz' => true,
-            ],
-        ]);
-
-        $ruleSet = RuleSet::create(
-            $customFixers,
-            Name::fromString(self::faker()->word()),
-            PhpVersion::create(
-                PhpVersion\Major::fromInt(\PHP_MAJOR_VERSION),
-                PhpVersion\Minor::fromInt(\PHP_MINOR_VERSION),
-                PhpVersion\Patch::fromInt(\PHP_RELEASE_VERSION),
-            ),
-            $rules,
-        );
-
-        $overrideRules = Rules::fromArray([
-            'foo' => false,
-        ]);
-
-        $config = Factory::fromRuleSet(
-            $ruleSet,
-            $overrideRules,
-        );
-
-        self::assertEquals($customFixers->toArray(), $config->getCustomFixers());
-        self::assertTrue($config->getRiskyAllowed());
-        self::assertEquals($rules->merge($overrideRules)->toArray(), $config->getRules());
-        self::assertTrue($config->getUsingCache());
-    }
 }

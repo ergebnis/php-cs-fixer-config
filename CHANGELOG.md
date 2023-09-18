@@ -38,6 +38,7 @@ For a full diff see [`5.16.0...main`][5.16.0...main].
 - Removed `Config\Ruleset\AbstractRuleSet` ([#877]), by [@localheinz]
 - Removed `Config\RuleSet\ExplicitRuleSet` ([#885]), by [@localheinz]
 - Removed optional `$header` parameter from `Config\RuleSet\Php53::create()`, `Config\RuleSet\Php54::create()`, `Config\RuleSet\Php55::create()`, `Config\RuleSet\Php56::create()`, `Config\RuleSet\Php70::create()`, `Config\RuleSet\Php71::create()`, `Config\RuleSet\Php72::create()`, `Config\RuleSet\Php73::create()`, `Config\RuleSet\Php74::create()`, `Config\RuleSet\Php80::create()`,  `Config\RuleSet\Php81::create()`,  `Config\RuleSet\Php82::create()` and added `Config\RuleSet\Php53::withHeader()`, `Config\RuleSet\Php54::withHeader()`, `Config\RuleSet\Php55::withHeader()`, `Config\RuleSet\Php56::withHeader()`, `Config\RuleSet\Php70::withHeader()`, `Config\RuleSet\Php71::withHeader()`, `Config\RuleSet\Php72::withHeader()`, `Config\RuleSet\Php73::withHeader()`, `Config\RuleSet\Php74::withHeader()`, `Config\RuleSet\Php80::withHeader()`,  `Config\RuleSet\Php81::withHeader()`,  `Config\RuleSet\Php82::withHeader()` mutators ([#887]), by [@localheinz]
+- Removed optional `$overrideRules` parameter from `Config\Factory::fromRuleSet()` ([#892]), by [@localheinz]
 
 ## [`5.16.0`][5.16.0]
 
@@ -1204,6 +1205,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#887]: https://github.com/ergebnis/php-cs-fixer-config/pull/887
 [#888]: https://github.com/ergebnis/php-cs-fixer-config/pull/888
 [#891]: https://github.com/ergebnis/php-cs-fixer-config/pull/891
+[#892]: https://github.com/ergebnis/php-cs-fixer-config/pull/892
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

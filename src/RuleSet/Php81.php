@@ -28,22 +28,17 @@ final class Php81 implements RuleSet
 
     public function __construct(?string $header = null)
     {
-        $this->customFixers = Fixers::empty();
-
+        $fixers = Fixers::empty();
         $phpVersion = PhpVersion::create(
             PhpVersion\Major::fromInt(8),
             PhpVersion\Minor::fromInt(1),
             PhpVersion\Patch::fromInt(0),
         );
-
-        $this->name = Name::fromString(\sprintf(
+        $name = Name::fromString(\sprintf(
             'ergebnis (PHP %d.%d)',
             $phpVersion->major()->toInt(),
             $phpVersion->minor()->toInt(),
         ));
-
-        $this->phpVersion = $phpVersion;
-
         $rules = Rules::fromArray([
             'align_multiline_comment' => [
                 'comment_type' => 'all_multiline',
@@ -880,6 +875,9 @@ final class Php81 implements RuleSet
             ]));
         }
 
+        $this->customFixers = $fixers;
+        $this->name = $name;
+        $this->phpVersion = $phpVersion;
         $this->rules = $rules;
     }
 

@@ -21,12 +21,15 @@ use Ergebnis\PhpCsFixer\Config\RuleSet;
 
 final class Php81 implements RuleSet
 {
+    private readonly Fixers $customFixers;
     private readonly Name $name;
     private readonly PhpVersion $phpVersion;
     private readonly Rules $rules;
 
     public function __construct(?string $header = null)
     {
+        $this->customFixers = Fixers::empty();
+
         $phpVersion = PhpVersion::create(
             PhpVersion\Major::fromInt(8),
             PhpVersion\Minor::fromInt(1),
@@ -882,7 +885,7 @@ final class Php81 implements RuleSet
 
     public function customFixers(): Fixers
     {
-        return Fixers::empty();
+        return $this->customFixers;
     }
 
     public function name(): Name

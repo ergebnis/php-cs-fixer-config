@@ -68,4 +68,12 @@ final class Fixers
     {
         return $this->value;
     }
+
+    public function merge(self $customFixers): self
+    {
+        return new self(...\array_merge(
+            $this->value,
+            $customFixers->value,
+        ));
+    }
 }

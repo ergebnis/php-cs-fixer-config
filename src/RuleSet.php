@@ -70,6 +70,19 @@ final class RuleSet
     }
 
     /**
+     * Returns a new rule set with custom fixers.
+     */
+    public function withCustomFixers(Fixers $customFixers): self
+    {
+        return new self(
+            $this->customFixers->merge($customFixers),
+            $this->name,
+            $this->phpVersion,
+            $this->rules,
+        );
+    }
+
+    /**
      * Returns a new rule set with merged rules.
      */
     public function withRules(Rules $rules): self

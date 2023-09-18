@@ -234,7 +234,7 @@ final class Php70 extends AbstractRuleSet implements ExplicitRuleSet
             'syntax' => 'long',
         ],
         'logical_operators' => true,
-        'long_to_shorthand_operator' => false,
+        'long_to_shorthand_operator' => true,
         'lowercase_cast' => true,
         'lowercase_keywords' => true,
         'lowercase_static_reference' => true,

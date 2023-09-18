@@ -64,7 +64,10 @@ final class RulesTest extends Framework\TestCase
             'baz' => true,
         ]);
 
-        $merged = $one->merge($two);
+        $mutated = $one->merge($two);
+
+        self::assertNotSame($one, $mutated);
+        self::assertNotSame($two, $mutated);
 
         $expected = Rules::fromArray([
             'foo' => false,
@@ -74,6 +77,6 @@ final class RulesTest extends Framework\TestCase
             'baz' => true,
         ]);
 
-        self::assertEquals($expected, $merged);
+        self::assertEquals($expected, $mutated);
     }
 }

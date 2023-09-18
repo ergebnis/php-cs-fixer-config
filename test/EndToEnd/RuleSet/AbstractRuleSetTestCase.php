@@ -94,7 +94,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
 declare(strict_types=1);
 
-$config = Ergebnis\PhpCsFixer\Config\Factory::fromRuleSet(%s::create(''));
+$ruleSet = %s::create('');
+
+$config = Ergebnis\PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
 
 $config->getFinder()
     ->exclude([

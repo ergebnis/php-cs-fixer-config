@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`5.15.1...main`][5.15.1...main].
+For a full diff see [`5.16.0...main`][5.16.0...main].
 
 ### Added
 
@@ -32,6 +32,15 @@ For a full diff see [`5.15.1...main`][5.15.1...main].
 - Removed `DOCTRINE_IGNORED_TAGS` constant from `Config\Ruleset\AbstractRuleSet` ([#875]), by [@localheinz]
 - Removed constructor from `Config\Ruleset\AbstractRuleSet` ([#876]), by [@localheinz]
 - Removed `Config\Ruleset\AbstractRuleSet` ([#877]), by [@localheinz]
+
+## [`5.16.0`][5.16.0]
+
+For a full diff see [`5.15.1...5.16.0`][5.15.1...5.16.0].
+
+## Changed
+
+- Updated `friendsofphp/php-cs-fixer` ([#880]), by [@dependabot]
+- Enabled `long_to_shorthand_operator` fixer ([#881]), by [@localheinz]
 
 ## [`5.15.1`][5.15.1]
 
@@ -898,6 +907,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [5.14.2]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/5.14.2
 [5.15.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/5.15.0
 [5.15.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/5.15.1
+[5.16.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/5.16.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -978,7 +988,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [5.14.1...5.14.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.14.1...5.14.2
 [5.14.2...5.15.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.14.2...5.15.0
 [5.15.0...5.15.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.15.0...5.15.1
-[5.15.1...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.15.1...main
+[5.15.1...5.16.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.15.1...5.16.0
+[5.16.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.16.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14
@@ -1179,6 +1190,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#875]: https://github.com/ergebnis/php-cs-fixer-config/pull/875
 [#876]: https://github.com/ergebnis/php-cs-fixer-config/pull/876
 [#877]: https://github.com/ergebnis/php-cs-fixer-config/pull/877
+[#880]: https://github.com/ergebnis/php-cs-fixer-config/pull/880
+[#881]: https://github.com/ergebnis/php-cs-fixer-config/pull/881
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

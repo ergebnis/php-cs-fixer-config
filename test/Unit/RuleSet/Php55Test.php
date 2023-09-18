@@ -30,6 +30,7 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
 #[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
 #[Framework\Attributes\UsesClass(Rules::class)]
+#[Framework\Attributes\UsesClass(RuleSet::class)]
 final class Php55Test extends ExplicitRuleSetTestCase
 {
     protected function expectedCustomFixers(): Fixers

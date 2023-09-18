@@ -180,51 +180,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         self::assertFalse($rules->toArray()['header_comment']);
     }
 
-    #[Framework\Attributes\DataProvider('provideValidHeader')]
-    final public function testWithHeaderReturnsRuleSetWithEnabledHeaderCommentFixer(string $header): void
-    {
-        $ruleSet = static::createRuleSet();
-
-        $mutatedRuleSet = $ruleSet->withHeader($header);
-
-        self::assertNotSame($ruleSet, $mutatedRuleSet);
-
-        self::assertEquals($ruleSet->customFixers(), $mutatedRuleSet->customFixers());
-        self::assertEquals($ruleSet->name(), $mutatedRuleSet->name());
-        self::assertEquals($ruleSet->phpVersion(), $mutatedRuleSet->phpVersion());
-
-        $expected = $ruleSet->rules()->merge(Rules::fromArray([
-            'header_comment' => [
-                'comment_type' => 'PHPDoc',
-                'header' => \trim($header),
-                'location' => 'after_declare_strict',
-                'separate' => 'both',
-            ],
-        ]));
-
-        self::assertEquals($expected, $mutatedRuleSet->rules());
-    }
-
-    /**
-     * @return \Generator<string, array{0: string}>
-     */
-    final public static function provideValidHeader(): \Generator
-    {
-        $values = [
-            'string-empty' => '',
-            'string-not-empty' => 'foo',
-            'string-with-line-feed-only' => "\n",
-            'string-with-spaces-only' => ' ',
-            'string-with-tab-only' => "\t",
-        ];
-
-        foreach ($values as $key => $value) {
-            yield $key => [
-                $value,
-            ];
-        }
-    }
-
     abstract protected function expectedCustomFixers(): Fixers;
 
     abstract protected function expectedName(): Name;

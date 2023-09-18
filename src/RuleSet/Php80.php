@@ -38,7 +38,7 @@ final class Php80 implements RuleSet
         $this->rules = $rules;
     }
 
-    public static function create(?string $header = null): self
+    public static function create(): self
     {
         $fixers = Fixers::empty();
         $phpVersion = PhpVersion::create(
@@ -874,17 +874,6 @@ final class Php80 implements RuleSet
             ],
         ]);
 
-        if (\is_string($header)) {
-            $rules = $rules->merge(Rules::fromArray([
-                'header_comment' => [
-                    'comment_type' => 'PHPDoc',
-                    'header' => \trim($header),
-                    'location' => 'after_declare_strict',
-                    'separate' => 'both',
-                ],
-            ]));
-        }
-
         return new self(
             $fixers,
             $name,
@@ -911,5 +900,22 @@ final class Php80 implements RuleSet
     public function rules(): Rules
     {
         return $this->rules;
+    }
+
+    public function withHeader(string $header): RuleSet
+    {
+        return new self(
+            $this->customFixers,
+            $this->name,
+            $this->phpVersion,
+            $this->rules->merge(Rules::fromArray([
+                'header_comment' => [
+                    'comment_type' => 'PHPDoc',
+                    'header' => \trim($header),
+                    'location' => 'after_declare_strict',
+                    'separate' => 'both',
+                ],
+            ])),
+        );
     }
 }

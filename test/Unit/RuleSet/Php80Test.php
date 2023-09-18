@@ -32,9 +32,9 @@ use PHPUnit\Framework;
 #[Framework\Attributes\UsesClass(Rules::class)]
 final class Php80Test extends ExplicitRuleSetTestCase
 {
-    protected static function createRuleSet(?string $header = null): RuleSet
+    protected static function createRuleSet(): RuleSet
     {
-        return RuleSet\Php80::create($header);
+        return RuleSet\Php80::create();
     }
 
     protected function expectedCustomFixers(): Fixers

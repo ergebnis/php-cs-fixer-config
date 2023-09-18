@@ -181,20 +181,28 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     }
 
     #[Framework\Attributes\DataProvider('provideValidHeader')]
-    final public function testHeaderCommentFixerIsEnabledIfHeaderIsProvided(string $header): void
+    final public function testWithHeaderReturnsRuleSetWithEnabledHeaderCommentFixer(string $header): void
     {
-        $rules = static::createRuleSet($header)->rules();
+        $ruleSet = static::createRuleSet();
 
-        self::assertArrayHasKey('header_comment', $rules->toArray());
+        $mutatedRuleSet = $ruleSet->withHeader($header);
 
-        $expected = [
-            'comment_type' => 'PHPDoc',
-            'header' => \trim($header),
-            'location' => 'after_declare_strict',
-            'separate' => 'both',
-        ];
+        self::assertNotSame($ruleSet, $mutatedRuleSet);
 
-        self::assertEquals($expected, $rules->toArray()['header_comment']);
+        self::assertEquals($ruleSet->customFixers(), $mutatedRuleSet->customFixers());
+        self::assertEquals($ruleSet->name(), $mutatedRuleSet->name());
+        self::assertEquals($ruleSet->phpVersion(), $mutatedRuleSet->phpVersion());
+
+        $expected = $ruleSet->rules()->merge(Rules::fromArray([
+            'header_comment' => [
+                'comment_type' => 'PHPDoc',
+                'header' => \trim($header),
+                'location' => 'after_declare_strict',
+                'separate' => 'both',
+            ],
+        ]));
+
+        self::assertEquals($expected, $mutatedRuleSet->rules());
     }
 
     /**
@@ -228,7 +236,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     /**
      * @throws \RuntimeException
      */
-    abstract protected static function createRuleSet(?string $header = null): RuleSet;
+    abstract protected static function createRuleSet(): RuleSet;
 
     /**
      * @return array<string, Fixer\FixerInterface>

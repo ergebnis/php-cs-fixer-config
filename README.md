@@ -119,7 +119,7 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
 
 ### Configuring a rule set that overrides rules
 
-:bulb: Optionally override rules from a rule set by passing in an array of rules to be merged in:
+:bulb: Optionally override rules from a rule set by passing a set of rules to be merged in:
 
 ```diff
  <?php

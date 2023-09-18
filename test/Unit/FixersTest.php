@@ -85,4 +85,30 @@ final class FixersTest extends Framework\TestCase
 
         self::assertSame($value, $fixers->toArray());
     }
+
+    public function testMergeReturnsFixersMergedWithFixers(): void
+    {
+        $one = Fixers::fromFixers(
+            $this->createStub(Fixer\FixerInterface::class),
+            $this->createStub(Fixer\FixerInterface::class),
+            $this->createStub(Fixer\FixerInterface::class),
+        );
+
+        $two = Fixers::fromFixers(
+            $this->createStub(Fixer\FixerInterface::class),
+            $this->createStub(Fixer\FixerInterface::class),
+        );
+
+        $mutated = $one->merge($two);
+
+        self::assertNotSame($one, $mutated);
+        self::assertNotSame($two, $mutated);
+
+        $expected = Fixers::fromFixers(...\array_merge(
+            $one->toArray(),
+            $two->toArray(),
+        ));
+
+        self::assertEquals($expected, $mutated);
+    }
 }

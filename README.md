@@ -142,6 +142,40 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
  return $config;
 ```
 
+### Configuring a rule set that registers and configures rules for custom fixers
+
+:bulb: Optionally register and configure rules for custom fixers:
+
+```diff
+ <?php
+
+ declare(strict_types=1);
+
+ use Ergebnis\PhpCsFixer\Config;
+ use FooBar\Fixer;
+
+-$ruleSet = Config\RuleSet\Php82::create();
++$ruleSet = Config\RuleSet\Php82::create()
++    ->withCustomFixers(Config\Fixers::fromFixers(
++        new Fixer\BarBazFixer(),
++        new Fixer\QuzFixer(),
++    ))
++    ->withRules(Config\Rules::fromArray([
++        'FooBar/bar_baz' => true,
++        'FooBar/quz' => [
++            'qux => false,
++        ],
++    ]))
++]);
+
+ $config = Config\Factory::fromRuleSet($ruleSet);
+
+ $config->getFinder()->in(__DIR__);
+ $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
+
+ return $config;
+```
+
 ### Makefile
 
 If you like [`Makefile`](https://www.gnu.org/software/make/manual/make.html#Introduction)s, create a `Makefile` with a `coding-standards` target:

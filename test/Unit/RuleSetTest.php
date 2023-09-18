@@ -64,6 +64,45 @@ final class RuleSetTest extends Framework\TestCase
         self::assertSame($rules, $ruleSet->rules());
     }
 
+    public function testWithCustomFixersReturnsRuleSetWithMergedCustomFixers(): void
+    {
+        $faker = self::faker();
+
+        $customFixers = Fixers::fromFixers(
+            $this->createStub(Fixer\FixerInterface::class),
+            $this->createStub(Fixer\FixerInterface::class),
+        );
+
+        $ruleSet = RuleSet::create(
+            Fixers::fromFixers(
+                $this->createStub(Fixer\FixerInterface::class),
+                $this->createStub(Fixer\FixerInterface::class),
+                $this->createStub(Fixer\FixerInterface::class),
+            ),
+            Name::fromString($faker->word()),
+            PhpVersion::create(
+                PhpVersion\Major::fromInt($faker->numberBetween(0)),
+                PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
+                PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
+            ),
+            Rules::fromArray([
+                'foo' => false,
+                'quz' => true,
+            ]),
+        );
+
+        $mutated = $ruleSet->withCustomFixers($customFixers);
+
+        self::assertNotSame($ruleSet, $mutated);
+
+        $expected = $ruleSet->customFixers()->merge($customFixers);
+
+        self::assertEquals($expected, $mutated->customFixers());
+        self::assertEquals($ruleSet->name(), $mutated->name());
+        self::assertEquals($ruleSet->phpVersion(), $mutated->phpVersion());
+        self::assertEquals($ruleSet->rules(), $mutated->rules());
+    }
+
     public function testWithRulesReturnsRuleSetWithMergedRules(): void
     {
         $faker = self::faker();

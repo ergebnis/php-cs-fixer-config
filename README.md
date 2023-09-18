@@ -129,8 +129,7 @@ file headers will be added to PHP files, for example:
 
  use Ergebnis\PhpCsFixer\Config;
 
--$ruleSet = Config\RuleSet\Php82::create();
-+$ruleSet = Config\RuleSet\Php82::create()->withHeader($header);
+ $ruleSet = Config\RuleSet\Php82::create();
 
 -$config = Config\Factory::fromRuleSet($ruleSet);
 +$config = Config\Factory::fromRuleSet($ruleSet, Config\Rules::fromArray([

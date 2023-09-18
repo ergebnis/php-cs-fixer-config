@@ -88,13 +88,13 @@ final class RuleSetTest extends Framework\TestCase
             ]),
         );
 
-        $mutatedRuleSet = $ruleSet->withHeader($header);
+        $mutated = $ruleSet->withHeader($header);
 
-        self::assertNotSame($ruleSet, $mutatedRuleSet);
+        self::assertNotSame($ruleSet, $mutated);
 
-        self::assertEquals($ruleSet->customFixers(), $mutatedRuleSet->customFixers());
-        self::assertEquals($ruleSet->name(), $mutatedRuleSet->name());
-        self::assertEquals($ruleSet->phpVersion(), $mutatedRuleSet->phpVersion());
+        self::assertEquals($ruleSet->customFixers(), $mutated->customFixers());
+        self::assertEquals($ruleSet->name(), $mutated->name());
+        self::assertEquals($ruleSet->phpVersion(), $mutated->phpVersion());
 
         $expected = $ruleSet->rules()->merge(Rules::fromArray([
             'header_comment' => [
@@ -105,7 +105,7 @@ final class RuleSetTest extends Framework\TestCase
             ],
         ]));
 
-        self::assertEquals($expected, $mutatedRuleSet->rules());
+        self::assertEquals($expected, $mutated->rules());
     }
 
     /**

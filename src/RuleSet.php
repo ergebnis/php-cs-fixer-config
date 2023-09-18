@@ -13,16 +13,12 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config;
 
-use PhpCsFixer\Fixer;
-
 interface RuleSet
 {
     /**
      * Returns custom fixers required by this rule set.
-     *
-     * @return iterable<Fixer\FixerInterface>
      */
-    public function customFixers(): iterable;
+    public function customFixers(): Fixers;
 
     /**
      * Returns the name of the rule set.

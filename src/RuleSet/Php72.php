@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
 use Ergebnis\PhpCsFixer\Config\ExplicitRuleSet;
+use Ergebnis\PhpCsFixer\Config\Fixers;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
@@ -859,9 +860,9 @@ final class Php72 implements ExplicitRuleSet, RuleSet
         ];
     }
 
-    public function customFixers(): iterable
+    public function customFixers(): Fixers
     {
-        yield from [];
+        return Fixers::empty();
     }
 
     public function name(): Name

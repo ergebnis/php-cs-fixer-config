@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="5.15.0@5c774aca4746caf3d239d9c8cadb9f882ca29352">
+  <file src="src/Fixers.php">
+    <PropertyTypeCoercion>
+      <code>$value</code>
+    </PropertyTypeCoercion>
+  </file>
   <file src="src/Rules.php">
     <MixedArgumentTypeCoercion>
       <code><![CDATA[\array_merge(
@@ -12,12 +17,6 @@
       <code><![CDATA[array<string, array<string, mixed>|bool>]]></code>
     </MixedReturnTypeCoercion>
   </file>
-  <file src="test/Double/Config/RuleSet/DummyRuleSet.php">
-    <MixedReturnTypeCoercion>
-      <code><![CDATA[$this->customFixers]]></code>
-      <code>iterable</code>
-    </MixedReturnTypeCoercion>
-  </file>
   <file src="test/EndToEnd/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass>
       <code>Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG</code>
@@ -27,6 +26,11 @@
     <PossiblyUnusedMethod>
       <code>provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion</code>
     </PossiblyUnusedMethod>
+  </file>
+  <file src="test/Unit/FixersTest.php">
+    <InvalidArgument>
+      <code>$value</code>
+    </InvalidArgument>
   </file>
   <file src="test/Unit/PhpVersion/MinorTest.php">
     <PossiblyUnusedMethod>
@@ -49,9 +53,6 @@
       <code>new FixerFactory()</code>
       <code>registerBuiltInFixers</code>
     </InternalMethod>
-    <InvalidArgument>
-      <code><![CDATA[static::createRuleSet()->customFixers()]]></code>
-    </InvalidArgument>
     <PossiblyUnusedMethod>
       <code>provideValidHeader</code>
     </PossiblyUnusedMethod>

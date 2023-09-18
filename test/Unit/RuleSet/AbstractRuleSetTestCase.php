@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
+use Ergebnis\PhpCsFixer\Config\Fixers;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
@@ -216,7 +217,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         }
     }
 
-    abstract protected function expectedCustomFixers(): iterable;
+    abstract protected function expectedCustomFixers(): Fixers;
 
     abstract protected function expectedName(): Name;
 
@@ -239,7 +240,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         $fixerFactory->registerBuiltInFixers();
 
         $fixersThatAreBuiltIn = $fixerFactory->getFixers();
-        $fixersThatShouldBeRegistered = \iterator_to_array(static::createRuleSet()->customFixers());
+        $fixersThatShouldBeRegistered = static::createRuleSet()->customFixers()->toArray();
 
         /** @var array<Fixer\FixerInterface> $fixers */
         $fixers = \array_merge(

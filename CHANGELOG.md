@@ -13,6 +13,7 @@ For a full diff see [`5.16.0...main`][5.16.0...main].
 - Extracted `Config\Name` as a value object ([#870]), by [@localheinz]
 - Extracted `Config\PhpVersion` as a value object ([#871]), by [@localheinz]
 - Extracted `Config\Rules` as a value object ([#874]), by [@localheinz]
+- Extracted `Config\Fixers` as a value object ([#883]), by [@localheinz]
 
 ### Changed
 
@@ -1194,6 +1195,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#880]: https://github.com/ergebnis/php-cs-fixer-config/pull/880
 [#881]: https://github.com/ergebnis/php-cs-fixer-config/pull/881
 [#882]: https://github.com/ergebnis/php-cs-fixer-config/pull/882
+[#883]: https://github.com/ergebnis/php-cs-fixer-config/pull/883
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

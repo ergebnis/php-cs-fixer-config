@@ -70,7 +70,7 @@ final class RuleSet
     }
 
     /**
-     * Returns rules along with the header_comment fixer enabled to add a header.
+     * Returns a new rule set with rules where the header_comment fixer is enabled to add a header.
      *
      * @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/v3.27.0/doc/rules/comment/header_comment.rst
      */

@@ -38,7 +38,9 @@ final class Php53 implements RuleSet
             $phpVersion->major()->toInt(),
             $phpVersion->minor()->toInt(),
         ));
+
         $this->phpVersion = $phpVersion;
+
         $rules = Rules::fromArray([
             'align_multiline_comment' => [
                 'comment_type' => 'all_multiline',

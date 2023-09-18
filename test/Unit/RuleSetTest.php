@@ -64,6 +64,46 @@ final class RuleSetTest extends Framework\TestCase
         self::assertSame($rules, $ruleSet->rules());
     }
 
+    public function testWithRulesReturnsRuleSetWithMergedRules(): void
+    {
+        $faker = self::faker();
+
+        $rules = Rules::fromArray([
+            'foo' => true,
+            'bar' => false,
+        ]);
+
+        $ruleSet = RuleSet::create(
+            Fixers::fromFixers(
+                $this->createStub(Fixer\FixerInterface::class),
+                $this->createStub(Fixer\FixerInterface::class),
+                $this->createStub(Fixer\FixerInterface::class),
+            ),
+            Name::fromString($faker->word()),
+            PhpVersion::create(
+                PhpVersion\Major::fromInt($faker->numberBetween(0)),
+                PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
+                PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
+            ),
+            Rules::fromArray([
+                'foo' => false,
+                'quz' => true,
+            ]),
+        );
+
+        $mutated = $ruleSet->withRules($rules);
+
+        self::assertNotSame($ruleSet, $mutated);
+
+        self::assertEquals($ruleSet->customFixers(), $mutated->customFixers());
+        self::assertEquals($ruleSet->name(), $mutated->name());
+        self::assertEquals($ruleSet->phpVersion(), $mutated->phpVersion());
+
+        $expected = $ruleSet->rules()->merge($rules);
+
+        self::assertEquals($expected, $mutated->rules());
+    }
+
     #[Framework\Attributes\DataProvider('provideValidHeader')]
     public function testWithHeaderReturnsRuleSetWithEnabledHeaderCommentFixer(string $header): void
     {

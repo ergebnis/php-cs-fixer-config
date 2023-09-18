@@ -128,13 +128,13 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
 
  use Ergebnis\PhpCsFixer\Config;
 
- $ruleSet = Config\RuleSet\Php82::create();
-
--$config = Config\Factory::fromRuleSet($ruleSet);
-+$config = Config\Factory::fromRuleSet($ruleSet, Config\Rules::fromArray([
+-$ruleSet = Config\RuleSet\Php82::create();
++$ruleSet = Config\RuleSet\Php82::create()->withRules(Config\Rules::fromArray([
 +    'mb_str_functions' => false,
 +    'strict_comparison' => false,
-+]));
++]);
+
+ $config = Config\Factory::fromRuleSet($ruleSet);
 
  $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');

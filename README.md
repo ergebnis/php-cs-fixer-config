@@ -50,7 +50,9 @@ declare(strict_types=1);
 
 use Ergebnis\PhpCsFixer\Config;
 
-$config = Config\Factory::fromRuleSet(Config\RuleSet\Php82::create());
+$ruleSet = Config\RuleSet\Php82::create();
+
+$config = Config\Factory::fromRuleSet($ruleSet);
 
 $config->getFinder()->in(__DIR__);
 $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
@@ -87,8 +89,10 @@ All configuration examples use the caching feature, and if you want to use it as
 +@see https://github.com/ergebnis/php-cs-fixer-config
 +EOF;
 
--$config = Config\Factory::fromRuleSet(Config\RuleSet\Php82::create());
-+$config = Config\Factory::fromRuleSet(Config\RuleSet\Php82::create()->withHeader($header)));
+-$ruleSet = Config\RuleSet\Php82::create();
++$ruleSet = Config\RuleSet\Php82::create()->withHeader($header);
+
+ $config = Config\Factory::fromRuleSet($ruleSet);
 
  $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
@@ -125,8 +129,11 @@ file headers will be added to PHP files, for example:
 
  use Ergebnis\PhpCsFixer\Config;
 
--$config = Config\Factory::fromRuleSet(Config\RuleSet\Php82::create());
-+$config = Config\Factory::fromRuleSet(Config\RuleSet\Php82::create(), Config\Rules::fromArray([
+-$ruleSet = Config\RuleSet\Php82::create();
++$ruleSet = Config\RuleSet\Php82::create()->withHeader($header);
+
+-$config = Config\Factory::fromRuleSet($ruleSet);
++$config = Config\Factory::fromRuleSet($ruleSet, Config\Rules::fromArray([
 +    'mb_str_functions' => false,
 +    'strict_comparison' => false,
 +]));

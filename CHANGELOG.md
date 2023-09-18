@@ -19,6 +19,7 @@ For a full diff see [`5.16.0...main`][5.16.0...main].
 
 - Allow implementations of `Config\RuleSet` to declare and configure custom fixers ([#872]), by [@localheinz]
 - Renamed `Config\RuleSet::targetPhpVersion()` to `Config\RuleSet::phpVersion()` ([#878]), by [@localheinz]
+- Reduced visibility of constructors and extracted named constructors `Config\RuleSet\Php53::create()`, `Config\RuleSet\Php54::create()`, `Config\RuleSet\Php55::create()`, `Config\RuleSet\Php56::create()`, `Config\RuleSet\Php70::create()`, `Config\RuleSet\Php71::create()`, `Config\RuleSet\Php72::create()`, `Config\RuleSet\Php73::create()`, `Config\RuleSet\Php74::create()`, `Config\RuleSet\Php80::create()`,  `Config\RuleSet\Php81::create()`,  `Config\RuleSet\Php82::create()` ([#886]), by [@localheinz]
 
 ### Fixed
 
@@ -1196,6 +1197,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#881]: https://github.com/ergebnis/php-cs-fixer-config/pull/881
 [#883]: https://github.com/ergebnis/php-cs-fixer-config/pull/883
 [#885]: https://github.com/ergebnis/php-cs-fixer-config/pull/885
+[#886]: https://github.com/ergebnis/php-cs-fixer-config/pull/886
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -26,7 +26,19 @@ final class Php54 implements RuleSet
     private readonly PhpVersion $phpVersion;
     private readonly Rules $rules;
 
-    public function __construct(?string $header = null)
+    private function __construct(
+        Fixers $customFixers,
+        Name $name,
+        PhpVersion $phpVersion,
+        Rules $rules,
+    ) {
+        $this->customFixers = $customFixers;
+        $this->name = $name;
+        $this->phpVersion = $phpVersion;
+        $this->rules = $rules;
+    }
+
+    public static function create(?string $header = null): self
     {
         $fixers = Fixers::empty();
         $phpVersion = PhpVersion::create(
@@ -848,10 +860,12 @@ final class Php54 implements RuleSet
             ]));
         }
 
-        $this->customFixers = $fixers;
-        $this->name = $name;
-        $this->phpVersion = $phpVersion;
-        $this->rules = $rules;
+        return new self(
+            $fixers,
+            $name,
+            $phpVersion,
+            $rules,
+        );
     }
 
     public function customFixers(): Fixers

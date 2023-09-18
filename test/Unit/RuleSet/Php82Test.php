@@ -34,7 +34,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
 {
     protected static function createRuleSet(?string $header = null): RuleSet
     {
-        return new RuleSet\Php82($header);
+        return RuleSet\Php82::create($header);
     }
 
     protected function expectedCustomFixers(): Fixers

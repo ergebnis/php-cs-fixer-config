@@ -831,7 +831,11 @@ final class Php53 implements ExplicitRuleSet, RuleSet
             PhpVersion\Patch::fromInt(0),
         );
 
-        $this->name = Name::fromPhpVersion($phpVersion);
+        $this->name = Name::fromString(\sprintf(
+            'ergebnis (PHP %d.%d)',
+            $phpVersion->major()->toInt(),
+            $phpVersion->minor()->toInt(),
+        ));
         $this->phpVersion = $phpVersion;
 
         if (null === $header) {

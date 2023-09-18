@@ -44,19 +44,4 @@ final class NameTest extends Framework\TestCase
 
         self::assertSame($value, $name->toString());
     }
-
-    public function testFromPhpVersionReturnsName(): void
-    {
-        $phpVersion = PhpVersion::current();
-
-        $name = Name::fromPhpVersion($phpVersion);
-
-        $expected = \sprintf(
-            'ergebnis (PHP %d.%d)',
-            $phpVersion->major()->toInt(),
-            $phpVersion->minor()->toInt(),
-        );
-
-        self::assertSame($expected, $name->toString());
-    }
 }

@@ -96,14 +96,16 @@ final class RuleSetTest extends Framework\TestCase
         self::assertEquals($ruleSet->name(), $mutated->name());
         self::assertEquals($ruleSet->phpVersion(), $mutated->phpVersion());
 
-        $expected = $ruleSet->rules()->merge(Rules::fromArray([
+        $expected = Rules::fromArray([
+            'foo' => false,
             'header_comment' => [
                 'comment_type' => 'PHPDoc',
                 'header' => \trim($header),
                 'location' => 'after_declare_strict',
                 'separate' => 'both',
             ],
-        ]));
+            'quz' => true,
+        ]);
 
         self::assertEquals($expected, $mutated->rules());
     }

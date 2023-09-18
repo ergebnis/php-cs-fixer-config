@@ -13,14 +13,13 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\RuleSet;
 
-use Ergebnis\PhpCsFixer\Config\ExplicitRuleSet;
 use Ergebnis\PhpCsFixer\Config\Fixers;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 
-final class Php82 implements ExplicitRuleSet, RuleSet
+final class Php82 implements RuleSet
 {
     /**
      * @var array<string, array<string, mixed>|bool>

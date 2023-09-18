@@ -40,6 +40,7 @@ final class Php72 implements RuleSet
         ));
 
         $this->phpVersion = $phpVersion;
+
         $rules = Rules::fromArray([
             'align_multiline_comment' => [
                 'comment_type' => 'all_multiline',

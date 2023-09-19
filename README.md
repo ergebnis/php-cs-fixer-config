@@ -325,6 +325,10 @@ This package uses the [MIT license](LICENSE.md).
 
 This package is inspired by and also replaces [`localheinz/php-cs-fixer-config`](https://github.com/localheinz/php-cs-fixer-config).
 
+This package requires and enables custom fixers from the following packages:
+
+- [`erickskrauch/php-cs-fixer-custom-fixers`]https://github.com/erickskrauch/php-cs-fixer-custom-fixers
+
 ## Social
 
 Follow [@localheinz](https://twitter.com/intent/follow?screen_name=localheinz) and [@ergebnis](https://twitter.com/intent/follow?screen_name=ergebnis) on Twitter.

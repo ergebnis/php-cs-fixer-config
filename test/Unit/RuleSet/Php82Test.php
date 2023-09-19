@@ -19,6 +19,7 @@ use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
+use ErickSkrauch\PhpCsFixer;
 use PHPUnit\Framework;
 
 #[Framework\Attributes\CoversClass(RuleSet\Php82::class)]
@@ -40,7 +41,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
 
     protected function expectedCustomFixers(): Fixers
     {
-        return Fixers::empty();
+        return Fixers::fromFixers(new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer());
     }
 
     protected function expectedName(): Name
@@ -51,6 +52,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
     protected function expectedRules(): Rules
     {
         return Rules::fromArray([
+            'ErickSkrauch/line_break_after_statements' => true,
             'align_multiline_comment' => [
                 'comment_type' => 'all_multiline',
             ],

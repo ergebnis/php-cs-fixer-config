@@ -19,6 +19,7 @@ use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use ErickSkrauch\PhpCsFixer;
+use PhpCsFixerCustomFixers\Fixer;
 
 final class Php56
 {
@@ -31,7 +32,10 @@ final class Php56
         );
 
         return RuleSet::create(
-            Fixers::fromFixers(new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()),
+            Fixers::fromFixers(
+                new Fixer\PhpdocArrayStyleFixer(),
+                new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
+            ),
             Name::fromString(\sprintf(
                 'ergebnis (PHP %d.%d)',
                 $phpVersion->major()->toInt(),
@@ -40,6 +44,7 @@ final class Php56
             $phpVersion,
             Rules::fromArray([
                 'ErickSkrauch/line_break_after_statements' => true,
+                'PhpCsFixerCustomFixers/phpdoc_array_style' => true,
                 'align_multiline_comment' => [
                     'comment_type' => 'all_multiline',
                 ],

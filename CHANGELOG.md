@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.1.0...main`][6.1.0...main].
 
+### Changed
+
+- Required [`kubawerlos/php-cs-fixer-custom-fixers`](https://github.com/kubawerlos/php-cs-fixer-custom-fixers) and enabled the [`PhpCsFixerCustomFixers/phpdoc_array_style`](https://github.com/kubawerlos/php-cs-fixer-custom-fixers/tree/v3.16.2#phpdocarraystylefixer) fixer ([#894]), by [@localheinz]
+
 ## [`6.1.0`][6.1.0]
 
 For a full diff see [`6.0.0...6.1.0`][6.0.0...6.1.0].
@@ -1225,6 +1229,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#891]: https://github.com/ergebnis/php-cs-fixer-config/pull/891
 [#892]: https://github.com/ergebnis/php-cs-fixer-config/pull/892
 [#893]: https://github.com/ergebnis/php-cs-fixer-config/pull/893
+[#894]: https://github.com/ergebnis/php-cs-fixer-config/pull/894
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

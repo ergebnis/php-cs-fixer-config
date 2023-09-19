@@ -328,6 +328,7 @@ This package is inspired by and also replaces [`localheinz/php-cs-fixer-config`]
 This package requires and enables custom fixers from the following packages:
 
 - [`erickskrauch/php-cs-fixer-custom-fixers`](https://github.com/erickskrauch/php-cs-fixer-custom-fixers)
+- [`kubawerlos/php-cs-fixer-custom-fixers`](https://github.com/kubawerlos/php-cs-fixer-custom-fixers)
 
 ## Social
 

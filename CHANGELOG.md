@@ -14,7 +14,7 @@ For a full diff see [`6.0.0...6.1.0`][6.0.0...6.1.0].
 
 ### Changed
 
-- Required [`erickskrauch/php-cs-fixer-custom-fixers`](https://github.com/erickskrauch/php-cs-fixer-custom-fixers) and enabled the `ErickSkrauch/line_break_after_statements` fixer ([#889]), by [@localheinz]
+- Required [`erickskrauch/php-cs-fixer-custom-fixers`](https://github.com/erickskrauch/php-cs-fixer-custom-fixers) and enabled the [`ErickSkrauch/line_break_after_statements`](https://github.com/erickskrauch/php-cs-fixer-custom-fixers/tree/1.2.0#erickskrauchline_break_after_statements) fixer ([#889]), by [@localheinz]
 
 ## [`6.0.0`][6.0.0]
 

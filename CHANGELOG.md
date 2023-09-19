@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.0.0...main`][6.0.0...main].
 
+### Changed
+
+- Required [`erickskrauch/php-cs-fixer-custom-fixers`](https://github.com/erickskrauch/php-cs-fixer-custom-fixers) and enabled the `ErickSkrauch/line_break_after_statements` fixer ([#889]), by [@localheinz]
+
 ## [`6.0.0`][6.0.0]
 
 For a full diff see [`5.16.0...6.0.0`][5.16.0...6.0.0].
@@ -1211,6 +1215,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#886]: https://github.com/ergebnis/php-cs-fixer-config/pull/886
 [#887]: https://github.com/ergebnis/php-cs-fixer-config/pull/887
 [#888]: https://github.com/ergebnis/php-cs-fixer-config/pull/888
+[#889]: https://github.com/ergebnis/php-cs-fixer-config/pull/889
 [#891]: https://github.com/ergebnis/php-cs-fixer-config/pull/891
 [#892]: https://github.com/ergebnis/php-cs-fixer-config/pull/892
 [#893]: https://github.com/ergebnis/php-cs-fixer-config/pull/893

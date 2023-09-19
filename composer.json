@@ -1,6 +1,6 @@
 {
   "name": "ergebnis/php-cs-fixer-config",
-  "description": "Provides a configuration factory and rule sets for friendsofphp/php-cs-fixer.",
+  "description": "Provides a configuration factory and rule set factories for friendsofphp/php-cs-fixer.",
   "license": "MIT",
   "type": "library",
   "authors": [

@@ -13,7 +13,8 @@
   "homepage": "https://github.com/ergebnis/php-cs-fixer-config",
   "support": {
     "issues": "https://github.com/ergebnis/php-cs-fixer-config/issues",
-    "source": "https://github.com/ergebnis/php-cs-fixer-config"
+    "source": "https://github.com/ergebnis/php-cs-fixer-config",
+    "security": "https://github.com/ergebnis/php-cs-fixer-config/blob/main/.github/SECURITY.md"
   },
   "require": {
     "php": "~8.1.0 || ~8.2.0",

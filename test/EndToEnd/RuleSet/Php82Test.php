@@ -15,7 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversNothing]
+#[Framework\Attributes\CoversNothing()]
 #[Framework\Attributes\RequiresPhp('8.2')]
 final class Php82Test extends AbstractRuleSetTestCase
 {

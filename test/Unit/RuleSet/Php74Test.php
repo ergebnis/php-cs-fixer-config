@@ -67,6 +67,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
                 'syntax' => 'short',
             ],
             'assign_null_coalescing_to_coalesce_equal' => true,
+            'attribute_empty_parentheses' => false,
             'backtick_to_shell_exec' => true,
             'binary_operator_spaces' => [
                 'default' => 'single_space',

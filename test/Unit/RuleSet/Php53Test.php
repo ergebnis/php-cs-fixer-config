@@ -67,6 +67,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'syntax' => 'long',
             ],
             'assign_null_coalescing_to_coalesce_equal' => false,
+            'attribute_empty_parentheses' => false,
             'backtick_to_shell_exec' => true,
             'binary_operator_spaces' => [
                 'default' => 'single_space',

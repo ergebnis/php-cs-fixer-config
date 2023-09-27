@@ -15,7 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversNothing]
+#[Framework\Attributes\CoversNothing()]
 final class Php74Test extends AbstractRuleSetTestCase
 {
 }

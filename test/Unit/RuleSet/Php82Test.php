@@ -67,7 +67,9 @@ final class Php82Test extends ExplicitRuleSetTestCase
                 'syntax' => 'short',
             ],
             'assign_null_coalescing_to_coalesce_equal' => true,
-            'attribute_empty_parentheses' => false,
+            'attribute_empty_parentheses' => [
+                'use_parentheses' => true,
+            ],
             'backtick_to_shell_exec' => true,
             'binary_operator_spaces' => [
                 'default' => 'single_space',

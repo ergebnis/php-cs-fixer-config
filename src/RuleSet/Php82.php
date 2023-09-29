@@ -274,6 +274,7 @@ final class Php82
                 'mb_str_functions' => true,
                 'method_argument_space' => [
                     'after_heredoc' => false,
+                    'attribute_placement' => 'standalone',
                     'keep_multiple_spaces_after_comma' => false,
                     'on_multiline' => 'ensure_fully_multiline',
                 ],

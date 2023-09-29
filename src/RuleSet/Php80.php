@@ -305,7 +305,7 @@ final class Php80
                     'scope' => 'all',
                     'strict' => false,
                 ],
-                'native_function_type_declaration_casing' => true,
+                'native_type_declaration_casing' => true,
                 'new_with_parentheses' => [
                     'anonymous_class' => true,
                     'named_class' => true,

@@ -7,9 +7,6 @@ updates:
       include: "scope"
       prefix: "composer"
     directory: "/"
-    ignore:
-      - dependency-name: "symfony/filesystem"
-      - dependency-name: "symfony/process"
     labels:
       - "dependency"
     open-pull-requests-limit: 10

@@ -35,6 +35,7 @@ $config->getFinder()
         '.build/',
         '.github/',
         '.note/',
+        'test/Fixture/',
     ])
     ->ignoreDotFiles(false)
     ->in(__DIR__);

@@ -105,6 +105,15 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'max_line_breaks' => 2,
                 'min_line_breaks' => 2,
             ],
+            'braces_position' => [
+                'allow_single_line_anonymous_functions' => false,
+                'allow_single_line_empty_anonymous_classes' => false,
+                'anonymous_classes_opening_brace' => 'same_line',
+                'anonymous_functions_opening_brace' => 'same_line',
+                'classes_opening_brace' => 'next_line_unless_newline_at_signature_end',
+                'control_structures_opening_brace' => 'same_line',
+                'functions_opening_brace' => 'next_line_unless_newline_at_signature_end',
+            ],
             'cast_spaces' => [
                 'space' => 'single',
             ],
@@ -130,7 +139,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'comment_to_phpdoc' => [
                 'ignored_tags' => [],
             ],
-            'compact_nullable_typehint' => false,
+            'compact_nullable_type_declaration' => false,
             'concat_space' => [
                 'spacing' => 'one',
             ],
@@ -140,15 +149,6 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'control_structure_braces' => true,
             'control_structure_continuation_position' => [
                 'position' => 'same_line',
-            ],
-            'curly_braces_position' => [
-                'allow_single_line_anonymous_functions' => false,
-                'allow_single_line_empty_anonymous_classes' => false,
-                'anonymous_classes_opening_brace' => 'same_line',
-                'anonymous_functions_opening_brace' => 'same_line',
-                'classes_opening_brace' => 'next_line_unless_newline_at_signature_end',
-                'control_structures_opening_brace' => 'same_line',
-                'functions_opening_brace' => 'next_line_unless_newline_at_signature_end',
             ],
             'date_time_create_from_format_call' => true,
             'date_time_immutable' => true,
@@ -314,7 +314,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'strict' => false,
             ],
             'native_function_type_declaration_casing' => true,
-            'new_with_braces' => [
+            'new_with_parentheses' => [
                 'anonymous_class' => true,
                 'named_class' => true,
             ],
@@ -391,6 +391,9 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'no_trailing_whitespace' => true,
             'no_trailing_whitespace_in_comment' => true,
             'no_trailing_whitespace_in_string' => true,
+            'no_unneeded_braces' => [
+                'namespaces' => false,
+            ],
             'no_unneeded_control_parentheses' => [
                 'statements' => [
                     'break',
@@ -402,9 +405,6 @@ final class Php53Test extends ExplicitRuleSetTestCase
                     'return',
                     'switch_case',
                 ],
-            ],
-            'no_unneeded_curly_braces' => [
-                'namespaces' => false,
             ],
             'no_unneeded_final_method' => [
                 'private_methods' => true,

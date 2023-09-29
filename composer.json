@@ -33,7 +33,7 @@
     "psalm/plugin-phpunit": "~0.18.4",
     "rector/rector": "~0.18.4",
     "symfony/filesystem": "^5.0.0 || ^6.0.0",
-    "symfony/process": "^5.0.0 || ^6.0.0",
+    "symfony/process": "^6.0.0",
     "vimeo/psalm": "^5.15.0"
   },
   "autoload": {

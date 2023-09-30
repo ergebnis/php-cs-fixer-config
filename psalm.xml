@@ -18,9 +18,7 @@
 
     <projectFiles>
         <directory name="src/" />
-        <directory name="test/EndToEnd/" />
-        <directory name="test/Unit/" />
-        <directory name="test/Util/" />
+        <directory name="test/" />
         <file name="rector.php" />
         <ignoreFiles>
             <directory name="vendor/" />

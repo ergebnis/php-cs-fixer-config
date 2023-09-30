@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-use Ergebnis\PhpCsFixer;
+use Ergebnis\Rector\Rules;
 use Rector\Config;
 use Rector\Core;
 use Rector\Php81;
@@ -24,16 +24,14 @@ return static function (Config\RectorConfig $rectorConfig): void {
 
     $rectorConfig->paths([
         __DIR__ . '/src/',
-        __DIR__ . '/test/EndToEnd/',
-        __DIR__ . '/test/Unit/',
-        __DIR__ . '/test/Util/',
+        __DIR__ . '/test/',
     ]);
 
     $rectorConfig->phpVersion(Core\ValueObject\PhpVersion::PHP_81);
 
     $rectorConfig->rules([
         Php81\Rector\Property\ReadOnlyPropertyRector::class,
-        PhpCsFixer\Config\Test\Rector\SortAssociativeArrayByKey::class,
+        Rules\Arrays\SortAssociativeArrayByKeyRector::class,
     ]);
 
     $rectorConfig->sets([

@@ -104,11 +104,6 @@
       <code>provideValueGreaterThanNinetyNine</code>
     </PossiblyUnusedMethod>
   </file>
-  <file src="test/Unit/Rector/SortAssociativeArrayByKey/SortAssociativeArrayByKeyTest.php">
-    <PossiblyUnusedMethod>
-      <code>provideData</code>
-    </PossiblyUnusedMethod>
-  </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass>
       <code>new FixerFactory()</code>

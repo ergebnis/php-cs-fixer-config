@@ -24,7 +24,7 @@
     "kubawerlos/php-cs-fixer-custom-fixers": "~3.16.2"
   },
   "require-dev": {
-    "ergebnis/composer-normalize": "^2.37.0",
+    "ergebnis/composer-normalize": "^2.38.0",
     "ergebnis/data-provider": "^3.0.0",
     "ergebnis/license": "^2.2.0",
     "ergebnis/phpunit-slow-test-detector": "^2.3.0",

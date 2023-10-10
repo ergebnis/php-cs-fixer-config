@@ -65,6 +65,11 @@
       <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
     </InternalMethod>
   </file>
+  <file src="src/RuleSet/Php83.php">
+    <InternalMethod>
+      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+    </InternalMethod>
+  </file>
   <file src="src/Rules.php">
     <MixedArgumentTypeCoercion>
       <code><![CDATA[\array_merge(
@@ -170,6 +175,11 @@
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php82Test.php">
+    <InternalMethod>
+      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+    </InternalMethod>
+  </file>
+  <file src="test/Unit/RuleSet/Php83Test.php">
     <InternalMethod>
       <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
     </InternalMethod>

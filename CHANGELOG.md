@@ -11,6 +11,7 @@ For a full diff see [`6.6.0...main`][6.6.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#908]), by [@dependabot]
+- Added support for PHP 8.3 ([#913]), by [@localheinz]
 
 ## [`6.6.0`][6.6.0]
 
@@ -1291,6 +1292,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#903]: https://github.com/ergebnis/php-cs-fixer-config/pull/903
 [#904]: https://github.com/ergebnis/php-cs-fixer-config/pull/904
 [#908]: https://github.com/ergebnis/php-cs-fixer-config/pull/908
+[#913]: https://github.com/ergebnis/php-cs-fixer-config/pull/913
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -31,8 +31,8 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertEquals($this->expectedCustomFixers(), $ruleSet->customFixers());
         self::assertEquals($this->expectedName(), $ruleSet->name());
-        self::assertEquals($this->expectedRules(), $ruleSet->rules());
         self::assertEquals($this->expectedPhpVersion(), $ruleSet->phpVersion());
+        self::assertEquals($this->expectedRules(), $ruleSet->rules());
     }
 
     final public function testRuleSetDoesNotConfigureRulesThatAreNotRegistered(): void
@@ -184,9 +184,9 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     abstract protected function expectedName(): Name;
 
-    abstract protected function expectedRules(): Rules;
-
     abstract protected function expectedPhpVersion(): PhpVersion;
+
+    abstract protected function expectedRules(): Rules;
 
     /**
      * @throws \RuntimeException

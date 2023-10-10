@@ -53,6 +53,15 @@ final class Php56Test extends ExplicitRuleSetTestCase
         return Name::fromString('ergebnis (PHP 5.6)');
     }
 
+    protected function expectedPhpVersion(): PhpVersion
+    {
+        return PhpVersion::create(
+            PhpVersion\Major::fromInt(5),
+            PhpVersion\Minor::fromInt(6),
+            PhpVersion\Patch::fromInt(0),
+        );
+    }
+
     protected function expectedRules(): Rules
     {
         return Rules::fromArray([
@@ -865,14 +874,5 @@ final class Php56Test extends ExplicitRuleSetTestCase
                 'less_and_greater' => true,
             ],
         ]);
-    }
-
-    protected function expectedPhpVersion(): PhpVersion
-    {
-        return PhpVersion::create(
-            PhpVersion\Major::fromInt(5),
-            PhpVersion\Minor::fromInt(6),
-            PhpVersion\Patch::fromInt(0),
-        );
     }
 }

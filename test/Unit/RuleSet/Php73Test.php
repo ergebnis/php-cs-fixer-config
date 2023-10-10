@@ -53,6 +53,15 @@ final class Php73Test extends ExplicitRuleSetTestCase
         return Name::fromString('ergebnis (PHP 7.3)');
     }
 
+    protected function expectedPhpVersion(): PhpVersion
+    {
+        return PhpVersion::create(
+            PhpVersion\Major::fromInt(7),
+            PhpVersion\Minor::fromInt(3),
+            PhpVersion\Patch::fromInt(0),
+        );
+    }
+
     protected function expectedRules(): Rules
     {
         return Rules::fromArray([
@@ -869,14 +878,5 @@ final class Php73Test extends ExplicitRuleSetTestCase
                 'less_and_greater' => true,
             ],
         ]);
-    }
-
-    protected function expectedPhpVersion(): PhpVersion
-    {
-        return PhpVersion::create(
-            PhpVersion\Major::fromInt(7),
-            PhpVersion\Minor::fromInt(3),
-            PhpVersion\Patch::fromInt(0),
-        );
     }
 }

@@ -53,6 +53,15 @@ final class Php81Test extends ExplicitRuleSetTestCase
         return Name::fromString('ergebnis (PHP 8.1)');
     }
 
+    protected function expectedPhpVersion(): PhpVersion
+    {
+        return PhpVersion::create(
+            PhpVersion\Major::fromInt(8),
+            PhpVersion\Minor::fromInt(1),
+            PhpVersion\Patch::fromInt(0),
+        );
+    }
+
     protected function expectedRules(): Rules
     {
         return Rules::fromArray([
@@ -885,14 +894,5 @@ final class Php81Test extends ExplicitRuleSetTestCase
                 'less_and_greater' => true,
             ],
         ]);
-    }
-
-    protected function expectedPhpVersion(): PhpVersion
-    {
-        return PhpVersion::create(
-            PhpVersion\Major::fromInt(8),
-            PhpVersion\Minor::fromInt(1),
-            PhpVersion\Patch::fromInt(0),
-        );
     }
 }

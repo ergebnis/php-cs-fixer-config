@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.6.0...main`][6.6.0...main].
 
+### Added
+
+- Added `Config\Ruleset\Php83` rule set factory ([#914]), by [@localheinz]
+
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#908]), by [@dependabot]
@@ -1293,6 +1297,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#904]: https://github.com/ergebnis/php-cs-fixer-config/pull/904
 [#908]: https://github.com/ergebnis/php-cs-fixer-config/pull/908
 [#913]: https://github.com/ergebnis/php-cs-fixer-config/pull/913
+[#914]: https://github.com/ergebnis/php-cs-fixer-config/pull/914
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

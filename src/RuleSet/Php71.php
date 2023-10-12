@@ -603,6 +603,7 @@ final class Php71
                     ],
                 ],
                 'phpdoc_param_order' => true,
+                'phpdoc_readonly_class_comment_to_keyword' => false,
                 'phpdoc_return_self_reference' => [
                     'replacements' => [
                         '$self' => 'self',

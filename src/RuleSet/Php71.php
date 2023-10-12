@@ -217,7 +217,9 @@ final class Php71
                     'b_mode' => true,
                 ],
                 'full_opening_tag' => true,
-                'fully_qualified_strict_types' => true,
+                'fully_qualified_strict_types' => [
+                    'leading_backslash_in_global_namespace' => false,
+                ],
                 'function_declaration' => [
                     'closure_fn_spacing' => 'one',
                     'closure_function_spacing' => 'one',
@@ -603,6 +605,7 @@ final class Php71
                     ],
                 ],
                 'phpdoc_param_order' => true,
+                'phpdoc_readonly_class_comment_to_keyword' => false,
                 'phpdoc_return_self_reference' => [
                     'replacements' => [
                         '$self' => 'self',

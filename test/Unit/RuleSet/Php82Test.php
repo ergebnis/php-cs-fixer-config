@@ -337,8 +337,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
             ],
             'no_alias_functions' => [
                 'sets' => [
-                    '@IMAP',
-                    '@internal',
+                    '@all',
                 ],
             ],
             'no_alias_language_construct_call' => true,

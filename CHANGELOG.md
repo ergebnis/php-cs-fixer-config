@@ -12,6 +12,10 @@ For a full diff see [`6.8.1...main`][6.8.1...main].
 
 - Configured `case` option of `elements` option of `class_attributes_separation` fixer ([#922]), by [@localheinz]
 
+### Fixed
+
+- Removed `get_called_class` and `get_class` options from `functions` option of `function_to_constant` fixer where the resulting code would be incompatible with the target PHP version ([#923]), by [@localheinz]
+
 ## [`6.8.1`][6.8.1]
 
 For a full diff see [`6.8.0...6.8.1`][6.8.0...6.8.1].

@@ -224,8 +224,6 @@ final class Php53
                 ],
                 'function_to_constant' => [
                     'functions' => [
-                        'get_called_class',
-                        'get_class',
                         'php_sapi_name',
                         'phpversion',
                         'pi',

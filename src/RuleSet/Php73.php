@@ -344,6 +344,7 @@ final class Php73
                         'switch',
                         'throw',
                         'use',
+                        'use_trait',
                     ],
                 ],
                 'no_homoglyph_names' => true,

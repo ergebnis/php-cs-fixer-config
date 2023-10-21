@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.8.1...main`][6.8.1...main].
 
+### Changed
+
+- Added `use_trait` to `tokens` option of `no_extra_blank_lines` fixer ([#921]), by [@localheinz]
+
 ## [`6.8.1`][6.8.1]
 
 For a full diff see [`6.8.0...6.8.1`][6.8.0...6.8.1].
@@ -1325,6 +1329,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#914]: https://github.com/ergebnis/php-cs-fixer-config/pull/914
 [#917]: https://github.com/ergebnis/php-cs-fixer-config/pull/917
 [#918]: https://github.com/ergebnis/php-cs-fixer-config/pull/918
+[#921]: https://github.com/ergebnis/php-cs-fixer-config/pull/921
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

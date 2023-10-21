@@ -347,6 +347,8 @@ final class Php81
                         'switch',
                         'throw',
                         'use',
+                        'use_trait',
+                        'use_trait',
                     ],
                 ],
                 'no_homoglyph_names' => true,

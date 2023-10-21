@@ -132,6 +132,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
             ],
             'class_attributes_separation' => [
                 'elements' => [
+                    'case' => 'only_if_meta',
                     'const' => 'only_if_meta',
                     'method' => 'one',
                     'property' => 'only_if_meta',

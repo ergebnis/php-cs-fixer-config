@@ -1019,6 +1019,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [6.6.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/6.6.0
 [6.7.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/6.7.0
 [6.8.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/6.8.0
+[6.8.1]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/6.8.1
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0

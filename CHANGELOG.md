@@ -12,6 +12,7 @@ For a full diff see [`6.8.1...main`][6.8.1...main].
 
 - Configured `case` option of `elements` option of `class_attributes_separation` fixer ([#922]), by [@localheinz]
 - Enabled `@all` instead of individual sets for `sets` option of `no_alias_functions` fixer ([#923]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#927]), by [@dependabot]
 
 ### Fixed
 
@@ -1337,6 +1338,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#922]: https://github.com/ergebnis/php-cs-fixer-config/pull/922
 [#923]: https://github.com/ergebnis/php-cs-fixer-config/pull/923
 [#924]: https://github.com/ergebnis/php-cs-fixer-config/pull/924
+[#927]: https://github.com/ergebnis/php-cs-fixer-config/pull/927
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

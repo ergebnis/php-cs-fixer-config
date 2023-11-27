@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.15.0@5c774aca4746caf3d239d9c8cadb9f882ca29352">
+<files psalm-version="5.16.0@2897ba636551a8cb61601cc26f6ccfbba6c36591">
   <file src="src/Fixers.php">
     <PropertyTypeCoercion>
       <code>$value</code>
@@ -118,6 +118,34 @@
       <code>new FixerFactory()</code>
       <code>registerBuiltInFixers</code>
     </InternalMethod>
+    <MixedArgumentTypeCoercion>
+      <code>static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
+                if (!\array_key_exists($nameOfRule, $fixersThatAreRegistered)) {
+                    return true;
+                }
+
+                $fixer = $fixersThatAreRegistered[$nameOfRule];
+
+                return !$fixer instanceof Fixer\DeprecatedFixerInterface;
+            }</code>
+      <code><![CDATA[static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
+                if (\str_starts_with($nameOfRule, '@')) {
+                    return true;
+                }
+
+                return \array_key_exists(
+                    $nameOfRule,
+                    $fixersThatAreRegistered,
+                );
+            }]]></code>
+    </MixedArgumentTypeCoercion>
+  </file>
+  <file src="test/Unit/RuleSet/ExplicitRuleSetTestCase.php">
+    <MixedArgumentTypeCoercion>
+      <code><![CDATA[static function (string $nameOfRule): bool {
+                return !\str_starts_with($nameOfRule, '@');
+            }]]></code>
+    </MixedArgumentTypeCoercion>
   </file>
   <file src="test/Unit/RuleSet/Php53Test.php">
     <InternalMethod>

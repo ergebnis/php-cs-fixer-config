@@ -50,12 +50,6 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
                 self::configPath(),
             ],
             null,
-            [
-                /**
-                 * @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/v3.13.1/php-cs-fixer#L31-L44
-                 */
-                'PHP_CS_FIXER_IGNORE_ENV' => true,
-            ],
         );
 
         $process->run();

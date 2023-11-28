@@ -51,7 +51,7 @@ declare(strict_types=1);
 
 use Ergebnis\PhpCsFixer\Config;
 
-$ruleSet = Config\RuleSet\Php82::create();
+$ruleSet = Config\RuleSet\Php83::create();
 
 $config = Config\Factory::fromRuleSet($ruleSet);
 
@@ -90,8 +90,8 @@ All configuration examples use the caching feature, and if you want to use it as
 +@see https://github.com/ergebnis/php-cs-fixer-config
 +EOF;
 
--$ruleSet = Config\RuleSet\Php82::create();
-+$ruleSet = Config\RuleSet\Php82::create()->withHeader($header);
+-$ruleSet = Config\RuleSet\Php83::create();
++$ruleSet = Config\RuleSet\Php83::create()->withHeader($header);
 
  $config = Config\Factory::fromRuleSet($ruleSet);
 
@@ -129,8 +129,8 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
 
  use Ergebnis\PhpCsFixer\Config;
 
--$ruleSet = Config\RuleSet\Php82::create();
-+$ruleSet = Config\RuleSet\Php82::create()->withRules(Config\Rules::fromArray([
+-$ruleSet = Config\RuleSet\Php83::create();
++$ruleSet = Config\RuleSet\Php83::create()->withRules(Config\Rules::fromArray([
 +    'mb_str_functions' => false,
 +    'strict_comparison' => false,
 +]));
@@ -155,8 +155,8 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
  use Ergebnis\PhpCsFixer\Config;
  use FooBar\Fixer;
 
--$ruleSet = Config\RuleSet\Php82::create();
-+$ruleSet = Config\RuleSet\Php82::create()
+-$ruleSet = Config\RuleSet\Php83::create();
++$ruleSet = Config\RuleSet\Php83::create()
 +    ->withCustomFixers(Config\Fixers::fromFixers(
 +        new Fixer\BarBazFixer(),
 +        new Fixer\QuzFixer(),
@@ -211,7 +211,7 @@ If you like [`composer` scripts](https://getcomposer.org/doc/articles/scripts.md
      "php": "^8.1",
    },
    "require-dev": {
-     "ergebnis/php-cs-fixer-config": "~5.1.0"
+     "ergebnis/php-cs-fixer-config": "~6.12.0"
 +  },
 +  "scripts": {
 +    "coding-standards": [

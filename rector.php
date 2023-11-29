@@ -14,7 +14,6 @@ declare(strict_types=1);
 use Ergebnis\Rector\Rules;
 use Rector\Config;
 use Rector\Core;
-use Rector\Php81;
 use Rector\PHPUnit;
 
 return static function (Config\RectorConfig $rectorConfig): void {
@@ -27,14 +26,13 @@ return static function (Config\RectorConfig $rectorConfig): void {
         __DIR__ . '/test/',
     ]);
 
-    $rectorConfig->phpVersion(Core\ValueObject\PhpVersion::PHP_81);
+    $rectorConfig->phpVersion(Core\ValueObject\PhpVersion::PHP_80);
 
     $rectorConfig->rules([
-        Php81\Rector\Property\ReadOnlyPropertyRector::class,
         Rules\Arrays\SortAssociativeArrayByKeyRector::class,
     ]);
 
     $rectorConfig->sets([
-        PHPUnit\Set\PHPUnitSetList::PHPUNIT_100,
+        PHPUnit\Set\PHPUnitSetList::PHPUNIT_90,
     ]);
 };

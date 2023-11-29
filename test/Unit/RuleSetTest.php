@@ -20,14 +20,17 @@ use Ergebnis\PhpCsFixer\Config\Test;
 use PhpCsFixer\Fixer;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(RuleSet::class)]
-#[Framework\Attributes\UsesClass(Name::class)]
-#[Framework\Attributes\UsesClass(Fixers::class)]
-#[Framework\Attributes\UsesClass(PhpVersion::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
-#[Framework\Attributes\UsesClass(Rules::class)]
+/**
+ * @covers \Ergebnis\PhpCsFixer\Config\RuleSet
+ *
+ * @uses \Ergebnis\PhpCsFixer\Config\Fixers
+ * @uses \Ergebnis\PhpCsFixer\Config\Name
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Major
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Minor
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
+ * @uses \Ergebnis\PhpCsFixer\Config\Rules
+ */
 final class RuleSetTest extends Framework\TestCase
 {
     use Test\Util\Helper;
@@ -143,7 +146,9 @@ final class RuleSetTest extends Framework\TestCase
         self::assertEquals($expected, $mutated->rules());
     }
 
-    #[Framework\Attributes\DataProvider('provideValidHeader')]
+    /**
+     * @dataProvider provideValidHeader
+     */
     public function testWithHeaderReturnsRuleSetWithEnabledHeaderCommentFixer(string $header): void
     {
         $faker = self::faker();
@@ -190,7 +195,7 @@ final class RuleSetTest extends Framework\TestCase
     /**
      * @return \Generator<string, array{0: string}>
      */
-    public static function provideValidHeader(): Generator
+    public static function provideValidHeader(): iterable
     {
         $values = [
             'string-empty' => '',

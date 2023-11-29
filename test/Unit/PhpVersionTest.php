@@ -16,10 +16,13 @@ use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(PhpVersion::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
+/**
+ * @covers \Ergebnis\PhpCsFixer\Config\PhpVersion
+ *
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Major
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Minor
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
+ */
 final class PhpVersionTest extends Framework\TestCase
 {
     use Test\Util\Helper;
@@ -52,7 +55,9 @@ final class PhpVersionTest extends Framework\TestCase
         self::assertSame($expected, $phpVersion->toString());
     }
 
-    #[Framework\Attributes\DataProviderExternal(DataProvider\IntProvider::class, 'lessThanZero')]
+    /**
+     * @dataProvider \Ergebnis\DataProvider\IntProvider::lessThanZero
+     */
     public function testFromIntRejectsInvalidValue(int $value): void
     {
         $this->expectException(\InvalidArgumentException::class);
@@ -64,8 +69,10 @@ final class PhpVersionTest extends Framework\TestCase
         PhpVersion::fromInt($value);
     }
 
-    #[Framework\Attributes\DataProviderExternal(DataProvider\IntProvider::class, 'zero')]
-    #[Framework\Attributes\DataProviderExternal(DataProvider\IntProvider::class, 'greaterThanZero')]
+    /**
+     * @dataProvider \Ergebnis\DataProvider\IntProvider::greaterThanZero
+     * @dataProvider \Ergebnis\DataProvider\IntProvider::zero
+     */
     public function testFromIntReturnsPhpVersion(int $value): void
     {
         $phpVersion = PhpVersion::fromInt($value);

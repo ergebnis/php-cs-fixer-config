@@ -15,7 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\PhpVersion;
 
 final class Patch
 {
-    private readonly int $value;
+    private int $value;
 
     private function __construct(int $value)
     {

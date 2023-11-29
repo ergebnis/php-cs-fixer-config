@@ -23,15 +23,18 @@ use Ergebnis\PhpCsFixer\Config\Test;
 use PhpCsFixer\Fixer;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(Factory::class)]
-#[Framework\Attributes\UsesClass(Fixers::class)]
-#[Framework\Attributes\UsesClass(Name::class)]
-#[Framework\Attributes\UsesClass(PhpVersion::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
-#[Framework\Attributes\UsesClass(Rules::class)]
-#[Framework\Attributes\UsesClass(RuleSet::class)]
+/**
+ * @covers \Ergebnis\PhpCsFixer\Config\Factory
+ *
+ * @uses \Ergebnis\PhpCsFixer\Config\Fixers
+ * @uses \Ergebnis\PhpCsFixer\Config\Name
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Major
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Minor
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
+ * @uses \Ergebnis\PhpCsFixer\Config\Rules
+ * @uses \Ergebnis\PhpCsFixer\Config\RuleSet
+ */
 final class FactoryTest extends Framework\TestCase
 {
     use Test\Util\Helper;
@@ -61,7 +64,9 @@ final class FactoryTest extends Framework\TestCase
         Factory::fromRuleSet($ruleSet);
     }
 
-    #[Framework\Attributes\DataProvider('provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion')]
+    /**
+     * @dataProvider provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion
+     */
     public function testFromRuleSetCreatesConfigWhenCurrentPhpVersionIsEqualToOrGreaterThanTargetPhpVersion(PhpVersion $targetPhpVersion): void
     {
         $customFixers = Fixers::fromFixers(
@@ -95,7 +100,7 @@ final class FactoryTest extends Framework\TestCase
     /**
      * @return \Generator<int, array{0: PhpVersion}>
      */
-    public static function provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion(): \Generator
+    public static function provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion(): iterable
     {
         $values = [
             PhpVersion::fromInt(\PHP_VERSION_ID - 1),

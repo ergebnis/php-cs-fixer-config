@@ -15,7 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config;
 
 final class Rules
 {
-    private readonly array $value;
+    private array $value;
 
     /**
      * @param array<string, array<string, mixed>|bool> $value

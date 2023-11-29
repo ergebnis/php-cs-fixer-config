@@ -13,7 +13,6 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
-use Ergebnis\PhpCsFixer\Config\Factory;
 use Ergebnis\PhpCsFixer\Config\Fixers;
 use Ergebnis\PhpCsFixer\Config\Name;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
@@ -21,18 +20,20 @@ use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use ErickSkrauch\PhpCsFixer;
 use PhpCsFixerCustomFixers\Fixer;
-use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(RuleSet\Php80::class)]
-#[Framework\Attributes\UsesClass(Factory::class)]
-#[Framework\Attributes\UsesClass(Fixers::class)]
-#[Framework\Attributes\UsesClass(Name::class)]
-#[Framework\Attributes\UsesClass(PhpVersion::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
-#[Framework\Attributes\UsesClass(Rules::class)]
-#[Framework\Attributes\UsesClass(RuleSet::class)]
+/**
+ * @covers \Ergebnis\PhpCsFixer\Config\RuleSet\Php80
+ *
+ * @uses \Ergebnis\PhpCsFixer\Config\Factory
+ * @uses \Ergebnis\PhpCsFixer\Config\Fixers
+ * @uses \Ergebnis\PhpCsFixer\Config\Name
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Major
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Minor
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
+ * @uses \Ergebnis\PhpCsFixer\Config\Rules
+ * @uses \Ergebnis\PhpCsFixer\Config\RuleSet
+ */
 final class Php80Test extends ExplicitRuleSetTestCase
 {
     protected static function createRuleSet(): RuleSet

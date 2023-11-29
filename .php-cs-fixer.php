@@ -26,7 +26,11 @@ $license = License\Type\MIT::markdown(
 
 $license->save();
 
-$ruleSet = PhpCsFixer\Config\RuleSet\Php81::create()->withHeader($license->header());
+$ruleSet = PhpCsFixer\Config\RuleSet\Php80::create()
+    ->withHeader($license->header())
+    ->withRules(PhpCsFixer\Config\Rules::fromArray([
+        'php_unit_internal_class' => false,
+    ]));
 
 $config = PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
 

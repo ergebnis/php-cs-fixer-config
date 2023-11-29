@@ -16,10 +16,10 @@ namespace Ergebnis\PhpCsFixer\Config;
 final class RuleSet
 {
     private function __construct(
-        private readonly Fixers $customFixers,
-        private readonly Name $name,
-        private readonly PhpVersion $phpVersion,
-        private readonly Rules $rules,
+        private Fixers $customFixers,
+        private Name $name,
+        private PhpVersion $phpVersion,
+        private Rules $rules,
     ) {
     }
 

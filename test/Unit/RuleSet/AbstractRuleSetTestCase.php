@@ -60,7 +60,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertEquals($rulesWithoutRulesThatAreNotRegistered, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules that are not registered.',
-            $ruleSet::class,
+            \get_class($ruleSet),
         ));
     }
 
@@ -88,7 +88,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertEquals($rulesWithoutRulesThatAreDeprecated, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules that are deprecated.',
-            $ruleSet::class,
+            \get_class($ruleSet),
         ));
     }
 
@@ -142,7 +142,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertEquals($rulesWithoutDeprecatedConfigurationOptions, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules using deprecated configuration options.',
-            $ruleSet::class,
+            \get_class($ruleSet),
         ));
     }
 
@@ -156,7 +156,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertSame($sorted, $rules->toArray(), \sprintf(
             'Failed asserting that rules and configuration options are sorted by name in rule set "%s".',
-            $ruleSet::class,
+            \get_class($ruleSet),
         ));
     }
 

@@ -42,8 +42,16 @@ final class Fixers
      *
      * @throws \InvalidArgumentException
      */
-    public static function fromIterable(iterable $iterable): self
+    public static function fromIterable($iterable): self
     {
+        if (!\is_array($iterable) && !$iterable instanceof \Traversable) {
+            throw new \InvalidArgumentException(\sprintf(
+                'Expected iterable to be an array or implement %s, got %s instead.',
+                \Traversable::class,
+                \is_object($iterable) ? \get_class($iterable) : \gettype($iterable),
+            ));
+        }
+
         $value = [];
 
         foreach ($iterable as $iterated) {
@@ -51,7 +59,7 @@ final class Fixers
                 throw new \InvalidArgumentException(\sprintf(
                     'Expected iterable to contain only instances of %s, got %s instead.',
                     Fixer\FixerInterface::class,
-                    \get_debug_type($iterated),
+                    \is_object($iterated) ? \get_class($iterated) : \gettype($iterated),
                 ));
             }
 

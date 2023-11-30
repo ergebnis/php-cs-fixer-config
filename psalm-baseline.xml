@@ -2,24 +2,14 @@
 <files psalm-version="5.16.0@2897ba636551a8cb61601cc26f6ccfbba6c36591">
   <file src="src/Fixers.php">
     <DocblockTypeContradiction>
-      <code><![CDATA[!\is_array($iterable) && !$iterable instanceof \Traversable]]></code>
       <code>\gettype($iterated)</code>
     </DocblockTypeContradiction>
-    <NoValue>
-      <code>$iterable</code>
-    </NoValue>
     <PropertyTypeCoercion>
       <code>$value</code>
     </PropertyTypeCoercion>
-    <RedundantCondition>
-      <code>\gettype($iterable)</code>
-    </RedundantCondition>
     <RedundantConditionGivenDocblockType>
       <code>\is_object($iterated)</code>
     </RedundantConditionGivenDocblockType>
-    <TypeDoesNotContainType>
-      <code>\is_object($iterable)</code>
-    </TypeDoesNotContainType>
   </file>
   <file src="src/RuleSet/Php53.php">
     <InternalMethod>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cfa6dcb154d1f7b6915f631cd1d8b4db",
+    "content-hash": "63ff6429c2ff25388166454de7d04c7e",
     "packages": [
         {
             "name": "composer/pcre",
@@ -2555,29 +2555,31 @@
         },
         {
             "name": "ergebnis/data-provider",
-            "version": "1.2.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/data-provider.git",
-                "reference": "3fa1615fccba03596fe81876304c8f27a2d716ff"
+                "reference": "e2b0b79b833f5a5799f2ee52ebc8e08e8d52f9eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/3fa1615fccba03596fe81876304c8f27a2d716ff",
-                "reference": "3fa1615fccba03596fe81876304c8f27a2d716ff",
+                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/e2b0b79b833f5a5799f2ee52ebc8e08e8d52f9eb",
+                "reference": "e2b0b79b833f5a5799f2ee52ebc8e08e8d52f9eb",
                 "shasum": ""
             },
             "require": {
-                "fakerphp/faker": "^1.19.0",
-                "php": "^7.4 || ^8.0"
+                "fakerphp/faker": "^1.21.0",
+                "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.23.1",
-                "ergebnis/license": "^1.2.0",
-                "ergebnis/php-cs-fixer-config": "^4.1.0",
-                "phpunit/phpunit": "^9.5.13",
-                "psalm/plugin-phpunit": "~0.16.1",
-                "vimeo/psalm": "^4.20"
+                "ergebnis/composer-normalize": "^2.28.3",
+                "ergebnis/license": "^2.4.0",
+                "ergebnis/php-cs-fixer-config": "^6.13.0",
+                "infection/infection": "~0.26.6",
+                "phpunit/phpunit": "^9.6.13",
+                "psalm/plugin-phpunit": "~0.18.4",
+                "rector/rector": "~0.18.11",
+                "vimeo/psalm": "^5.16.0"
             },
             "type": "library",
             "extra": {
@@ -2598,7 +2600,8 @@
             "authors": [
                 {
                     "name": "Andreas Möller",
-                    "email": "am@localheinz.com"
+                    "email": "am@localheinz.com",
+                    "homepage": "https://localheinz.com"
                 }
             ],
             "description": "Provides generic data providers for use with phpunit/phpunit.",
@@ -2611,13 +2614,7 @@
                 "issues": "https://github.com/ergebnis/data-provider/issues",
                 "source": "https://github.com/ergebnis/data-provider"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/localheinz",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-02-10T18:54:18+00:00"
+            "time": "2023-11-30T17:30:28+00:00"
         },
         {
             "name": "ergebnis/json-normalizer",

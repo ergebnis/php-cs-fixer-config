@@ -25,7 +25,7 @@
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.28.3",
-    "ergebnis/data-provider": "^1.2.0",
+    "ergebnis/data-provider": "^3.2.0",
     "ergebnis/license": "^2.4.0",
     "ergebnis/rector-rules": "~0.3.0",
     "fakerphp/faker": "^1.23.0",

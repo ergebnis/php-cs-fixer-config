@@ -34,7 +34,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
         self::assertEquals($rulesWithoutRulesForRuleSets, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" does not configure rules for rule sets.',
-            $ruleSet::class,
+            \get_class($ruleSet),
         ));
     }
 
@@ -64,7 +64,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
         self::assertEquals($rulesWithRulesThatAreNotDeprecated, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" configures all non-deprecated fixers.',
-            $ruleSet::class,
+            \get_class($ruleSet),
         ));
     }
 
@@ -136,7 +136,7 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 
         self::assertEquals($rulesWithAllNonDeprecatedConfigurationOptions, $rules->toArray(), \sprintf(
             'Failed asserting that rule set "%s" configures configurable rules using all non-deprecated configuration options.',
-            $ruleSet::class,
+            \get_class($ruleSet),
         ));
     }
 }

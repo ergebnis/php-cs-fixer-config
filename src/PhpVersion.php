@@ -22,7 +22,7 @@ final class PhpVersion
     private function __construct(
         PhpVersion\Major $major,
         PhpVersion\Minor $minor,
-        PhpVersion\Patch $patch,
+        PhpVersion\Patch $patch
     ) {
         $this->major = $major;
         $this->minor = $minor;
@@ -32,7 +32,7 @@ final class PhpVersion
     public static function create(
         PhpVersion\Major $major,
         PhpVersion\Minor $minor,
-        PhpVersion\Patch $patch,
+        PhpVersion\Patch $patch
     ): self {
         return new self(
             $major,

@@ -15,6 +15,8 @@ namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
 /**
  * @coversNothing
+ *
+ * @requires PHP 8.0
  */
 final class Php80Test extends AbstractRuleSetTestCase
 {

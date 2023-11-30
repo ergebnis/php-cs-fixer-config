@@ -12,6 +12,7 @@ declare(strict_types=1);
  */
 
 use Ergebnis\PhpCsFixer\Config\Fixers;
+use Ergebnis\PhpCsFixer\Config\Test;
 use PhpCsFixer\Fixer;
 use PHPUnit\Framework;
 
@@ -20,6 +21,8 @@ use PHPUnit\Framework;
  */
 final class FixersTest extends Framework\TestCase
 {
+    use Test\Util\Helper;
+
     public function testEmptyReturnsFixers(): void
     {
         $fixers = Fixers::empty();
@@ -40,9 +43,36 @@ final class FixersTest extends Framework\TestCase
         self::assertSame($value, $fixers->toArray());
     }
 
-    public function testFromIterableRejectsInvalidValue(): void
+    public function testFromIterableRejectsIterableWhenItIsASimpleType(): void
     {
-        $value = [
+        $iterable = self::faker()->word();
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage(\sprintf(
+            'Expected iterable to be an array or implement %s, got string instead.',
+            \Traversable::class,
+        ));
+
+        Fixers::fromIterable($iterable);
+    }
+
+    public function testFromIterableRejectsIterableWhenItIsNotATraversable(): void
+    {
+        $iterable = new stdClass();
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage(\sprintf(
+            'Expected iterable to be an array or implement %s, got %s instead.',
+            \Traversable::class,
+            stdClass::class,
+        ));
+
+        Fixers::fromIterable($iterable);
+    }
+
+    public function testFromIterableRejectsIterableWhenItDoesNotContainFixersOnly(): void
+    {
+        $iterable = [
             $this->createStub(Fixer\FixerInterface::class),
             new \stdClass(),
             $this->createStub(Fixer\FixerInterface::class),
@@ -55,7 +85,7 @@ final class FixersTest extends Framework\TestCase
             stdClass::class,
         ));
 
-        Fixers::fromIterable($value);
+        Fixers::fromIterable($iterable);
     }
 
     public function testFromIterableReturnsFixersWhenValueIsArray(): void

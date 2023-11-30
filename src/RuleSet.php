@@ -15,19 +15,28 @@ namespace Ergebnis\PhpCsFixer\Config;
 
 final class RuleSet
 {
+    private Rules $rules;
+    private PhpVersion $phpVersion;
+    private Name $name;
+    private Fixers $customFixers;
+
     private function __construct(
-        private Fixers $customFixers,
-        private Name $name,
-        private PhpVersion $phpVersion,
-        private Rules $rules,
+        Fixers $customFixers,
+        Name $name,
+        PhpVersion $phpVersion,
+        Rules $rules
     ) {
+        $this->customFixers = $customFixers;
+        $this->name = $name;
+        $this->phpVersion = $phpVersion;
+        $this->rules = $rules;
     }
 
     public static function create(
         Fixers $customFixers,
         Name $name,
         PhpVersion $phpVersion,
-        Rules $rules,
+        Rules $rules
     ): self {
         return new self(
             $customFixers,

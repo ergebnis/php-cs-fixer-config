@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.1"
+          - "8.0"
 
         dependencies:
           - "locked"
@@ -80,7 +80,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.1"
+          - "8.0"
 
         dependencies:
           - "locked"
@@ -152,7 +152,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.1"
+          - "8.0"
 
         dependencies:
           - "locked"
@@ -208,7 +208,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.1"
+          - "8.0"
 
         dependencies:
           - "locked"
@@ -270,7 +270,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.1"
+          - "8.0"
 
         dependencies:
           - "locked"
@@ -320,7 +320,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.1"
+          - "8.0"
 
         dependencies:
           - "locked"
@@ -373,6 +373,7 @@ jobs:
     strategy:
       matrix:
         php-version:
+          - "8.0"
           - "8.1"
           - "8.2"
           - "8.3"
@@ -411,6 +412,9 @@ jobs:
           path: "${{ env.COMPOSER_CACHE_DIR }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Remove incompatible dependencies with composer"
+        run: "composer remove ergebnis/composer-normalize --ansi --dev --no-interaction --no-progress"
 
       - name: "Install ${{ matrix.dependencies }} dependencies with composer"
         uses: "ergebnis/.github/actions/composer/install@1.8.0"

@@ -15,7 +15,9 @@ use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(Rules::class)]
+/**
+ * @covers \Ergebnis\PhpCsFixer\Config\Rules
+ */
 final class RulesTest extends Framework\TestCase
 {
     use Test\Util\Helper;

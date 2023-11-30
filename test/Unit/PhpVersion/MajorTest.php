@@ -17,10 +17,14 @@ use Ergebnis\DataProvider;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(PhpVersion\Major::class)]
+/**
+ * @covers \Ergebnis\PhpCsFixer\Config\PhpVersion\Major
+ */
 final class MajorTest extends Framework\TestCase
 {
-    #[Framework\Attributes\DataProviderExternal(DataProvider\IntProvider::class, 'lessThanZero')]
+    /**
+     * @dataProvider \Ergebnis\DataProvider\IntProvider::lessThanZero
+     */
     public function testFromIntRejectsInvalidValue(int $value): void
     {
         $this->expectException(\InvalidArgumentException::class);
@@ -32,8 +36,10 @@ final class MajorTest extends Framework\TestCase
         PhpVersion\Major::fromInt($value);
     }
 
-    #[Framework\Attributes\DataProviderExternal(DataProvider\IntProvider::class, 'zero')]
-    #[Framework\Attributes\DataProviderExternal(DataProvider\IntProvider::class, 'greaterThanZero')]
+    /**
+     * @dataProvider \Ergebnis\DataProvider\IntProvider::greaterThanZero
+     * @dataProvider \Ergebnis\DataProvider\IntProvider::zero
+     */
     public function testFromIntReturnsMajor(int $value): void
     {
         $major = PhpVersion\Major::fromInt($value);

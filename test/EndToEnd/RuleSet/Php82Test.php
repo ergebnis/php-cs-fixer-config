@@ -13,10 +13,11 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
-use PHPUnit\Framework;
-
-#[Framework\Attributes\CoversNothing()]
-#[Framework\Attributes\RequiresPhp('8.2')]
+/**
+ * @coversNothing
+ *
+ * @requires PHP 8.2
+ */
 final class Php82Test extends AbstractRuleSetTestCase
 {
 }

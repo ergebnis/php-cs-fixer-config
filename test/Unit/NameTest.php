@@ -13,21 +13,25 @@ declare(strict_types=1);
 
 use Ergebnis\DataProvider;
 use Ergebnis\PhpCsFixer\Config\Name;
-use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(Name::class)]
-#[Framework\Attributes\UsesClass(PhpVersion::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Major::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Minor::class)]
-#[Framework\Attributes\UsesClass(PhpVersion\Patch::class)]
+/**
+ * @covers \Ergebnis\PhpCsFixer\Config\Name
+ *
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Major
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Minor
+ * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
+ */
 final class NameTest extends Framework\TestCase
 {
     use Test\Util\Helper;
 
-    #[Framework\Attributes\DataProviderExternal(DataProvider\StringProvider::class, 'blank')]
-    #[Framework\Attributes\DataProviderExternal(DataProvider\StringProvider::class, 'empty')]
+    /**
+     * @dataProvider \Ergebnis\DataProvider\StringProvider::blank
+     * @dataProvider \Ergebnis\DataProvider\StringProvider::empty
+     */
     public function testFromStringRejectsBlankOrEmptyString(string $value): void
     {
         $this->expectException(\InvalidArgumentException::class);

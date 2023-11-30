@@ -87,27 +87,10 @@
       <code>Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG</code>
     </InternalClass>
   </file>
-  <file src="test/Unit/FactoryTest.php">
-    <PossiblyUnusedMethod>
-      <code>provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion</code>
-    </PossiblyUnusedMethod>
-  </file>
   <file src="test/Unit/FixersTest.php">
     <InvalidArgument>
       <code>$value</code>
     </InvalidArgument>
-  </file>
-  <file src="test/Unit/PhpVersion/MinorTest.php">
-    <PossiblyUnusedMethod>
-      <code>provideValidValue</code>
-      <code>provideValueGreaterThanNinetyNine</code>
-    </PossiblyUnusedMethod>
-  </file>
-  <file src="test/Unit/PhpVersion/PatchTest.php">
-    <PossiblyUnusedMethod>
-      <code>provideValidValue</code>
-      <code>provideValueGreaterThanNinetyNine</code>
-    </PossiblyUnusedMethod>
   </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass>
@@ -128,7 +111,7 @@
 
                 return !$fixer instanceof Fixer\DeprecatedFixerInterface;
             }</code>
-      <code><![CDATA[static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
+      <code>static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
                 if (\str_starts_with($nameOfRule, '@')) {
                     return true;
                 }
@@ -137,14 +120,14 @@
                     $nameOfRule,
                     $fixersThatAreRegistered,
                 );
-            }]]></code>
+            }</code>
     </MixedArgumentTypeCoercion>
   </file>
   <file src="test/Unit/RuleSet/ExplicitRuleSetTestCase.php">
     <MixedArgumentTypeCoercion>
-      <code><![CDATA[static function (string $nameOfRule): bool {
+      <code>static function (string $nameOfRule): bool {
                 return !\str_starts_with($nameOfRule, '@');
-            }]]></code>
+            }</code>
     </MixedArgumentTypeCoercion>
   </file>
   <file src="test/Unit/RuleSet/Php53Test.php">
@@ -211,10 +194,5 @@
     <InternalMethod>
       <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
     </InternalMethod>
-  </file>
-  <file src="test/Unit/RuleSetTest.php">
-    <PossiblyUnusedMethod>
-      <code>provideValidHeader</code>
-    </PossiblyUnusedMethod>
   </file>
 </files>

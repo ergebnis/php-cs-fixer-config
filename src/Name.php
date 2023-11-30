@@ -15,7 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config;
 
 final class Name
 {
-    private readonly string $value;
+    private string $value;
 
     private function __construct(string $value)
     {

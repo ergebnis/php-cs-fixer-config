@@ -20,7 +20,7 @@ final class Fixers
     /**
      * @var list<Fixer\FixerInterface>
      */
-    private readonly array $value;
+    private array $value;
 
     private function __construct(Fixer\FixerInterface ...$value)
     {

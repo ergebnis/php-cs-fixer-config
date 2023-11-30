@@ -18,12 +18,16 @@ use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(PhpVersion\Patch::class)]
+/**
+ * @covers \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
+ */
 final class PatchTest extends Framework\TestCase
 {
     use Test\Util\Helper;
 
-    #[Framework\Attributes\DataProviderExternal(DataProvider\IntProvider::class, 'lessThanZero')]
+    /**
+     * @dataProvider \Ergebnis\DataProvider\IntProvider::lessThanZero
+     */
     public function testFromIntRejectsValueLessThanZero(int $value): void
     {
         $this->expectException(\InvalidArgumentException::class);
@@ -35,7 +39,9 @@ final class PatchTest extends Framework\TestCase
         PhpVersion\Patch::fromInt($value);
     }
 
-    #[Framework\Attributes\DataProvider('provideValueGreaterThanNinetyNine')]
+    /**
+     * @dataProvider provideValueGreaterThanNinetyNine
+     */
     public function testFromIntRejectsValueGreaterThanNinetyNine(int $value): void
     {
         $this->expectException(\InvalidArgumentException::class);
@@ -50,7 +56,7 @@ final class PatchTest extends Framework\TestCase
     /**
      * @return \Generator<string, array{0: int}>
      */
-    public static function provideValueGreaterThanNinetyNine(): \Generator
+    public static function provideValueGreaterThanNinetyNine(): iterable
     {
         $values = [
             'int-one-hundred' => 100,
@@ -64,7 +70,9 @@ final class PatchTest extends Framework\TestCase
         }
     }
 
-    #[Framework\Attributes\DataProvider('provideValidValue')]
+    /**
+     * @dataProvider provideValidValue
+     */
     public function testFromIntReturnsPatch(int $value): void
     {
         $patch = PhpVersion\Patch::fromInt($value);
@@ -75,7 +83,7 @@ final class PatchTest extends Framework\TestCase
     /**
      * @return \Generator<string, array{0: int}>
      */
-    public static function provideValidValue(): \Generator
+    public static function provideValidValue(): iterable
     {
         $values = [
             'int-zero' => 0,

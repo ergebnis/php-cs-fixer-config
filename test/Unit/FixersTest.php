@@ -15,7 +15,9 @@ use Ergebnis\PhpCsFixer\Config\Fixers;
 use PhpCsFixer\Fixer;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversClass(Fixers::class)]
+/**
+ * @covers \Ergebnis\PhpCsFixer\Config\Fixers
+ */
 final class FixersTest extends Framework\TestCase
 {
     public function testEmptyReturnsFixers(): void

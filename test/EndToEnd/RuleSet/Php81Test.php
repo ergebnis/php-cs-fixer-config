@@ -13,9 +13,11 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
-use PHPUnit\Framework;
-
-#[Framework\Attributes\CoversNothing()]
+/**
+ * @coversNothing
+ *
+ * @requires PHP 8.1
+ */
 final class Php81Test extends AbstractRuleSetTestCase
 {
 }

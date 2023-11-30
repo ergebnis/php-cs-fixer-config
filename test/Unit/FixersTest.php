@@ -49,13 +49,11 @@ final class FixersTest extends Framework\TestCase
         ];
 
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage(
-            \sprintf(
-                'Expected iterable to contain only instances of %s, got %s instead.',
-                Fixer\FixerInterface::class,
-                stdClass::class,
-            ),
-        );
+        $this->expectExceptionMessage(\sprintf(
+            'Expected iterable to contain only instances of %s, got %s instead.',
+            Fixer\FixerInterface::class,
+            stdClass::class,
+        ));
 
         Fixers::fromIterable($value);
     }

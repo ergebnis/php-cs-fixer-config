@@ -22,6 +22,9 @@
     stopOnSkipped="false"
     verbose="true"
 >
+    <extensions>
+        <extension class="Ergebnis\PHPUnit\SlowTestDetector\Extension"/>
+    </extensions>
     <testsuites>
         <testsuite name="EndToEnd Tests">
             <directory>.</directory>

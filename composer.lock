@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "379e6a609c6238d884858a673ee80c0f",
+    "content-hash": "36d3e3f22b79aa711a21e167ff488d67",
     "packages": [
         {
             "name": "composer/pcre",
@@ -2876,21 +2876,21 @@
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-slow-test-detector.git",
-                "reference": "3687a9720d31b8ff0f4bf9c963d02faef729c393"
+                "reference": "c101046731d256046efdb37f3c1800897a6cccfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/3687a9720d31b8ff0f4bf9c963d02faef729c393",
-                "reference": "3687a9720d31b8ff0f4bf9c963d02faef729c393",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/c101046731d256046efdb37f3c1800897a6cccfe",
+                "reference": "c101046731d256046efdb37f3c1800897a6cccfe",
                 "shasum": ""
             },
             "require": {
                 "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
-                "phpunit/phpunit": "^8.5.36 || ^9.6.0 || ^10.4.0"
+                "phpunit/phpunit": "^8.5.19 || ^9.0.0 || ^10.0.0"
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.28.3",
@@ -2939,7 +2939,7 @@
                 "security": "https://github.com/ergebnis/phpunit-slow-test-detector/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpunit-slow-test-detector"
             },
-            "time": "2023-12-03T12:58:50+00:00"
+            "time": "2023-12-03T14:14:57+00:00"
         },
         {
             "name": "ergebnis/rector-rules",

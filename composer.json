@@ -27,7 +27,7 @@
     "ergebnis/composer-normalize": "^2.28.3",
     "ergebnis/data-provider": "^3.2.0",
     "ergebnis/license": "^2.4.0",
-    "ergebnis/phpunit-slow-test-detector": "^2.6.0",
+    "ergebnis/phpunit-slow-test-detector": "^2.7.0",
     "ergebnis/rector-rules": "~0.3.0",
     "fakerphp/faker": "^1.23.0",
     "infection/infection": "~0.26.6",

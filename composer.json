@@ -58,7 +58,10 @@
       "abandoned": "report"
     },
     "preferred-install": "dist",
-    "sort-packages": true
+    "sort-packages": true,
+    "platform": {
+      "php": "7.4.33"
+    }
   },
   "extra": {
     "composer-normalize": {

@@ -12,14 +12,14 @@ For a full diff see [`6.14.0...main`][6.14.0...main].
 
 For a full diff see [`6.13.1...6.14.0`][6.13.1...6.14.0].
 
-### Fixed
-
-- Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#962]), by [@dependabot]
-
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#956]), by [@localheinz]
 - Updated `friendsofphp/php-cs-fixer` ([#963]), by [@dependabot]
+
+### Fixed
+
+- Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#962]), by [@dependabot]
 
 ## [`6.13.1`][6.13.1]
 

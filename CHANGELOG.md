@@ -12,6 +12,10 @@ For a full diff see [`6.14.0...main`][6.14.0...main].
 
 For a full diff see [`6.13.1...6.14.0`][6.13.1...6.14.0].
 
+### Fixed
+
+- Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#962]), by [@dependabot]
+
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#956]), by [@localheinz]
@@ -1414,6 +1418,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#952]: https://github.com/ergebnis/php-cs-fixer-config/pull/952
 [#955]: https://github.com/ergebnis/php-cs-fixer-config/pull/955
 [#956]: https://github.com/ergebnis/php-cs-fixer-config/pull/956
+[#962]: https://github.com/ergebnis/php-cs-fixer-config/pull/962
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

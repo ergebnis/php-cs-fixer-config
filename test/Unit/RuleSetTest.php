@@ -193,7 +193,7 @@ final class RuleSetTest extends Framework\TestCase
     }
 
     /**
-     * @return \Generator<string, array{0: string}>
+     * @return Generator<string, array{0: string}>
      */
     public static function provideValidHeader(): iterable
     {

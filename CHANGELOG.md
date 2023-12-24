@@ -19,6 +19,7 @@ For a full diff see [`6.13.1...6.14.0`][6.13.1...6.14.0].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#956]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#963]), by [@dependabot]
 
 ## [`6.13.1`][6.13.1]
 
@@ -1419,6 +1420,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#955]: https://github.com/ergebnis/php-cs-fixer-config/pull/955
 [#956]: https://github.com/ergebnis/php-cs-fixer-config/pull/956
 [#962]: https://github.com/ergebnis/php-cs-fixer-config/pull/962
+[#963]: https://github.com/ergebnis/php-cs-fixer-config/pull/963
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

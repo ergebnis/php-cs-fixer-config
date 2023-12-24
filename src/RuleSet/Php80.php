@@ -123,6 +123,7 @@ final class Php80
                     'single_line' => false,
                     'space_before_parenthesis' => false,
                 ],
+                'class_keyword' => false,
                 'class_reference_name_casing' => true,
                 'clean_namespace' => true,
                 'combine_consecutive_issets' => true,
@@ -220,6 +221,7 @@ final class Php80
                 ],
                 'full_opening_tag' => true,
                 'fully_qualified_strict_types' => [
+                    'import_symbols' => false,
                     'leading_backslash_in_global_namespace' => false,
                 ],
                 'function_declaration' => [

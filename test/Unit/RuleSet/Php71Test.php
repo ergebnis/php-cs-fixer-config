@@ -242,6 +242,7 @@ final class Php71Test extends ExplicitRuleSetTestCase
             ],
             'full_opening_tag' => true,
             'fully_qualified_strict_types' => [
+                'import_symbols' => false,
                 'leading_backslash_in_global_namespace' => false,
             ],
             'function_declaration' => [

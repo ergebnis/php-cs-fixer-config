@@ -11,6 +11,8 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
+namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
+
 use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;

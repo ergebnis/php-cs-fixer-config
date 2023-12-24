@@ -11,6 +11,8 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
+namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
+
 use Ergebnis\PhpCsFixer\Config\Fixers;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PhpCsFixer\Fixer;
@@ -58,13 +60,13 @@ final class FixersTest extends Framework\TestCase
 
     public function testFromIterableRejectsIterableWhenItIsNotATraversable(): void
     {
-        $iterable = new stdClass();
+        $iterable = new \stdClass();
 
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage(\sprintf(
             'Expected iterable to be an array or implement %s, got %s instead.',
             \Traversable::class,
-            stdClass::class,
+            \stdClass::class,
         ));
 
         Fixers::fromIterable($iterable);
@@ -82,7 +84,7 @@ final class FixersTest extends Framework\TestCase
         $this->expectExceptionMessage(\sprintf(
             'Expected iterable to contain only instances of %s, got %s instead.',
             Fixer\FixerInterface::class,
-            stdClass::class,
+            \stdClass::class,
         ));
 
         Fixers::fromIterable($iterable);
@@ -109,7 +111,7 @@ final class FixersTest extends Framework\TestCase
             $this->createStub(Fixer\FixerInterface::class),
         ];
 
-        $iterable = new ArrayIterator($value);
+        $iterable = new \ArrayIterator($value);
 
         $fixers = Fixers::fromIterable($iterable);
 

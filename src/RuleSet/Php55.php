@@ -221,6 +221,28 @@ final class Php55
                 'fully_qualified_strict_types' => [
                     'import_symbols' => false,
                     'leading_backslash_in_global_namespace' => false,
+                    'phpdoc_tags' => [
+                        'param',
+                        'phpstan-param',
+                        'phpstan-property',
+                        'phpstan-property-read',
+                        'phpstan-property-write',
+                        'phpstan-return',
+                        'phpstan-var',
+                        'property',
+                        'property-read',
+                        'property-write',
+                        'psalm-param',
+                        'psalm-property',
+                        'psalm-property-read',
+                        'psalm-property-write',
+                        'psalm-return',
+                        'psalm-var',
+                        'return',
+                        'see',
+                        'throws',
+                        'var',
+                    ],
                 ],
                 'function_declaration' => [
                     'closure_fn_spacing' => 'one',
@@ -808,7 +830,9 @@ final class Php55
                 ],
                 'standardize_increment' => true,
                 'standardize_not_equals' => true,
-                'statement_indentation' => true,
+                'statement_indentation' => [
+                    'stick_comment_to_next_continuous_control_statement' => false,
+                ],
                 'static_lambda' => true,
                 'strict_comparison' => true,
                 'strict_param' => true,
@@ -836,7 +860,9 @@ final class Php55
                     'space' => 'none',
                     'space_multiple_catch' => 'none',
                 ],
-                'unary_operator_spaces' => true,
+                'unary_operator_spaces' => [
+                    'only_dec_inc' => false,
+                ],
                 'use_arrow_functions' => false,
                 'visibility_required' => [
                     'elements' => [

@@ -185,7 +185,7 @@ If you like [`Makefile`](https://www.gnu.org/software/make/manual/make.html#Intr
 +.PHONY: coding-standards
 +coding-standards: vendor
 +    mkdir -p .build/php-cs-fixer
-+    vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --verbose
++    vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --show-progress=dots --verbose
 
  vendor: composer.json composer.lock
      composer validate
@@ -216,7 +216,7 @@ If you like [`composer` scripts](https://getcomposer.org/doc/articles/scripts.md
 +  "scripts": {
 +    "coding-standards": [
 +      "mkdir -p .build/php-cs-fixer",
-+      "php-cs-fixer fix --diff --verbose"
++      "php-cs-fixer fix --diff --show-progress=dots --verbose"
 +    ]
    }
  }
@@ -287,7 +287,7 @@ If you like [GitHub Actions](https://github.com/features/actions), add a `coding
 +            php-${{ matrix.php-version }}-php-cs-fixer-
 +
 +      - name: "Run friendsofphp/php-cs-fixer"
-+        run: "vendor/bin/php-cs-fixer fix --ansi --config=.php-cs-fixer.php --diff --dry-run --verbose"
++        run: "vendor/bin/php-cs-fixer fix --ansi --config=.php-cs-fixer.php --diff --dry-run --show-progress=dots --verbose"
 ```
 
 ## Changelog

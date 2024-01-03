@@ -205,7 +205,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         $fixersThatAreBuiltIn = $fixerFactory->getFixers();
         $fixersThatShouldBeRegistered = static::createRuleSet()->customFixers()->toArray();
 
-        /** @var array<Fixer\FixerInterface> $fixers */
+        /** @var list<Fixer\FixerInterface> $fixers */
         $fixers = \array_merge(
             $fixersThatAreBuiltIn,
             $fixersThatShouldBeRegistered,

@@ -45,6 +45,7 @@ final class Php72Test extends ExplicitRuleSetTestCase
     {
         return Fixers::fromFixers(
             new Fixer\PhpdocArrayStyleFixer(),
+            new Fixer\PhpdocTypeListFixer(),
             new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
         );
     }
@@ -68,6 +69,7 @@ final class Php72Test extends ExplicitRuleSetTestCase
         return Rules::fromArray([
             'ErickSkrauch/line_break_after_statements' => true,
             'PhpCsFixerCustomFixers/phpdoc_array_style' => true,
+            'PhpCsFixerCustomFixers/phpdoc_type_list' => true,
             'align_multiline_comment' => [
                 'comment_type' => 'all_multiline',
             ],

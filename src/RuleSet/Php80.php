@@ -35,6 +35,7 @@ final class Php80
             Fixers::fromFixers(
                 new Fixer\MultilineCommentOpeningClosingAloneFixer(),
                 new Fixer\MultilinePromotedPropertiesFixer(),
+                new Fixer\NoDuplicatedArrayKeyFixer(),
                 new Fixer\PhpdocArrayStyleFixer(),
                 new Fixer\PhpdocTypeListFixer(),
                 new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
@@ -51,6 +52,9 @@ final class Php80
                 'PhpCsFixerCustomFixers/multiline_promoted_properties' => [
                     'keep_blank_lines' => false,
                     'minimum_number_of_parameters' => 2,
+                ],
+                'PhpCsFixerCustomFixers/no_duplicated_array_key' => [
+                    'ignore_expressions' => true,
                 ],
                 'PhpCsFixerCustomFixers/phpdoc_array_style' => true,
                 'PhpCsFixerCustomFixers/phpdoc_type_list' => true,

@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.18.0...main`][6.18.0...main].
 
+### Changed
+
+- Enabled the `PhpCsFixerCustomFixers/multiline_comment_opening_closing_alone` fixer ([#974]), by [@localheinz]
+
 ## [`6.18.0`][6.18.0]
 
 For a full diff see [`6.17.0...6.18.0`][6.17.0...6.18.0].
@@ -1479,6 +1483,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#971]: https://github.com/ergebnis/php-cs-fixer-config/pull/971
 [#972]: https://github.com/ergebnis/php-cs-fixer-config/pull/972
 [#973]: https://github.com/ergebnis/php-cs-fixer-config/pull/973
+[#974]: https://github.com/ergebnis/php-cs-fixer-config/pull/974
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

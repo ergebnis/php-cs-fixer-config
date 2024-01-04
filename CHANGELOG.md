@@ -16,7 +16,7 @@ For a full diff see [`6.17.0...6.18.0`][6.17.0...6.18.0].
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#970]), by [@dependabot]
 - Updated `friendsofphp/php-cs-fixer` ([#972]), by [@dependabot]
-- Enabled the [`PhpCsFixerCustomFixers/phpdoc_type_list_fixer`](https://github.com/kubawerlos/php-cs-fixer-custom-fixers/tree/v3.18.0#phpdoctypelistfixer) fixer ([#973]), by [@localheinz]
+- Enabled the `PhpCsFixerCustomFixers/phpdoc_type_list_fixer` fixer ([#973]), by [@localheinz]
 
 ## [`6.17.0`][6.17.0]
 
@@ -187,7 +187,7 @@ For a full diff see [`6.1.0...6.2.0`][6.1.0...6.2.0].
 
 ### Changed
 
-- Required [`kubawerlos/php-cs-fixer-custom-fixers`](https://github.com/kubawerlos/php-cs-fixer-custom-fixers) and enabled the [`PhpCsFixerCustomFixers/phpdoc_array_style`](https://github.com/kubawerlos/php-cs-fixer-custom-fixers/tree/v3.16.2#phpdocarraystylefixer) fixer ([#894]), by [@localheinz]
+- Required `kubawerlos/php-cs-fixer-custom-fixers` and enabled the `PhpCsFixerCustomFixers/phpdoc_array_style` fixer ([#894]), by [@localheinz]
 
 ## [`6.1.0`][6.1.0]
 
@@ -195,7 +195,7 @@ For a full diff see [`6.0.0...6.1.0`][6.0.0...6.1.0].
 
 ### Changed
 
-- Required [`erickskrauch/php-cs-fixer-custom-fixers`](https://github.com/erickskrauch/php-cs-fixer-custom-fixers) and enabled the [`ErickSkrauch/line_break_after_statements`](https://github.com/erickskrauch/php-cs-fixer-custom-fixers/tree/1.2.0#erickskrauchline_break_after_statements) fixer ([#889]), by [@localheinz]
+- Required `erickskrauch/php-cs-fixer-custom-fixers` and enabled the `ErickSkrauch/line_break_after_statements` fixer ([#889]), by [@localheinz]
 
 ## [`6.0.0`][6.0.0]
 

@@ -45,6 +45,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
     {
         return Fixers::fromFixers(
             new Fixer\MultilineCommentOpeningClosingAloneFixer(),
+            new Fixer\MultilinePromotedPropertiesFixer(),
             new Fixer\PhpdocArrayStyleFixer(),
             new Fixer\PhpdocTypeListFixer(),
             new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
@@ -70,6 +71,10 @@ final class Php82Test extends ExplicitRuleSetTestCase
         return Rules::fromArray([
             'ErickSkrauch/line_break_after_statements' => true,
             'PhpCsFixerCustomFixers/multiline_comment_opening_closing_alone' => true,
+            'PhpCsFixerCustomFixers/multiline_promoted_properties' => [
+                'keep_blank_lines' => false,
+                'minimum_number_of_parameters' => 2,
+            ],
             'PhpCsFixerCustomFixers/phpdoc_array_style' => true,
             'PhpCsFixerCustomFixers/phpdoc_type_list' => true,
             'align_multiline_comment' => [

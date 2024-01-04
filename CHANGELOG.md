@@ -1477,6 +1477,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#969]: https://github.com/ergebnis/php-cs-fixer-config/pull/969
 [#970]: https://github.com/ergebnis/php-cs-fixer-config/pull/970
 [#971]: https://github.com/ergebnis/php-cs-fixer-config/pull/971
+[#972]: https://github.com/ergebnis/php-cs-fixer-config/pull/972
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

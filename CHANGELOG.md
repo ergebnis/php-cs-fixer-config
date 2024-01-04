@@ -15,6 +15,7 @@ For a full diff see [`6.18.0...main`][6.18.0...main].
 - Enabled the `PhpCsFixerCustomFixers/no_duplicated_array_key` fixer ([#976]), by [@localheinz]
 - Enabled the `PhpCsFixerCustomFixers/no_duplicated_imports` fixer ([#977]), by [@localheinz]
 - Enabled the `PhpCsFixerCustomFixers/no_import_from_global_namespace` fixer ([#978]), by [@localheinz]
+- Enabled the `PhpCsFixerCustomFixers/phpdoc_types_comma_spaces` fixer ([#979]), by [@localheinz]
 
 ## [`6.18.0`][6.18.0]
 
@@ -1492,6 +1493,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#976]: https://github.com/ergebnis/php-cs-fixer-config/pull/976
 [#977]: https://github.com/ergebnis/php-cs-fixer-config/pull/977
 [#978]: https://github.com/ergebnis/php-cs-fixer-config/pull/978
+[#979]: https://github.com/ergebnis/php-cs-fixer-config/pull/979
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

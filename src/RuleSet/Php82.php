@@ -40,6 +40,7 @@ final class Php82
                 new Fixer\NoImportFromGlobalNamespaceFixer(),
                 new Fixer\PhpdocArrayStyleFixer(),
                 new Fixer\PhpdocTypeListFixer(),
+                new Fixer\PhpdocTypesCommaSpacesFixer(),
                 new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
             ),
             Name::fromString(\sprintf(
@@ -62,6 +63,7 @@ final class Php82
                 'PhpCsFixerCustomFixers/no_import_from_global_namespace' => true,
                 'PhpCsFixerCustomFixers/phpdoc_array_style' => true,
                 'PhpCsFixerCustomFixers/phpdoc_type_list' => true,
+                'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
                 'align_multiline_comment' => [
                     'comment_type' => 'all_multiline',
                 ],

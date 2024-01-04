@@ -36,6 +36,7 @@ final class Php82
                 new Fixer\MultilineCommentOpeningClosingAloneFixer(),
                 new Fixer\MultilinePromotedPropertiesFixer(),
                 new Fixer\NoDuplicatedArrayKeyFixer(),
+                new Fixer\NoDuplicatedImportsFixer(),
                 new Fixer\PhpdocArrayStyleFixer(),
                 new Fixer\PhpdocTypeListFixer(),
                 new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
@@ -56,6 +57,7 @@ final class Php82
                 'PhpCsFixerCustomFixers/no_duplicated_array_key' => [
                     'ignore_expressions' => true,
                 ],
+                'PhpCsFixerCustomFixers/no_duplicated_imports' => true,
                 'PhpCsFixerCustomFixers/phpdoc_array_style' => true,
                 'PhpCsFixerCustomFixers/phpdoc_type_list' => true,
                 'align_multiline_comment' => [

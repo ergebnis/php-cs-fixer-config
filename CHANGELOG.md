@@ -12,6 +12,7 @@ For a full diff see [`6.18.0...main`][6.18.0...main].
 
 - Enabled the `PhpCsFixerCustomFixers/multiline_comment_opening_closing_alone` fixer ([#974]), by [@localheinz]
 - Enabled the `PhpCsFixerCustomFixers/multiline_promoted_properties` fixer ([#975]), by [@localheinz]
+- Enabled the `PhpCsFixerCustomFixers/no_duplicated_array_key` fixer ([#976]), by [@localheinz]
 
 ## [`6.18.0`][6.18.0]
 
@@ -1486,6 +1487,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#973]: https://github.com/ergebnis/php-cs-fixer-config/pull/973
 [#974]: https://github.com/ergebnis/php-cs-fixer-config/pull/974
 [#975]: https://github.com/ergebnis/php-cs-fixer-config/pull/975
+[#976]: https://github.com/ergebnis/php-cs-fixer-config/pull/976
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

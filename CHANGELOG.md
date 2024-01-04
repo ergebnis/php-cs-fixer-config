@@ -15,8 +15,8 @@ For a full diff see [`6.17.0...6.18.0`][6.17.0...6.18.0].
 ### Changed
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#970]), by [@dependabot]
-- Updated `friendsofphp/php-cs-fixer` ([#971]), by [@dependabot]
-- Enabled the [`PhpCsFixerCustomFixers/phpdoc_type_list_fixer`](https://github.com/kubawerlos/php-cs-fixer-custom-fixers/tree/v3.18.0#phpdoctypelistfixer) fixer ([#972]), by [@localheinz]
+- Updated `friendsofphp/php-cs-fixer` ([#972]), by [@dependabot]
+- Enabled the [`PhpCsFixerCustomFixers/phpdoc_type_list_fixer`](https://github.com/kubawerlos/php-cs-fixer-custom-fixers/tree/v3.18.0#phpdoctypelistfixer) fixer ([#973]), by [@localheinz]
 
 ## [`6.17.0`][6.17.0]
 
@@ -1478,6 +1478,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#970]: https://github.com/ergebnis/php-cs-fixer-config/pull/970
 [#971]: https://github.com/ergebnis/php-cs-fixer-config/pull/971
 [#972]: https://github.com/ergebnis/php-cs-fixer-config/pull/972
+[#973]: https://github.com/ergebnis/php-cs-fixer-config/pull/973
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

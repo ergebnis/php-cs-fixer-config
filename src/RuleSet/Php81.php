@@ -294,6 +294,7 @@ final class Php81
                 'global_namespace_import' => false,
                 'group_import' => false,
                 'header_comment' => false,
+                'heredoc_closing_marker' => false,
                 'heredoc_indentation' => false,
                 'heredoc_to_nowdoc' => true,
                 'implode_call' => true,
@@ -328,6 +329,7 @@ final class Php81
                 'modernize_strpos' => true,
                 'modernize_types_casting' => true,
                 'multiline_comment_opening_closing' => true,
+                'multiline_string_to_heredoc' => false,
                 'multiline_whitespace_before_semicolons' => [
                     'strategy' => 'no_multi_line',
                 ],
@@ -477,6 +479,7 @@ final class Php81
                 'nullable_type_declaration_for_default_null_value' => [
                     'use_nullable_type_declaration' => true,
                 ],
+                'numeric_literal_separator' => false,
                 'object_operator_without_whitespace' => true,
                 'octal_notation' => true,
                 'operator_linebreak' => [
@@ -578,6 +581,7 @@ final class Php81
                 ],
                 'phpdoc_align' => [
                     'align' => 'vertical',
+                    'spacing' => 1,
                     'tags' => [
                         'method',
                         'param',
@@ -719,6 +723,7 @@ final class Php81
                 'phpdoc_to_param_type' => false,
                 'phpdoc_to_property_type' => [
                     'scalar_types' => true,
+                    'union_types' => true,
                 ],
                 'phpdoc_to_return_type' => false,
                 'phpdoc_trim' => true,

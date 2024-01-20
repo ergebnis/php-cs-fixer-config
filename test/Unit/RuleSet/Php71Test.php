@@ -592,6 +592,7 @@ final class Php71Test extends ExplicitRuleSetTestCase
             ],
             'phpdoc_align' => [
                 'align' => 'vertical',
+                'spacing' => 1,
                 'tags' => [
                     'method',
                     'param',

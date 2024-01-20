@@ -604,6 +604,7 @@ final class Php83Test extends ExplicitRuleSetTestCase
             ],
             'phpdoc_align' => [
                 'align' => 'vertical',
+                'spacing' => 1,
                 'tags' => [
                     'method',
                     'param',

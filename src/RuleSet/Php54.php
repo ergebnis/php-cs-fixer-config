@@ -563,6 +563,7 @@ final class Php54
                 ],
                 'phpdoc_align' => [
                     'align' => 'vertical',
+                    'spacing' => 1,
                     'tags' => [
                         'method',
                         'param',

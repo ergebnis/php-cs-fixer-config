@@ -562,6 +562,7 @@ final class Php53
                 ],
                 'phpdoc_align' => [
                     'align' => 'vertical',
+                    'spacing' => 1,
                     'tags' => [
                         'method',
                         'param',

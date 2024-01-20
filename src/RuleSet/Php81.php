@@ -581,6 +581,7 @@ final class Php81
                 ],
                 'phpdoc_align' => [
                     'align' => 'vertical',
+                    'spacing' => 1,
                     'tags' => [
                         'method',
                         'param',

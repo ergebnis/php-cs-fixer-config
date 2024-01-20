@@ -286,6 +286,7 @@ final class Php70
                 'global_namespace_import' => false,
                 'group_import' => false,
                 'header_comment' => false,
+                'heredoc_closing_marker' => false,
                 'heredoc_indentation' => false,
                 'heredoc_to_nowdoc' => true,
                 'implode_call' => true,
@@ -320,6 +321,7 @@ final class Php70
                 'modernize_strpos' => false,
                 'modernize_types_casting' => true,
                 'multiline_comment_opening_closing' => true,
+                'multiline_string_to_heredoc' => false,
                 'multiline_whitespace_before_semicolons' => [
                     'strategy' => 'no_multi_line',
                 ],
@@ -464,6 +466,7 @@ final class Php70
                 'not_operator_with_successor_space' => false,
                 'nullable_type_declaration' => false,
                 'nullable_type_declaration_for_default_null_value' => false,
+                'numeric_literal_separator' => false,
                 'object_operator_without_whitespace' => true,
                 'octal_notation' => false,
                 'operator_linebreak' => [

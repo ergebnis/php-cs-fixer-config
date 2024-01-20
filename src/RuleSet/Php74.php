@@ -711,6 +711,7 @@ final class Php74
                 'phpdoc_to_param_type' => false,
                 'phpdoc_to_property_type' => [
                     'scalar_types' => true,
+                    'union_types' => false,
                 ],
                 'phpdoc_to_return_type' => false,
                 'phpdoc_trim' => true,

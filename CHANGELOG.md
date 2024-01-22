@@ -12,6 +12,7 @@ For a full diff see [`6.19.0...main`][6.19.0...main].
 
 - Updated `erickskrauch/php-cs-fixer-custom-fixers` ([#984]), by [@dependabot]
 - Updated `friendsofphp/php-cs-fixer` ([#993]), by [@dependabot]
+- Enabled the `multiline_string_to_heredoc` fixer ([#994]), by [@localheinz]
 
 ## [`6.19.0`][6.19.0]
 
@@ -1507,6 +1508,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#979]: https://github.com/ergebnis/php-cs-fixer-config/pull/979
 [#984]: https://github.com/ergebnis/php-cs-fixer-config/pull/984
 [#993]: https://github.com/ergebnis/php-cs-fixer-config/pull/993
+[#994]: https://github.com/ergebnis/php-cs-fixer-config/pull/994
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

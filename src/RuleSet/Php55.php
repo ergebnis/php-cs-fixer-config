@@ -321,7 +321,7 @@ final class Php55
                 'modernize_strpos' => false,
                 'modernize_types_casting' => true,
                 'multiline_comment_opening_closing' => true,
-                'multiline_string_to_heredoc' => false,
+                'multiline_string_to_heredoc' => true,
                 'multiline_whitespace_before_semicolons' => [
                     'strategy' => 'no_multi_line',
                 ],

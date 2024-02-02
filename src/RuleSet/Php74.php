@@ -205,11 +205,6 @@ final class Php74
                     'noise_remaining_usages' => true,
                     'noise_remaining_usages_exclude' => [],
                 ],
-                'escape_implicit_backslashes' => [
-                    'double_quoted' => true,
-                    'heredoc_syntax' => true,
-                    'single_quoted' => false,
-                ],
                 'explicit_indirect_variable' => true,
                 'explicit_string_variable' => true,
                 'final_class' => true,
@@ -602,6 +597,7 @@ final class Php74
                     'method' => 'multi',
                     'property' => 'multi',
                 ],
+                'phpdoc_list_type' => false,
                 'phpdoc_no_access' => true,
                 'phpdoc_no_alias_tag' => [
                     'replacements' => [
@@ -859,6 +855,11 @@ final class Php74
                 'static_lambda' => true,
                 'strict_comparison' => true,
                 'strict_param' => true,
+                'string_implicit_backslashes' => [
+                    'double_quoted' => 'escape',
+                    'heredoc' => 'escape',
+                    'single_quoted' => 'ignore',
+                ],
                 'string_length_to_empty' => true,
                 'string_line_ending' => true,
                 'switch_case_semicolon_to_colon' => true,

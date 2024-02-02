@@ -211,7 +211,7 @@ If you like [`composer` scripts](https://getcomposer.org/doc/articles/scripts.md
      "php": "^8.1",
    },
    "require-dev": {
-     "ergebnis/php-cs-fixer-config": "~6.13.0"
+     "ergebnis/php-cs-fixer-config": "^6.21.0"
 +  },
 +  "scripts": {
 +    "coding-standards": [

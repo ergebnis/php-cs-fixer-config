@@ -48,7 +48,7 @@ For a full diff see [`6.17.0...6.18.0`][6.17.0...6.18.0].
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#970]), by [@dependabot]
 - Updated `friendsofphp/php-cs-fixer` ([#972]), by [@dependabot]
-- Enabled the `PhpCsFixerCustomFixers/phpdoc_type_list_fixer` fixer ([#973]), by [@localheinz]
+- Enabled the `PhpCsFixerCustomFixers/phpdoc_type_list` fixer ([#973]), by [@localheinz]
 
 ## [`6.17.0`][6.17.0]
 

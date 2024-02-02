@@ -38,7 +38,6 @@ final class Php71
                 new Fixer\NoDuplicatedImportsFixer(),
                 new Fixer\NoImportFromGlobalNamespaceFixer(),
                 new Fixer\PhpdocArrayStyleFixer(),
-                new Fixer\PhpdocTypeListFixer(),
                 new Fixer\PhpdocTypesCommaSpacesFixer(),
                 new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
             ),
@@ -57,7 +56,6 @@ final class Php71
                 'PhpCsFixerCustomFixers/no_duplicated_imports' => true,
                 'PhpCsFixerCustomFixers/no_import_from_global_namespace' => true,
                 'PhpCsFixerCustomFixers/phpdoc_array_style' => true,
-                'PhpCsFixerCustomFixers/phpdoc_type_list' => true,
                 'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
                 'align_multiline_comment' => [
                     'comment_type' => 'all_multiline',
@@ -597,7 +595,7 @@ final class Php71
                     'method' => 'multi',
                     'property' => 'multi',
                 ],
-                'phpdoc_list_type' => false,
+                'phpdoc_list_type' => true,
                 'phpdoc_no_access' => true,
                 'phpdoc_no_alias_tag' => [
                     'replacements' => [

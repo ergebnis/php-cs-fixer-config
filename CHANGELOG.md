@@ -12,6 +12,7 @@ For a full diff see [`6.20.0...main`][6.20.0...main].
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#996]), by [@dependabot]
 - Updated `friendsofphp/php-cs-fixer` ([#1005]), by [@dependabot]
+- Enabled the `phpdoc_list_type` instead of the `PhpCsFixerCustomFixers/phpdoc_type_list` fixer ([#1006]), by [@localheinz]
 
 ### Fixed
 

@@ -613,6 +613,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'method' => 'multi',
                 'property' => 'multi',
             ],
+            'phpdoc_list_type' => false,
             'phpdoc_no_access' => true,
             'phpdoc_no_alias_tag' => [
                 'replacements' => [

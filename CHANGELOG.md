@@ -12,6 +12,7 @@ For a full diff see [`6.21.0...main`][6.21.0...main].
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1009]), by [@dependabot]
 - Disabled the `fully_qualified_strict_types` fixer ([#1010]), by [@localheinz]
+- Enabled and configured the `global_namespace_import` instead of the `PhpCsFixerCustomFixers/no_import_from_global_namespace` fixer ([#1011]), by [@localheinz]
 
 ## [`6.21.0`][6.21.0]
 

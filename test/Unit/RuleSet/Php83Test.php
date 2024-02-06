@@ -48,7 +48,6 @@ final class Php83Test extends ExplicitRuleSetTestCase
             new Fixer\MultilinePromotedPropertiesFixer(),
             new Fixer\NoDuplicatedArrayKeyFixer(),
             new Fixer\NoDuplicatedImportsFixer(),
-            new Fixer\NoImportFromGlobalNamespaceFixer(),
             new Fixer\PhpdocArrayStyleFixer(),
             new Fixer\PhpdocTypesCommaSpacesFixer(),
             new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
@@ -82,7 +81,6 @@ final class Php83Test extends ExplicitRuleSetTestCase
                 'ignore_expressions' => true,
             ],
             'PhpCsFixerCustomFixers/no_duplicated_imports' => true,
-            'PhpCsFixerCustomFixers/no_import_from_global_namespace' => true,
             'PhpCsFixerCustomFixers/phpdoc_array_style' => true,
             'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
             'align_multiline_comment' => [
@@ -282,7 +280,11 @@ final class Php83Test extends ExplicitRuleSetTestCase
                 ],
             ],
             'get_class_to_class_keyword' => true,
-            'global_namespace_import' => false,
+            'global_namespace_import' => [
+                'import_classes' => false,
+                'import_constants' => false,
+                'import_functions' => false,
+            ],
             'group_import' => false,
             'header_comment' => false,
             'heredoc_closing_marker' => false,

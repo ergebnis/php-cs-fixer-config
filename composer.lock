@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "384df57411ad5dbd517cba575d143f02",
+    "content-hash": "d839aca4e05fad4f4b2c45cde6f08286",
     "packages": [
         {
             "name": "composer/pcre",
@@ -1416,16 +1416,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.28.0",
+            "version": "v1.29.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "42292d99c55abe617799667f454222c54c60e229"
+                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/42292d99c55abe617799667f454222c54c60e229",
-                "reference": "42292d99c55abe617799667f454222c54c60e229",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
+                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
                 "shasum": ""
             },
             "require": {
@@ -1439,9 +1439,6 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "1.28-dev"
-                },
                 "thanks": {
                     "name": "symfony/polyfill",
                     "url": "https://github.com/symfony/polyfill"
@@ -1479,7 +1476,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.28.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.29.0"
             },
             "funding": [
                 {
@@ -1495,7 +1492,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-28T09:04:16+00:00"
+            "time": "2024-01-29T20:11:03+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
@@ -3086,35 +3083,35 @@
         },
         {
             "name": "ergebnis/rector-rules",
-            "version": "0.4.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/rector-rules.git",
-                "reference": "de6391c6dd532df333e7044b1b29cd8623156b3d"
+                "reference": "8e1766bb9a6cf76289677aa84d69cbb3de6a5fda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/rector-rules/zipball/de6391c6dd532df333e7044b1b29cd8623156b3d",
-                "reference": "de6391c6dd532df333e7044b1b29cd8623156b3d",
+                "url": "https://api.github.com/repos/ergebnis/rector-rules/zipball/8e1766bb9a6cf76289677aa84d69cbb3de6a5fda",
+                "reference": "8e1766bb9a6cf76289677aa84d69cbb3de6a5fda",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.17.1 || ^5.0.0",
                 "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
                 "phpstan/phpstan": "^1.10.36",
-                "rector/rector": "~0.19.2",
+                "rector/rector": "~0.19.2 || ^1.0.0",
                 "symplify/rule-doc-generator-contracts": "^9.3.26"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.28.3",
+                "ergebnis/composer-normalize": "^2.42.0",
                 "ergebnis/data-provider": "^3.2.0",
                 "ergebnis/license": "^2.4.0",
-                "ergebnis/php-cs-fixer-config": "^6.20.0",
-                "ergebnis/phpunit-slow-test-detector": "^2.9.0",
+                "ergebnis/php-cs-fixer-config": "^6.22.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.10.0",
                 "infection/infection": "~0.26.6",
                 "phpunit/phpunit": "^9.6.16",
                 "psalm/plugin-phpunit": "~0.18.4",
-                "vimeo/psalm": "^5.20.0"
+                "vimeo/psalm": "^5.21.1"
             },
             "type": "library",
             "extra": {
@@ -3146,7 +3143,7 @@
                 "security": "https://github.com/ergebnis/rector-rules/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/rector-rules"
             },
-            "time": "2024-01-23T12:02:50+00:00"
+            "time": "2024-02-07T17:28:32+00:00"
         },
         {
             "name": "fakerphp/faker",

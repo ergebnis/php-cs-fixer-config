@@ -386,6 +386,7 @@ final class Php81
                 ],
                 'no_superfluous_elseif' => true,
                 'no_superfluous_phpdoc_tags' => [
+                    'allow_hidden_params' => false,
                     'allow_mixed' => true,
                     'allow_unused_params' => false,
                     'remove_inheritdoc' => false,

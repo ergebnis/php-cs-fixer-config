@@ -11,6 +11,7 @@ For a full diff see [`6.22.0...main`][6.22.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#1021]), by [@dependabot]
+- Enabled the `phpdoc_array_type` instead of the `PhpCsFixerCustomFixers/phpdoc_array_style` fixer ([#1022]), by [@localheinz]
 
 ## [`6.22.0`][6.22.0]
 
@@ -1553,6 +1554,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1009]: https://github.com/ergebnis/php-cs-fixer-config/pull/1009
 [#1010]: https://github.com/ergebnis/php-cs-fixer-config/pull/1010
 [#1021]: https://github.com/ergebnis/php-cs-fixer-config/pull/1021
+[#1022]: https://github.com/ergebnis/php-cs-fixer-config/pull/1022
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

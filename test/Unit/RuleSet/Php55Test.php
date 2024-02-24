@@ -42,7 +42,6 @@ final class Php55Test extends ExplicitRuleSetTestCase
             new Fixer\MultilineCommentOpeningClosingAloneFixer(),
             new Fixer\NoDuplicatedArrayKeyFixer(),
             new Fixer\NoDuplicatedImportsFixer(),
-            new Fixer\PhpdocArrayStyleFixer(),
             new Fixer\PhpdocTypesCommaSpacesFixer(),
             new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
         );
@@ -76,7 +75,6 @@ final class Php55Test extends ExplicitRuleSetTestCase
                 'ignore_expressions' => true,
             ],
             'PhpCsFixerCustomFixers/no_duplicated_imports' => true,
-            'PhpCsFixerCustomFixers/phpdoc_array_style' => true,
             'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
             'align_multiline_comment' => [
                 'comment_type' => 'all_multiline',
@@ -577,7 +575,7 @@ final class Php55Test extends ExplicitRuleSetTestCase
                 ],
             ],
             'phpdoc_annotation_without_dot' => true,
-            'phpdoc_array_type' => false,
+            'phpdoc_array_type' => true,
             'phpdoc_indent' => true,
             'phpdoc_inline_tag_normalizer' => [
                 'tags' => [

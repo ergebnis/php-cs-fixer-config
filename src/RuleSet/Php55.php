@@ -377,6 +377,7 @@ final class Php55
                 ],
                 'no_superfluous_elseif' => true,
                 'no_superfluous_phpdoc_tags' => [
+                    'allow_hidden_params' => false,
                     'allow_mixed' => true,
                     'allow_unused_params' => false,
                     'remove_inheritdoc' => false,
@@ -553,6 +554,7 @@ final class Php55
                     ],
                 ],
                 'phpdoc_annotation_without_dot' => true,
+                'phpdoc_array_type' => false,
                 'phpdoc_indent' => true,
                 'phpdoc_inline_tag_normalizer' => [
                     'tags' => [

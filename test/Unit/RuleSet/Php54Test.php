@@ -570,6 +570,7 @@ final class Php54Test extends ExplicitRuleSetTestCase
                 ],
             ],
             'phpdoc_annotation_without_dot' => true,
+            'phpdoc_array_type' => false,
             'phpdoc_indent' => true,
             'phpdoc_inline_tag_normalizer' => [
                 'tags' => [

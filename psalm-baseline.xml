@@ -1,89 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.21.1@8c473e2437be8b6a8fd8f630f0f11a16b114c494">
+<files psalm-version="5.22.2@d768d914152dbbf3486c36398802f74e80cfde48">
   <file src="src/Fixers.php">
     <DocblockTypeContradiction>
       <code><![CDATA[!\is_array($iterable) && !$iterable instanceof \Traversable]]></code>
-      <code>\gettype($iterated)</code>
+      <code><![CDATA[\gettype($iterated)]]></code>
     </DocblockTypeContradiction>
     <NoValue>
-      <code>$iterable</code>
+      <code><![CDATA[$iterable]]></code>
     </NoValue>
     <PropertyTypeCoercion>
-      <code>$value</code>
+      <code><![CDATA[$value]]></code>
     </PropertyTypeCoercion>
     <RedundantCondition>
-      <code>\gettype($iterable)</code>
+      <code><![CDATA[\gettype($iterable)]]></code>
     </RedundantCondition>
     <RedundantConditionGivenDocblockType>
-      <code>\is_object($iterated)</code>
+      <code><![CDATA[\is_object($iterated)]]></code>
     </RedundantConditionGivenDocblockType>
     <TypeDoesNotContainType>
-      <code>\is_object($iterable)</code>
+      <code><![CDATA[\is_object($iterable)]]></code>
     </TypeDoesNotContainType>
   </file>
   <file src="src/RuleSet/Php53.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php54.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php55.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php56.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php70.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php71.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php72.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php73.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php74.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php80.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php81.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php82.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php83.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/Rules.php">
@@ -100,27 +100,27 @@
   </file>
   <file src="test/EndToEnd/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass>
-      <code>Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG</code>
+      <code><![CDATA[Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG]]></code>
     </InternalClass>
   </file>
   <file src="test/Unit/FixersTest.php">
     <InvalidArgument>
-      <code>$iterable</code>
-      <code>$iterable</code>
-      <code>$iterable</code>
+      <code><![CDATA[$iterable]]></code>
+      <code><![CDATA[$iterable]]></code>
+      <code><![CDATA[$iterable]]></code>
     </InvalidArgument>
   </file>
   <file src="test/Unit/RuleSet/AbstractRuleSetTestCase.php">
     <InternalClass>
-      <code>new FixerFactory()</code>
+      <code><![CDATA[new FixerFactory()]]></code>
     </InternalClass>
     <InternalMethod>
-      <code>getFixers</code>
-      <code>new FixerFactory()</code>
-      <code>registerBuiltInFixers</code>
+      <code><![CDATA[getFixers]]></code>
+      <code><![CDATA[new FixerFactory()]]></code>
+      <code><![CDATA[registerBuiltInFixers]]></code>
     </InternalMethod>
     <MixedArgumentTypeCoercion>
-      <code>static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
+      <code><![CDATA[static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
                 if (!\array_key_exists($nameOfRule, $fixersThatAreRegistered)) {
                     return true;
                 }
@@ -128,8 +128,8 @@
                 $fixer = $fixersThatAreRegistered[$nameOfRule];
 
                 return !$fixer instanceof Fixer\DeprecatedFixerInterface;
-            }</code>
-      <code>static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
+            }]]></code>
+      <code><![CDATA[static function (string $nameOfRule) use ($fixersThatAreRegistered): bool {
                 if (\str_starts_with($nameOfRule, '@')) {
                     return true;
                 }
@@ -138,79 +138,79 @@
                     $nameOfRule,
                     $fixersThatAreRegistered,
                 );
-            }</code>
+            }]]></code>
     </MixedArgumentTypeCoercion>
   </file>
   <file src="test/Unit/RuleSet/ExplicitRuleSetTestCase.php">
     <MixedArgumentTypeCoercion>
-      <code>static function (string $nameOfRule): bool {
+      <code><![CDATA[static function (string $nameOfRule): bool {
                 return !\str_starts_with($nameOfRule, '@');
-            }</code>
+            }]]></code>
     </MixedArgumentTypeCoercion>
   </file>
   <file src="test/Unit/RuleSet/Php53Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php54Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php55Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php56Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php70Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php71Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php72Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php73Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php74Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php80Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php81Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php82Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php83Test.php">
     <InternalMethod>
-      <code>new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()</code>
+      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
 </files>

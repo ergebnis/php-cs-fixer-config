@@ -21,7 +21,7 @@
     "ext-filter": "*",
     "erickskrauch/php-cs-fixer-custom-fixers": "~1.2.4",
     "friendsofphp/php-cs-fixer": "~3.50.0",
-    "kubawerlos/php-cs-fixer-custom-fixers": "~3.20.0"
+    "kubawerlos/php-cs-fixer-custom-fixers": "~3.21.0"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.42.0",

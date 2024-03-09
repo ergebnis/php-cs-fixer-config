@@ -1564,6 +1564,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1005]: https://github.com/ergebnis/php-cs-fixer-config/pull/1005
 [#1009]: https://github.com/ergebnis/php-cs-fixer-config/pull/1009
 [#1010]: https://github.com/ergebnis/php-cs-fixer-config/pull/1010
+[#1011]: https://github.com/ergebnis/php-cs-fixer-config/pull/1011
 [#1021]: https://github.com/ergebnis/php-cs-fixer-config/pull/1021
 [#1023]: https://github.com/ergebnis/php-cs-fixer-config/pull/1023
 [#1025]: https://github.com/ergebnis/php-cs-fixer-config/pull/1025

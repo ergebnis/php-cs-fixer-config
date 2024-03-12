@@ -36,7 +36,7 @@
     "rector/rector": "^1.0.2",
     "symfony/filesystem": "^5.0.0 || ^6.0.0",
     "symfony/process": "^5.0.0 || ^6.0.0",
-    "vimeo/psalm": "^5.23.0"
+    "vimeo/psalm": "^5.23.1"
   },
   "autoload": {
     "psr-4": {

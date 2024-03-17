@@ -12,6 +12,7 @@ For a full diff see [`6.23.0...main`][6.23.0...main].
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1025]), by [@dependabot]
 - Updated `friendsofphp/php-cs-fixer` ([#1026]), by [@dependabot]
+- Enabled the `namespaces` option of `no_uneeded_braces` fixer ([#1036]), by [@localheinz]
 
 ## [`6.23.0`][6.23.0]
 
@@ -1569,6 +1570,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1023]: https://github.com/ergebnis/php-cs-fixer-config/pull/1023
 [#1025]: https://github.com/ergebnis/php-cs-fixer-config/pull/1025
 [#1026]: https://github.com/ergebnis/php-cs-fixer-config/pull/1026
+[#1036]: https://github.com/ergebnis/php-cs-fixer-config/pull/1036
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -392,7 +392,7 @@ final class Php72
                 'no_trailing_whitespace_in_comment' => true,
                 'no_trailing_whitespace_in_string' => true,
                 'no_unneeded_braces' => [
-                    'namespaces' => false,
+                    'namespaces' => true,
                 ],
                 'no_unneeded_control_parentheses' => [
                     'statements' => [

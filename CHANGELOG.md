@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`6.24.0...main`][6.24.0...main].
+For a full diff see [`6.25.0...main`][6.25.0...main].
+
+## [`6.25.0`][6.25.0]
+
+For a full diff see [`6.24.0...6.25.0`][6.24.0...6.25.0].
 
 ### Changed
 
@@ -1207,6 +1211,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [6.22.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/6.22.0
 [6.23.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/6.23.0
 [6.24.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/6.24.0
+[6.25.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/6.25.0
 
 [d899e77...1.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/d899e77...1.0.0
 [1.0.0...1.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.0.0...1.1.0
@@ -1316,7 +1321,8 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [6.21.0...6.22.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.21.0...6.22.0
 [6.22.0...6.23.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.22.0...6.23.0
 [6.23.0...6.24.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.23.0...6.24.0
-[6.24.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.24.0...main
+[6.24.0...6.25.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.24.0...6.25.0
+[6.25.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.25.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14

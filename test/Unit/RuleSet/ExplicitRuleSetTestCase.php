@@ -101,6 +101,10 @@ abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
                     return !$fixerOption instanceof FixerConfiguration\DeprecatedFixerOptionInterface;
                 });
 
+                if ([] === $nonDeprecatedConfigurationOptions) {
+                    return true;
+                }
+
                 $ruleConfigurationWithAllNonDeprecatedConfigurationOptionsAndDefaultValues = \array_combine(
                     \array_map(static function (FixerConfiguration\FixerOptionInterface $fixerOption): string {
                         return $fixerOption->getName();

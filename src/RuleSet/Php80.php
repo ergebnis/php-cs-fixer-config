@@ -444,9 +444,7 @@ final class Php80
                 'nullable_type_declaration' => [
                     'syntax' => 'question_mark',
                 ],
-                'nullable_type_declaration_for_default_null_value' => [
-                    'use_nullable_type_declaration' => true,
-                ],
+                'nullable_type_declaration_for_default_null_value' => true,
                 'numeric_literal_separator' => false,
                 'object_operator_without_whitespace' => true,
                 'octal_notation' => false,

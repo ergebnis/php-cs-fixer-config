@@ -499,6 +499,7 @@ final class Php54Test extends ExplicitRuleSetTestCase
                 'null_adjustment' => 'always_first',
                 'sort_algorithm' => 'alpha',
             ],
+            'php_unit_attributes' => false,
             'php_unit_construct' => [
                 'assertions' => [
                     'assertEquals',

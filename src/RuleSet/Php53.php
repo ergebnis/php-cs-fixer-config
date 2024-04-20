@@ -475,6 +475,7 @@ final class Php53
                     'null_adjustment' => 'always_first',
                     'sort_algorithm' => 'alpha',
                 ],
+                'php_unit_attributes' => false,
                 'php_unit_construct' => [
                     'assertions' => [
                         'assertEquals',

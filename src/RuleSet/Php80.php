@@ -452,7 +452,10 @@ final class Php80
                     'only_booleans' => true,
                     'position' => 'beginning',
                 ],
-                'ordered_attributes' => false,
+                'ordered_attributes' => [
+                    'order' => [],
+                    'sort_algorithm' => 'alpha',
+                ],
                 'ordered_class_elements' => [
                     'case_sensitive' => false,
                     'order' => [

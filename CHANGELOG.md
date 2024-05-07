@@ -11,6 +11,7 @@ For a full diff see [`6.26.0...main`][6.26.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#1058]), by [@dependabot]
+- Enabled and configured the `ordered_attributes` fixer ([#1060]), by [@localheinz]
 
 ## [`6.26.0`][6.26.0]
 
@@ -1615,6 +1616,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1039]: https://github.com/ergebnis/php-cs-fixer-config/pull/1039
 [#1051]: https://github.com/ergebnis/php-cs-fixer-config/pull/1051
 [#1058]: https://github.com/ergebnis/php-cs-fixer-config/pull/1058
+[#1060]: https://github.com/ergebnis/php-cs-fixer-config/pull/1060
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

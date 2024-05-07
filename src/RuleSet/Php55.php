@@ -442,6 +442,7 @@ final class Php55
                     'only_booleans' => true,
                     'position' => 'beginning',
                 ],
+                'ordered_attributes' => false,
                 'ordered_class_elements' => [
                     'case_sensitive' => false,
                     'order' => [

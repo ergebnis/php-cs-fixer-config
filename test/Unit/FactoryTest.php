@@ -21,6 +21,7 @@ use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PhpCsFixer\Fixer;
+use PhpCsFixer\Runner;
 use PHPUnit\Framework;
 
 /**
@@ -92,6 +93,7 @@ final class FactoryTest extends Framework\TestCase
         $config = Factory::fromRuleSet($ruleSet);
 
         self::assertEquals($customFixers->toArray(), $config->getCustomFixers());
+        self::assertEquals(Runner\Parallel\ParallelConfigFactory::detect(), $config->getParallelConfig());
         self::assertTrue($config->getRiskyAllowed());
         self::assertSame($rules->toArray(), $config->getRules());
         self::assertTrue($config->getUsingCache());

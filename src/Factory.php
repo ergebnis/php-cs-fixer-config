@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config;
 
 use PhpCsFixer\Config;
+use PhpCsFixer\Runner;
 
 final class Factory
 {
@@ -37,6 +38,7 @@ final class Factory
         $config = new Config($ruleSet->name()->toString());
 
         $config->registerCustomFixers($ruleSet->customFixers()->toArray());
+        $config->setParallelConfig(Runner\Parallel\ParallelConfigFactory::detect());
         $config->setRiskyAllowed(true);
         $config->setRules($ruleSet->rules()->toArray());
 

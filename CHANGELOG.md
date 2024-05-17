@@ -11,7 +11,8 @@ For a full diff see [`6.28.1...main`][6.28.1...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#1065]), by [@dependabot]
--
+- Enabled parallel runner  ([#1066]), by [@localheinz]
+
 ## [`6.28.1`][6.28.1]
 
 For a full diff see [`6.28.0...6.28.1`][6.28.0...6.28.1].
@@ -1650,6 +1651,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1061]: https://github.com/ergebnis/php-cs-fixer-config/pull/1061
 [#1062]: https://github.com/ergebnis/php-cs-fixer-config/pull/1062
 [#1065]: https://github.com/ergebnis/php-cs-fixer-config/pull/1065
+[#1066]: https://github.com/ergebnis/php-cs-fixer-config/pull/1066
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

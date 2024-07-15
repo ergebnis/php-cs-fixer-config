@@ -23,67 +23,67 @@
   </file>
   <file src="src/RuleSet/Php53.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php54.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php55.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php56.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php70.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php71.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php72.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php73.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php74.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php80.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php81.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php82.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/RuleSet/Php83.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="src/Rules.php">
@@ -150,67 +150,67 @@
   </file>
   <file src="test/Unit/RuleSet/Php53Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php54Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php55Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php56Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php70Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php71Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php72Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php73Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php74Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php80Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php81Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php82Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
   <file src="test/Unit/RuleSet/Php83Test.php">
     <InternalMethod>
-      <code><![CDATA[new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
+      <code><![CDATA[new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer()]]></code>
     </InternalMethod>
   </file>
 </files>

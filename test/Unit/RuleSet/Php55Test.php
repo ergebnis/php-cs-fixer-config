@@ -43,7 +43,7 @@ final class Php55Test extends ExplicitRuleSetTestCase
             new Fixer\NoDuplicatedArrayKeyFixer(),
             new Fixer\NoDuplicatedImportsFixer(),
             new Fixer\PhpdocTypesCommaSpacesFixer(),
-            new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
+            new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer(),
         );
     }
 

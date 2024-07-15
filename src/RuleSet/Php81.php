@@ -38,7 +38,7 @@ final class Php81
                 new Fixer\NoDuplicatedArrayKeyFixer(),
                 new Fixer\NoDuplicatedImportsFixer(),
                 new Fixer\PhpdocTypesCommaSpacesFixer(),
-                new PhpCsFixer\Whitespace\LineBreakAfterStatementsFixer(),
+                new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer(),
             ),
             Name::fromString(\sprintf(
                 'ergebnis (PHP %d.%d)',

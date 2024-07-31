@@ -14,7 +14,7 @@ For a full diff see [`6.33.0...main`][6.33.0...main].
 
 ## [`6.33.0`][6.33.0]
 
-For a full diff see [`6.31.0...6.33.0`][6.31.0...6.33.0].
+For a full diff see [`6.32.0...6.33.0`][6.32.0...6.33.0].
 
 ### Changed
 

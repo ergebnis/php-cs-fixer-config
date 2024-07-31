@@ -483,6 +483,7 @@ final class Php74
                     'null_adjustment' => 'always_first',
                     'sort_algorithm' => 'alpha',
                 ],
+                'php_unit_assert_new_names' => false,
                 'php_unit_attributes' => false,
                 'php_unit_construct' => [
                     'assertions' => [

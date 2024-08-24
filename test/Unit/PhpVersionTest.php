@@ -13,7 +13,6 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
-use Ergebnis\DataProvider;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
@@ -113,5 +112,28 @@ final class PhpVersionTest extends Framework\TestCase
         $two = PhpVersion::fromInt(\PHP_VERSION_ID + 1);
 
         self::assertTrue($one->isSmallerThan($two));
+    }
+
+    /**
+     * @dataProvider versionStringDataProvider
+     */
+    public function testVersionStringCanBeParsed(string $phpVersion, int $major, int $minor, int $patch): void
+    {
+        $phpVersion = PhpVersion::fromString($phpVersion);
+
+        self::assertSame($major, $phpVersion->major()->toInt());
+        self::assertSame($minor, $phpVersion->minor()->toInt());
+        self::assertSame($patch, $phpVersion->patch()->toInt());
+    }
+
+    public static function versionStringDataProvider(): iterable
+    {
+        yield 'empty string' => ['phpVersion' => '', 'major' => 0, 'minor' => 0, 'patch' => 0];
+
+        yield 'missing minor and patch' => ['phpVersion' => '5', 'major' => 5, 'minor' => 0, 'patch' => 0];
+
+        yield 'missing patch' => ['phpVersion' => '7.1', 'major' => 7, 'minor' => 1, 'patch' => 0];
+
+        yield 'including release' => ['phpVersion' => '7.2.3.45678', 'major' => 7, 'minor' => 2, 'patch' => 3];
     }
 }

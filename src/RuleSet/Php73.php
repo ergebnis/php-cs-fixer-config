@@ -21,7 +21,7 @@ use Ergebnis\PhpCsFixer\Config\RuleSet;
 use ErickSkrauch\PhpCsFixer;
 use PhpCsFixerCustomFixers\Fixer;
 
-final class Php73
+final class Php73 implements PhpRuleSet
 {
     public static function create(): RuleSet
     {

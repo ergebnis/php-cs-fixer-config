@@ -81,6 +81,20 @@ final class PhpVersion
         );
     }
 
+    /**
+     * @throws \InvalidArgumentException
+     */
+    public static function fromString(string $value): self
+    {
+        $split = \explode('.', $value, 4);
+
+        return new self(
+            PhpVersion\Major::fromInt((int) ($split[0] ?? '0')),
+            PhpVersion\Minor::fromInt((int) ($split[1] ?? '0')),
+            PhpVersion\Patch::fromInt((int) ($split[2] ?? '0')),
+        );
+    }
+
     public function major(): PhpVersion\Major
     {
         return $this->major;
@@ -99,6 +113,15 @@ final class PhpVersion
     public function toInt(): int
     {
         return $this->major->toInt() * 10_000 + $this->minor->toInt() * 100 + $this->patch->toInt();
+    }
+
+    public function toLanguageLevelInt(): int
+    {
+        if (9 < $this->minor->toInt()) {
+            throw new \LogicException('PHP minor version must be less than 10');
+        }
+
+        return ($this->major->toInt() * 10) + $this->minor->toInt();
     }
 
     public function toString(): string

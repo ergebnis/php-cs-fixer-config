@@ -13,7 +13,6 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
-use Ergebnis\DataProvider;
 use Ergebnis\PhpCsFixer\Config\PhpVersion;
 use Ergebnis\PhpCsFixer\Config\Test;
 use PHPUnit\Framework;
@@ -113,5 +112,57 @@ final class PhpVersionTest extends Framework\TestCase
         $two = PhpVersion::fromInt(\PHP_VERSION_ID + 1);
 
         self::assertTrue($one->isSmallerThan($two));
+    }
+
+    /**
+     * @dataProvider versionStringDataProvider
+     */
+    public function testVersionStringCanBeParsed(string $phpVersionString, PhpVersion $expectedVersion): void
+    {
+        $actualVersion = PhpVersion::fromString($phpVersionString);
+
+        self::assertEquals($expectedVersion, $actualVersion);
+    }
+
+    /**
+     * @return iterable<string, array{phpVersionString: string, expectedVersion: PhpVersion}>
+     */
+    public static function versionStringDataProvider(): iterable
+    {
+        yield 'empty string' => [
+            'phpVersionString' => '',
+            'expectedVersion' => PhpVersion::create(
+                PhpVersion\Major::fromInt(0),
+                PhpVersion\Minor::fromInt(0),
+                PhpVersion\Patch::fromInt(0),
+            ),
+        ];
+
+        yield 'missing minor and patch' => [
+            'phpVersionString' => '5',
+            'expectedVersion' => PhpVersion::create(
+                PhpVersion\Major::fromInt(5),
+                PhpVersion\Minor::fromInt(0),
+                PhpVersion\Patch::fromInt(0),
+            ),
+        ];
+
+        yield 'missing patch' => [
+            'phpVersionString' => '7.1',
+            'expectedVersion' => PhpVersion::create(
+                PhpVersion\Major::fromInt(7),
+                PhpVersion\Minor::fromInt(1),
+                PhpVersion\Patch::fromInt(0),
+            ),
+        ];
+
+        yield 'including release' => [
+            'phpVersionString' => '7.2.3.45678',
+            'expectedVersion' => PhpVersion::create(
+                PhpVersion\Major::fromInt(7),
+                PhpVersion\Minor::fromInt(2),
+                PhpVersion\Patch::fromInt(3),
+            ),
+        ];
     }
 }

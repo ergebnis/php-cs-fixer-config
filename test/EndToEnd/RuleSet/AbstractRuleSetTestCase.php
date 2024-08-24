@@ -58,12 +58,16 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
         self::assertNotNull($exitCode);
         self::assertSame(0, Console\Command\Command::FAILURE & $exitCode, \sprintf(
-            'Failed asserting that running friendsofphp/php-cs-fixer with the configuration in "%s" did not result in failure.',
+            'Failed asserting that running friendsofphp/php-cs-fixer with the configuration in "%s" did not result in failure:%s%s',
             self::className(),
+            \PHP_EOL,
+            $process->getErrorOutput() ?: $process->getOutput(),
         ));
         self::assertSame(0, Command\FixCommandExitStatusCalculator::EXIT_STATUS_FLAG_HAS_INVALID_CONFIG & $exitCode, \sprintf(
-            'Failed asserting that the configuration in "%s" is considered valid by friendsofphp/php-cs-fixer.',
+            'Failed asserting that the configuration in "%s" is considered valid by friendsofphp/php-cs-fixer:%s%s',
             self::className(),
+            \PHP_EOL,
+            $process->getErrorOutput() ?: $process->getOutput(),
         ));
     }
 

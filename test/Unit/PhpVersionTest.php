@@ -117,23 +117,52 @@ final class PhpVersionTest extends Framework\TestCase
     /**
      * @dataProvider versionStringDataProvider
      */
-    public function testVersionStringCanBeParsed(string $phpVersion, int $major, int $minor, int $patch): void
+    public function testVersionStringCanBeParsed(string $phpVersionString, PhpVersion $expectedVersion): void
     {
-        $phpVersion = PhpVersion::fromString($phpVersion);
+        $actualVersion = PhpVersion::fromString($phpVersionString);
 
-        self::assertSame($major, $phpVersion->major()->toInt());
-        self::assertSame($minor, $phpVersion->minor()->toInt());
-        self::assertSame($patch, $phpVersion->patch()->toInt());
+        self::assertEquals($expectedVersion, $actualVersion);
     }
 
+    /**
+     * @return iterable<string, array{phpVersionString: string, expectedVersion: PhpVersion}>
+     */
     public static function versionStringDataProvider(): iterable
     {
-        yield 'empty string' => ['phpVersion' => '', 'major' => 0, 'minor' => 0, 'patch' => 0];
+        yield 'empty string' => [
+            'phpVersionString' => '',
+            'expectedVersion' => PhpVersion::create(
+                PhpVersion\Major::fromInt(0),
+                PhpVersion\Minor::fromInt(0),
+                PhpVersion\Patch::fromInt(0),
+            ),
+        ];
 
-        yield 'missing minor and patch' => ['phpVersion' => '5', 'major' => 5, 'minor' => 0, 'patch' => 0];
+        yield 'missing minor and patch' => [
+            'phpVersionString' => '5',
+            'expectedVersion' => PhpVersion::create(
+                PhpVersion\Major::fromInt(5),
+                PhpVersion\Minor::fromInt(0),
+                PhpVersion\Patch::fromInt(0),
+            ),
+        ];
 
-        yield 'missing patch' => ['phpVersion' => '7.1', 'major' => 7, 'minor' => 1, 'patch' => 0];
+        yield 'missing patch' => [
+            'phpVersionString' => '7.1',
+            'expectedVersion' => PhpVersion::create(
+                PhpVersion\Major::fromInt(7),
+                PhpVersion\Minor::fromInt(1),
+                PhpVersion\Patch::fromInt(0),
+            ),
+        ];
 
-        yield 'including release' => ['phpVersion' => '7.2.3.45678', 'major' => 7, 'minor' => 2, 'patch' => 3];
+        yield 'including release' => [
+            'phpVersionString' => '7.2.3.45678',
+            'expectedVersion' => PhpVersion::create(
+                PhpVersion\Major::fromInt(7),
+                PhpVersion\Minor::fromInt(2),
+                PhpVersion\Patch::fromInt(3),
+            ),
+        ];
     }
 }

@@ -115,6 +115,15 @@ final class PhpVersion
         return $this->major->toInt() * 10_000 + $this->minor->toInt() * 100 + $this->patch->toInt();
     }
 
+    public function toLanguageLevelInt(): int
+    {
+        if (9 < $this->minor->toInt()) {
+            throw new \LogicException('PHP minor version must be less than 10');
+        }
+
+        return ($this->major->toInt() * 10) + $this->minor->toInt();
+    }
+
     public function toString(): string
     {
         return \sprintf(

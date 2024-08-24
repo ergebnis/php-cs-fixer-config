@@ -26,7 +26,8 @@ composer require --dev ergebnis/php-cs-fixer-config
 
 ### Configuration
 
-Pick one of the rule sets:
+Use [`Ergebnis\PhpCsFixer\RuleSet\PhpAuto`](src/RuleSet/PhpAuto.php) to find the best rule set for the minimum PHP
+version defined in your `composer.json` file or pick one of the rule sets:
 
 - [`Ergebnis\PhpCsFixer\RuleSet\Php53`](src/RuleSet/Php53.php)
 - [`Ergebnis\PhpCsFixer\RuleSet\Php54`](src/RuleSet/Php54.php)
@@ -51,7 +52,7 @@ declare(strict_types=1);
 
 use Ergebnis\PhpCsFixer\Config;
 
-$ruleSet = Config\RuleSet\Php83::create();
+$ruleSet = Config\RuleSet\PhpAuto::create();
 
 $config = Config\Factory::fromRuleSet($ruleSet);
 
@@ -90,8 +91,8 @@ All configuration examples use the caching feature, and if you want to use it as
 +@see https://github.com/ergebnis/php-cs-fixer-config
 +EOF;
 
--$ruleSet = Config\RuleSet\Php83::create();
-+$ruleSet = Config\RuleSet\Php83::create()->withHeader($header);
+-$ruleSet = Config\RuleSet\PhpAuto::create();
++$ruleSet = Config\RuleSet\PhpAuto::create()->withHeader($header);
 
  $config = Config\Factory::fromRuleSet($ruleSet);
 
@@ -129,8 +130,8 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
 
  use Ergebnis\PhpCsFixer\Config;
 
--$ruleSet = Config\RuleSet\Php83::create();
-+$ruleSet = Config\RuleSet\Php83::create()->withRules(Config\Rules::fromArray([
+-$ruleSet = Config\RuleSet\PhpAuto::create();
++$ruleSet = Config\RuleSet\PhpAuto::create()->withRules(Config\Rules::fromArray([
 +    'mb_str_functions' => false,
 +    'strict_comparison' => false,
 +]));
@@ -155,8 +156,8 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
  use Ergebnis\PhpCsFixer\Config;
  use FooBar\Fixer;
 
--$ruleSet = Config\RuleSet\Php83::create();
-+$ruleSet = Config\RuleSet\Php83::create()
+-$ruleSet = Config\RuleSet\PhpAuto::create();
++$ruleSet = Config\RuleSet\PhpAuto::create()
 +    ->withCustomFixers(Config\Fixers::fromFixers(
 +        new Fixer\BarBazFixer(),
 +        new Fixer\QuzFixer(),

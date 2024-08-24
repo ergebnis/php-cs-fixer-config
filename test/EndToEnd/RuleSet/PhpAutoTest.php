@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-cs-fixer-config
  */
 
-namespace Ergebnis\PhpCsFixer\Config\RuleSet;
+namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
-use Ergebnis\PhpCsFixer\Config\RuleSet;
-
-interface PhpRuleSet
+/**
+ * @coversNothing
+ */
+final class PhpAutoTest extends AbstractRuleSetTestCase
 {
-    public static function create(): RuleSet;
 }

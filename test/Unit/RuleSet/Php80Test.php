@@ -888,6 +888,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
                 'after_heredoc' => false,
                 'elements' => [
                     'arguments',
+                    'array_destructuring',
                     'arrays',
                     'match',
                     'parameters',

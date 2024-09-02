@@ -868,6 +868,7 @@ final class Php73Test extends ExplicitRuleSetTestCase
                 'after_heredoc' => false,
                 'elements' => [
                     'arguments',
+                    'array_destructuring',
                     'arrays',
                 ],
             ],

@@ -844,6 +844,7 @@ final class Php72
                 'trailing_comma_in_multiline' => [
                     'after_heredoc' => false,
                     'elements' => [
+                        'array_destructuring',
                         'arrays',
                     ],
                 ],

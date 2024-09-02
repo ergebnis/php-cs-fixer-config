@@ -867,6 +867,7 @@ final class Php72Test extends ExplicitRuleSetTestCase
             'trailing_comma_in_multiline' => [
                 'after_heredoc' => false,
                 'elements' => [
+                    'array_destructuring',
                     'arrays',
                 ],
             ],

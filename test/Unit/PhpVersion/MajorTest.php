@@ -29,7 +29,7 @@ final class MajorTest extends Framework\TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage(\sprintf(
-            'Value needs to greater than or equal to 0, but %d is not.',
+            'Value needs to be greater than or equal to 0, but %d is not.',
             $value,
         ));
 

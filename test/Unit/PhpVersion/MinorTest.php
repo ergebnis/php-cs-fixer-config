@@ -32,7 +32,7 @@ final class MinorTest extends Framework\TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage(\sprintf(
-            'Value needs to be a greater than or equal to 0, but %d is not.',
+            'Value needs to be greater than or equal to 0, but %d is not.',
             $value,
         ));
 
@@ -46,7 +46,7 @@ final class MinorTest extends Framework\TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage(\sprintf(
-            'Value needs to be a less than or equal to 99, but %d is not.',
+            'Value needs to be less than or equal to 99, but %d is not.',
             $value,
         ));
 

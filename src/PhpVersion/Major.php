@@ -29,7 +29,7 @@ final class Major
     {
         if (0 > $value) {
             throw new \InvalidArgumentException(\sprintf(
-                'Value needs to greater than or equal to 0, but %d is not.',
+                'Value needs to be greater than or equal to 0, but %d is not.',
                 $value,
             ));
         }

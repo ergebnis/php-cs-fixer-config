@@ -891,6 +891,7 @@ final class Php82Test extends ExplicitRuleSetTestCase
                 'after_heredoc' => false,
                 'elements' => [
                     'arguments',
+                    'array_destructuring',
                     'arrays',
                     'match',
                     'parameters',

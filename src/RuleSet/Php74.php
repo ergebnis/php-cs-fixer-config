@@ -848,6 +848,7 @@ final class Php74
                     'after_heredoc' => false,
                     'elements' => [
                         'arguments',
+                        'array_destructuring',
                         'arrays',
                     ],
                 ],

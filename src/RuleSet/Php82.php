@@ -868,6 +868,7 @@ final class Php82
                     'after_heredoc' => false,
                     'elements' => [
                         'arguments',
+                        'array_destructuring',
                         'arrays',
                         'match',
                         'parameters',

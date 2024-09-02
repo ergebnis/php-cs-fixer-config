@@ -11,6 +11,7 @@ For a full diff see [`6.35.0...main`][6.35.0...main].
 ### Changed
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1095]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#1102]), by [@dependabot]
 
 ## [`6.35.0`][6.35.0]
 
@@ -1740,6 +1741,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1091]: https://github.com/ergebnis/php-cs-fixer-config/pull/1091
 [#1093]: https://github.com/ergebnis/php-cs-fixer-config/pull/1093
 [#1095]: https://github.com/ergebnis/php-cs-fixer-config/pull/1095
+[#1102]: https://github.com/ergebnis/php-cs-fixer-config/pull/1102
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

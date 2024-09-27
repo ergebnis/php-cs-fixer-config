@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.36.0...main`][6.36.0...main].
 
+### Changed
+
+- Allowed installation on PHP 8.4 ([#1109]), by [@localheinz]
+
 ## [`6.36.0`][6.36.0]
 
 For a full diff see [`6.35.0...6.36.0`][6.35.0...6.36.0].
@@ -1750,6 +1754,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1095]: https://github.com/ergebnis/php-cs-fixer-config/pull/1095
 [#1102]: https://github.com/ergebnis/php-cs-fixer-config/pull/1102
 [#1103]: https://github.com/ergebnis/php-cs-fixer-config/pull/1103
+[#1109]: https://github.com/ergebnis/php-cs-fixer-config/pull/1109
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

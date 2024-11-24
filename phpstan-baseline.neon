@@ -1,0 +1,52 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property Ergebnis\\\\PhpCsFixer\\\\Config\\\\Rules\\:\\:\\$value type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Rules.php
+
+		-
+			message: "#^Parameter \\#1 \\$iterable of static method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Fixers\\:\\:fromIterable\\(\\) expects iterable\\<PhpCsFixer\\\\Fixer\\\\FixerInterface\\>, array\\<int, \\(PhpCsFixer\\\\Fixer\\\\FixerInterface&PHPUnit\\\\Framework\\\\MockObject\\\\Stub\\)\\|stdClass\\> given\\.$#"
+			count: 1
+			path: test/Unit/FixersTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$iterable of static method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Fixers\\:\\:fromIterable\\(\\) expects iterable\\<PhpCsFixer\\\\Fixer\\\\FixerInterface\\>, stdClass given\\.$#"
+			count: 1
+			path: test/Unit/FixersTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$iterable of static method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Fixers\\:\\:fromIterable\\(\\) expects iterable\\<PhpCsFixer\\\\Fixer\\\\FixerInterface\\>, string given\\.$#"
+			count: 1
+			path: test/Unit/FixersTest.php
+
+		-
+			message: "#^Method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:sort\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
+
+		-
+			message: "#^Method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:sort\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
+
+		-
+			message: "#^Method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:sort\\(\\) should return array but returns array\\|false\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
+
+		-
+			message: "#^Parameter \\#1 \\$array_arg of function ksort expects array, array\\<string, PhpCsFixer\\\\Fixer\\\\FixerInterface\\>\\|false given\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
+
+		-
+			message: "#^Parameter \\#1 \\$arr1 of function array_diff_key expects array, array\\<string, mixed\\>\\|false given\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/ExplicitRuleSetTestCase.php
+
+		-
+			message: "#^Parameter \\#1 \\$arr1 of function array_merge expects array, array\\<string, false\\>\\|false given\\.$#"
+			count: 1
+			path: test/Unit/RuleSet/ExplicitRuleSetTestCase.php
+

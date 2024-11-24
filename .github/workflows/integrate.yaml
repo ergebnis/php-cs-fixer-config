@@ -327,7 +327,7 @@ jobs:
         uses: "shivammathur/setup-php@2.31.1"
         with:
           coverage: "none"
-          extensions: "none, ctype, curl, dom, json, mbstring, opcache, pcntl, phar, posix, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, bcmath, ctype, curl, dom, intl, json, mbstring, opcache, pcntl, phar, posix, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
@@ -351,8 +351,8 @@ jobs:
         with:
           dependencies: "${{ matrix.dependencies }}"
 
-      - name: "Run vimeo/psalm"
-        run: "vendor/bin/psalm --config=psalm.xml --output-format=github --shepherd --show-info=false --stats --threads=4"
+      - name: "Run phpstan/phpstan"
+        run: "vendor/bin/phpstan --ansi --configuration=phpstan.neon --memory-limit=-1"
 
   tests:
     name: "Tests"

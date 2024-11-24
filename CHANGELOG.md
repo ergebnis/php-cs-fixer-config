@@ -11,6 +11,7 @@ For a full diff see [`6.37.0...main`][6.37.0...main].
 ### Changed
 
 - Added support for PHP 8.4 ([#1139]), by [@localheinz]
+- Added `Config\Ruleset\Php84` rule set ([#1140]), by [@localheinz]
 
 ## [`6.37.0`][6.37.0]
 
@@ -1766,6 +1767,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1103]: https://github.com/ergebnis/php-cs-fixer-config/pull/1103
 [#1109]: https://github.com/ergebnis/php-cs-fixer-config/pull/1109
 [#1139]: https://github.com/ergebnis/php-cs-fixer-config/pull/1139
+[#1140]: https://github.com/ergebnis/php-cs-fixer-config/pull/1140
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

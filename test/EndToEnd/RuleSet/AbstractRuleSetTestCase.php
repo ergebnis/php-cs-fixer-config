@@ -38,6 +38,17 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
 
     final public function testConfigurationIsConsideredValid(): void
     {
+        $env = [];
+
+        if (\PHP_VERSION_ID >= 80400) {
+            $env = [
+                /**
+                 * @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/v3.64.0/README.md#supported-php-versions
+                 */
+                'PHP_CS_FIXER_IGNORE_ENV' => true,
+            ];
+        }
+
         $process = new Process\Process(
             [
                 'vendor/bin/php-cs-fixer',
@@ -50,6 +61,7 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
                 self::configPath(),
             ],
             null,
+            $env,
         );
 
         $process->run();

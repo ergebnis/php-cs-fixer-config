@@ -12,7 +12,7 @@ For a full diff see [`6.38.0...main`][6.38.0...main].
 
 For a full diff see [`6.37.0...6.38.0`][6.37.0...6.38.0].
 
-### Changed
+### Added
 
 - Added support for PHP 8.4 ([#1139]), by [@localheinz]
 - Added `Config\Ruleset\Php84` rule set ([#1140]), by [@localheinz]

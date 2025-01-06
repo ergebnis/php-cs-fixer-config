@@ -26,7 +26,16 @@ $license = License\Type\MIT::markdown(
 
 $license->save();
 
-$ruleSet = PhpCsFixer\Config\RuleSet\Php74::create()->withHeader($license->header());
+$ruleSet = PhpCsFixer\Config\RuleSet\Php74::create()
+    ->withHeader($license->header())
+    ->withRules(PhpCsFixer\Config\Rules::fromArray([
+        'php_unit_test_case_static_method_calls' => [
+            'call_type' => 'self',
+            'methods' => [
+                'createStub' => 'this',
+            ],
+        ],
+    ]));
 
 $config = PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
 

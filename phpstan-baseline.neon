@@ -1,52 +1,80 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Property Ergebnis\\\\PhpCsFixer\\\\Config\\\\Rules\\:\\:\\$value type has no value type specified in iterable type array\\.$#"
+			message: '#^Method Ergebnis\\PhpCsFixer\\Config\\Rules\:\:toArray\(\) should return array\<string, array\<string, mixed\>\|bool\> but returns array\.$#'
+			identifier: return.type
 			count: 1
 			path: src/Rules.php
 
 		-
-			message: "#^Parameter \\#1 \\$iterable of static method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Fixers\\:\\:fromIterable\\(\\) expects iterable\\<PhpCsFixer\\\\Fixer\\\\FixerInterface\\>, array\\<int, \\(PhpCsFixer\\\\Fixer\\\\FixerInterface&PHPUnit\\\\Framework\\\\MockObject\\\\Stub\\)\\|stdClass\\> given\\.$#"
+			message: '#^Parameter \#1 \$value of class Ergebnis\\PhpCsFixer\\Config\\Rules constructor expects array\<string, array\<string, mixed\>\|bool\>, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Rules.php
+
+		-
+			message: '#^Property Ergebnis\\PhpCsFixer\\Config\\Rules\:\:\$value type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Rules.php
+
+		-
+			message: '#^Parameter \#1 \$iterable of static method Ergebnis\\PhpCsFixer\\Config\\Fixers\:\:fromIterable\(\) expects iterable\<PhpCsFixer\\Fixer\\FixerInterface\>, array\<int, \(PhpCsFixer\\Fixer\\FixerInterface&PHPUnit\\Framework\\MockObject\\Stub\)\|stdClass\> given\.$#'
+			identifier: argument.type
 			count: 1
 			path: test/Unit/FixersTest.php
 
 		-
-			message: "#^Parameter \\#1 \\$iterable of static method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Fixers\\:\\:fromIterable\\(\\) expects iterable\\<PhpCsFixer\\\\Fixer\\\\FixerInterface\\>, stdClass given\\.$#"
+			message: '#^Parameter \#1 \$iterable of static method Ergebnis\\PhpCsFixer\\Config\\Fixers\:\:fromIterable\(\) expects iterable\<PhpCsFixer\\Fixer\\FixerInterface\>, stdClass given\.$#'
+			identifier: argument.type
 			count: 1
 			path: test/Unit/FixersTest.php
 
 		-
-			message: "#^Parameter \\#1 \\$iterable of static method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Fixers\\:\\:fromIterable\\(\\) expects iterable\\<PhpCsFixer\\\\Fixer\\\\FixerInterface\\>, string given\\.$#"
+			message: '#^Parameter \#1 \$iterable of static method Ergebnis\\PhpCsFixer\\Config\\Fixers\:\:fromIterable\(\) expects iterable\<PhpCsFixer\\Fixer\\FixerInterface\>, string given\.$#'
+			identifier: argument.type
 			count: 1
 			path: test/Unit/FixersTest.php
 
 		-
-			message: "#^Method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:sort\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			message: '#^Method Ergebnis\\PhpCsFixer\\Config\\Test\\Unit\\RuleSet\\AbstractRuleSetTestCase\:\:fixersThatAreRegistered\(\) should return array\<string, PhpCsFixer\\Fixer\\FixerInterface\> but returns array\<mixed\>\.$#'
+			identifier: return.type
 			count: 1
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
 
 		-
-			message: "#^Method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:sort\\(\\) return type has no value type specified in iterable type array\\.$#"
+			message: '#^Method Ergebnis\\PhpCsFixer\\Config\\Test\\Unit\\RuleSet\\AbstractRuleSetTestCase\:\:sort\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
 			count: 1
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
 
 		-
-			message: "#^Method Ergebnis\\\\PhpCsFixer\\\\Config\\\\Test\\\\Unit\\\\RuleSet\\\\AbstractRuleSetTestCase\\:\\:sort\\(\\) should return array but returns array\\|false\\.$#"
+			message: '#^Method Ergebnis\\PhpCsFixer\\Config\\Test\\Unit\\RuleSet\\AbstractRuleSetTestCase\:\:sort\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
 			count: 1
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
 
 		-
-			message: "#^Parameter \\#1 \\$array_arg of function ksort expects array, array\\<string, PhpCsFixer\\\\Fixer\\\\FixerInterface\\>\\|false given\\.$#"
+			message: '#^Method Ergebnis\\PhpCsFixer\\Config\\Test\\Unit\\RuleSet\\AbstractRuleSetTestCase\:\:sort\(\) should return array but returns array\|false\.$#'
+			identifier: return.type
 			count: 1
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
 
 		-
-			message: "#^Parameter \\#1 \\$arr1 of function array_diff_key expects array, array\\<string, mixed\\>\\|false given\\.$#"
+			message: '#^Parameter \#1 \$array_arg of function ksort expects array, array\<string, PhpCsFixer\\Fixer\\FixerInterface\>\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php
+
+		-
+			message: '#^Parameter \#1 \$arr1 of function array_diff_key expects array, array\<string, mixed\>\|false given\.$#'
+			identifier: argument.type
 			count: 1
 			path: test/Unit/RuleSet/ExplicitRuleSetTestCase.php
 
 		-
-			message: "#^Parameter \\#1 \\$arr1 of function array_merge expects array, array\\<string, false\\>\\|false given\\.$#"
+			message: '#^Parameter \#1 \$arr1 of function array_merge expects array, array\<string, false\>\|false given\.$#'
+			identifier: argument.type
 			count: 1
 			path: test/Unit/RuleSet/ExplicitRuleSetTestCase.php
 

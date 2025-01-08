@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.40.0...main`][6.40.0...main].
 
+### Changed
+
+- Updated `friendsofphp/php-cs-fixer` ([#1150]), by [@dependabot]
+
 ## [`6.40.0`][6.40.0]
 
 For a full diff see [`6.39.0...6.40.0`][6.39.0...6.40.0].

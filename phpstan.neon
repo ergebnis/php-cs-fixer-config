@@ -2,6 +2,13 @@ includes:
 	- phpstan-baseline.neon
 
 parameters:
+	ergebnis:
+		noExtends:
+			classesAllowedToBeExtended:
+				- Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet\AbstractRuleSetTestCase
+				- Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet\AbstractRuleSetTestCase
+				- Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet\ExplicitRuleSetTestCase
+
 	inferPrivatePropertyTypeFromConstructor: true
 
 	level: max

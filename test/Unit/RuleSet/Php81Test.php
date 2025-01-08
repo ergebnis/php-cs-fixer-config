@@ -267,6 +267,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
                     'pi',
                 ],
             ],
+            'general_attribute_remove' => false,
             'general_phpdoc_annotation_remove' => false,
             'general_phpdoc_tag_rename' => [
                 'case_sensitive' => false,

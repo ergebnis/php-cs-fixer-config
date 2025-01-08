@@ -231,6 +231,7 @@ final class Php53
                         'pi',
                     ],
                 ],
+                'general_attribute_remove' => false,
                 'general_phpdoc_annotation_remove' => false,
                 'general_phpdoc_tag_rename' => [
                     'case_sensitive' => false,

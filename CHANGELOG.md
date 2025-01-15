@@ -11,7 +11,8 @@ For a full diff see [`6.41.0...main`][6.41.0...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#1153]), by [@dependabot]
--
+- Enabled `modernize_stripos` option of `modernize_strpos fixer` ([#1154]), by [@localheinz]
+
 ## [`6.41.0`][6.41.0]
 
 For a full diff see [`6.40.0...6.41.0`][6.40.0...6.41.0].
@@ -1812,6 +1813,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1148]: https://github.com/ergebnis/php-cs-fixer-config/pull/1148
 [#1150]: https://github.com/ergebnis/php-cs-fixer-config/pull/1150
 [#1153]: https://github.com/ergebnis/php-cs-fixer-config/pull/1153
+[#1154]: https://github.com/ergebnis/php-cs-fixer-config/pull/1154
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

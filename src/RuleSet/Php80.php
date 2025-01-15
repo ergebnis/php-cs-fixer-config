@@ -294,7 +294,9 @@ final class Php80
                     'on_multiline' => 'ensure_fully_multiline',
                 ],
                 'method_chaining_indentation' => true,
-                'modernize_strpos' => true,
+                'modernize_strpos' => [
+                    'modernize_stripos' => false,
+                ],
                 'modernize_types_casting' => true,
                 'multiline_comment_opening_closing' => true,
                 'multiline_string_to_heredoc' => true,

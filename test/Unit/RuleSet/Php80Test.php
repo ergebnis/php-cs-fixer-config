@@ -318,7 +318,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
             ],
             'method_chaining_indentation' => true,
             'modernize_strpos' => [
-                'modernize_stripos' => false,
+                'modernize_stripos' => true,
             ],
             'modernize_types_casting' => true,
             'multiline_comment_opening_closing' => true,

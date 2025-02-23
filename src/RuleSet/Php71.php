@@ -494,7 +494,9 @@ final class Php71
                         'assertSame',
                     ],
                 ],
-                'php_unit_data_provider_method_order' => false,
+                'php_unit_data_provider_method_order' => [
+                    'placement' => 'after',
+                ],
                 'php_unit_data_provider_name' => false,
                 'php_unit_data_provider_return_type' => true,
                 'php_unit_data_provider_static' => [

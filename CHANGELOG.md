@@ -11,6 +11,7 @@ For a full diff see [`6.43.1...main`][6.43.1...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#1177]), by [@dependabot]
+- Added `constant` to `elements` option of `type_declaration_spaces` fixer ([#1178]), by [@localheinz]
 
 ## [`6.43.1`][6.43.1]
 
@@ -1882,6 +1883,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1170]: https://github.com/ergebnis/php-cs-fixer-config/pull/1170
 [#1173]: https://github.com/ergebnis/php-cs-fixer-config/pull/1173
 [#1177]: https://github.com/ergebnis/php-cs-fixer-config/pull/1177
+[#1178]: https://github.com/ergebnis/php-cs-fixer-config/pull/1178
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

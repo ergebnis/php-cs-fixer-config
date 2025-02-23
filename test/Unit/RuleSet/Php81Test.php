@@ -905,6 +905,7 @@ final class Php81Test extends ExplicitRuleSetTestCase
             'trim_array_spaces' => true,
             'type_declaration_spaces' => [
                 'elements' => [
+                    'constant',
                     'function',
                     'property',
                 ],

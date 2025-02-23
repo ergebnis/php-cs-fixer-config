@@ -517,6 +517,7 @@ final class Php55Test extends ExplicitRuleSetTestCase
                     'assertSame',
                 ],
             ],
+            'php_unit_data_provider_method_order' => false,
             'php_unit_data_provider_name' => false,
             'php_unit_data_provider_return_type' => false,
             'php_unit_data_provider_static' => [

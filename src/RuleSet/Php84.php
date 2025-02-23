@@ -882,6 +882,7 @@ final class Php84
                 'trim_array_spaces' => true,
                 'type_declaration_spaces' => [
                     'elements' => [
+                        'constant',
                         'function',
                         'property',
                     ],

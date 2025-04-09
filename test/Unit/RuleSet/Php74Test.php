@@ -48,6 +48,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
             new Fixer\NoDuplicatedArrayKeyFixer(),
             new Fixer\NoDuplicatedImportsFixer(),
             new Fixer\PhpdocTypesCommaSpacesFixer(),
+            new Fixer\PhpUnitRequiresConstraintFixer(),
             new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer(),
         );
     }
@@ -75,6 +76,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
                 'ignore_expressions' => true,
             ],
             'PhpCsFixerCustomFixers/no_duplicated_imports' => true,
+            'PhpCsFixerCustomFixers/php_unit_requires_constraint' => true,
             'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
             'align_multiline_comment' => [
                 'comment_type' => 'all_multiline',

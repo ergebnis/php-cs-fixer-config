@@ -11,6 +11,7 @@ For a full diff see [`6.45.0...main`][6.45.0...main].
 ### Changed
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1193]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#1199]), by [@dependabot]
 - Enabled the `PhpCsFixerCustomFixers/php_unit_requires_constraint` fixer ([#1200]), by [@localheinz]
 
 ## [`6.45.0`][6.45.0]
@@ -1920,6 +1921,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1183]: https://github.com/ergebnis/php-cs-fixer-config/pull/1183
 [#1187]: https://github.com/ergebnis/php-cs-fixer-config/pull/1187
 [#1193]: https://github.com/ergebnis/php-cs-fixer-config/pull/1193
+[#1199]: https://github.com/ergebnis/php-cs-fixer-config/pull/1199
 [#1200]: https://github.com/ergebnis/php-cs-fixer-config/pull/1200
 
 [@dependabot]: https://github.com/apps/dependabot

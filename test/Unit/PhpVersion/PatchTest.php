@@ -59,8 +59,8 @@ final class PatchTest extends Framework\TestCase
     public static function provideValueGreaterThanNinetyNine(): iterable
     {
         $values = [
-            'int-one-hundred' => 100,
             'int-greater-than-one-hundred' => self::faker()->numberBetween(101, 999),
+            'int-one-hundred' => 100,
         ];
 
         foreach ($values as $key => $value) {
@@ -86,10 +86,10 @@ final class PatchTest extends Framework\TestCase
     public static function provideValidValue(): iterable
     {
         $values = [
-            'int-zero' => 0,
-            'int-one' => 1,
             'int-greater-than-one-less-than-ninetynine' => self::faker()->numberBetween(1, 99),
             'int-ninetynine' => 99,
+            'int-one' => 1,
+            'int-zero' => 0,
         ];
 
         foreach ($values as $key => $value) {

@@ -77,10 +77,10 @@ final class FactoryTest extends Framework\TestCase
         );
 
         $rules = Rules::fromArray([
-            'foo' => true,
             'bar' => [
                 'baz' => true,
             ],
+            'foo' => true,
         ]);
 
         $ruleSet = RuleSet::create(

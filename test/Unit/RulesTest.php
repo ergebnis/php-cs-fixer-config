@@ -34,13 +34,13 @@ final class RulesTest extends Framework\TestCase
     public function testFromArrayReturnsRules(): void
     {
         $value = [
-            'foo' => true,
             'bar' => [
                 'baz' => [
                     'qux',
                     'quz',
                 ],
             ],
+            'foo' => true,
         ];
 
         $rules = Rules::fromArray($value);
@@ -51,21 +51,21 @@ final class RulesTest extends Framework\TestCase
     public function testMergeReturnsRulesMergedWithRules(): void
     {
         $one = Rules::fromArray([
-            'foo' => true,
             'bar' => [
                 'baz' => [
                     'qux',
                     'quz',
                 ],
             ],
+            'foo' => true,
         ]);
 
         $two = Rules::fromArray([
-            'foo' => false,
             'bar' => [
                 'quux' => [],
             ],
             'baz' => true,
+            'foo' => false,
         ]);
 
         $mutated = $one->merge($two);
@@ -74,11 +74,11 @@ final class RulesTest extends Framework\TestCase
         self::assertNotSame($two, $mutated);
 
         $expected = Rules::fromArray([
-            'foo' => false,
             'bar' => [
                 'quux' => [],
             ],
             'baz' => true,
+            'foo' => false,
         ]);
 
         self::assertEquals($expected, $mutated);

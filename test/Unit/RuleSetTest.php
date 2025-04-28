@@ -113,8 +113,8 @@ final class RuleSetTest extends Framework\TestCase
         $faker = self::faker();
 
         $rules = Rules::fromArray([
-            'foo' => true,
             'bar' => false,
+            'foo' => true,
         ]);
 
         $ruleSet = RuleSet::create(

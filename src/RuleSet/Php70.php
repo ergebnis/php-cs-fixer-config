@@ -816,6 +816,9 @@ final class Php70
                         'yield_from',
                     ],
                     'constructs_preceded_by_a_single_space' => [
+                        'as',
+                        'else',
+                        'elseif',
                         'use_lambda',
                     ],
                 ],

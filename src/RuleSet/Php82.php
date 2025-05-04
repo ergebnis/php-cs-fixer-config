@@ -842,6 +842,9 @@ final class Php82
                         'yield_from',
                     ],
                     'constructs_preceded_by_a_single_space' => [
+                        'as',
+                        'else',
+                        'elseif',
                         'use_lambda',
                     ],
                 ],

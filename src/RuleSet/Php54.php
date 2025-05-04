@@ -803,6 +803,9 @@ final class Php54
                         'while',
                     ],
                     'constructs_preceded_by_a_single_space' => [
+                        'as',
+                        'else',
+                        'elseif',
                         'use_lambda',
                     ],
                 ],

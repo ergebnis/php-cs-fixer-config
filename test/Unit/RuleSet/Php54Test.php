@@ -826,6 +826,9 @@ final class Php54Test extends ExplicitRuleSetTestCase
                     'while',
                 ],
                 'constructs_preceded_by_a_single_space' => [
+                    'as',
+                    'else',
+                    'elseif',
                     'use_lambda',
                 ],
             ],

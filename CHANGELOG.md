@@ -11,6 +11,7 @@ For a full diff see [`6.46.0...main`][6.46.0...main].
 ### Changed
 
 - Added `as`, `else`, and `elseif` to `constructs_preceded_by_a_single_space` option of `single_space_around_construct` fixer ([#1212]), by [@localheinz]
+- Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1215]), by [@dependabot]
 
 ## [`6.46.0`][6.46.0]
 
@@ -1934,6 +1935,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1199]: https://github.com/ergebnis/php-cs-fixer-config/pull/1199
 [#1200]: https://github.com/ergebnis/php-cs-fixer-config/pull/1200
 [#1212]: https://github.com/ergebnis/php-cs-fixer-config/pull/1212
+[#1215]: https://github.com/ergebnis/php-cs-fixer-config/pull/1215
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -20,6 +20,8 @@ use PHPUnit\Framework;
 
 /**
  * @covers \Ergebnis\PhpCsFixer\Config\Fixers
+ *
+ * @no-named-arguments
  */
 final class FixersTest extends Framework\TestCase
 {

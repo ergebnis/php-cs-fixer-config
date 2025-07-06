@@ -20,6 +20,8 @@ use PHPUnit\Framework;
 
 /**
  * @covers \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
+ *
+ * @no-named-arguments
  */
 final class PatchTest extends Framework\TestCase
 {

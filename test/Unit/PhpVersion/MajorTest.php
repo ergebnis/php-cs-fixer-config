@@ -19,6 +19,8 @@ use PHPUnit\Framework;
 
 /**
  * @covers \Ergebnis\PhpCsFixer\Config\PhpVersion\Major
+ *
+ * @no-named-arguments
  */
 final class MajorTest extends Framework\TestCase
 {

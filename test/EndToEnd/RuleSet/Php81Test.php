@@ -17,6 +17,8 @@ namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
  * @coversNothing
  *
  * @requires PHP 8.1
+ *
+ * @no-named-arguments
  */
 final class Php81Test extends AbstractRuleSetTestCase
 {

@@ -32,6 +32,8 @@ use PHPUnit\Framework;
  * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Minor
  * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
  * @uses \Ergebnis\PhpCsFixer\Config\Rules
+ *
+ * @no-named-arguments
  */
 final class RuleSetTest extends Framework\TestCase
 {

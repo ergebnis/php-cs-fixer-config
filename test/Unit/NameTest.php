@@ -25,6 +25,8 @@ use PHPUnit\Framework;
  * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Major
  * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Minor
  * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
+ *
+ * @no-named-arguments
  */
 final class NameTest extends Framework\TestCase
 {

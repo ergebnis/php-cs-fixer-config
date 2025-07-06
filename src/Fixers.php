@@ -15,6 +15,9 @@ namespace Ergebnis\PhpCsFixer\Config;
 
 use PhpCsFixer\Fixer;
 
+/**
+ * @no-named-arguments
+ */
 final class Fixers
 {
     /**

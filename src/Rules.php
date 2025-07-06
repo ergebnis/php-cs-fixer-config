@@ -13,6 +13,9 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config;
 
+/**
+ * @no-named-arguments
+ */
 final class Rules
 {
     private array $value;

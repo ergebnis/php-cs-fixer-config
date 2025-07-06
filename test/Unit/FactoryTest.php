@@ -35,6 +35,8 @@ use PHPUnit\Framework;
  * @uses \Ergebnis\PhpCsFixer\Config\PhpVersion\Patch
  * @uses \Ergebnis\PhpCsFixer\Config\Rules
  * @uses \Ergebnis\PhpCsFixer\Config\RuleSet
+ *
+ * @no-named-arguments
  */
 final class FactoryTest extends Framework\TestCase
 {

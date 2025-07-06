@@ -16,6 +16,9 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Util;
 use Faker\Factory;
 use Faker\Generator;
 
+/**
+ * @no-named-arguments
+ */
 trait Helper
 {
     final protected static function faker(string $locale = 'en_US'): Generator

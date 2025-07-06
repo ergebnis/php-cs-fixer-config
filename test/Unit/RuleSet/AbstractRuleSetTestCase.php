@@ -23,6 +23,9 @@ use PhpCsFixer\FixerConfiguration;
 use PhpCsFixer\FixerFactory;
 use PHPUnit\Framework;
 
+/**
+ * @no-named-arguments
+ */
 abstract class AbstractRuleSetTestCase extends Framework\TestCase
 {
     final public function testDefaults(): void

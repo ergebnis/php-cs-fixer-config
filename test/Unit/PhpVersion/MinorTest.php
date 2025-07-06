@@ -20,6 +20,8 @@ use PHPUnit\Framework;
 
 /**
  * @covers \Ergebnis\PhpCsFixer\Config\PhpVersion\Minor
+ *
+ * @no-named-arguments
  */
 final class MinorTest extends Framework\TestCase
 {

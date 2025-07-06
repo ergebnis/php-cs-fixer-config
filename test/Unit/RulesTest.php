@@ -19,6 +19,8 @@ use PHPUnit\Framework;
 
 /**
  * @covers \Ergebnis\PhpCsFixer\Config\Rules
+ *
+ * @no-named-arguments
  */
 final class RulesTest extends Framework\TestCase
 {

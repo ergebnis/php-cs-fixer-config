@@ -16,6 +16,9 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\FixerConfiguration;
 
+/**
+ * @no-named-arguments
+ */
 abstract class ExplicitRuleSetTestCase extends AbstractRuleSetTestCase
 {
     final public function testRuleSetDoesNotConfigureRuleSets(): void

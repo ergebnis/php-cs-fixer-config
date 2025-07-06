@@ -16,6 +16,9 @@ namespace Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Config;
 use PhpCsFixer\Runner;
 
+/**
+ * @no-named-arguments
+ */
 final class Factory
 {
     /**

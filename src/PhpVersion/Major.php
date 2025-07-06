@@ -13,6 +13,9 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\PhpVersion;
 
+/**
+ * @no-named-arguments
+ */
 final class Major
 {
     private int $value;

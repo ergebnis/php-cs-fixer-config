@@ -19,6 +19,9 @@ use Symfony\Component\Console;
 use Symfony\Component\Filesystem;
 use Symfony\Component\Process;
 
+/**
+ * @no-named-arguments
+ */
 abstract class AbstractRuleSetTestCase extends Framework\TestCase
 {
     final protected function setUp(): void

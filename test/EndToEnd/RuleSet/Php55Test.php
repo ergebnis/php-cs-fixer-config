@@ -15,6 +15,8 @@ namespace Ergebnis\PhpCsFixer\Config\Test\EndToEnd\RuleSet;
 
 /**
  * @coversNothing
+ *
+ * @no-named-arguments
  */
 final class Php55Test extends AbstractRuleSetTestCase
 {

@@ -14,6 +14,7 @@ For a full diff see [`6.46.0...main`][6.46.0...main].
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1215]), by [@dependabot]
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1228]), by [@dependabot]
 - Enabled and configured the `PhpCsFixerCustomFixers/phpdoc_tag_no_named_arguments` fixer ([#1232]), by [@localheinz]
+- Enabled the `PhpCsFixerCustomFixers/typed_class_constant` fixer ([#1233]), by [@localheinz]
 
 ## [`6.46.0`][6.46.0]
 
@@ -1940,6 +1941,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1215]: https://github.com/ergebnis/php-cs-fixer-config/pull/1215
 [#1228]: https://github.com/ergebnis/php-cs-fixer-config/pull/1228
 [#1232]: https://github.com/ergebnis/php-cs-fixer-config/pull/1232
+[#1233]: https://github.com/ergebnis/php-cs-fixer-config/pull/1233
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

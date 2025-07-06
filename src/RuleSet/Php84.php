@@ -43,6 +43,7 @@ final class Php84
                 new Fixer\PhpdocTagNoNamedArgumentsFixer(),
                 new Fixer\PhpdocTypesCommaSpacesFixer(),
                 new Fixer\PhpUnitRequiresConstraintFixer(),
+                new Fixer\TypedClassConstantFixer(),
                 new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer(),
             ),
             Name::fromString(\sprintf(
@@ -68,6 +69,7 @@ final class Php84
                     'directory' => '',
                 ],
                 'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
+                'PhpCsFixerCustomFixers/typed_class_constant' => true,
                 'align_multiline_comment' => [
                     'comment_type' => 'all_multiline',
                 ],

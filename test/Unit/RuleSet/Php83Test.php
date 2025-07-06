@@ -53,6 +53,7 @@ final class Php83Test extends ExplicitRuleSetTestCase
             new Fixer\PhpdocTagNoNamedArgumentsFixer(),
             new Fixer\PhpdocTypesCommaSpacesFixer(),
             new Fixer\PhpUnitRequiresConstraintFixer(),
+            new Fixer\TypedClassConstantFixer(),
             new PhpCsFixer\Fixer\Whitespace\LineBreakAfterStatementsFixer(),
         );
     }
@@ -90,6 +91,7 @@ final class Php83Test extends ExplicitRuleSetTestCase
                 'directory' => '',
             ],
             'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
+            'PhpCsFixerCustomFixers/typed_class_constant' => true,
             'align_multiline_comment' => [
                 'comment_type' => 'all_multiline',
             ],

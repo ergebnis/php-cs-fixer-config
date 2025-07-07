@@ -128,9 +128,9 @@ PHP
     }
 
     /**
-     * @psalm-return class-string
-     *
      * @throws \RuntimeException
+     *
+     * @psalm-return class-string
      */
     private static function className(): string
     {

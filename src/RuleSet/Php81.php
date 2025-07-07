@@ -37,7 +37,6 @@ final class Php81
         return RuleSet::create(
             Fixers::fromFixers(
                 new Fixer\MultilineCommentOpeningClosingAloneFixer(),
-                new Fixer\MultilinePromotedPropertiesFixer(),
                 new Fixer\NoDuplicatedArrayKeyFixer(),
                 new Fixer\NoDuplicatedImportsFixer(),
                 new Fixer\PhpdocTagNoNamedArgumentsFixer(),
@@ -54,10 +53,6 @@ final class Php81
             Rules::fromArray([
                 'ErickSkrauch/line_break_after_statements' => true,
                 'PhpCsFixerCustomFixers/multiline_comment_opening_closing_alone' => true,
-                'PhpCsFixerCustomFixers/multiline_promoted_properties' => [
-                    'keep_blank_lines' => false,
-                    'minimum_number_of_parameters' => 2,
-                ],
                 'PhpCsFixerCustomFixers/no_duplicated_array_key' => [
                     'ignore_expressions' => true,
                 ],
@@ -310,6 +305,10 @@ final class Php81
                 ],
                 'modernize_types_casting' => true,
                 'multiline_comment_opening_closing' => true,
+                'multiline_promoted_properties' => [
+                    'keep_blank_lines' => false,
+                    'minimum_number_of_parameters' => 2,
+                ],
                 'multiline_string_to_heredoc' => true,
                 'multiline_whitespace_before_semicolons' => [
                     'strategy' => 'no_multi_line',
@@ -335,6 +334,7 @@ final class Php81
                     'strict' => false,
                 ],
                 'native_type_declaration_casing' => true,
+                'new_expression_parentheses' => false,
                 'new_with_parentheses' => [
                     'anonymous_class' => true,
                     'named_class' => true,
@@ -869,6 +869,7 @@ final class Php81
                     'stick_comment_to_next_continuous_control_statement' => false,
                 ],
                 'static_lambda' => true,
+                'static_private_method' => false,
                 'strict_comparison' => true,
                 'strict_param' => true,
                 'string_implicit_backslashes' => [

@@ -371,6 +371,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'tokens' => [
                     'break',
                     'case',
+                    'comma',
                     'continue',
                     'curly_brace_block',
                     'default',

@@ -349,6 +349,7 @@ final class Php53
                     'tokens' => [
                         'break',
                         'case',
+                        'comma',
                         'continue',
                         'curly_brace_block',
                         'default',

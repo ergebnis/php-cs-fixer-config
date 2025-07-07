@@ -372,6 +372,7 @@ final class Php54Test extends ExplicitRuleSetTestCase
                 'tokens' => [
                     'break',
                     'case',
+                    'comma',
                     'continue',
                     'curly_brace_block',
                     'default',
@@ -382,6 +383,7 @@ final class Php54Test extends ExplicitRuleSetTestCase
                     'switch',
                     'throw',
                     'use',
+                    'use_trait',
                 ],
             ],
             'no_homoglyph_names' => true,

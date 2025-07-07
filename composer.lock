@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0004db6cf37c0bbebbdf488f18f5fe93",
+    "content-hash": "65099979b1ec3786d3828434638bf56e",
     "packages": [
         {
             "name": "clue/ndjson-react",
@@ -578,16 +578,16 @@
         },
         {
             "name": "kubawerlos/php-cs-fixer-custom-fixers",
-            "version": "v3.29.1",
+            "version": "v3.29.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kubawerlos/php-cs-fixer-custom-fixers.git",
-                "reference": "2d9af89140c047b68c767dab9f9f60d0506d66bc"
+                "reference": "0774fabfdf5e487c170bacfcc03f8e439a960f9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kubawerlos/php-cs-fixer-custom-fixers/zipball/2d9af89140c047b68c767dab9f9f60d0506d66bc",
-                "reference": "2d9af89140c047b68c767dab9f9f60d0506d66bc",
+                "url": "https://api.github.com/repos/kubawerlos/php-cs-fixer-custom-fixers/zipball/0774fabfdf5e487c170bacfcc03f8e439a960f9a",
+                "reference": "0774fabfdf5e487c170bacfcc03f8e439a960f9a",
                 "shasum": ""
             },
             "require": {
@@ -618,7 +618,7 @@
             "description": "A set of custom fixers for PHP CS Fixer",
             "support": {
                 "issues": "https://github.com/kubawerlos/php-cs-fixer-custom-fixers/issues",
-                "source": "https://github.com/kubawerlos/php-cs-fixer-custom-fixers/tree/v3.29.1"
+                "source": "https://github.com/kubawerlos/php-cs-fixer-custom-fixers/tree/v3.29.2"
             },
             "funding": [
                 {
@@ -626,7 +626,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-06T13:46:09+00:00"
+            "time": "2025-07-07T13:55:04+00:00"
         },
         {
             "name": "psr/container",

@@ -19,6 +19,7 @@ For a full diff see [`6.46.0...main`][6.46.0...main].
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1235]), by [@localheinz]
 - Configured the `multiline_promoted_properties` instead of the deprecated `PhpCsFixerCustomFixers/multiline_promoted_properties` fixer ([#1235]), by [@localheinz]
 - Enabled and configured the `new_expression_parentheses` fixer  ([#1236]), by [@localheinz]
+- Enabled the `static_private_method` fixer  ([#1237]), by [@localheinz]
 
 ## [`6.46.0`][6.46.0]
 
@@ -1948,6 +1949,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1233]: https://github.com/ergebnis/php-cs-fixer-config/pull/1233
 [#1235]: https://github.com/ergebnis/php-cs-fixer-config/pull/1235
 [#1236]: https://github.com/ergebnis/php-cs-fixer-config/pull/1236
+[#1237]: https://github.com/ergebnis/php-cs-fixer-config/pull/1237
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -37,7 +37,6 @@ final class Php83
         return RuleSet::create(
             Fixers::fromFixers(
                 new Fixer\MultilineCommentOpeningClosingAloneFixer(),
-                new Fixer\MultilinePromotedPropertiesFixer(),
                 new Fixer\NoDuplicatedArrayKeyFixer(),
                 new Fixer\NoDuplicatedImportsFixer(),
                 new Fixer\PhpdocTagNoNamedArgumentsFixer(),
@@ -55,10 +54,6 @@ final class Php83
             Rules::fromArray([
                 'ErickSkrauch/line_break_after_statements' => true,
                 'PhpCsFixerCustomFixers/multiline_comment_opening_closing_alone' => true,
-                'PhpCsFixerCustomFixers/multiline_promoted_properties' => [
-                    'keep_blank_lines' => false,
-                    'minimum_number_of_parameters' => 2,
-                ],
                 'PhpCsFixerCustomFixers/no_duplicated_array_key' => [
                     'ignore_expressions' => true,
                 ],
@@ -312,7 +307,10 @@ final class Php83
                 ],
                 'modernize_types_casting' => true,
                 'multiline_comment_opening_closing' => true,
-                'multiline_promoted_properties' => false,
+                'multiline_promoted_properties' => [
+                    'keep_blank_lines' => false,
+                    'minimum_number_of_parameters' => 2,
+                ],
                 'multiline_string_to_heredoc' => true,
                 'multiline_whitespace_before_semicolons' => [
                     'strategy' => 'no_multi_line',

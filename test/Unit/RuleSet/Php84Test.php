@@ -358,7 +358,9 @@ final class Php84Test extends ExplicitRuleSetTestCase
                 'strict' => false,
             ],
             'native_type_declaration_casing' => true,
-            'new_expression_parentheses' => false,
+            'new_expression_parentheses' => [
+                'use_parentheses' => true,
+            ],
             'new_with_parentheses' => [
                 'anonymous_class' => true,
                 'named_class' => true,

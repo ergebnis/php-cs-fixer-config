@@ -21,6 +21,7 @@ For a full diff see [`6.46.0...main`][6.46.0...main].
 - Enabled and configured the `new_expression_parentheses` fixer ([#1236]), by [@localheinz]
 - Enabled the `static_private_method` fixer ([#1237]), by [@localheinz]
 - Configured more constructs for `constructs_followed_by_a_single_space` option of `single_space_around_construct` fixer ([#1238]), by [@localheinz]
+- Configured more tokens for `tokens` option of `no_extra_blank_lines` fixer ([#1239]), by [@localheinz]
 
 ## [`6.46.0`][6.46.0]
 
@@ -1952,6 +1953,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1236]: https://github.com/ergebnis/php-cs-fixer-config/pull/1236
 [#1237]: https://github.com/ergebnis/php-cs-fixer-config/pull/1237
 [#1238]: https://github.com/ergebnis/php-cs-fixer-config/pull/1238
+[#1239]: https://github.com/ergebnis/php-cs-fixer-config/pull/1239
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -354,6 +354,7 @@ final class Php55
                     'tokens' => [
                         'break',
                         'case',
+                        'comma',
                         'continue',
                         'curly_brace_block',
                         'default',
@@ -364,6 +365,7 @@ final class Php55
                         'switch',
                         'throw',
                         'use',
+                        'use_trait',
                     ],
                 ],
                 'no_homoglyph_names' => true,

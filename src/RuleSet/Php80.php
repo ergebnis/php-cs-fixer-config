@@ -309,6 +309,7 @@ final class Php80
                 ],
                 'modernize_types_casting' => true,
                 'multiline_comment_opening_closing' => true,
+                'multiline_promoted_properties' => false,
                 'multiline_string_to_heredoc' => true,
                 'multiline_whitespace_before_semicolons' => [
                     'strategy' => 'no_multi_line',
@@ -334,6 +335,7 @@ final class Php80
                     'strict' => false,
                 ],
                 'native_type_declaration_casing' => true,
+                'new_expression_parentheses' => false,
                 'new_with_parentheses' => [
                     'anonymous_class' => true,
                     'named_class' => true,
@@ -866,6 +868,7 @@ final class Php80
                     'stick_comment_to_next_continuous_control_statement' => false,
                 ],
                 'static_lambda' => true,
+                'static_private_method' => false,
                 'strict_comparison' => true,
                 'strict_param' => true,
                 'string_implicit_backslashes' => [

@@ -10,6 +10,7 @@ For a full diff see [`6.53.0...main`][6.53.0...main].
 
 ### Added
 
+- Added `Config\Ruleset\Php85` rule set ([#1242]), by [@localheinz]
 - Added support for PHP 8.5 ([#1282]), by [@localheinz]
 
 ### Changed
@@ -2044,6 +2045,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1239]: https://github.com/ergebnis/php-cs-fixer-config/pull/1239
 [#1240]: https://github.com/ergebnis/php-cs-fixer-config/pull/1240
 [#1241]: https://github.com/ergebnis/php-cs-fixer-config/pull/1241
+[#1242]: https://github.com/ergebnis/php-cs-fixer-config/pull/1242
 [#1243]: https://github.com/ergebnis/php-cs-fixer-config/pull/1243
 [#1244]: https://github.com/ergebnis/php-cs-fixer-config/pull/1244
 [#1245]: https://github.com/ergebnis/php-cs-fixer-config/pull/1245

@@ -130,7 +130,7 @@ PHP
     /**
      * @throws \RuntimeException
      *
-     * @psalm-return class-string
+     * @return class-string
      */
     private static function className(): string
     {

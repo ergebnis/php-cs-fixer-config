@@ -18,8 +18,8 @@ For a full diff see [`6.46.0...main`][6.46.0...main].
 - Updated `friendsofphp/php-cs-fixer` ([#1235]), by [@dependabot]
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1235]), by [@localheinz]
 - Configured the `multiline_promoted_properties` instead of the deprecated `PhpCsFixerCustomFixers/multiline_promoted_properties` fixer ([#1235]), by [@localheinz]
-- Enabled and configured the `new_expression_parentheses` fixer  ([#1236]), by [@localheinz]
-- Enabled the `static_private_method` fixer  ([#1237]), by [@localheinz]
+- Enabled and configured the `new_expression_parentheses` fixer ([#1236]), by [@localheinz]
+- Enabled the `static_private_method` fixer ([#1237]), by [@localheinz]
 
 ## [`6.46.0`][6.46.0]
 

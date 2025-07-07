@@ -869,7 +869,7 @@ final class Php81
                     'stick_comment_to_next_continuous_control_statement' => false,
                 ],
                 'static_lambda' => true,
-                'static_private_method' => false,
+                'static_private_method' => true,
                 'strict_comparison' => true,
                 'strict_param' => true,
                 'string_implicit_backslashes' => [

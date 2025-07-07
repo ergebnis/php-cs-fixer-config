@@ -400,7 +400,6 @@ final class Php84Test extends ExplicitRuleSetTestCase
                     'switch',
                     'throw',
                     'use',
-                    'use_trait',
                 ],
             ],
             'no_homoglyph_names' => true,

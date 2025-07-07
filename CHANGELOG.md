@@ -15,6 +15,7 @@ For a full diff see [`6.47.0...main`][6.47.0...main].
 ### Fixed
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1241]), by [@dependabot]
+- Stopped using deprecated `use_trait` token for for `tokens` option of `no_extra_blank_lines` fixer ([#1243]), by [@localheinz]
 
 ## [`6.47.0`][6.47.0]
 
@@ -1970,6 +1971,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1239]: https://github.com/ergebnis/php-cs-fixer-config/pull/1239
 [#1240]: https://github.com/ergebnis/php-cs-fixer-config/pull/1240
 [#1241]: https://github.com/ergebnis/php-cs-fixer-config/pull/1241
+[#1243]: https://github.com/ergebnis/php-cs-fixer-config/pull/1243
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

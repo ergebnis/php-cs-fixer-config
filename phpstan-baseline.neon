@@ -19,6 +19,12 @@ parameters:
 			path: src/Rules.php
 
 		-
+			message: '#^Comparison operation "\>\=" between int\<70400, 80499\> and 80500 is always false\.$#'
+			identifier: greaterOrEqual.alwaysFalse
+			count: 1
+			path: test/EndToEnd/RuleSet/AbstractRuleSetTestCase.php
+
+		-
 			message: '#^Parameter \#1 \$iterable of static method Ergebnis\\PhpCsFixer\\Config\\Fixers\:\:fromIterable\(\) expects iterable\<PhpCsFixer\\Fixer\\FixerInterface\>, array\<int, \(PhpCsFixer\\Fixer\\FixerInterface&PHPUnit\\Framework\\MockObject\\Stub\)\|stdClass\> given\.$#'
 			identifier: argument.type
 			count: 1

@@ -12,6 +12,10 @@ For a full diff see [`6.48.0...main`][6.48.0...main].
 
 For a full diff see [`6.47.0...6.48.0`][6.47.0...6.48.0].
 
+### Added
+
+- Added `Config\Ruleset\Php85` rule set ([#1242]), by [@localheinz]
+
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#1240]), by [@dependabot]
@@ -1977,6 +1981,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1239]: https://github.com/ergebnis/php-cs-fixer-config/pull/1239
 [#1240]: https://github.com/ergebnis/php-cs-fixer-config/pull/1240
 [#1241]: https://github.com/ergebnis/php-cs-fixer-config/pull/1241
+[#1242]: https://github.com/ergebnis/php-cs-fixer-config/pull/1242
 [#1243]: https://github.com/ergebnis/php-cs-fixer-config/pull/1243
 
 [@dependabot]: https://github.com/apps/dependabot

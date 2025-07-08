@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46672c66851a8218022bf48da5c64398",
+    "content-hash": "0f58ae58d17263d7228162381ac250fb",
     "packages": [
         {
             "name": "clue/ndjson-react",
@@ -578,22 +578,22 @@
         },
         {
             "name": "kubawerlos/php-cs-fixer-custom-fixers",
-            "version": "v3.29.2",
+            "version": "v3.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kubawerlos/php-cs-fixer-custom-fixers.git",
-                "reference": "0774fabfdf5e487c170bacfcc03f8e439a960f9a"
+                "reference": "0cf921cf9aee50ac3091839325f5cf38ab189b97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kubawerlos/php-cs-fixer-custom-fixers/zipball/0774fabfdf5e487c170bacfcc03f8e439a960f9a",
-                "reference": "0774fabfdf5e487c170bacfcc03f8e439a960f9a",
+                "url": "https://api.github.com/repos/kubawerlos/php-cs-fixer-custom-fixers/zipball/0cf921cf9aee50ac3091839325f5cf38ab189b97",
+                "reference": "0cf921cf9aee50ac3091839325f5cf38ab189b97",
                 "shasum": ""
             },
             "require": {
                 "ext-filter": "*",
                 "ext-tokenizer": "*",
-                "friendsofphp/php-cs-fixer": "^3.77",
+                "friendsofphp/php-cs-fixer": "^3.82",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
@@ -618,7 +618,7 @@
             "description": "A set of custom fixers for PHP CS Fixer",
             "support": {
                 "issues": "https://github.com/kubawerlos/php-cs-fixer-custom-fixers/issues",
-                "source": "https://github.com/kubawerlos/php-cs-fixer-custom-fixers/tree/v3.29.2"
+                "source": "https://github.com/kubawerlos/php-cs-fixer-custom-fixers/tree/v3.30.0"
             },
             "funding": [
                 {
@@ -626,7 +626,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-07T13:55:04+00:00"
+            "time": "2025-07-07T22:51:31+00:00"
         },
         {
             "name": "psr/container",

@@ -49,7 +49,6 @@ final class Php84Test extends ExplicitRuleSetTestCase
             new Fixer\MultilineCommentOpeningClosingAloneFixer(),
             new Fixer\NoDuplicatedArrayKeyFixer(),
             new Fixer\NoDuplicatedImportsFixer(),
-            new Fixer\PhpdocTagNoNamedArgumentsFixer(),
             new Fixer\PhpdocTypesCommaSpacesFixer(),
             new Fixer\PhpUnitRequiresConstraintFixer(),
             new Fixer\TypedClassConstantFixer(),
@@ -81,10 +80,6 @@ final class Php84Test extends ExplicitRuleSetTestCase
             ],
             'PhpCsFixerCustomFixers/no_duplicated_imports' => true,
             'PhpCsFixerCustomFixers/php_unit_requires_constraint' => true,
-            'PhpCsFixerCustomFixers/phpdoc_tag_no_named_arguments' => [
-                'description' => '',
-                'directory' => '',
-            ],
             'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
             'PhpCsFixerCustomFixers/typed_class_constant' => true,
             'align_multiline_comment' => [

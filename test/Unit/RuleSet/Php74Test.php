@@ -452,7 +452,7 @@ final class Php74Test extends ExplicitRuleSetTestCase
             ],
             'no_useless_else' => true,
             'no_useless_nullsafe_operator' => false,
-            'no_useless_printf' => false,
+            'no_useless_printf' => true,
             'no_useless_return' => true,
             'no_useless_sprintf' => true,
             'no_whitespace_before_comma_in_array' => [

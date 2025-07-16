@@ -2000,6 +2000,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1244]: https://github.com/ergebnis/php-cs-fixer-config/pull/1244
 [#1245]: https://github.com/ergebnis/php-cs-fixer-config/pull/1245
 [#1249]: https://github.com/ergebnis/php-cs-fixer-config/pull/1249
+[#1251]: https://github.com/ergebnis/php-cs-fixer-config/pull/1251
 [#1252]: https://github.com/ergebnis/php-cs-fixer-config/pull/1252
 
 [@dependabot]: https://github.com/apps/dependabot

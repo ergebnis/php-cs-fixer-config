@@ -15,6 +15,7 @@ For a full diff see [`6.49.0...main`][6.49.0...main].
 
 ### Fixed
 
+- Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1250]), by [@dependabot]
 - Disabled the `PhpCsFixerCustomFixers/phpdoc_tag_no_named_arguments` fixer ([#1251]), by [@localheinz]
 
 ## [`6.49.0`][6.49.0]
@@ -2000,6 +2001,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1244]: https://github.com/ergebnis/php-cs-fixer-config/pull/1244
 [#1245]: https://github.com/ergebnis/php-cs-fixer-config/pull/1245
 [#1249]: https://github.com/ergebnis/php-cs-fixer-config/pull/1249
+[#1250]: https://github.com/ergebnis/php-cs-fixer-config/pull/1250
 [#1251]: https://github.com/ergebnis/php-cs-fixer-config/pull/1251
 [#1252]: https://github.com/ergebnis/php-cs-fixer-config/pull/1252
 

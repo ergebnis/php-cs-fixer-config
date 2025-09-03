@@ -43,10 +43,10 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         $env = [];
 
-        if (\PHP_VERSION_ID >= 80400) {
+        if (\PHP_VERSION_ID >= 80500) {
             $env = [
                 /**
-                 * @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/v3.64.0/README.md#supported-php-versions
+                 * @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/v3.87.1/README.md#supported-php-versions
                  */
                 'PHP_CS_FIXER_IGNORE_ENV' => true,
             ];

@@ -726,6 +726,7 @@ final class Php83Test extends ExplicitRuleSetTestCase
                     'inheritDoc',
                 ],
             ],
+            'phpdoc_tag_no_named_arguments' => false,
             'phpdoc_tag_type' => [
                 'tags' => [
                     'inheritdoc' => 'inline',

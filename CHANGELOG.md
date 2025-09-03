@@ -12,6 +12,10 @@ For a full diff see [`6.53.0...main`][6.53.0...main].
 
 - Added support for PHP 8.5 ([#1282]), by [@localheinz]
 
+### Changed
+
+- Updated `friendsofphp/php-cs-fixer` ([#1280]), by [@dependabot]
+
 ## [`6.53.0`][6.53.0]
 
 For a full diff see [`6.52.0...6.53.0`][6.52.0...6.53.0].
@@ -2052,6 +2056,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1266]: https://github.com/ergebnis/php-cs-fixer-config/pull/1266
 [#1267]: https://github.com/ergebnis/php-cs-fixer-config/pull/1267
 [#1270]: https://github.com/ergebnis/php-cs-fixer-config/pull/1270
+[#1280]: https://github.com/ergebnis/php-cs-fixer-config/pull/1280
 [#1282]: https://github.com/ergebnis/php-cs-fixer-config/pull/1282
 
 [@dependabot]: https://github.com/apps/dependabot

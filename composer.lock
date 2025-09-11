@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "daa3a31e397431f2a6b2c5738305c6a1",
+    "content-hash": "3495a7e5e888c7201749025c0b3a82e4",
     "packages": [
         {
             "name": "clue/ndjson-react",
@@ -4207,16 +4207,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.22",
+            "version": "2.1.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "41600c8379eb5aee63e9413fe9e97273e25d57e4"
+                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/41600c8379eb5aee63e9413fe9e97273e25d57e4",
-                "reference": "41600c8379eb5aee63e9413fe9e97273e25d57e4",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
+                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
                 "shasum": ""
             },
             "require": {
@@ -4261,7 +4261,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-04T19:17:37+00:00"
+            "time": "2025-09-10T11:42:22+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",

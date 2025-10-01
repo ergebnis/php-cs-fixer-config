@@ -299,6 +299,13 @@ final class Php81
                     'modernize_stripos' => true,
                 ],
                 'modernize_types_casting' => true,
+                'modifier_keywords' => [
+                    'elements' => [
+                        'const',
+                        'method',
+                        'property',
+                    ],
+                ],
                 'multiline_comment_opening_closing' => true,
                 'multiline_promoted_properties' => [
                     'keep_blank_lines' => false,
@@ -909,13 +916,6 @@ final class Php81
                     'only_dec_inc' => false,
                 ],
                 'use_arrow_functions' => false,
-                'visibility_required' => [
-                    'elements' => [
-                        'const',
-                        'method',
-                        'property',
-                    ],
-                ],
                 'void_return' => true,
                 'whitespace_after_comma_in_array' => [
                     'ensure_single_space' => true,

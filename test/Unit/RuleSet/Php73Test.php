@@ -316,6 +316,13 @@ final class Php73Test extends ExplicitRuleSetTestCase
             'method_chaining_indentation' => true,
             'modernize_strpos' => false,
             'modernize_types_casting' => true,
+            'modifier_keywords' => [
+                'elements' => [
+                    'const',
+                    'method',
+                    'property',
+                ],
+            ],
             'multiline_comment_opening_closing' => true,
             'multiline_promoted_properties' => false,
             'multiline_string_to_heredoc' => true,
@@ -904,13 +911,6 @@ final class Php73Test extends ExplicitRuleSetTestCase
                 'only_dec_inc' => false,
             ],
             'use_arrow_functions' => false,
-            'visibility_required' => [
-                'elements' => [
-                    'const',
-                    'method',
-                    'property',
-                ],
-            ],
             'void_return' => true,
             'whitespace_after_comma_in_array' => [
                 'ensure_single_space' => true,

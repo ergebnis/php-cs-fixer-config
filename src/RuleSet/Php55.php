@@ -294,6 +294,12 @@ final class Php55
                 'method_chaining_indentation' => true,
                 'modernize_strpos' => false,
                 'modernize_types_casting' => true,
+                'modifier_keywords' => [
+                    'elements' => [
+                        'method',
+                        'property',
+                    ],
+                ],
                 'multiline_comment_opening_closing' => true,
                 'multiline_promoted_properties' => false,
                 'multiline_string_to_heredoc' => true,
@@ -877,12 +883,6 @@ final class Php55
                     'only_dec_inc' => false,
                 ],
                 'use_arrow_functions' => false,
-                'visibility_required' => [
-                    'elements' => [
-                        'method',
-                        'property',
-                    ],
-                ],
                 'void_return' => false,
                 'whitespace_after_comma_in_array' => [
                     'ensure_single_space' => true,

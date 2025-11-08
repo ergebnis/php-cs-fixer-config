@@ -158,7 +158,9 @@ final class Php54
                     'space' => 'none',
                 ],
                 'declare_parentheses' => true,
-                'declare_strict_types' => true,
+                'declare_strict_types' => [
+                    'preserve_existing_declaration' => false,
+                ],
                 'dir_constant' => true,
                 'doctrine_annotation_array_assignment' => [
                     'ignored_tags' => Doctrine::IGNORED_TAGS,

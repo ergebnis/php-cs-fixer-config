@@ -848,6 +848,7 @@ final class Php54
                 ],
                 'string_length_to_empty' => true,
                 'string_line_ending' => true,
+                'stringable_for_to_string' => false,
                 'switch_case_semicolon_to_colon' => true,
                 'switch_case_space' => true,
                 'switch_continue_to_break' => true,

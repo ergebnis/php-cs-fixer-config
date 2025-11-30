@@ -13,6 +13,10 @@ For a full diff see [`6.56.1...main`][6.56.1...main].
 - Updated `friendsofphp/php-cs-fixer` ([#1318]), by [@dependabot]
 - Enabled `stringable_for_to_string fixer` ([#1321]), by [@localheinz]
 
+### Fixed
+
+- Updated `erickskrauch/php-cs-fixer-custom-fixers` ([#1319]), by [@dependabot]
+
 ## [`6.56.1`][6.56.1]
 
 For a full diff see [`6.56.0...6.56.1`][6.56.0...6.56.1].
@@ -2109,6 +2113,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1306]: https://github.com/ergebnis/php-cs-fixer-config/pull/1306
 [#1309]: https://github.com/ergebnis/php-cs-fixer-config/pull/1309
 [#1318]: https://github.com/ergebnis/php-cs-fixer-config/pull/1318
+[#1319]: https://github.com/ergebnis/php-cs-fixer-config/pull/1319
 [#1321]: https://github.com/ergebnis/php-cs-fixer-config/pull/1321
 
 [@dependabot]: https://github.com/apps/dependabot

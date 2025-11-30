@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbf9036e9c93e1872e058be5d29e1490",
+    "content-hash": "251b1f4ab315eb8db3bbfa4a7ef2cd41",
     "packages": [
         {
             "name": "clue/ndjson-react",
@@ -294,16 +294,16 @@
         },
         {
             "name": "erickskrauch/php-cs-fixer-custom-fixers",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erickskrauch/php-cs-fixer-custom-fixers.git",
-                "reference": "36fb7f8204c1e17d9b8a24910e2147d0a3973b9c"
+                "reference": "8c54170266d7a98610f43f8223b3ac653043821a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erickskrauch/php-cs-fixer-custom-fixers/zipball/36fb7f8204c1e17d9b8a24910e2147d0a3973b9c",
-                "reference": "36fb7f8204c1e17d9b8a24910e2147d0a3973b9c",
+                "url": "https://api.github.com/repos/erickskrauch/php-cs-fixer-custom-fixers/zipball/8c54170266d7a98610f43f8223b3ac653043821a",
+                "reference": "8c54170266d7a98610f43f8223b3ac653043821a",
                 "shasum": ""
             },
             "require": {
@@ -355,9 +355,9 @@
             ],
             "support": {
                 "issues": "https://github.com/erickskrauch/php-cs-fixer-custom-fixers/issues",
-                "source": "https://github.com/erickskrauch/php-cs-fixer-custom-fixers/tree/1.3.0"
+                "source": "https://github.com/erickskrauch/php-cs-fixer-custom-fixers/tree/1.3.1"
             },
-            "time": "2024-06-21T20:19:52+00:00"
+            "time": "2025-11-24T16:54:01+00:00"
         },
         {
             "name": "evenement/evenement",

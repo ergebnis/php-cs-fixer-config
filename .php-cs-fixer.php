@@ -35,6 +35,7 @@ $ruleSet = PhpCsFixer\Config\RuleSet\Php74::create()
             'methods' => [
                 'createStub' => 'this',
             ],
+            'target' => 'newest',
         ],
     ]));
 

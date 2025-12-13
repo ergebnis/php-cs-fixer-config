@@ -567,6 +567,7 @@ final class Php80
                 'php_unit_test_case_static_method_calls' => [
                     'call_type' => 'self',
                     'methods' => [],
+                    'target' => 'newest',
                 ],
                 'php_unit_test_class_requires_covers' => false,
                 'phpdoc_add_missing_param_annotation' => [

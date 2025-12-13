@@ -51,13 +51,16 @@ Create a configuration file `.php-cs-fixer.php` in the root of your project:
 declare(strict_types=1);
 
 use Ergebnis\PhpCsFixer\Config;
+use PhpCsFixer\Finder;
 
 $ruleSet = Config\RuleSet\Php83::create();
 
+$finder = Finder::create()->in(__DIR__);
+
 $config = Config\Factory::fromRuleSet($ruleSet);
 
-$config->getFinder()->in(__DIR__);
 $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
+$config->setFinder($finder);
 
 return $config;
 ```
@@ -81,6 +84,7 @@ All configuration examples use the caching feature, and if you want to use it as
  declare(strict_types=1);
 
  use Ergebnis\PhpCsFixer\Config;
+ use PhpCsFixer\Finder;
 
 +$header = <<<EOF
 +Copyright (c) 2023 Andreas Möller
@@ -94,10 +98,12 @@ All configuration examples use the caching feature, and if you want to use it as
 -$ruleSet = Config\RuleSet\Php83::create();
 +$ruleSet = Config\RuleSet\Php83::create()->withHeader($header);
 
+ $finder = Finder::create()->in(__DIR__);
+
  $config = Config\Factory::fromRuleSet($ruleSet);
 
- $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
+ $config->setFinder($finder);
 
  return $config;
 ```
@@ -129,6 +135,7 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
  declare(strict_types=1);
 
  use Ergebnis\PhpCsFixer\Config;
+ use PhpCsFixer\Finder;
 
 -$ruleSet = Config\RuleSet\Php83::create();
 +$ruleSet = Config\RuleSet\Php83::create()->withRules(Config\Rules::fromArray([
@@ -136,10 +143,12 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
 +    'strict_comparison' => false,
 +]));
 
+ $finder = Finder::create()->in(__DIR__);
+
  $config = Config\Factory::fromRuleSet($ruleSet);
 
- $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
+ $config->setFinder($finder);
 
  return $config;
 ```
@@ -155,6 +164,7 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
 
  use Ergebnis\PhpCsFixer\Config;
  use FooBar\Fixer;
+ use PhpCsFixer\Finder;
 
 -$ruleSet = Config\RuleSet\Php83::create();
 +$ruleSet = Config\RuleSet\Php83::create()
@@ -170,10 +180,12 @@ This will enable and configure the [`HeaderCommentFixer`](https://github.com/Fri
 +    ]))
 +]);
 
+ $finder = Finder::create()->in(__DIR__);
+
  $config = Config\Factory::fromRuleSet($ruleSet);
 
- $config->getFinder()->in(__DIR__);
  $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
+ $config->setFinder($finder);
 
  return $config;
 ```

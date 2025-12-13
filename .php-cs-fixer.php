@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 use Ergebnis\License;
 use Ergebnis\PhpCsFixer;
+use PhpCsFixer\Finder;
 
 $license = License\Type\MIT::markdown(
     __DIR__ . '/LICENSE.md',
@@ -34,12 +35,11 @@ $ruleSet = PhpCsFixer\Config\RuleSet\Php74::create()
             'methods' => [
                 'createStub' => 'this',
             ],
+            'target' => 'newest',
         ],
     ]));
 
-$config = PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
-
-$config->getFinder()
+$finder = Finder::create()
     ->exclude([
         '.build/',
         '.github/',
@@ -48,6 +48,9 @@ $config->getFinder()
     ->ignoreDotFiles(false)
     ->in(__DIR__);
 
+$config = PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
+
 $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
+$config->setFinder($finder);
 
 return $config;

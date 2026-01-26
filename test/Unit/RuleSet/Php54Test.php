@@ -89,6 +89,7 @@ final class Php54Test extends ExplicitRuleSetTestCase
                 'syntax' => 'short',
             ],
             'assign_null_coalescing_to_coalesce_equal' => false,
+            'attribute_block_no_spaces' => false,
             'attribute_empty_parentheses' => false,
             'backtick_to_shell_exec' => true,
             'binary_operator_spaces' => [
@@ -312,6 +313,7 @@ final class Php54Test extends ExplicitRuleSetTestCase
                 'on_multiline' => 'ensure_fully_multiline',
             ],
             'method_chaining_indentation' => true,
+            'modern_serialization_methods' => false,
             'modernize_strpos' => false,
             'modernize_types_casting' => true,
             'modifier_keywords' => [
@@ -398,6 +400,7 @@ final class Php54Test extends ExplicitRuleSetTestCase
             'no_multiple_statements_per_line' => true,
             'no_null_property_initialization' => true,
             'no_php4_constructor' => false,
+            'no_redundant_readonly_property' => false,
             'no_short_bool_cast' => true,
             'no_singleline_whitespace_before_semicolons' => true,
             'no_space_around_double_colon' => true,
@@ -731,6 +734,7 @@ final class Php54Test extends ExplicitRuleSetTestCase
                     'simple',
                 ],
             ],
+            'phpdoc_types_no_duplicates' => false,
             'phpdoc_types_order' => [
                 'case_sensitive' => false,
                 'null_adjustment' => 'always_first',

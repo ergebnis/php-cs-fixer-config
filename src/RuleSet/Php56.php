@@ -718,7 +718,7 @@ final class Php56
                         'simple',
                     ],
                 ],
-                'phpdoc_types_no_duplicates' => false,
+                'phpdoc_types_no_duplicates' => true,
                 'phpdoc_types_order' => [
                     'case_sensitive' => false,
                     'null_adjustment' => 'always_first',

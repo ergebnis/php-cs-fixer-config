@@ -89,7 +89,7 @@ final class Php80Test extends ExplicitRuleSetTestCase
                 'syntax' => 'short',
             ],
             'assign_null_coalescing_to_coalesce_equal' => true,
-            'attribute_block_no_spaces' => false,
+            'attribute_block_no_spaces' => true,
             'attribute_empty_parentheses' => [
                 'use_parentheses' => true,
             ],

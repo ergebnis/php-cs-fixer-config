@@ -394,7 +394,7 @@ final class Php83
                 'no_multiple_statements_per_line' => true,
                 'no_null_property_initialization' => true,
                 'no_php4_constructor' => false,
-                'no_redundant_readonly_property' => false,
+                'no_redundant_readonly_property' => true,
                 'no_short_bool_cast' => true,
                 'no_singleline_whitespace_before_semicolons' => true,
                 'no_space_around_double_colon' => true,

@@ -11,7 +11,7 @@ For a full diff see [`6.58.2...main`][6.58.2...main].
 ### Changed
 
 - Updated `friendsofphp/php-cs-fixer` ([#1345]), by [@dependabot]
-- Enabled the `attribute_block_no_spaces` fixer  ([#1350]), by [@localheinz]
+- Enabled the `attribute_block_no_spaces` fixer ([#1350]), by [@localheinz]
 - Enabled the `no_redundant_readonly_property` fixer ([#1351]), by [@localheinz]
 - Enabled the `phpdoc_types_no_duplicates` fixer ([#1352]), by [@localheinz]
 

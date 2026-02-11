@@ -617,9 +617,13 @@ final class Php73Test extends ExplicitRuleSetTestCase
                 ],
             ],
             'phpdoc_line_span' => [
+                'case' => null,
+                'class' => null,
                 'const' => 'multi',
                 'method' => 'multi',
+                'other' => null,
                 'property' => 'multi',
+                'trait_import' => null,
             ],
             'phpdoc_list_type' => true,
             'phpdoc_no_access' => true,
@@ -919,7 +923,9 @@ final class Php73Test extends ExplicitRuleSetTestCase
                 'only_dec_inc' => false,
             ],
             'use_arrow_functions' => false,
-            'void_return' => true,
+            'void_return' => [
+                'fix_lambda' => true,
+            ],
             'whitespace_after_comma_in_array' => [
                 'ensure_single_space' => true,
             ],

@@ -35,7 +35,7 @@
     "phpstan/phpstan": "^2.1.37",
     "phpstan/phpstan-deprecation-rules": "^2.0.4",
     "phpstan/phpstan-phpunit": "^2.0.15",
-    "phpstan/phpstan-strict-rules": "^2.0.8",
+    "phpstan/phpstan-strict-rules": "^2.0.10",
     "phpunit/phpunit": "^9.6.33",
     "rector/rector": "^2.3.6",
     "symfony/filesystem": "^5.0.0 || ^6.0.0",

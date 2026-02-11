@@ -616,9 +616,13 @@ final class Php56Test extends ExplicitRuleSetTestCase
                 ],
             ],
             'phpdoc_line_span' => [
+                'case' => null,
+                'class' => null,
                 'const' => 'multi',
                 'method' => 'multi',
+                'other' => null,
                 'property' => 'multi',
+                'trait_import' => null,
             ],
             'phpdoc_list_type' => true,
             'phpdoc_no_access' => true,

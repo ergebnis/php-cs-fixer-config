@@ -12,6 +12,7 @@ For a full diff see [`6.59.0...main`][6.59.0...main].
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1360]), by [@dependabot]
 - Updated `friendsofphp/php-cs-fixer` ([#1372]), by [@dependabot]
+- Set the `case`, `class`, and `trait_import` options of the `phpdoc_line_span` fixer to `multi` ([#1373]), by [@localheinz]
 
 ## [`6.59.0`][6.59.0]
 
@@ -2189,6 +2190,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1352]: https://github.com/ergebnis/php-cs-fixer-config/pull/1352
 [#1360]: https://github.com/ergebnis/php-cs-fixer-config/pull/1360
 [#1372]: https://github.com/ergebnis/php-cs-fixer-config/pull/1372
+[#1373]: https://github.com/ergebnis/php-cs-fixer-config/pull/1373
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

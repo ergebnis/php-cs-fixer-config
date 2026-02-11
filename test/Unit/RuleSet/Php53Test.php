@@ -610,7 +610,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             ],
             'phpdoc_line_span' => [
                 'case' => null,
-                'class' => null,
+                'class' => 'multi',
                 'const' => 'multi',
                 'method' => 'multi',
                 'other' => null,

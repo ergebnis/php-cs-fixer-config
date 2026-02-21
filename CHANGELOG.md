@@ -22,6 +22,7 @@ For a full diff see [`6.59.0...6.60.0`][6.59.0...6.60.0].
 
 ### Changed
 
+- Started using `php-cs-fixer/shim` instead of `friendsofphp/php-cs-fixer` to avoid conflicts ([#1366]), by [@alexander-schranz]
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1360]), by [@dependabot]
 - Updated `friendsofphp/php-cs-fixer` ([#1372]), by [@dependabot]
 - Set the `case`, `class`, and `trait_import` options of the `phpdoc_line_span` fixer to `multi` ([#1373]), by [@localheinz]
@@ -2209,6 +2210,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1373]: https://github.com/ergebnis/php-cs-fixer-config/pull/1373
 [#1377]: https://github.com/ergebnis/php-cs-fixer-config/pull/1377
 
+[@alexander-schranz]: https://github.com/alexander-schranz
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler
 [@localheinz]: https://github.com/localheinz

@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.60.1...main`][6.60.1...main].
 
+### Fixed
+
+- Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1381]), by [@dependabot]
+
 ## [`6.60.1`][6.60.1]
 
 For a full diff see [`6.60.0...6.60.1`][6.60.0...6.60.1].
@@ -2208,6 +2212,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1372]: https://github.com/ergebnis/php-cs-fixer-config/pull/1372
 [#1373]: https://github.com/ergebnis/php-cs-fixer-config/pull/1373
 [#1377]: https://github.com/ergebnis/php-cs-fixer-config/pull/1377
+[#1381]: https://github.com/ergebnis/php-cs-fixer-config/pull/1381
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

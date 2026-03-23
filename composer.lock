@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35314b9a6e0ac4df94a9b855d90efb77",
+    "content-hash": "2792c39625bd0630903e489975d128c0",
     "packages": [
         {
             "name": "clue/ndjson-react",
@@ -3675,16 +3675,16 @@
         },
         {
             "name": "ergebnis/rector-rules",
-            "version": "1.12.4",
+            "version": "1.15.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/rector-rules.git",
-                "reference": "23f512c66dfa7b90746ce8eb48f4ddb1ddd090f8"
+                "reference": "32c8fb51c018c44490cae1f1d17914d2a411e6db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/rector-rules/zipball/23f512c66dfa7b90746ce8eb48f4ddb1ddd090f8",
-                "reference": "23f512c66dfa7b90746ce8eb48f4ddb1ddd090f8",
+                "url": "https://api.github.com/repos/ergebnis/rector-rules/zipball/32c8fb51c018c44490cae1f1d17914d2a411e6db",
+                "reference": "32c8fb51c018c44490cae1f1d17914d2a411e6db",
                 "shasum": ""
             },
             "require": {
@@ -3698,7 +3698,7 @@
                 "ergebnis/data-provider": "^3.6.0",
                 "ergebnis/license": "^2.7.0",
                 "ergebnis/php-cs-fixer-config": "^6.60.2",
-                "ergebnis/phpunit-slow-test-detector": "^2.23.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.24.0",
                 "phpstan/extension-installer": "^1.4.3",
                 "phpstan/phpstan-deprecation-rules": "^2.0.4",
                 "phpstan/phpstan-phpunit": "^2.0.16",
@@ -3735,7 +3735,7 @@
                 "security": "https://github.com/ergebnis/rector-rules/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/rector-rules"
             },
-            "time": "2026-03-13T17:40:18+00:00"
+            "time": "2026-03-22T21:54:50+00:00"
         },
         {
             "name": "fakerphp/faker",

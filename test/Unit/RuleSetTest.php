@@ -13,12 +13,7 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
-use Ergebnis\PhpCsFixer\Config\Fixers;
-use Ergebnis\PhpCsFixer\Config\Name;
-use Ergebnis\PhpCsFixer\Config\PhpVersion;
-use Ergebnis\PhpCsFixer\Config\Rules;
-use Ergebnis\PhpCsFixer\Config\RuleSet;
-use Ergebnis\PhpCsFixer\Config\Test;
+use Ergebnis\PhpCsFixer;
 use PhpCsFixer\Fixer;
 use PHPUnit\Framework;
 
@@ -37,28 +32,28 @@ use PHPUnit\Framework;
  */
 final class RuleSetTest extends Framework\TestCase
 {
-    use Test\Util\Helper;
+    use PhpCsFixer\Config\Test\Util\Helper;
 
     public function testCreateReturnsRuleSet(): void
     {
         $faker = self::faker();
 
-        $customFixers = Fixers::fromFixers(
+        $customFixers = PhpCsFixer\Config\Fixers::fromFixers(
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
         );
-        $name = Name::fromString($faker->word());
-        $phpVersion = PhpVersion::create(
-            PhpVersion\Major::fromInt($faker->numberBetween(0)),
-            PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
-            PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
+        $name = PhpCsFixer\Config\Name::fromString($faker->word());
+        $phpVersion = PhpCsFixer\Config\PhpVersion::create(
+            PhpCsFixer\Config\PhpVersion\Major::fromInt($faker->numberBetween(0)),
+            PhpCsFixer\Config\PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
+            PhpCsFixer\Config\PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
         );
-        $rules = Rules::fromArray([
+        $rules = PhpCsFixer\Config\Rules::fromArray([
             'header_comment' => false,
         ]);
 
-        $ruleSet = RuleSet::create(
+        $ruleSet = PhpCsFixer\Config\RuleSet::create(
             $customFixers,
             $name,
             $phpVersion,
@@ -75,24 +70,24 @@ final class RuleSetTest extends Framework\TestCase
     {
         $faker = self::faker();
 
-        $customFixers = Fixers::fromFixers(
+        $customFixers = PhpCsFixer\Config\Fixers::fromFixers(
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
         );
 
-        $ruleSet = RuleSet::create(
-            Fixers::fromFixers(
+        $ruleSet = PhpCsFixer\Config\RuleSet::create(
+            PhpCsFixer\Config\Fixers::fromFixers(
                 $this->createStub(Fixer\FixerInterface::class),
                 $this->createStub(Fixer\FixerInterface::class),
                 $this->createStub(Fixer\FixerInterface::class),
             ),
-            Name::fromString($faker->word()),
-            PhpVersion::create(
-                PhpVersion\Major::fromInt($faker->numberBetween(0)),
-                PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
-                PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
+            PhpCsFixer\Config\Name::fromString($faker->word()),
+            PhpCsFixer\Config\PhpVersion::create(
+                PhpCsFixer\Config\PhpVersion\Major::fromInt($faker->numberBetween(0)),
+                PhpCsFixer\Config\PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
+                PhpCsFixer\Config\PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
             ),
-            Rules::fromArray([
+            PhpCsFixer\Config\Rules::fromArray([
                 'foo' => false,
                 'quz' => true,
             ]),
@@ -114,24 +109,24 @@ final class RuleSetTest extends Framework\TestCase
     {
         $faker = self::faker();
 
-        $rules = Rules::fromArray([
+        $rules = PhpCsFixer\Config\Rules::fromArray([
             'bar' => false,
             'foo' => true,
         ]);
 
-        $ruleSet = RuleSet::create(
-            Fixers::fromFixers(
+        $ruleSet = PhpCsFixer\Config\RuleSet::create(
+            PhpCsFixer\Config\Fixers::fromFixers(
                 $this->createStub(Fixer\FixerInterface::class),
                 $this->createStub(Fixer\FixerInterface::class),
                 $this->createStub(Fixer\FixerInterface::class),
             ),
-            Name::fromString($faker->word()),
-            PhpVersion::create(
-                PhpVersion\Major::fromInt($faker->numberBetween(0)),
-                PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
-                PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
+            PhpCsFixer\Config\Name::fromString($faker->word()),
+            PhpCsFixer\Config\PhpVersion::create(
+                PhpCsFixer\Config\PhpVersion\Major::fromInt($faker->numberBetween(0)),
+                PhpCsFixer\Config\PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
+                PhpCsFixer\Config\PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
             ),
-            Rules::fromArray([
+            PhpCsFixer\Config\Rules::fromArray([
                 'foo' => false,
                 'quz' => true,
             ]),
@@ -157,19 +152,19 @@ final class RuleSetTest extends Framework\TestCase
     {
         $faker = self::faker();
 
-        $ruleSet = RuleSet::create(
-            Fixers::fromFixers(
+        $ruleSet = PhpCsFixer\Config\RuleSet::create(
+            PhpCsFixer\Config\Fixers::fromFixers(
                 $this->createStub(Fixer\FixerInterface::class),
                 $this->createStub(Fixer\FixerInterface::class),
                 $this->createStub(Fixer\FixerInterface::class),
             ),
-            Name::fromString($faker->word()),
-            PhpVersion::create(
-                PhpVersion\Major::fromInt($faker->numberBetween(0)),
-                PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
-                PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
+            PhpCsFixer\Config\Name::fromString($faker->word()),
+            PhpCsFixer\Config\PhpVersion::create(
+                PhpCsFixer\Config\PhpVersion\Major::fromInt($faker->numberBetween(0)),
+                PhpCsFixer\Config\PhpVersion\Minor::fromInt($faker->numberBetween(0, 99)),
+                PhpCsFixer\Config\PhpVersion\Patch::fromInt($faker->numberBetween(0, 99)),
             ),
-            Rules::fromArray([
+            PhpCsFixer\Config\Rules::fromArray([
                 'foo' => false,
                 'header_comment' => false,
                 'quz' => true,
@@ -184,7 +179,7 @@ final class RuleSetTest extends Framework\TestCase
         self::assertEquals($ruleSet->name(), $mutated->name());
         self::assertEquals($ruleSet->phpVersion(), $mutated->phpVersion());
 
-        $expected = $ruleSet->rules()->merge(Rules::fromArray([
+        $expected = $ruleSet->rules()->merge(PhpCsFixer\Config\Rules::fromArray([
             'header_comment' => [
                 'comment_type' => 'PHPDoc',
                 'header' => \trim($header),

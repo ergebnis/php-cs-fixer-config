@@ -33,6 +33,13 @@ return static function (Config\RectorConfig $rectorConfig): void {
         Rules\Faker\GeneratorPropertyFetchToMethodCallRector::class,
     ]);
 
+    $rectorConfig->ruleWithConfiguration(Rules\Files\ReferenceNamespacedSymbolsRelativeToNamespacePrefixRector::class, [
+        'discoverNamespacePrefixes' => true,
+        'parentNamespacePrefixes' => [
+            'Symfony\Component',
+        ],
+    ]);
+
     $rectorConfig->sets([
         PHPUnit\Set\PHPUnitSetList::PHPUNIT_90,
     ]);

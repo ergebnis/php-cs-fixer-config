@@ -14,8 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
 use Ergebnis\DataProvider;
-use Ergebnis\PhpCsFixer\Config\PhpVersion;
-use Ergebnis\PhpCsFixer\Config\Test;
+use Ergebnis\PhpCsFixer;
 use PHPUnit\Framework;
 
 /**
@@ -29,17 +28,17 @@ use PHPUnit\Framework;
  */
 final class PhpVersionTest extends Framework\TestCase
 {
-    use Test\Util\Helper;
+    use PhpCsFixer\Config\Test\Util\Helper;
 
     public function testCreateReturnsPhpVersion(): void
     {
         $faker = self::faker();
 
-        $major = PhpVersion\Major::fromInt($faker->numberBetween(0));
-        $minor = PhpVersion\Minor::fromInt($faker->numberBetween(0, 99));
-        $patch = PhpVersion\Patch::fromInt($faker->numberBetween(0, 99));
+        $major = PhpCsFixer\Config\PhpVersion\Major::fromInt($faker->numberBetween(0));
+        $minor = PhpCsFixer\Config\PhpVersion\Minor::fromInt($faker->numberBetween(0, 99));
+        $patch = PhpCsFixer\Config\PhpVersion\Patch::fromInt($faker->numberBetween(0, 99));
 
-        $phpVersion = PhpVersion::create(
+        $phpVersion = PhpCsFixer\Config\PhpVersion::create(
             $major,
             $minor,
             $patch,
@@ -70,7 +69,7 @@ final class PhpVersionTest extends Framework\TestCase
             $value,
         ));
 
-        PhpVersion::fromInt($value);
+        PhpCsFixer\Config\PhpVersion::fromInt($value);
     }
 
     /**
@@ -79,22 +78,22 @@ final class PhpVersionTest extends Framework\TestCase
      */
     public function testFromIntReturnsPhpVersion(int $value): void
     {
-        $phpVersion = PhpVersion::fromInt($value);
+        $phpVersion = PhpCsFixer\Config\PhpVersion::fromInt($value);
 
         self::assertSame($value, $phpVersion->toInt());
     }
 
     public function testCurrentReturnsPhpVersion(): void
     {
-        $phpVersion = PhpVersion::current();
+        $phpVersion = PhpCsFixer\Config\PhpVersion::current();
 
         self::assertSame(\PHP_VERSION_ID, $phpVersion->toInt());
     }
 
     public function testIsSmallerThanReturnsFalseWhenValueIsGreater(): void
     {
-        $one = PhpVersion::fromInt(\PHP_VERSION_ID + 1);
-        $two = PhpVersion::fromInt(\PHP_VERSION_ID);
+        $one = PhpCsFixer\Config\PhpVersion::fromInt(\PHP_VERSION_ID + 1);
+        $two = PhpCsFixer\Config\PhpVersion::fromInt(\PHP_VERSION_ID);
 
         self::assertFalse($one->isSmallerThan($two));
     }
@@ -103,16 +102,16 @@ final class PhpVersionTest extends Framework\TestCase
     {
         $value = \PHP_VERSION_ID;
 
-        $one = PhpVersion::fromInt($value);
-        $two = PhpVersion::fromInt($value);
+        $one = PhpCsFixer\Config\PhpVersion::fromInt($value);
+        $two = PhpCsFixer\Config\PhpVersion::fromInt($value);
 
         self::assertFalse($one->isSmallerThan($two));
     }
 
     public function testIsSmallerThanReturnsTrueWhenValueIsSmaller(): void
     {
-        $one = PhpVersion::fromInt(\PHP_VERSION_ID);
-        $two = PhpVersion::fromInt(\PHP_VERSION_ID + 1);
+        $one = PhpCsFixer\Config\PhpVersion::fromInt(\PHP_VERSION_ID);
+        $two = PhpCsFixer\Config\PhpVersion::fromInt(\PHP_VERSION_ID + 1);
 
         self::assertTrue($one->isSmallerThan($two));
     }

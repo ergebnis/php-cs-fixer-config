@@ -768,7 +768,9 @@ final class Php70Test extends ExplicitRuleSetTestCase
                 ],
             ],
             'regular_callable_call' => true,
-            'return_assignment' => true,
+            'return_assignment' => [
+                'skip_named_var_tags' => false,
+            ],
             'return_to_yield_from' => false,
             'return_type_declaration' => [
                 'space_before' => 'none',

@@ -640,6 +640,7 @@ final class Php84Test extends ExplicitRuleSetTestCase
                 'case' => 'multi',
                 'class' => 'multi',
                 'const' => 'multi',
+                'function' => 'multi',
                 'method' => 'multi',
                 'other' => null,
                 'property' => 'multi',

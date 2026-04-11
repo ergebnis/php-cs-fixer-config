@@ -598,6 +598,7 @@ final class Php55
                     'case' => null,
                     'class' => 'multi',
                     'const' => 'multi',
+                    'function' => 'multi',
                     'method' => 'multi',
                     'other' => null,
                     'property' => 'multi',

@@ -591,6 +591,7 @@ final class Php53
                     'case' => null,
                     'class' => 'multi',
                     'const' => 'multi',
+                    'function' => 'multi',
                     'method' => 'multi',
                     'other' => null,
                     'property' => 'multi',

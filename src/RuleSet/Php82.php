@@ -614,6 +614,7 @@ final class Php82
                     'case' => 'multi',
                     'class' => 'multi',
                     'const' => 'multi',
+                    'function' => 'multi',
                     'method' => 'multi',
                     'other' => null,
                     'property' => 'multi',

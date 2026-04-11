@@ -613,6 +613,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'case' => null,
                 'class' => 'multi',
                 'const' => 'multi',
+                'function' => 'multi',
                 'method' => 'multi',
                 'other' => null,
                 'property' => 'multi',

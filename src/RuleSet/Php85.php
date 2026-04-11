@@ -462,6 +462,7 @@ final class Php85
                     'after_heredoc' => false,
                 ],
                 'no_whitespace_in_blank_line' => true,
+                'no_whitespace_in_empty_array' => false,
                 'non_printable_character' => [
                     'use_escape_sequences_in_strings' => false,
                 ],

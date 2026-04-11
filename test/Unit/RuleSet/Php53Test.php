@@ -628,6 +628,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                     'type' => 'var',
                 ],
             ],
+            'phpdoc_no_duplicate_types' => true,
             'phpdoc_no_empty_return' => true,
             'phpdoc_no_package' => true,
             'phpdoc_no_useless_inheritdoc' => true,
@@ -738,7 +739,6 @@ final class Php53Test extends ExplicitRuleSetTestCase
                     'simple',
                 ],
             ],
-            'phpdoc_types_no_duplicates' => true,
             'phpdoc_types_order' => [
                 'case_sensitive' => false,
                 'null_adjustment' => 'always_first',

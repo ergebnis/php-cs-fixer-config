@@ -189,7 +189,7 @@ final class Php83Test extends ExplicitRuleSetTestCase
             ],
             'declare_parentheses' => true,
             'declare_strict_types' => [
-                'preserve_existing_declaration' => false,
+                'strategy' => 'enforce',
             ],
             'dir_constant' => true,
             'doctrine_annotation_array_assignment' => [
@@ -482,6 +482,7 @@ final class Php83Test extends ExplicitRuleSetTestCase
                 'after_heredoc' => false,
             ],
             'no_whitespace_in_blank_line' => true,
+            'no_whitespace_in_empty_array' => false,
             'non_printable_character' => [
                 'use_escape_sequences_in_strings' => false,
             ],
@@ -637,6 +638,7 @@ final class Php83Test extends ExplicitRuleSetTestCase
                 'case' => 'multi',
                 'class' => 'multi',
                 'const' => 'multi',
+                'function' => 'multi',
                 'method' => 'multi',
                 'other' => null,
                 'property' => 'multi',
@@ -652,6 +654,7 @@ final class Php83Test extends ExplicitRuleSetTestCase
                     'type' => 'var',
                 ],
             ],
+            'phpdoc_no_duplicate_types' => true,
             'phpdoc_no_empty_return' => true,
             'phpdoc_no_package' => true,
             'phpdoc_no_useless_inheritdoc' => true,
@@ -760,13 +763,13 @@ final class Php83Test extends ExplicitRuleSetTestCase
             'phpdoc_trim' => true,
             'phpdoc_trim_consecutive_blank_line_separation' => true,
             'phpdoc_types' => [
+                'exclude' => [],
                 'groups' => [
                     'alias',
                     'meta',
                     'simple',
                 ],
             ],
-            'phpdoc_types_no_duplicates' => true,
             'phpdoc_types_order' => [
                 'case_sensitive' => false,
                 'null_adjustment' => 'always_first',
@@ -787,7 +790,9 @@ final class Php83Test extends ExplicitRuleSetTestCase
                 ],
             ],
             'regular_callable_call' => true,
-            'return_assignment' => true,
+            'return_assignment' => [
+                'skip_named_var_tags' => false,
+            ],
             'return_to_yield_from' => true,
             'return_type_declaration' => [
                 'space_before' => 'none',

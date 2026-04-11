@@ -162,7 +162,7 @@ final class Php56
                 ],
                 'declare_parentheses' => true,
                 'declare_strict_types' => [
-                    'preserve_existing_declaration' => false,
+                    'strategy' => 'enforce',
                 ],
                 'dir_constant' => true,
                 'doctrine_annotation_array_assignment' => [

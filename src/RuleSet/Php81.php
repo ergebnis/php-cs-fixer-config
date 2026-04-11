@@ -739,6 +739,7 @@ final class Php81
                 'phpdoc_trim' => true,
                 'phpdoc_trim_consecutive_blank_line_separation' => true,
                 'phpdoc_types' => [
+                    'exclude' => [],
                     'groups' => [
                         'alias',
                         'meta',

@@ -471,7 +471,7 @@ final class Php72Test extends ExplicitRuleSetTestCase
                 'after_heredoc' => false,
             ],
             'no_whitespace_in_blank_line' => true,
-            'no_whitespace_in_empty_array' => false,
+            'no_whitespace_in_empty_array' => true,
             'non_printable_character' => [
                 'use_escape_sequences_in_strings' => false,
             ],

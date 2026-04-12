@@ -314,7 +314,7 @@ final class Php71Test extends ExplicitRuleSetTestCase
                 'after_heredoc' => false,
                 'attribute_placement' => 'standalone',
                 'keep_multiple_spaces_after_comma' => false,
-                'on_multiline' => 'ensure_fully_multiline',
+                'on_multiline' => 'ensure_single_line_for_single_argument',
             ],
             'method_chaining_indentation' => true,
             'modern_serialization_methods' => false,

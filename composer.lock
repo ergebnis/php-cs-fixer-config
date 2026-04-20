@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ea86f081e895900555ad5eeb5269362",
+    "content-hash": "dbdb27fd87e20e2c90b42362cedf6613",
     "packages": [
         {
             "name": "clue/ndjson-react",
@@ -3747,16 +3747,16 @@
         },
         {
             "name": "ergebnis/rector-rules",
-            "version": "1.17.0",
+            "version": "1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/rector-rules.git",
-                "reference": "78f0a1a16835db99e920359cfc2e923c6821aa34"
+                "reference": "db1dd5b5f928f89b17392e7915f5e8458bd46df3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/rector-rules/zipball/78f0a1a16835db99e920359cfc2e923c6821aa34",
-                "reference": "78f0a1a16835db99e920359cfc2e923c6821aa34",
+                "url": "https://api.github.com/repos/ergebnis/rector-rules/zipball/db1dd5b5f928f89b17392e7915f5e8458bd46df3",
+                "reference": "db1dd5b5f928f89b17392e7915f5e8458bd46df3",
                 "shasum": ""
             },
             "require": {
@@ -3811,7 +3811,7 @@
                 "security": "https://github.com/ergebnis/rector-rules/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/rector-rules"
             },
-            "time": "2026-04-09T16:16:33+00:00"
+            "time": "2026-04-13T16:13:31+00:00"
         },
         {
             "name": "fakerphp/faker",

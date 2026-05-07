@@ -58,7 +58,7 @@ final class Php85
                 ],
                 'PhpCsFixerCustomFixers/no_duplicated_imports' => true,
                 'PhpCsFixerCustomFixers/php_unit_requires_constraint' => [
-                    'make_version_complete' => false,
+                    'make_version_complete' => true,
                 ],
                 'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
                 'PhpCsFixerCustomFixers/typed_class_constant' => true,

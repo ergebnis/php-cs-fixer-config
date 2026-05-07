@@ -57,7 +57,7 @@ final class Php53
                 ],
                 'PhpCsFixerCustomFixers/no_duplicated_imports' => true,
                 'PhpCsFixerCustomFixers/php_unit_requires_constraint' => [
-                    'make_version_complete' => false,
+                    'make_version_complete' => true,
                 ],
                 'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
                 'align_multiline_comment' => [

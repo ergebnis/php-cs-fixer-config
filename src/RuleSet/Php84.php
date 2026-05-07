@@ -57,7 +57,9 @@ final class Php84
                     'ignore_expressions' => true,
                 ],
                 'PhpCsFixerCustomFixers/no_duplicated_imports' => true,
-                'PhpCsFixerCustomFixers/php_unit_requires_constraint' => true,
+                'PhpCsFixerCustomFixers/php_unit_requires_constraint' => [
+                    'make_version_complete' => false,
+                ],
                 'PhpCsFixerCustomFixers/phpdoc_types_comma_spaces' => true,
                 'PhpCsFixerCustomFixers/typed_class_constant' => true,
                 'align_multiline_comment' => [

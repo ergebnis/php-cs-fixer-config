@@ -11,6 +11,7 @@ For a full diff see [`6.61.1...main`][6.61.1...main].
 ### Changed
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1412]), by [@dependabot]
+- Enabled `make_version_complete` option of `PhpCsFixerCustomFixers/php_unit_requires_constraint` fixer ([#1415]), by [@localheinz]
 
 ## [`6.61.1`][6.61.1]
 
@@ -2248,6 +2249,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1402]: https://github.com/ergebnis/php-cs-fixer-config/pull/1402
 [#1404]: https://github.com/ergebnis/php-cs-fixer-config/pull/1404
 [#1412]: https://github.com/ergebnis/php-cs-fixer-config/pull/1412
+[#1415]: https://github.com/ergebnis/php-cs-fixer-config/pull/1415
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

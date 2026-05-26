@@ -37,7 +37,7 @@ parameters:
 			path: test/Unit/FixersTest.php
 
 		-
-			message: '#^Method Ergebnis\\PhpCsFixer\\Config\\Test\\Unit\\RuleSet\\AbstractRuleSetTestCase\:\:fixersThatAreRegistered\(\) should return array\<string, PhpCsFixer\\Fixer\\FixerInterface\> but returns array\<mixed\>\.$#'
+			message: '#^Method Ergebnis\\PhpCsFixer\\Config\\Test\\Unit\\RuleSet\\AbstractRuleSetTestCase\:\:fixersThatAreRegistered\(\) should return array\<string, PhpCsFixer\\Fixer\\FixerInterface\> but returns array\<string, PhpCsFixer\\Fixer\\FixerInterface\>\|false\.$#'
 			identifier: return.type
 			count: 1
 			path: test/Unit/RuleSet/AbstractRuleSetTestCase.php

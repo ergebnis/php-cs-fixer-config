@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a60f0315725b8c436f0a9ca11e162281",
+    "content-hash": "b3f965d7d4fe9e0071297fdd31654408",
     "packages": [
         {
             "name": "clue/ndjson-react",
@@ -5015,16 +5015,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.5.2",
+            "version": "2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "49ff6339174bdbdf50b0b35ecbcff14a05ac9e24"
+                "reference": "adaa18d7cd6b3c960967cfbc98c03efb3116ac0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/49ff6339174bdbdf50b0b35ecbcff14a05ac9e24",
-                "reference": "49ff6339174bdbdf50b0b35ecbcff14a05ac9e24",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/adaa18d7cd6b3c960967cfbc98c03efb3116ac0e",
+                "reference": "adaa18d7cd6b3c960967cfbc98c03efb3116ac0e",
                 "shasum": ""
             },
             "require": {
@@ -5063,7 +5063,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.5.2"
+                "source": "https://github.com/rectorphp/rector/tree/2.5.4"
             },
             "funding": [
                 {
@@ -5071,7 +5071,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-22T11:39:33+00:00"
+            "time": "2026-07-06T12:41:46+00:00"
         },
         {
             "name": "sebastian/cli-parser",

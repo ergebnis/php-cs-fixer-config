@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.62.3...main`][6.62.3...main].
 
+### Added
+
+- Added branch alias ([#1450]), by [@localheinz]
+
 ### Fixed
 
 - Updated `friendsofphp/php-cs-fixer` ([#1448]), by [@dependabot]
@@ -2296,6 +2300,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1433]: https://github.com/ergebnis/php-cs-fixer-config/pull/1433
 [#1443]: https://github.com/ergebnis/php-cs-fixer-config/pull/1443
 [#1448]: https://github.com/ergebnis/php-cs-fixer-config/pull/1448
+[#1450]: https://github.com/ergebnis/php-cs-fixer-config/pull/1450
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

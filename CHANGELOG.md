@@ -1573,7 +1573,7 @@ For a full diff see [`2.2.0...2.2.1`][2.2.0...2.2.1].
 
 ## [`2.2.0`][2.2.0]
 
-For a full diff see [`2.1.2...2.2.0`][2.1.2...2.2.0].
+For a full diff see [`2.1.0...2.2.0`][2.1.0...2.2.0].
 
 ### Changed
 
@@ -1806,10 +1806,10 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [1.1.2...1.1.3]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.2...1.1.3
 [1.1.3...2.0.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/1.1.3...2.0.0
 [2.0.0...2.1.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.0.0...2.1.0
-[2.1.2...2.2.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.1.2...2.2.0
+[2.1.0...2.2.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.1.0...2.2.0
 [2.2.0...2.2.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.2.0...2.2.1
 [2.2.1...2.2.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.2.1...2.2.2
-[2.2.2...2.3.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.2.1...2.3.0
+[2.2.2...2.3.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.2.2...2.3.0
 [2.3.0...2.4.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.3.0...2.4.0
 [2.4.0...2.5.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.4.0...2.5.0
 [2.5.0...2.5.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/2.5.0...2.5.1
@@ -1862,7 +1862,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [5.4.0...5.5.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.4.0...5.5.0
 [5.5.0...5.5.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.5.0...5.5.1
 [5.5.1...5.5.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.5.1...5.5.2
-[5.5.2...5.6.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.5.1...5.6.0
+[5.5.2...5.6.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.5.2...5.6.0
 [5.6.0...5.7.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.6.0...5.7.0
 [5.7.0...5.8.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.7.0...5.8.0
 [5.8.0...5.9.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/5.8.0...5.9.0
@@ -1891,10 +1891,10 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [6.8.0...6.8.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.8.0...6.8.1
 [6.8.1...6.9.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.8.1...6.9.0
 [6.9.0...6.10.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.9.0...6.10.0
-[6.10.0...6.11.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.11.0...main
+[6.10.0...6.11.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.10.0...6.11.0
 [6.11.0...6.12.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.11.0...6.12.0
 [6.12.0...6.13.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.12.0...6.13.0
-[6.13.0...6.13.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.13.1...main
+[6.13.0...6.13.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.13.0...6.13.1
 [6.13.1...6.14.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.13.1...6.14.0
 [6.14.0...6.15.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.14.0...6.15.0
 [6.15.0...6.16.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.15.0...6.16.0
@@ -1947,7 +1947,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [6.53.0...6.54.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.53.0...6.54.0
 [6.54.0...6.55.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.54.0...6.55.0
 [6.55.0...6.56.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.55.0...6.56.0
-[6.56.0...6.55.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.56.0...6.56.1
+[6.56.0...6.56.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.56.0...6.56.1
 [6.56.1...6.57.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.56.1...6.57.0
 [6.57.0...6.57.1]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.57.0...6.57.1
 [6.57.1...6.58.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.57.1...6.58.0
@@ -2113,9 +2113,11 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#672]: https://github.com/ergebnis/php-cs-fixer-config/pull/672
 [#673]: https://github.com/ergebnis/php-cs-fixer-config/pull/673
 [#684]: https://github.com/ergebnis/php-cs-fixer-config/pull/684
+[#690]: https://github.com/ergebnis/php-cs-fixer-config/pull/690
 [#693]: https://github.com/ergebnis/php-cs-fixer-config/pull/693
 [#694]: https://github.com/ergebnis/php-cs-fixer-config/pull/694
 [#710]: https://github.com/ergebnis/php-cs-fixer-config/pull/710
+[#711]: https://github.com/ergebnis/php-cs-fixer-config/pull/711
 [#718]: https://github.com/ergebnis/php-cs-fixer-config/pull/718
 [#737]: https://github.com/ergebnis/php-cs-fixer-config/pull/737
 [#738]: https://github.com/ergebnis/php-cs-fixer-config/pull/738
@@ -2157,6 +2159,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#856]: https://github.com/ergebnis/php-cs-fixer-config/pull/856
 [#857]: https://github.com/ergebnis/php-cs-fixer-config/pull/857
 [#864]: https://github.com/ergebnis/php-cs-fixer-config/pull/864
+[#865]: https://github.com/ergebnis/php-cs-fixer-config/pull/865
 [#866]: https://github.com/ergebnis/php-cs-fixer-config/pull/866
 [#867]: https://github.com/ergebnis/php-cs-fixer-config/pull/867
 [#868]: https://github.com/ergebnis/php-cs-fixer-config/pull/868
@@ -2167,6 +2170,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#875]: https://github.com/ergebnis/php-cs-fixer-config/pull/875
 [#876]: https://github.com/ergebnis/php-cs-fixer-config/pull/876
 [#877]: https://github.com/ergebnis/php-cs-fixer-config/pull/877
+[#878]: https://github.com/ergebnis/php-cs-fixer-config/pull/878
 [#880]: https://github.com/ergebnis/php-cs-fixer-config/pull/880
 [#881]: https://github.com/ergebnis/php-cs-fixer-config/pull/881
 [#883]: https://github.com/ergebnis/php-cs-fixer-config/pull/883
@@ -2223,6 +2227,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#996]: https://github.com/ergebnis/php-cs-fixer-config/pull/996
 [#997]: https://github.com/ergebnis/php-cs-fixer-config/pull/997
 [#1005]: https://github.com/ergebnis/php-cs-fixer-config/pull/1005
+[#1006]: https://github.com/ergebnis/php-cs-fixer-config/pull/1006
 [#1009]: https://github.com/ergebnis/php-cs-fixer-config/pull/1009
 [#1010]: https://github.com/ergebnis/php-cs-fixer-config/pull/1010
 [#1011]: https://github.com/ergebnis/php-cs-fixer-config/pull/1011

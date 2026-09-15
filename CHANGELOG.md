@@ -11,6 +11,7 @@ For a full diff see [`6.63.2...main`][6.63.2...main].
 ### Fixed
 
 - Updated `friendsofphp/php-cs-fixer` ([#1487]), by [@dependabot]
+- Updated `friendsofphp/php-cs-fixer` ([#1496]), by [@dependabot]
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1496]), by [@dependabot]
 
 ## [`6.63.2`][6.63.2]

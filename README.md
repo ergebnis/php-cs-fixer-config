@@ -9,7 +9,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/ergebnis/php-cs-fixer-config/v/stable)](https://packagist.org/packages/ergebnis/php-cs-fixer-config)
 [![Total Downloads](https://poser.pugx.org/ergebnis/php-cs-fixer-config/downloads)](https://packagist.org/packages/ergebnis/php-cs-fixer-config)
-[![Monthly Downloads](http://poser.pugx.org/ergebnis/php-cs-fixer-config/d/monthly)](https://packagist.org/packages/ergebnis/php-cs-fixer-config)
+[![Monthly Downloads](https://poser.pugx.org/ergebnis/php-cs-fixer-config/d/monthly)](https://packagist.org/packages/ergebnis/php-cs-fixer-config)
 
 This project provides a [`composer`](https://getcomposer.org) package with a configuration factory and rule set factories for [`friendsofphp/php-cs-fixer`](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer).
 

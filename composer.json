@@ -69,7 +69,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-main": "6.63-dev"
+      "dev-main": "6.64-dev"
     },
     "composer-normalize": {
       "indent-size": 2,

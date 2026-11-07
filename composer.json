@@ -37,7 +37,7 @@
     "phpstan/phpstan-phpunit": "^2.1.1",
     "phpstan/phpstan-strict-rules": "^2.1.0",
     "phpunit/phpunit": "^9.6.33",
-    "rector/rector": "^2.8.1",
+    "rector/rector": "^2.8.3",
     "symfony/filesystem": "^5.4.56 || ^6.4.50 || ^7.4.23 || ^8.1.11",
     "symfony/process": "^5.0.0 || ^6.0.0"
   },

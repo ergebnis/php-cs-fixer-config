@@ -205,7 +205,7 @@ final class Php54
                     'noise_remaining_usages' => true,
                     'noise_remaining_usages_exclude' => [],
                 ],
-                'explicit_indirect_variable' => true,
+                'explicit_indirect_variable' => false,
                 'explicit_string_variable' => true,
                 'final_class' => true,
                 'final_internal_class' => [

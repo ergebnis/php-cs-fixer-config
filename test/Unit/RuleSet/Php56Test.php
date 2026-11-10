@@ -767,7 +767,7 @@ final class Php56Test extends ExplicitRuleSetTestCase
                     'srand' => 'mt_srand',
                 ],
             ],
-            'regular_callable_call' => true,
+            'regular_callable_call' => false,
             'return_assignment' => [
                 'skip_named_var_tags' => false,
             ],

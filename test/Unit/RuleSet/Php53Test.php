@@ -890,7 +890,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'switch_continue_to_break' => true,
             'ternary_operator_spaces' => true,
             'ternary_to_elvis_operator' => true,
-            'ternary_to_null_coalescing' => true,
+            'ternary_to_null_coalescing' => false,
             'trailing_comma_in_multiline' => [
                 'after_heredoc' => false,
                 'elements' => [

@@ -480,7 +480,7 @@ final class Php56Test extends ExplicitRuleSetTestCase
             'not_operator_with_space' => false,
             'not_operator_with_successor_space' => false,
             'nullable_type_declaration' => false,
-            'nullable_type_declaration_for_default_null_value' => true,
+            'nullable_type_declaration_for_default_null_value' => false,
             'numeric_literal_separator' => false,
             'object_operator_without_whitespace' => true,
             'octal_notation' => false,

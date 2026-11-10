@@ -11,6 +11,7 @@ For a full diff see [`6.64.2...main`][6.64.2...main].
 ### Fixed
 
 - Updated `kubawerlos/php-cs-fixer-custom-fixers` ([#1577]), by [@dependabot]
+- Disabled the `nullable_type_declaration_for_default_null_value` fixer in the `Config\RuleSet\Php53`, `Config\RuleSet\Php54`, `Config\RuleSet\Php55`, and `Config\RuleSet\Php56` rule sets ([#1578]), by [@localheinz]
 
 ## [`6.64.2`][6.64.2]
 
@@ -2388,6 +2389,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1529]: https://github.com/ergebnis/php-cs-fixer-config/pull/1529
 [#1575]: https://github.com/ergebnis/php-cs-fixer-config/pull/1575
 [#1577]: https://github.com/ergebnis/php-cs-fixer-config/pull/1577
+[#1578]: https://github.com/ergebnis/php-cs-fixer-config/pull/1578
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

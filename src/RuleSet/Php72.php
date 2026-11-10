@@ -241,6 +241,7 @@ final class Php72
                     'functions' => [
                         'get_called_class',
                         'get_class',
+                        'get_class_this',
                         'php_sapi_name',
                         'phpversion',
                         'pi',

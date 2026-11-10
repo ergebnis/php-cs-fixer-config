@@ -160,9 +160,7 @@ final class Php53
                     'space' => 'none',
                 ],
                 'declare_parentheses' => true,
-                'declare_strict_types' => [
-                    'strategy' => 'enforce',
-                ],
+                'declare_strict_types' => false,
                 'dir_constant' => true,
                 'doctrine_annotation_array_assignment' => [
                     'ignored_tags' => Doctrine::IGNORED_TAGS,

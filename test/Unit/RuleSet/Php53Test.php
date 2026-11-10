@@ -161,7 +161,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'clean_namespace' => true,
             'combine_consecutive_issets' => true,
             'combine_consecutive_unsets' => true,
-            'combine_nested_dirname' => true,
+            'combine_nested_dirname' => false,
             'comment_to_phpdoc' => [
                 'ignored_tags' => [],
             ],
@@ -177,14 +177,12 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'position' => 'same_line',
             ],
             'date_time_create_from_format_call' => true,
-            'date_time_immutable' => true,
+            'date_time_immutable' => false,
             'declare_equal_normalize' => [
                 'space' => 'none',
             ],
             'declare_parentheses' => true,
-            'declare_strict_types' => [
-                'strategy' => 'enforce',
-            ],
+            'declare_strict_types' => false,
             'dir_constant' => true,
             'doctrine_annotation_array_assignment' => [
                 'ignored_tags' => RuleSet\Doctrine::IGNORED_TAGS,
@@ -228,7 +226,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                 'noise_remaining_usages' => true,
                 'noise_remaining_usages_exclude' => [],
             ],
-            'explicit_indirect_variable' => true,
+            'explicit_indirect_variable' => false,
             'explicit_string_variable' => true,
             'final_class' => true,
             'final_internal_class' => [
@@ -297,7 +295,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'line_ending' => true,
             'linebreak_after_opening_tag' => true,
             'list_syntax' => [
-                'syntax' => 'short',
+                'syntax' => 'long',
             ],
             'logical_operators' => true,
             'long_to_shorthand_operator' => true,
@@ -473,7 +471,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'not_operator_with_space' => false,
             'not_operator_with_successor_space' => false,
             'nullable_type_declaration' => false,
-            'nullable_type_declaration_for_default_null_value' => true,
+            'nullable_type_declaration_for_default_null_value' => false,
             'numeric_literal_separator' => false,
             'object_operator_without_whitespace' => true,
             'octal_notation' => false,
@@ -762,7 +760,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
                     'srand' => 'mt_srand',
                 ],
             ],
-            'regular_callable_call' => true,
+            'regular_callable_call' => false,
             'return_assignment' => [
                 'skip_named_var_tags' => false,
             ],
@@ -873,7 +871,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'statement_indentation' => [
                 'stick_comment_to_next_continuous_control_statement' => false,
             ],
-            'static_lambda' => true,
+            'static_lambda' => false,
             'static_private_method' => true,
             'strict_comparison' => true,
             'strict_param' => true,
@@ -890,7 +888,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'switch_continue_to_break' => true,
             'ternary_operator_spaces' => true,
             'ternary_to_elvis_operator' => true,
-            'ternary_to_null_coalescing' => true,
+            'ternary_to_null_coalescing' => false,
             'trailing_comma_in_multiline' => [
                 'after_heredoc' => false,
                 'elements' => [

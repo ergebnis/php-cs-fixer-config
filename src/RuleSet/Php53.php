@@ -155,7 +155,7 @@ final class Php53
                     'position' => 'same_line',
                 ],
                 'date_time_create_from_format_call' => true,
-                'date_time_immutable' => true,
+                'date_time_immutable' => false,
                 'declare_equal_normalize' => [
                     'space' => 'none',
                 ],

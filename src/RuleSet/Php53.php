@@ -139,7 +139,7 @@ final class Php53
                 'clean_namespace' => true,
                 'combine_consecutive_issets' => true,
                 'combine_consecutive_unsets' => true,
-                'combine_nested_dirname' => true,
+                'combine_nested_dirname' => false,
                 'comment_to_phpdoc' => [
                     'ignored_tags' => [],
                 ],

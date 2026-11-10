@@ -871,7 +871,7 @@ final class Php53Test extends ExplicitRuleSetTestCase
             'statement_indentation' => [
                 'stick_comment_to_next_continuous_control_statement' => false,
             ],
-            'static_lambda' => true,
+            'static_lambda' => false,
             'static_private_method' => true,
             'strict_comparison' => true,
             'strict_param' => true,

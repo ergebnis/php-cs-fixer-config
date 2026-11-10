@@ -17,6 +17,7 @@ For a full diff see [`6.64.2...main`][6.64.2...main].
 - Disabled the `combine_nested_dirname` fixer in the `Config\RuleSet\Php53`, `Config\RuleSet\Php54`, `Config\RuleSet\Php55`, and `Config\RuleSet\Php56` rule sets ([#1581]), by [@localheinz]
 - Disabled the `declare_strict_types` fixer in the `Config\RuleSet\Php53`, `Config\RuleSet\Php54`, `Config\RuleSet\Php55`, and `Config\RuleSet\Php56` rule sets ([#1582]), by [@localheinz]
 - Disabled the `date_time_immutable` fixer in the `Config\RuleSet\Php53` and `Config\RuleSet\Php54` rule sets ([#1583]), by [@localheinz]
+- Disabled the `static_lambda` fixer in the `Config\RuleSet\Php53` rule set ([#1584]), by [@localheinz]
 
 ## [`6.64.2`][6.64.2]
 
@@ -2400,6 +2401,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1581]: https://github.com/ergebnis/php-cs-fixer-config/pull/1581
 [#1582]: https://github.com/ergebnis/php-cs-fixer-config/pull/1582
 [#1583]: https://github.com/ergebnis/php-cs-fixer-config/pull/1583
+[#1584]: https://github.com/ergebnis/php-cs-fixer-config/pull/1584
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

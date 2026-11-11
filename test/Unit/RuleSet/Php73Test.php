@@ -289,7 +289,9 @@ final class Php73Test extends ExplicitRuleSetTestCase
             'group_import' => false,
             'header_comment' => false,
             'heredoc_closing_marker' => false,
-            'heredoc_indentation' => false,
+            'heredoc_indentation' => [
+                'indentation' => 'start_plus_one',
+            ],
             'heredoc_to_nowdoc' => true,
             'implode_call' => true,
             'include' => true,

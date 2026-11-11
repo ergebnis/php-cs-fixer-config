@@ -99,28 +99,28 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
     {
         return \sprintf(
             <<<'PHP'
-<?php
+                <?php
 
-declare(strict_types=1);
+                declare(strict_types=1);
 
-$ruleSet = %s::create('');
+                $ruleSet = %s::create('');
 
-$config = Ergebnis\PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
+                $config = Ergebnis\PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
 
-$config->getFinder()
-    ->exclude([
-        '.build/',
-        '.github/',
-        '.notes/',
-    ])
-    ->ignoreDotFiles(false)
-    ->in('%s')
-    ->name('.php-cs-fixer.php');
+                $config->getFinder()
+                    ->exclude([
+                        '.build/',
+                        '.github/',
+                        '.notes/',
+                    ])
+                    ->ignoreDotFiles(false)
+                    ->in('%s')
+                    ->name('.php-cs-fixer.php');
 
-$config->setUsingCache(false);
+                $config->setUsingCache(false);
 
-return $config;
-PHP
+                return $config;
+                PHP
             ,
             self::className(),
             self::projectDirectory(),

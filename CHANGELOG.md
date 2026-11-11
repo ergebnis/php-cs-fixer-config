@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`6.64.3...main`][6.64.3...main].
 
+### Added
+
+- Added `Config\RuleSet\Php86` rule set ([#1592]), by [@localheinz]
+
 ### Changed
 
 - Added `never-return`, `never-returns`, and `no-return` to the `types` option of the `phpdoc_scalar` fixer ([#1588]), by [@localheinz]
@@ -2426,6 +2430,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1589]: https://github.com/ergebnis/php-cs-fixer-config/pull/1589
 [#1590]: https://github.com/ergebnis/php-cs-fixer-config/pull/1590
 [#1591]: https://github.com/ergebnis/php-cs-fixer-config/pull/1591
+[#1592]: https://github.com/ergebnis/php-cs-fixer-config/pull/1592
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

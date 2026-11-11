@@ -42,6 +42,7 @@ Pick one of the rule sets:
 - [`Ergebnis\PhpCsFixer\RuleSet\Php83`](src/RuleSet/Php83.php)
 - [`Ergebnis\PhpCsFixer\RuleSet\Php84`](src/RuleSet/Php84.php)
 - [`Ergebnis\PhpCsFixer\RuleSet\Php85`](src/RuleSet/Php85.php)
+- [`Ergebnis\PhpCsFixer\RuleSet\Php86`](src/RuleSet/Php86.php)
 
 Create a configuration file `.php-cs-fixer.php` in the root of your project:
 

@@ -12,6 +12,7 @@ For a full diff see [`6.64.3...main`][6.64.3...main].
 
 - Added `never-return`, `never-returns`, and `no-return` to the `types` option of the `phpdoc_scalar` fixer ([#1588]), by [@localheinz]
 - Added `get_class_this` to the `functions` option of the `function_to_constant` fixer in the `Config\RuleSet\Php55`, `Config\RuleSet\Php56`, `Config\RuleSet\Php70`, `Config\RuleSet\Php71`, `Config\RuleSet\Php72`, `Config\RuleSet\Php73`, and `Config\RuleSet\Php74` rule sets ([#1589]), by [@localheinz]
+- Enabled and configured the `heredoc_indentation` fixer in the `Config\RuleSet\Php73`, `Config\RuleSet\Php74`, `Config\RuleSet\Php80`, `Config\RuleSet\Php81`, `Config\RuleSet\Php82`, `Config\RuleSet\Php83`, `Config\RuleSet\Php84`, and `Config\RuleSet\Php85` rule sets ([#1590]), by [@localheinz]
 
 ## [`6.64.3`][6.64.3]
 
@@ -2419,6 +2420,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1587]: https://github.com/ergebnis/php-cs-fixer-config/pull/1587
 [#1588]: https://github.com/ergebnis/php-cs-fixer-config/pull/1588
 [#1589]: https://github.com/ergebnis/php-cs-fixer-config/pull/1589
+[#1590]: https://github.com/ergebnis/php-cs-fixer-config/pull/1590
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

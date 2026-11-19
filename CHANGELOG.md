@@ -12,6 +12,10 @@ For a full diff see [`6.65.0...main`][6.65.0...main].
 
 - Added support for PHP 8.6 ([#1596]), by [@localheinz]
 
+### Fixed
+
+- Updated `friendsofphp/php-cs-fixer` ([#1601]), by [@dependabot]
+
 ## [`6.65.0`][6.65.0]
 
 For a full diff see [`6.64.3...6.65.0`][6.64.3...6.65.0].
@@ -2442,6 +2446,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1591]: https://github.com/ergebnis/php-cs-fixer-config/pull/1591
 [#1592]: https://github.com/ergebnis/php-cs-fixer-config/pull/1592
 [#1596]: https://github.com/ergebnis/php-cs-fixer-config/pull/1596
+[#1601]: https://github.com/ergebnis/php-cs-fixer-config/pull/1601
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

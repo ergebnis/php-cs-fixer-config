@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`6.65.0...main`][6.65.0...main].
+For a full diff see [`6.66.0...main`][6.66.0...main].
+
+## [`6.66.0`][6.66.0]
+
+For a full diff see [`6.65.0...6.66.0`][6.65.0...6.66.0].
 
 ### Added
 
@@ -2052,7 +2056,9 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [6.64.1...6.64.2]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.64.1...6.64.2
 [6.64.2...6.64.3]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.64.2...6.64.3
 [6.64.3...6.65.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.64.3...6.65.0
-[6.65.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.65.0...main
+[6.65.0...6.66.0]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.65.0...6.66.0
+[6.66.0]: https://github.com/ergebnis/php-cs-fixer-config/releases/tag/6.66.0
+[6.66.0...main]: https://github.com/ergebnis/php-cs-fixer-config/compare/6.66.0...main
 
 [#3]: https://github.com/ergebnis/php-cs-fixer-config/pull/3
 [#14]: https://github.com/ergebnis/php-cs-fixer-config/pull/14

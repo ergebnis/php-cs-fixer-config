@@ -114,6 +114,11 @@ final class PhpVersion
         );
     }
 
+    public function isLessThan(self $other): bool
+    {
+        return $this->toInt() < $other->toInt();
+    }
+
     public function isSmallerThan(self $other): bool
     {
         return $this->toInt() < $other->toInt();

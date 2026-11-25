@@ -37,6 +37,15 @@ parameters:
 			path: test/Unit/FixersTest.php
 
 		-
+			message: '''
+				#^Call to deprecated method isSmallerThan\(\) of class Ergebnis\\PhpCsFixer\\Config\\PhpVersion\:
+				will be removed in 7\.0\.0, use isLessThan\(\) instead$#
+			'''
+			identifier: method.deprecated
+			count: 3
+			path: test/Unit/PhpVersionTest.php
+
+		-
 			message: '#^Method Ergebnis\\PhpCsFixer\\Config\\Test\\Unit\\RuleSet\\AbstractRuleSetTestCase\:\:fixersThatAreRegistered\(\) should return array\<string, PhpCsFixer\\Fixer\\FixerInterface\> but returns array\<string, PhpCsFixer\\Fixer\\FixerInterface\>\|false\.$#'
 			identifier: return.type
 			count: 1

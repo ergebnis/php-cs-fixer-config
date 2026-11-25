@@ -119,8 +119,11 @@ final class PhpVersion
         return $this->toInt() < $other->toInt();
     }
 
+    /**
+     * @deprecated will be removed in 7.0.0, use isLessThan() instead
+     */
     public function isSmallerThan(self $other): bool
     {
-        return $this->toInt() < $other->toInt();
+        return $this->isLessThan($other);
     }
 }

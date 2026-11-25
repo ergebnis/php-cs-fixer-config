@@ -30,7 +30,7 @@ final class Factory
     {
         $currentPhpVersion = PhpVersion::current();
 
-        if ($currentPhpVersion->isSmallerThan($ruleSet->phpVersion())) {
+        if ($currentPhpVersion->isLessThan($ruleSet->phpVersion())) {
             throw new \RuntimeException(\sprintf(
                 'Current PHP version "%s" is smaller than targeted PHP version "%s".',
                 $currentPhpVersion->toString(),

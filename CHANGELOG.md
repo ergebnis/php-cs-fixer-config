@@ -12,6 +12,10 @@ For a full diff see [`6.67.0...main`][6.67.0...main].
 
 - Added `PhpVersion::isLessThan()` ([#1607]), by [@localheinz]
 
+### Deprecated
+
+- Deprecated `PhpVersion::isSmallerThan()` ([#1608]), by [@localheinz]
+
 ## [`6.67.0`][6.67.0]
 
 For a full diff see [`6.66.0...6.67.0`][6.66.0...6.67.0].
@@ -2469,6 +2473,7 @@ For a full diff see [`d899e77...1.0.0`][d899e77...1.0.0].
 [#1601]: https://github.com/ergebnis/php-cs-fixer-config/pull/1601
 [#1606]: https://github.com/ergebnis/php-cs-fixer-config/pull/1606
 [#1607]: https://github.com/ergebnis/php-cs-fixer-config/pull/1607
+[#1608]: https://github.com/ergebnis/php-cs-fixer-config/pull/1608
 
 [@dependabot]: https://github.com/apps/dependabot
 [@linuxjuggler]: https://github.com/linuxjuggler

@@ -12,6 +12,10 @@ For a full diff see [`6.67.0...main`][6.67.0...main].
 
 - Added `PhpVersion::isLessThan()` ([#1607]), by [@localheinz]
 
+### Changed
+
+- Changed the exception message thrown by `Factory` to say less than instead of smaller than ([#1608]), by [@localheinz]
+
 ### Deprecated
 
 - Deprecated `PhpVersion::isSmallerThan()` ([#1608]), by [@localheinz]

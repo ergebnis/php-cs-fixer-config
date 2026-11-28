@@ -12,7 +12,6 @@ declare(strict_types=1);
  */
 
 use Ergebnis\License;
-use Ergebnis\PhpCsFixer;
 use Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Finder;
 

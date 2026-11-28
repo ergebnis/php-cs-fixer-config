@@ -13,7 +13,6 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
-use Ergebnis\PhpCsFixer;
 use Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\FixerConfiguration;

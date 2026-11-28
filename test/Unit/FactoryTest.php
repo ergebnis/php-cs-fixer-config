@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
 use Ergebnis\PhpCsFixer;
+use Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\Runner;
 use PHPUnit\Framework;
@@ -34,59 +35,59 @@ use PHPUnit\Framework;
  */
 final class FactoryTest extends Framework\TestCase
 {
-    use PhpCsFixer\Config\Test\Util\Helper;
+    use Config\Test\Util\Helper;
 
     public function testFromRuleSetThrowsRuntimeExceptionWhenCurrentPhpVersionIsLessThanTargetPhpVersion(): void
     {
-        $phpVersion = PhpCsFixer\Config\PhpVersion::create(
-            PhpCsFixer\Config\PhpVersion\Major::fromInt(\PHP_MAJOR_VERSION),
-            PhpCsFixer\Config\PhpVersion\Minor::fromInt(\PHP_MINOR_VERSION),
-            PhpCsFixer\Config\PhpVersion\Patch::fromInt(\PHP_RELEASE_VERSION + 1),
+        $phpVersion = Config\PhpVersion::create(
+            Config\PhpVersion\Major::fromInt(\PHP_MAJOR_VERSION),
+            Config\PhpVersion\Minor::fromInt(\PHP_MINOR_VERSION),
+            Config\PhpVersion\Patch::fromInt(\PHP_RELEASE_VERSION + 1),
         );
 
-        $ruleSet = PhpCsFixer\Config\RuleSet::create(
-            PhpCsFixer\Config\Fixers::empty(),
-            PhpCsFixer\Config\Name::fromString(self::faker()->word()),
+        $ruleSet = Config\RuleSet::create(
+            Config\Fixers::empty(),
+            Config\Name::fromString(self::faker()->word()),
             $phpVersion,
-            PhpCsFixer\Config\Rules::fromArray([]),
+            Config\Rules::fromArray([]),
         );
 
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage(\sprintf(
             'Current PHP version "%s" is less than targeted PHP version "%s".',
-            PhpCsFixer\Config\PhpVersion::current()->toString(),
+            Config\PhpVersion::current()->toString(),
             $phpVersion->toString(),
         ));
 
-        PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
+        Config\Factory::fromRuleSet($ruleSet);
     }
 
     /**
      * @dataProvider provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion
      */
-    public function testFromRuleSetCreatesConfigWhenCurrentPhpVersionIsEqualToOrGreaterThanTargetPhpVersion(PhpCsFixer\Config\PhpVersion $targetPhpVersion): void
+    public function testFromRuleSetCreatesConfigWhenCurrentPhpVersionIsEqualToOrGreaterThanTargetPhpVersion(Config\PhpVersion $targetPhpVersion): void
     {
-        $customFixers = PhpCsFixer\Config\Fixers::fromFixers(
+        $customFixers = Config\Fixers::fromFixers(
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
         );
 
-        $rules = PhpCsFixer\Config\Rules::fromArray([
+        $rules = Config\Rules::fromArray([
             'bar' => [
                 'baz' => true,
             ],
             'foo' => true,
         ]);
 
-        $ruleSet = PhpCsFixer\Config\RuleSet::create(
+        $ruleSet = Config\RuleSet::create(
             $customFixers,
-            PhpCsFixer\Config\Name::fromString(self::faker()->word()),
+            Config\Name::fromString(self::faker()->word()),
             $targetPhpVersion,
             $rules,
         );
 
-        $config = PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
+        $config = Config\Factory::fromRuleSet($ruleSet);
 
         self::assertEquals($customFixers->toArray(), $config->getCustomFixers());
         self::assertEquals(Runner\Parallel\ParallelConfigFactory::detect(), $config->getParallelConfig());
@@ -96,13 +97,13 @@ final class FactoryTest extends Framework\TestCase
     }
 
     /**
-     * @return \Generator<int, array{0: PhpCsFixer\Config\PhpVersion}>
+     * @return \Generator<int, array{0: Config\PhpVersion}>
      */
     public static function provideTargetPhpVersionLessThanOrEqualToCurrentPhpVersion(): iterable
     {
         $values = [
-            PhpCsFixer\Config\PhpVersion::fromInt(\PHP_VERSION_ID - 1),
-            PhpCsFixer\Config\PhpVersion::fromInt(\PHP_VERSION_ID),
+            Config\PhpVersion::fromInt(\PHP_VERSION_ID - 1),
+            Config\PhpVersion::fromInt(\PHP_VERSION_ID),
         ];
 
         foreach ($values as $value) {

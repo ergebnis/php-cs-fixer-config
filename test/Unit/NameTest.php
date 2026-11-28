@@ -15,6 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
 use Ergebnis\DataProvider;
 use Ergebnis\PhpCsFixer;
+use Ergebnis\PhpCsFixer\Config;
 use PHPUnit\Framework;
 
 /**
@@ -29,7 +30,7 @@ use PHPUnit\Framework;
  */
 final class NameTest extends Framework\TestCase
 {
-    use PhpCsFixer\Config\Test\Util\Helper;
+    use Config\Test\Util\Helper;
 
     /**
      * @dataProvider \Ergebnis\DataProvider\StringProvider::blank
@@ -40,14 +41,14 @@ final class NameTest extends Framework\TestCase
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage('Value can not be blank or empty.');
 
-        PhpCsFixer\Config\Name::fromString($value);
+        Config\Name::fromString($value);
     }
 
     public function testFromStringReturnsName(): void
     {
         $value = self::faker()->word();
 
-        $name = PhpCsFixer\Config\Name::fromString($value);
+        $name = Config\Name::fromString($value);
 
         self::assertSame($value, $name->toString());
     }

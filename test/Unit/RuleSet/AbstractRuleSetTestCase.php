@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
 use Ergebnis\PhpCsFixer;
+use Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Fixer;
 use PhpCsFixer\FixerConfiguration;
 use PhpCsFixer\FixerFactory;
@@ -179,18 +180,18 @@ abstract class AbstractRuleSetTestCase extends Framework\TestCase
         self::assertFalse($rules->toArray()['header_comment']);
     }
 
-    abstract protected function expectedCustomFixers(): PhpCsFixer\Config\Fixers;
+    abstract protected function expectedCustomFixers(): Config\Fixers;
 
-    abstract protected function expectedName(): PhpCsFixer\Config\Name;
+    abstract protected function expectedName(): Config\Name;
 
-    abstract protected function expectedPhpVersion(): PhpCsFixer\Config\PhpVersion;
+    abstract protected function expectedPhpVersion(): Config\PhpVersion;
 
-    abstract protected function expectedRules(): PhpCsFixer\Config\Rules;
+    abstract protected function expectedRules(): Config\Rules;
 
     /**
      * @throws \RuntimeException
      */
-    abstract protected static function createRuleSet(): PhpCsFixer\Config\RuleSet;
+    abstract protected static function createRuleSet(): Config\RuleSet;
 
     /**
      * @return array<string, Fixer\FixerInterface>

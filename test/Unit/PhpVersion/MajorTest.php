@@ -15,6 +15,7 @@ namespace Ergebnis\PhpCsFixer\Config\Test\Unit\PhpVersion;
 
 use Ergebnis\DataProvider;
 use Ergebnis\PhpCsFixer;
+use Ergebnis\PhpCsFixer\Config;
 use PHPUnit\Framework;
 
 /**
@@ -35,7 +36,7 @@ final class MajorTest extends Framework\TestCase
             $value,
         ));
 
-        PhpCsFixer\Config\PhpVersion\Major::fromInt($value);
+        Config\PhpVersion\Major::fromInt($value);
     }
 
     /**
@@ -44,7 +45,7 @@ final class MajorTest extends Framework\TestCase
      */
     public function testFromIntReturnsMajor(int $value): void
     {
-        $major = PhpCsFixer\Config\PhpVersion\Major::fromInt($value);
+        $major = Config\PhpVersion\Major::fromInt($value);
 
         self::assertSame($value, $major->toInt());
     }

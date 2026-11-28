@@ -18,6 +18,9 @@ namespace Ergebnis\PhpCsFixer\Config;
  */
 final class Rules
 {
+    /**
+     * @var array<string, array<string, mixed>|bool>
+     */
     private array $value;
 
     /**

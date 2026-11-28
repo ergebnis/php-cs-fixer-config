@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
-use Ergebnis\PhpCsFixer;
+use Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Fixer;
 use PHPUnit\Framework;
 
@@ -24,11 +24,11 @@ use PHPUnit\Framework;
  */
 final class FixersTest extends Framework\TestCase
 {
-    use PhpCsFixer\Config\Test\Util\Helper;
+    use Config\Test\Util\Helper;
 
     public function testEmptyReturnsFixers(): void
     {
-        $fixers = PhpCsFixer\Config\Fixers::empty();
+        $fixers = Config\Fixers::empty();
 
         self::assertSame([], $fixers->toArray());
     }
@@ -41,7 +41,7 @@ final class FixersTest extends Framework\TestCase
             $this->createStub(Fixer\FixerInterface::class),
         ];
 
-        $fixers = PhpCsFixer\Config\Fixers::fromFixers(...$value);
+        $fixers = Config\Fixers::fromFixers(...$value);
 
         self::assertSame($value, $fixers->toArray());
     }
@@ -56,7 +56,7 @@ final class FixersTest extends Framework\TestCase
             \Traversable::class,
         ));
 
-        PhpCsFixer\Config\Fixers::fromIterable($iterable);
+        Config\Fixers::fromIterable($iterable);
     }
 
     public function testFromIterableRejectsIterableWhenItIsNotATraversable(): void
@@ -70,7 +70,7 @@ final class FixersTest extends Framework\TestCase
             \stdClass::class,
         ));
 
-        PhpCsFixer\Config\Fixers::fromIterable($iterable);
+        Config\Fixers::fromIterable($iterable);
     }
 
     public function testFromIterableRejectsIterableWhenItDoesNotContainFixersOnly(): void
@@ -88,7 +88,7 @@ final class FixersTest extends Framework\TestCase
             \stdClass::class,
         ));
 
-        PhpCsFixer\Config\Fixers::fromIterable($iterable);
+        Config\Fixers::fromIterable($iterable);
     }
 
     public function testFromIterableReturnsFixersWhenValueIsArray(): void
@@ -99,7 +99,7 @@ final class FixersTest extends Framework\TestCase
             $this->createStub(Fixer\FixerInterface::class),
         ];
 
-        $fixers = PhpCsFixer\Config\Fixers::fromIterable($value);
+        $fixers = Config\Fixers::fromIterable($value);
 
         self::assertSame($value, $fixers->toArray());
     }
@@ -114,20 +114,20 @@ final class FixersTest extends Framework\TestCase
 
         $iterable = new \ArrayIterator($value);
 
-        $fixers = PhpCsFixer\Config\Fixers::fromIterable($iterable);
+        $fixers = Config\Fixers::fromIterable($iterable);
 
         self::assertSame($value, $fixers->toArray());
     }
 
     public function testMergeReturnsFixersMergedWithFixers(): void
     {
-        $one = PhpCsFixer\Config\Fixers::fromFixers(
+        $one = Config\Fixers::fromFixers(
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
         );
 
-        $two = PhpCsFixer\Config\Fixers::fromFixers(
+        $two = Config\Fixers::fromFixers(
             $this->createStub(Fixer\FixerInterface::class),
             $this->createStub(Fixer\FixerInterface::class),
         );
@@ -137,7 +137,7 @@ final class FixersTest extends Framework\TestCase
         self::assertNotSame($one, $mutated);
         self::assertNotSame($two, $mutated);
 
-        $expected = PhpCsFixer\Config\Fixers::fromFixers(...\array_merge(
+        $expected = Config\Fixers::fromFixers(...\array_merge(
             $one->toArray(),
             $two->toArray(),
         ));

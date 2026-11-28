@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\PhpVersion;
 
 use Ergebnis\DataProvider;
-use Ergebnis\PhpCsFixer;
+use Ergebnis\PhpCsFixer\Config;
 use PHPUnit\Framework;
 
 /**
@@ -24,7 +24,7 @@ use PHPUnit\Framework;
  */
 final class PatchTest extends Framework\TestCase
 {
-    use PhpCsFixer\Config\Test\Util\Helper;
+    use Config\Test\Util\Helper;
 
     /**
      * @dataProvider \Ergebnis\DataProvider\IntProvider::lessThanZero
@@ -37,7 +37,7 @@ final class PatchTest extends Framework\TestCase
             $value,
         ));
 
-        PhpCsFixer\Config\PhpVersion\Patch::fromInt($value);
+        Config\PhpVersion\Patch::fromInt($value);
     }
 
     /**
@@ -51,7 +51,7 @@ final class PatchTest extends Framework\TestCase
             $value,
         ));
 
-        PhpCsFixer\Config\PhpVersion\Patch::fromInt($value);
+        Config\PhpVersion\Patch::fromInt($value);
     }
 
     /**
@@ -76,7 +76,7 @@ final class PatchTest extends Framework\TestCase
      */
     public function testFromIntReturnsPatch(int $value): void
     {
-        $patch = PhpCsFixer\Config\PhpVersion\Patch::fromInt($value);
+        $patch = Config\PhpVersion\Patch::fromInt($value);
 
         self::assertSame($value, $patch->toInt());
     }

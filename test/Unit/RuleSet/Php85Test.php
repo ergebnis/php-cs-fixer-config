@@ -13,11 +13,7 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit\RuleSet;
 
-use Ergebnis\PhpCsFixer\Config\Fixers;
-use Ergebnis\PhpCsFixer\Config\Name;
-use Ergebnis\PhpCsFixer\Config\PhpVersion;
-use Ergebnis\PhpCsFixer\Config\Rules;
-use Ergebnis\PhpCsFixer\Config\RuleSet;
+use Ergebnis\PhpCsFixer\Config;
 use ErickSkrauch\PhpCsFixer;
 use PhpCsFixerCustomFixers\Fixer;
 
@@ -38,14 +34,14 @@ use PhpCsFixerCustomFixers\Fixer;
  */
 final class Php85Test extends ExplicitRuleSetTestCase
 {
-    protected static function createRuleSet(): RuleSet
+    protected static function createRuleSet(): Config\RuleSet
     {
-        return RuleSet\Php85::create();
+        return Config\RuleSet\Php85::create();
     }
 
-    protected function expectedCustomFixers(): Fixers
+    protected function expectedCustomFixers(): Config\Fixers
     {
-        return Fixers::fromFixers(
+        return Config\Fixers::fromFixers(
             new Fixer\MultilineCommentOpeningClosingAloneFixer(),
             new Fixer\NoDuplicatedArrayKeyFixer(),
             new Fixer\NoDuplicatedImportsFixer(),
@@ -56,23 +52,23 @@ final class Php85Test extends ExplicitRuleSetTestCase
         );
     }
 
-    protected function expectedName(): Name
+    protected function expectedName(): Config\Name
     {
-        return Name::fromString('ergebnis (PHP 8.5)');
+        return Config\Name::fromString('ergebnis (PHP 8.5)');
     }
 
-    protected function expectedPhpVersion(): PhpVersion
+    protected function expectedPhpVersion(): Config\PhpVersion
     {
-        return PhpVersion::create(
-            PhpVersion\Major::fromInt(8),
-            PhpVersion\Minor::fromInt(5),
-            PhpVersion\Patch::fromInt(0),
+        return Config\PhpVersion::create(
+            Config\PhpVersion\Major::fromInt(8),
+            Config\PhpVersion\Minor::fromInt(5),
+            Config\PhpVersion\Patch::fromInt(0),
         );
     }
 
-    protected function expectedRules(): Rules
+    protected function expectedRules(): Config\Rules
     {
-        return Rules::fromArray([
+        return Config\Rules::fromArray([
             'ErickSkrauch/line_break_after_statements' => true,
             'PhpCsFixerCustomFixers/multiline_comment_opening_closing_alone' => true,
             'PhpCsFixerCustomFixers/no_duplicated_array_key' => [
@@ -195,15 +191,15 @@ final class Php85Test extends ExplicitRuleSetTestCase
             ],
             'dir_constant' => true,
             'doctrine_annotation_array_assignment' => [
-                'ignored_tags' => RuleSet\Doctrine::IGNORED_TAGS,
+                'ignored_tags' => Config\RuleSet\Doctrine::IGNORED_TAGS,
                 'operator' => ':',
             ],
             'doctrine_annotation_braces' => [
-                'ignored_tags' => RuleSet\Doctrine::IGNORED_TAGS,
+                'ignored_tags' => Config\RuleSet\Doctrine::IGNORED_TAGS,
                 'syntax' => 'without_braces',
             ],
             'doctrine_annotation_indentation' => [
-                'ignored_tags' => RuleSet\Doctrine::IGNORED_TAGS,
+                'ignored_tags' => Config\RuleSet\Doctrine::IGNORED_TAGS,
                 'indent_mixed_lines' => false,
             ],
             'doctrine_annotation_spaces' => [
@@ -215,7 +211,7 @@ final class Php85Test extends ExplicitRuleSetTestCase
                 'before_argument_assignments' => false,
                 'before_array_assignments_colon' => false,
                 'before_array_assignments_equals' => false,
-                'ignored_tags' => RuleSet\Doctrine::IGNORED_TAGS,
+                'ignored_tags' => Config\RuleSet\Doctrine::IGNORED_TAGS,
             ],
             'echo_tag_syntax' => [
                 'format' => 'long',

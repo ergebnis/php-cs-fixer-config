@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Ergebnis\PhpCsFixer\Config\Test\Unit;
 
-use Ergebnis\PhpCsFixer;
+use Ergebnis\PhpCsFixer\Config;
 use PHPUnit\Framework;
 
 /**
@@ -23,11 +23,11 @@ use PHPUnit\Framework;
  */
 final class RulesTest extends Framework\TestCase
 {
-    use PhpCsFixer\Config\Test\Util\Helper;
+    use Config\Test\Util\Helper;
 
     public function testEmptyReturnsRules(): void
     {
-        $rules = PhpCsFixer\Config\Rules::empty();
+        $rules = Config\Rules::empty();
 
         self::assertSame([], $rules->toArray());
     }
@@ -44,14 +44,14 @@ final class RulesTest extends Framework\TestCase
             'foo' => true,
         ];
 
-        $rules = PhpCsFixer\Config\Rules::fromArray($value);
+        $rules = Config\Rules::fromArray($value);
 
         self::assertSame($value, $rules->toArray());
     }
 
     public function testMergeReturnsRulesMergedWithRules(): void
     {
-        $one = PhpCsFixer\Config\Rules::fromArray([
+        $one = Config\Rules::fromArray([
             'bar' => [
                 'baz' => [
                     'qux',
@@ -61,7 +61,7 @@ final class RulesTest extends Framework\TestCase
             'foo' => true,
         ]);
 
-        $two = PhpCsFixer\Config\Rules::fromArray([
+        $two = Config\Rules::fromArray([
             'bar' => [
                 'quux' => [],
             ],
@@ -74,7 +74,7 @@ final class RulesTest extends Framework\TestCase
         self::assertNotSame($one, $mutated);
         self::assertNotSame($two, $mutated);
 
-        $expected = PhpCsFixer\Config\Rules::fromArray([
+        $expected = Config\Rules::fromArray([
             'bar' => [
                 'quux' => [],
             ],

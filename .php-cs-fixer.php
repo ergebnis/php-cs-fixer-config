@@ -12,7 +12,7 @@ declare(strict_types=1);
  */
 
 use Ergebnis\License;
-use Ergebnis\PhpCsFixer;
+use Ergebnis\PhpCsFixer\Config;
 use PhpCsFixer\Finder;
 
 $license = License\Type\MIT::markdown(
@@ -27,9 +27,9 @@ $license = License\Type\MIT::markdown(
 
 $license->save();
 
-$ruleSet = PhpCsFixer\Config\RuleSet\Php74::create()
+$ruleSet = Config\RuleSet\Php74::create()
     ->withHeader($license->header())
-    ->withRules(PhpCsFixer\Config\Rules::fromArray([
+    ->withRules(Config\Rules::fromArray([
         'php_unit_test_case_static_method_calls' => [
             'call_type' => 'self',
             'methods' => [
@@ -48,7 +48,7 @@ $finder = Finder::create()
     ->ignoreDotFiles(false)
     ->in(__DIR__);
 
-$config = PhpCsFixer\Config\Factory::fromRuleSet($ruleSet);
+$config = Config\Factory::fromRuleSet($ruleSet);
 
 $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
 $config->setFinder($finder);

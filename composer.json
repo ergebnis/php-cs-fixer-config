@@ -29,7 +29,7 @@
     "ergebnis/license": "^2.9.0",
     "ergebnis/phpstan-rules": "^2.17.1",
     "ergebnis/phpunit-slow-test-detector": "^2.27.0",
-    "ergebnis/rector-rules": "^1.19.0",
+    "ergebnis/rector-config": "~0.5.0",
     "fakerphp/faker": "^1.24.1",
     "phpstan/extension-installer": "^1.4.3",
     "phpstan/phpstan": "^2.3.6",
@@ -37,7 +37,6 @@
     "phpstan/phpstan-phpunit": "^2.1.2",
     "phpstan/phpstan-strict-rules": "^2.1.2",
     "phpunit/phpunit": "^9.6.33",
-    "rector/rector": "^2.8.1",
     "symfony/filesystem": "^5.4.56 || ^6.4.50 || ^7.4.23 || ^8.1.11",
     "symfony/process": "^5.4.47 || ^6.4.24 || ^7.2.0 || ^8.0.0"
   },
